@@ -1,6 +1,4 @@
-# alreq
-Arabic Layout Requirements document
-
+#Arabic Layout Requirements document#
 
 development version: http://w3c.github.io/alreq/
 
