@@ -91,10 +91,63 @@
 	<ul>
 		<li><strong>Characters:</strong> Listing the characters&mdash;alphabet, diacritics, numerals, and punctuations&mdash;which are used with Arabic script. Distinguishing which character is used with which language. Provide sources for the classification (e.g. CLDR exemplar data).</li>
 		<li><strong>Direction:</strong> Breif description of bidi. Reference to further reading.</li>
-		<li><strong>Joining:</strong> Describe the joining/non-joining behavour and ligatures briefly and refer to Unicode Standard for in-detail description.</li>
+		<li><del><strong>Joining:</strong> Describe the joining/non-joining behavour and ligatures briefly and refer to Unicode Standard for in-detail description.</del></li>
 		<li><strong>Diacritics:</strong> Describe diacritics, their lack of effect on the joining, and combining them.</li>
 		<li><strong>Numbers:</strong> Brief description of different sets of numerals and their usage for Arabic and Persian languages.</li>
 	</ul>
+
+	<section id="h_joining">
+		<h2>Joining</h2>
+
+		<section id="h_joining_behavior_of_characters">
+			<h2>Joining Behavior of Characters</h2>
+
+			<p>Arabic script is cursive; i.e, characters are joined to their neighbors. For this purpose, each Arabic letter has at most four different shapes that allows it to join to its neighbors: beside the “isolated” form, there are “initial”, “medial”, and “final” forms. Their purposes, as their names suggest, are as follows:</p>
+
+			<ul>
+				<li><strong>Isolated shape:</strong> Used when the letter is not joined to any other letter.</li>
+				<li><strong>Isolated shape:</strong>Initial shape: Used when the letter is joined only to its next (left-side) letter.</li>
+				<li><strong>Isolated shape:</strong>Medial shape: Used when the letter is joined from its both sides.</li>
+				<li><strong>Isolated shape:</strong>Final shape: Used when the letter is joined only to its previous (right-side) letter.</li>
+			</ul>
+
+			<p><a href="#letter_shapes"></a> shows all four shapes of character <span class="uname">U+0645 ARABIC LETTER MEEM</span> (<span lang="ar" dir="rtl">&#x0645;</span>).<p>
+
+			<figure id="letter_shapes">
+				<img src="images/letter-shapes.png" alt="Four different shapes for joining to previous or succeeding letters" width="90%" />
+				<figcaption>Four different shapes for joining to previous or succeeding letters</figcaption>
+			</figure>
+
+			<p>For each Arabic letter, based on the joining behavior of its neighbors, one of its shapes is used in writing. <a href="#joining_process"></a> demonstrates how letters join to form a word.</p>
+
+			<figure id="joining_process">
+				<img src="images/joining-process.png" alt="Joining letters by using their various shapes" width="90%" />
+				<figcaption>Joining letters by using their various shapes</figcaption>
+			</figure>
+
+			<p>There are different categories of characters based on their joining behavior, but most of the Arabic letters are either “dual joining” or “right joining”. Dual joining characters can join from both sides. Like the character in image 1, these types of characters have all the four shapes mentioned above. Right joining characters only join to their previous (right-side) character. These characters only have isolated and final shapes, for they don’t join to their next character.</p>
+
+			<p>Almost all the non-alphabetical characters are “non-joining”. The few exceptions will be discussed in this document.</p>
+
+			<p>Please refer to The Unicode Standard Version 8.0, Section 9.2, for full explanation of Arabic cursive joining.</p>
+		</section>
+
+		<section id="h_ligatures">
+			<h2>Ligatures</h2>
+
+			<p>Almost all the writing styles of Arabic script use a special shape when letters <span class="lettername">lam</span> and <span class="lettername">alef</span> are joined. Most Arabic fonts include mandatory ligatures for this combination. Ignoring this ligature, as shown in <a href="#laam-alef-ligature"></a>, leads to wrong rendering of text.</p>
+
+			<figure id="laam-alef-ligature">
+				<img src="images/laam-alef-ligature.png" alt="Correct and wrong ways of rendering letter lam followed by letter alef" width="90%" />
+				<figcaption>Correct and wrong ways of rendering letter <span class="lettername">lam</span> followed by letter <span class="lettername">alef</span></figcaption>
+			</figure>
+
+			<p>This shape is not limited to the combination of <span class="uname">U+0644 ARABIC LETTER LAM</span> (<span lang="ar" dir="rtl">&#x0644;</span>) with <span class="uname">U+0627 ARABIC LETTER ALEF</span> (<span lang="ar" dir="rtl">&#x0627;</span>). Variations of letter <span class="lettername">alef</span> such as <span class="uname">U+0622 ARABIC LETTER ALEF WITH MADDA ABOVE</span> (<span lang="ar" dir="rtl">&#x0622;</span>) and <span class="uname">U+0623 ARABIC LETTER ALEF WITH HAMZA ABOVE</span> (<span lang="ar" dir="rtl">&#x0623;</span>) and also variations of letter <span class="lettername">lam</span> follow the same rules as well. Combination with diacritics does not affect these ligatures. Each of these ligatures also provides a special shape for joining from its right side (to the preceding letter).</p>
+
+		</section>
+
+	</section>
+
 </section>
     
     
