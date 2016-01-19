@@ -94,7 +94,11 @@ samp, kbd {
 table td {
 	border: 1px solid #ddd;
 	padding: 10px;
-	}
+}
+.rtlTermCell {
+    text-direction: rtl;
+    text-align: right;
+}
 .exampleList {
 	float: left; 
 	margin:10px;
