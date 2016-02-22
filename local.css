@@ -83,10 +83,6 @@ samp, kbd {
 .lettername {
 	font-style: italic;
 	}
-	
-
-
-
 
 .tab-format {
 	margin-left: 10%;
@@ -95,10 +91,12 @@ table td {
 	border: 1px solid #ddd;
 	padding: 10px;
 }
-.rtlTermCell {
-    text-direction: rtl;
-    text-align: right;
-}
+
+.glossary td:nth-child(2), td:nth-child(3) { 
+	    text-direction: rtl;
+    	text-align: right;
+	}
+
 .exampleList {
 	float: left; 
 	margin:10px;
