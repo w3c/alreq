@@ -92,7 +92,7 @@ table td {
 	padding: 10px;
 }
 
-.glossary td:nth-child(2), td:nth-child(3) { 
+.glossary td:nth-child(2), td:nth-child(4) { 
 	    text-direction: rtl;
     	text-align: right;
 	}
