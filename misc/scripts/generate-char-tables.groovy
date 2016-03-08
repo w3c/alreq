@@ -62,8 +62,8 @@ markup.section(class: 'appendix', id: "characters") {
 						td (lang: 'ar', class: 'rtlTermCell', row['Character'])
 						td (class: 'uname', row['UCS'])
 						td (class: 'uname', row['Name'])
-						td row['Fa']
 						td row['Ar']
+						td row['Fa']
 					}
 				}
 			}
