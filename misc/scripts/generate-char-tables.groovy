@@ -40,7 +40,7 @@ StringWriter writer = new StringWriter()
 MarkupBuilder markup = new MarkupBuilder(writer)
 markup.setDoubleQuotes(true)
 
-markup.section(class: 'appendix', id: "characters") {
+markup.section(class: 'appendix', id: "characters-tables") {
     h2 'Characters'
 	tables.each {
 		h3 it['name']
