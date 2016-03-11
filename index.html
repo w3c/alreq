@@ -198,7 +198,20 @@
     </section>
   </section>
   <section id="h_characters_and_words">
-    <h2>Characters and Words</h2>
+    <h2><a href="#h_characters_and_words">Characters and Words</a></h2>
+<section id="h_diacritics">
+    <h3><a href="#h_diacritics">Diacritics</a></h3>
+    <p>In Arabic script text it is unusual to use diacritics for  vowel information and for consonant lengthening.</p>
+    <section class="questions">
+      <p>Issues/questions:</p>
+      <ul>
+        <li>Some applications allow adjustment of the distance between the diacritics and the base character. Is this a requirement for most text systems?</li>
+        <li>What about adjustment to the horizontal position of the diacritic?</li>
+        <li>Should it be possible to influence whether a font places the kasra below the base character or immediately below the shadda, when combined with the latter?</li>
+      </ul>
+    </section>
+  </section>
+ <section>
     <p>Topic Keywords:</p>
     <ul>
       <li>
@@ -210,20 +223,79 @@
         topics under <a href="#h_lines_and_paragraphs">Lines and Paragraphs</a> section.
       </li>
       <li><strong>Spacing:</strong> Use of space as word boundary and exceptions ("و" conjunction
-      in Arabic orthography, "ل" before a non-Arabic script noun). Misuse of space in place of ZWNJ
+        in Arabic orthography, "ل" before a non-Arabic script noun). Misuse of space in place of ZWNJ
       in some Arabic script languages.</li>
       <li><strong>Numbers and counting:</strong> An overview of different numbering solutions
-      (digits, Abjad, …) and provide resources and guidelines on how to choose the right set of
+        (digits, Abjad, …) and provide resources and guidelines on how to choose the right set of
       numerals based on the language.</li>
       <li><strong>Font and Typographical considerations:</strong> Common typographical styles and
-      their visual identity according to historical and contemporary usages. Font size
-      considerations for mixed-script text. Ligatures and their categories (optional vs.
-      mandatory). Use or misuse of some generic font-styles such as italic and oblique with Arabic
+        their visual identity according to historical and contemporary usages. Font size
+        considerations for mixed-script text. Ligatures and their categories (optional vs.
+        mandatory). Use or misuse of some generic font-styles such as italic and oblique with Arabic
       script.</li>
     </ul>
   </section>
+  </section>
+
+
   <section id="h_lines_and_paragraphs">
-    <h2>Lines and Paragraphs</h2>
+    <h2><a href="#h_lines_and_paragraphs">Lines and Paragraphs</a></h2>
+
+  <section id="h_line_breaking">
+    <h3><a href="#h_line_breaking">Line breaking</a></h3>
+    <p>When Arabic text doesn't fit within the available line width, the text is wrapped to the next line between words. </p>
+    <p>In bidirectional text, if a line break occurs between a sequence of words that are progressing in a left-to-right direction the first line will be filled with LTR words that come at the start of the phrase in the order spoken (ie. not the visual order when laid out in a single line). This is because it is never correct to read lines from bottom to top. A similar rearrangement is required when a sequence of right-to-left words is split at the end of a line in an overall LTR context.</p>
+    <section class="questions">
+      <p>Issues/questions:</p>
+      <ul>
+        <li>In Urdu words are not necessarily bounded by spaces. What method is used for determining appropriate break points in this case?</li>
+        <li>What other characters besides SPACE constitute break points for automatic line wrapping?</li>
+        <li>What are the rules for hyphenation in Arabic script text?</li>
+        <li>The CSS Text spec <a href="https://drafts.csswg.org/css-text-3/#example-953e914f">says</a> &quot;When shaping scripts such as Arabic are allowed to break within words due to hyphenation, the characters must still be shaped as if the word were not broken.&quot; The example shows Uighur text with a hyphen at the end of a line and with shaped characters at line end and start. Is this normal in Arabic and Persian text also?</li>
+        <li>In some styles of CJK typesetting, English words are allowed to break between any two letters, rather than only at spaces or hyphenation points. Are the rules different form Arabic script text?</li>
+        <li>The CSS spec <a href="https://drafts.csswg.org/css-text-3/#example-b3227dab">says</a> &quot;When shaping scripts such as Arabic are allowed to break within words due to break-all, the characters must still be shaped as if the word were not broken.&quot; Is this true?</li>
+        <li>The CSS <a href="https://drafts.csswg.org/css-text-3/#hanging-punctuation-property">hanging-punctuation</a> property allows the arabic comma and arabic full stop to hang in the margin, rather than wrapping them to the next line. Is this appropriate?</li>
+      </ul>
+    </section>
+  </section>
+
+<section id="h_justification">
+      <h3><a href="#h_justification">Justification and elongation</a></h3>
+      <p>There are a number of different ways to produce justified text in Arabic. In some cases several of these methods may be combined. In other cases, certain methods are disallowed.</p>
+      <p>Typical methods include:</p>
+      <ul>
+        <li>Expansion or contraction of inter-word spaces.</li>
+        <li>Expansion or contraction of intra-word spaces, ie. the space following a character in the middle of a word that doesn't join with the character that follows it.</li>
+        <li>Use of wider glyph forms for certain characters.</li>
+        <li>Stretching of the joins between characters, known as 'kashida'.</li>
+        <li>Use of ligated forms, to reduce space taken by characters on a line.</li>
+      </ul>
+      <section class="questions">
+        <p>Issues/questions:</p>
+        <ul>
+          <li>What are the rules for elongation of inter-character baselines, and how do they differ from one font style to another?</li>
+          <li>When is it appropriate to use which method? </li>
+          <li>Is the tatweel character useful?</li>
+          <li>What should happen if an application uses a ruq'ah font as a fallback, which cannot allow for word elongation? Does the application need to automatically know that it should not stretch words when using this font style?</li>
+          <li>How does an application or person decide which methods to use, and where, to justify text?</li>
+          <li>The CSS Text spec says: that, apart from elongation, applications &quot;must assume that no justification opportunity exists between any pair of typographic letter units in cursive script (regardless of whether they join). &quot; Is this correct? InDesign, for example, allows alterations of gaps in the middle of a word where one character doesn't join with the following character.</li>
+          <li>Should the CSS <a href="https://drafts.csswg.org/css-text-3/#cursive-tracking">letter-spacing property</a> have any effect on Arabic script text?</li>
+        </ul>
+      </section>
+    </section>
+
+    <section id="h_para_line_alignment">
+      <h3><a href="#h_para_line_alignment">Paragraph and line alignment</a></h3>
+      <p>Lines of Arabic script text are normally right aligned within the page.</p>
+      <section class="questions">
+        <p>Issues/questions:</p>
+        <ul>
+          <li>When a list on an Arabic page contains an item that is completely composed of LTR text, should the list item be right- or left-aligned on the page?</li>
+          <li>If a list item is left-sligned on an Arabic page because it contains only LTR text, should the list item counter be to the right or to the left?</li>
+        </ul>
+      </section>
+    </section>
+
     <p>Topic Keywords:</p>
     <ul>
       <li><strong>Line composition rules:</strong> Characters which can not appear in start and end
@@ -251,8 +323,10 @@
       etc.</li>
     </ul>
   </section>
+  
+  
   <section id="h_pages">
-    <h2>Pages</h2>
+    <h2><a href="#h_pages">Pages</a></h2>
     <p>Topic Keywords:</p>
     <ul>
       <li><strong>Basic common templates:</strong></li>
@@ -1425,7 +1499,7 @@
         </tr>
         <tr id="def_no-breaktext">
           <td>no-break text</td>
-          <td class="rtlTermCell">عدم تفكُّك النص، نص دون اِنفِكاك</td>
+          <td class="rtlTermCell">عدم تفكُّك النص، نص دون اِنفِكاك</td>
           <td class="rtlTermCell"></td>
           <td></td>
         </tr>
@@ -2032,7 +2106,7 @@
         </tr>
         <tr id="def_trimsize">
           <td>trim size</td>
-          <td class="rtlTermCell">حجم التقليم، حجم القَصِّ</td>
+          <td class="rtlTermCell">حجم التقليم، حجم القَصِّ</td>
           <td class="rtlTermCell"></td>
           <td>Dimensions of a full page in a publication, including margins.</td>
         </tr>
@@ -2072,7 +2146,7 @@
         </tr>
         <tr id="def_typesetting">
           <td>typesetting</td>
-          <td class="rtlTermCell">تنضيد، تَنْضِيدُ الحُرُوفِ الْمَطْبَعِيَّةِ</td>
+          <td class="rtlTermCell">تنضيد، تَنْضِيدُ الحُرُوفِ الْمَطْبَعِيَّةِ</td>
           <td class="rtlTermCell">حروفچینی</td>
           <td></td>
         </tr>
