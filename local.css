@@ -119,3 +119,8 @@ table td {
   float: left;
   margin:10px;
 }
+
+
+.questions {
+	font-style: italic;
+	}
