@@ -34,6 +34,13 @@ tables.each {
 	}
 }
 
+tables.each {
+	it['rows'].each {
+		Boolean hasImage = new File('resources/char-images/'+it['UCS']+'.svg').exists()
+		it['hasImage'] = hasImage
+	}
+}
+
 File fOut = new File('chars-out.html')
 
 StringWriter writer = new StringWriter()
@@ -59,7 +66,13 @@ markup.section(class: 'appendix', id: "characters-tables") {
 				rows.findAll
 				{ row ->
 					tr(id: "def_${row['UCS']}") {
-						td (lang: 'ar', class: 'rtlTermCell', row['Character'])
+						if (row['hasImage']) {
+							td (lang: 'ar', class: 'rtlTermCell') {
+								img (src: 'images/characters/'+row['UCS']+'.svg', alt: row['Character'], class: 'charimage')
+							}
+						} else {
+							td (lang: 'ar', class: 'rtlTermCell', row['Character'])
+						}
 						td (class: 'uname', row['UCS'])
 						td (class: 'uname', row['Name'])
 						td row['Ar']
