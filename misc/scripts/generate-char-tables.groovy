@@ -55,11 +55,11 @@ markup.section(class: 'appendix', id: "characters-tables") {
 		table(class: 'characters') {
 			thead {
 				tr {
-					th ('Character')
-					th ('UCS')
-					th ('Name')
-					th ('Ar')
-					th ('Fa')
+					th (class: 'charColumn', 'Character')
+					th (class: 'ucsColumn', 'UCS')
+					th (class: 'charnameColumn', 'Name')
+					th (class: 'languageColumn', 'Ar')
+					th (class: 'languageColumn', 'Fa')
 				}
 			}
 			tbody {

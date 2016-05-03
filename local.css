@@ -125,7 +125,23 @@ table td {
 	font-style: italic;
 }
 
-.charimage {
+table.characters {
+    width: 100%;
+}
+
+table.characters th.charColumn {
+    width: 5%;
+}
+
+table.characters th.ucsColumn {
+    width: 10%;
+}
+
+table.characters th.languageColumn {
+    width: 5%;
+}
+
+table.characters tr td .charimage {
     width: 30px;
     height: 30px;
 }
