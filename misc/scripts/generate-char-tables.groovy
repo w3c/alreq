@@ -75,8 +75,8 @@ markup.section(class: 'appendix', id: "characters-tables") {
 						}
 						td (class: 'uname', row['UCS'])
 						td (class: 'uname', row['Name'])
-						td row['Ar']
-						td row['Fa']
+						td (class: 'langMark', row['Ar'])
+						td (class: 'langMark', row['Fa'])
 					}
 				}
 			}
