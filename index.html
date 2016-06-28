@@ -101,7 +101,7 @@
       <del><li><strong>Characters:</strong> Listing the characters—alphabet, diacritics, numerals, and
       punctuations—which are used with Arabic script. Distinguishing which character is used with
       which language. Provide sources for the classification (e.g. CLDR exemplar data).</li></del>
-      <li><strong>Direction:</strong> Breif description of bidi. Reference to further reading.</li>
+      <li><del><strong>Direction:</strong> Breif description of bidi. Reference to further reading.</del></li>
       <li>
         <del><strong>Joining:</strong> Describe the joining/non-joining behavour and ligatures
         briefly and refer to Unicode Standard for in-detail description.</del>
@@ -128,15 +128,29 @@
     </section>
     <section id="h_direction">
       <h2>Direction</h2>
-			<p>Arabic script is written from right to left. Please refer to Unicode Standard Annex #9,
-			Unicode Bidirectional Algorithm, for detailed information on how to render right-to-left
-			texts and mixing right-to-left and left-to-right texts.</p>
-
-			<p>Numbers are written from left to right, as is text in a script that is normally
-			left-to-right.</p>
-
-			<p>The effects of writing from right to left on page layout and document structure are
-			discussed in the following sections of this document.</p>
+      <p>Arabic script is written from right to left. Numbers, even Arabic numbers, are written from left to right, as is text in a script that is normally left-to-right.</p>
+      <p>When the main script is Arabic, the layout and structure of pages and documents are also set from right to left.</p>
+      <p><a href="http://www.unicode.org/reports/tr9/">Unicode Standard Annex #9, Unicode Bidirectional Algorithm</a> details an algorithm for rendering right-to-left text and covers a myriad of situations in mixing different kinds of characters. A simpler explanation of the basics of the algorithm exists in the W3C article <a href="http://www.w3.org/International/articles/inline-bidi-markup/uba-basics">Unicode Bidirectional Algorithm basics</a>. You can refer to these documents for more information about Unicode’s bidirectional algorithm.</p>
+      <p>A brief overview of the bidirectional (<span class="qterm">bidi</span> for short) algorithm follows, because the direction is an essential part of how Arabic script is used.</p>
+      <p>The logical order of a text is the order in which its characters are usually typed and read. This is the order used for saving texts in digital format. This visual order is the order of characters when the text is represented in its written form. <a href="#logical_visual_order"></a> shows the difference between the two, with logical order visualized from left to right. The goal of the bidi algorithm is to convert the logical order to visual order to prepare the texts for rendering.</p>
+      <figure id="logical_visual_order">
+        <img src="images/logical-visual-order.svg" alt="Logical and visual order" width="90%">
+        <figcaption>Logical and visual order</figcaption>
+      </figure>
+      <p>An initial step of the process involves determining each paragraph’s <span class="qterm">base direction</span>: whether the paragraph is left-to-right or right-to-left. The base direction is either explicitly set by the author, inherited from the page, or (typically for user-generated content) detected based on the content of the paragraph. The base direction has two important uses later in the process.</p>
+      <p>The next step is to split the text into <span class="qterm">directional runs</span>. Each directional run is a sequence of characters with the same direction.</p>
+      <figure id="directional_runs">
+        <img src="images/directional-runs.svg" alt="Splitting a text into 3 directional runs" width="90%">
+        <figcaption>Splitting a text into 3 directional runs</figcaption>
+      </figure>
+      <p>Inside each run, all the characters follow the same order. The runs themselves are ordered for visual representation from left to right or from right to left, depending on the base direction of the paragraph. <a href="#order_of_directional_runs"></a> demonstrates an example of this. This is the first effect of the base direction.</p>
+      <figure id="order_of_directional_runs">
+        <img src="images/order-of-directional-runs.svg" alt="The effect of base direction on the order of runs" width="90%">
+        <figcaption>The effect of base direction on the order of runs</figcaption>
+      </figure>
+      <p>Unicode has a <span class="qterm">bidi category</span> property defined for each character that is used to determine the direction of each character. All the Arabic letters are marked as right-to-left characters, while Latin characters have the left-to-right category.</p>
+      <p>Some characters, mostly punctuations, are <span class="qterm">neutral</span>. The direction of these characters is derived from their surrounding characters. If a neutral character is surrounded by characters of the same direction (e.g. an space surrounded by Arabic letters), it gets the direction of its neighbors. Otherwise (e.g. a space between an Arabic and a Latin, or a neutral character appearing at the start or the end of a paragraph), the neutral character gets its direction from the paragraph’s base direction. This is another effect of the base direction in the bidi algorithm.</p>
+      <p>The above explanation of the bidi algorithm is highly simplified, to convey only the essentials of how Arabic text is transformed for rendering. The actual algorithm deals with many more character types and edge cases.</p>
     </section>
     <section id="h_joining">
       <h2>Joining</h2>
