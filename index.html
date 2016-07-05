@@ -1,11 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Arabic Layout Requirements</title>
-  <script src="https://www.w3.org/Tools/respec/respec-w3c-common" async class="remove">
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+
+  
+<meta charset="utf-8">
+
+
+  
+<title>Arabic Layout Requirements</title>
+
+
+  
+<script src="https://www.w3.org/Tools/respec/respec-w3c-common" async="" class="remove">
   </script>
-  <script class="remove">
+  
+<script class="remove">
     var respecConfig = {
       // specification status (e.g. WD, LCWD, WG-NOTE, etc.). If in doubt use ED.
       specStatus:           "ED",
@@ -16,7 +26,7 @@
       noRecTrack:           true,
       shortName:            "alreq",
       copyrightStart:       "2015",
-      edDraftURI:           "https://w3c.github.io/alreq/",
+      edDraftURI:           "http://w3c.github.io/alreq/",
 
       // if this is a LCWD, uncomment and set the end of its review period
       // lcEnd: "2009-08-05",
@@ -32,7 +42,7 @@
 
 
       wg:           "Internationalization Working Group",
-      wgURI:        "https://www.w3.org/International/core/",
+      wgURI:        "http://www.w3.org/International/core/",
       wgPublicList: "public-i18n-arabic",
       bugTracker: { new: "https://github.com/w3c/alreq/issues", open: "https://github.com/w3c/alreq/issues" } ,
       otherLinks: [
@@ -52,34 +62,40 @@
       // This is important for Rec-track documents, do not copy a patent URI from a random
       // document unless you know what you're doing. If in doubt ask your friendly neighbourhood
       // Team Contact.
-      wgPatentURI:  "https://www.w3.org/2004/01/pp-impl/32113/status",
+      wgPatentURI:  "http://www.w3.org/2004/01/pp-impl/32113/status",
       // !!!! IMPORTANT !!!! MAKE THE ABOVE BLINK IN YOUR HEAD
     };
   </script>
-  <link rel="stylesheet" href="local.css" type="text/css">
+  
+<link rel="stylesheet" href="local.css" type="text/css">
+
+
 </head>
-<body id="respecDocument" role="document" class="h-entry">
-  <div id="abstract">
+<body class="h-entry" role="document" id="respecDocument" style="  color: rgb(0, 0, 0);" alink="#EE0000" link="#0000EE" vlink="#551A8B">
+  
+<div id="abstract">
     <p>This document describes requirements for the layout and presentation of text in languages
     that use the Arabic script when they are used by Web standards and technologies, such as HTML,
     CSS, Mobile Web, Digital Publications, and Unicode.</p>
   </div>
-  <div id="sotd">
+
+
+  
+<div id="sotd">
     <p>This document describes the basic requirements for Arabic script layout and text support on
     the Web and in eBooks. These requirements provide information for Web technologies such as CSS,
     HTML and digital publications about how to support users of Arabic scripts. Currently the
     document focuses on Standard Arabic and Persian.</p>
-    <p>The editor's draft of this document is being developed by the <a href=
-    "https://www.w3.org/International/groups/arabic-layout/">Arabic Layout Task Force</a>, part of
-    the W3C <a href="https://www.w3.org/International/ig/">Internationalization Interest Group</a>.
-    It is published by the <a href="https://www.w3.org/International/core/">Internationalization
+    <p>The editor's draft of this document is being developed by the <a href="http://www.w3.org/International/groups/arabic-layout/">Arabic Layout Task Force</a>, part of
+    the W3C <a href="http://www.w3.org/International/ig/">Internationalization Interest Group</a>.
+    It is published by the <a href="http://www.w3.org/International/core/">Internationalization
     Working Group</a>. The end target for this document is a Working Group Note.</p>
     <div class="note">
       <p data-lang="en" style="font-weight: bold; font-size: 120%">Sending comments on this
       document</p>
       <p data-lang="en">If you wish to make comments regarding this document, please raise them as
       <a href="https://github.com/w3c/alreq/issues" style="font-size: 120%;">github issues</a> 
-      <!--against the <a href="https://www.w3.org/TR/2015/WD-ilreq-20150721/" style="font-size: 120%">latest dated version in /TR</a>-->.
+      <!--against the <a href="http://www.w3.org/TR/2015/WD-ilreq-20150721/" style="font-size: 120%">latest dated version in /TR</a>-->.
       Only send comments by email if you are unable to raise issues on github (see links below).
       All comments are welcome.</p>
       <p data-lang="en">To make it easier to track comments, please raise separate issues or emails
@@ -87,20 +103,26 @@
       dated version of the document.</p>
     </div>
   </div>
-  <section id="h_introduction">
+
+
+  
+<section id="h_introduction">
     <h2>Introduction</h2>
     <section id="h_about_this_document">
       <h2>About this document</h2>
       <p>Some text goes here.</p>
     </section>
   </section>
-  <section id="h_arabic_script_overview">
+
+
+  
+<section id="h_arabic_script_overview">
     <h2>Arabic Script Overview</h2>
     <p>Topic Keywords:</p>
     <ul>
-      <del><li><strong>Characters:</strong> Listing the characters—alphabet, diacritics, numerals, and
+      <li><strong>Characters:</strong> Listing the characters—alphabet, diacritics, numerals, and
       punctuations—which are used with Arabic script. Distinguishing which character is used with
-      which language. Provide sources for the classification (e.g. CLDR exemplar data).</li></del>
+      which language. Provide sources for the classification (e.g. CLDR exemplar data).</li>
       <li><strong>Direction:</strong> Breif description of bidi. Reference to further reading.</li>
       <li>
         <del><strong>Joining:</strong> Describe the joining/non-joining behavour and ligatures
@@ -120,12 +142,6 @@
       script, under blocks <em>Arabic Presentation Forms-A</em> and <em>Arabic Presentation
       Forms-B</em>, which are deprecated and should not be used in general interchange.</p>
     </section>
-    <section id="h_characters">
-      <h2>Characters</h2>
-      <p>Arabic script uses Arabic alphabet, diacritics, numbers, punctuations and symbols, and control characters. Appendix <a href="#characters-tables"></a> lists these characters.</p>
-      <p>The majority of these characters are common among different languages. There are two different set of digits for 0–9 (<span class="uname">U+0660</span>–<span class="uname">U+0669</span> and <span class="uname">U+06F0</span>–<span class="uname">U+06F9</span>) used by different languages. Most of the alphabetical characters are used by all the languages using Arabic scripts, but there are exceptions, such as the Arabic letter <span class="lettername">yeh</span> being represented with two different characters, <span class="uname">U+064A ARABIC LETTER YEH</span> (<span lang="ar" dir="rtl">ي</span>) and <span class="uname">U+06CC ARABIC LETTER FARSI YEH</span> (<span lang="ar" dir="rtl">ی</span>). These differences among the character sets of each language are marked in the appendix tables.</p>
-      <p>Control characters are used to produce the correct spelling of the words or to ensure correct combination with left-to-right content. Consequently, they should be preserved when storing and displaying texts.</p>
-    </section>
     <section id="h_direction">
       <h2>Direction</h2>
 			<p>Arabic script is written from right to left. Please refer to Unicode Standard Annex #9,
@@ -144,9 +160,7 @@
         <h2>Joining Behavior of Characters</h2>
         <p>Arabic script is cursive; i.e, characters are joined to their neighbors. For this
         purpose, each Arabic letter has at most four different shapes that allows it to join to its
-        neighbors: beside the <span class="qterm">isolated</span> form, there are <span class=
-        "qterm">initial</span>, <span class="qterm">medial</span>, and <span class=
-        "qterm">final</span> forms. Their purposes, as their names suggest, are as follows:</p>
+        neighbors: beside the <span class="qterm">isolated</span> form, there are <span class="qterm">initial</span>, <span class="qterm">medial</span>, and <span class="qterm">final</span> forms. Their purposes, as their names suggest, are as follows:</p>
         <ul>
           <li><strong>Isolated shape:</strong> Used when the letter is not joined to any other
           letter.</li>
@@ -157,28 +171,24 @@
           <li><strong>Final shape:</strong> Used when the letter is joined only to its previous
           (right-side) letter.</li>
         </ul>
-        <p><a href="#letter_shapes"></a> shows all four shapes of character <span class=
-        "uname">U+0645 ARABIC LETTER MEEM</span> (<span lang="ar" dir="rtl">م</span>).</p>
+        <p> shows all four shapes of character <span class="uname">U+0645 ARABIC LETTER MEEM</span> (<span dir="rtl" lang="ar">م</span>).</p>
         <figure id="letter_shapes">
-          <img src="images/letter-shapes.png" alt=
-          "Four different shapes for joining to previous or succeeding letters" width="90%">
+          <img src="images/letter-shapes.png" alt="Four different shapes for joining to previous or succeeding letters" width="90%">
           <figcaption>
             Four different shapes for joining to previous or succeeding letters
           </figcaption>
         </figure>
         <p>For each Arabic letter, based on the joining behavior of its neighbors, one of its
-        shapes is used in writing. <a href="#joining_process"></a> demonstrates how letters join to
+        shapes is used in writing.  demonstrates how letters join to
         form a word.</p>
         <figure id="joining_process">
-          <img src="images/joining-process.png" alt="Joining letters by using their various shapes"
-          width="90%">
+          <img src="images/joining-process.png" alt="Joining letters by using their various shapes" width="90%">
           <figcaption>
             Joining letters by using their various shapes
           </figcaption>
         </figure>
         <p>There are different categories of characters based on their joining behavior, but most
-        of the Arabic letters are either <span class="qterm">dual joining</span> or <span class=
-        "qterm">right joining</span>. Dual joining characters can join from both sides. Like the
+        of the Arabic letters are either <span class="qterm">dual joining</span> or <span class="qterm">right joining</span>. Dual joining characters can join from both sides. Like the
         character in image 1, these types of characters have all the four shapes mentioned above.
         Right joining characters only join to their previous (right-side) character. These
         characters only have isolated and final shapes, for they don’t join to their next
@@ -193,44 +203,33 @@
         <p>Almost all the writing styles of Arabic script use a special shape when letters
         <span class="lettername">lam</span> and <span class="lettername">alef</span> are joined.
         Most Arabic fonts include mandatory ligatures for this combination. Ignoring this ligature,
-        as shown in <a href="#laam-alef-ligature"></a>, leads to wrong rendering of text.</p>
+        as shown in , leads to wrong rendering of text.</p>
         <figure id="laam-alef-ligature">
-          <img src="images/laam-alef-ligature.png" alt=
-          "Correct and wrong ways of rendering letter lam followed by letter alef" width="90%">
+          <img src="images/laam-alef-ligature.png" alt="Correct and wrong ways of rendering letter lam followed by letter alef" width="90%">
           <figcaption>
             Correct and wrong ways of rendering letter <span class="lettername">lam</span> followed
             by letter <span class="lettername">alef</span>
           </figcaption>
         </figure>
         <p>This shape is not limited to the combination of <span class="uname">U+0644 ARABIC LETTER
-        LAM</span> (<span lang="ar" dir="rtl">ل</span>) with <span class="uname">U+0627 ARABIC
-        LETTER ALEF</span> (<span lang="ar" dir="rtl">ا</span>). Variations of letter <span class=
-        "lettername">alef</span> such as <span class="uname">U+0622 ARABIC LETTER ALEF WITH MADDA
-        ABOVE</span> (<span lang="ar" dir="rtl">آ</span>) and <span class="uname">U+0623 ARABIC
-        LETTER ALEF WITH HAMZA ABOVE</span> (<span lang="ar" dir="rtl">أ</span>) and also
+        LAM</span> (<span dir="rtl" lang="ar">ل</span>) with <span class="uname">U+0627 ARABIC
+        LETTER ALEF</span> (<span dir="rtl" lang="ar">ا</span>). Variations of letter <span class="lettername">alef</span> such as <span class="uname">U+0622 ARABIC LETTER ALEF WITH MADDA
+        ABOVE</span> (<span dir="rtl" lang="ar">آ</span>) and <span class="uname">U+0623 ARABIC
+        LETTER ALEF WITH HAMZA ABOVE</span> (<span dir="rtl" lang="ar">أ</span>) and also
         variations of letter <span class="lettername">lam</span> follow the same rules as well.
         Combination with diacritics does not affect these ligatures. Each of these ligatures also
         provides a special shape for joining from its right side (to the preceding letter).</p>
       </section>
     </section>
-    <section id="h_diacritics">
-      <h2>Diacritics</h2>
-      <p>More than one diacritics can appear after a single character subsequently and all of them should be applied over the same character. Font files usually define special shapes or positioning for combination of diacritics. These extra information should be applied in rendering texts.</p>
-      <p><a href="#combining_diacritics"></a> shows an example, where, according to this font’s specification, combining U+0651 ARABIC SHADDA and U+0650 ARABIC KASRA changes their positions. Various font files may require different transformations.</p>
-      <figure id="combining_diacritics">
-        <img src="images/combining-diacritics.png" alt=
-             "Diacritics could be combined in Arabic script." width="90%">
-        <figcaption>
-          Diacritics could be combined in Arabic script.
-        </figcaption>
-      </figure>
-    </section>
+
+
+
 
 <section id="h_font_and_typographical_considerations">
 <h2><a href="#h_font_and_typographical_considerations">Font and
   Typographical considerations</a></h2>
 
-	<section id="h_style_and_calligraphy">
+  <section id="h_arabic_style_and_calligraphy">
   <h3>Arabic Style and Calligraphy</h3>
 
   <p>Arabic styling and writing has its origins in Islamic art and
@@ -242,137 +241,139 @@
   stretched into elongated shapes, and the scribes and artists of
   Islam labored with passion to take advantage of all these
   possibilities.</p>
+<p>
 
-  <p>From the beginning of Arabic calligraphy, two tendencies or
+  </p>
+<p>From the beginning of Arabic calligraphy, two tendencies or
   two types of styles can be seen emerging: writing for the
   decoration of mosques and sculptures, which was complex and highly decorative,
   and writing styles reserved for writing the <em>Kor'an</em>, which were easier
   to use and more readable.</p>
+<p>
 
-  <p>Writing styles then evolved under the influences of
+  </p>
+<p>Writing styles then evolved under the influences of
   cultural diversity, leading to regional calligraphic schools and
   styles (<em>Kufi</em> in Iraq, <em>Farsi</em> and <em>Taʻliq</em> in
   Persia, or <em>Diwani</em> in Turkey). Additional differences arose depending on the purpose of writing,
   such as the copying and dissemination of the <em>Korʼan</em>.</p>
+<p>
 
-  <p>In general we group under the generic term <em><strong>Naskh</strong></em>
+  </p>
+<p>In general we group under the generic term <em><strong>Naskh</strong></em>
   (copy/inscription) the scripts which are meant for reading at
   smaller sizes and are suitable for books and texts to be read, e.g. the
-  <em>Korʼan</em>, and as <em><strong>Kufi</strong></em> (from city of Kufa in
-  Irak) the highly stylized font styles used for ornamentation. Nevertheless, the rich evolution of the Arabic script led to the distinctive enumeration of a number of additional named styles.</p>
+  <em>Korʼan</em>, and as <em><strong>Kufic</strong></em> the highly stylized font styles used for ornamentation and more styled writings.
+ Nevertheless, the rich evolution of the Arabic script led to the 
+distinctive enumeration of a number of additional named styles.<br>
+Two other styles are used as synonyms for <em>Kufic</em> and <em>Naskh</em>: <em>Mabsut</em> (<em>wa mustaqīm</em>) is a form of style that is straight angled and elongated, [which dominated the copies of <em>Korʼan</em> in eighth and ninth centuries], and <em>Muqawwar</em> (<em>wa mudawar</em>) is a form of style that is curved and rounded.</p>
+
+
 </section>
 
-<section id="h_different_font_styles">
-  <h3>Different Font Styles</h3>
+
+
+
+<section id="h_different_writing_styles">
+  <h3>Different Writing Styles</h3>
 
   <p>Basics and principles of Arabic writing were  defined by
-  <em>Ibn Moqlah</em> (886-940 Higra) @@add a ref. Welch 1979@@, who
-  defined  Six Styles of writing: <em>Kufi</em>, <em>Thuluth</em>,
-  <em>Naskh</em>, <em>Riqaʻ</em>, <em>Diwani</em> and
-  <em>Taʻliq</em>.</p>
+  <em>Ibn Moqlah</em> (886-940 Higra), who
+  defined six styles of writing: <em>Kufi</em>, <em>Thuluth</em>,
+  <em>Naskh</em>, <em>Ruqʻa</em>, <em>Taʻliq</em> and  <em>Diwani</em>.</p>
 
-  <dl>
-    <dt>Kufi</dt>
+  
+<dl>
+<img alt="Arabic writing styles" src="images/ArabicWritingStyles.png" style=" width: 373px; height: 397px;" align="right">
+    <dt>Kufi  (كوفي)</dt>
 
-    <dd><img alt="Kufi script" src="images/kufi.jpg" style=
-    " width: 181px; height: 77px;" align="right" /> One of the
+    <dd>One of the
     oldest and best known Arabic scripts. It is characterized by
     its decorative and pronounced geometric forms, well adapted for
-    architectural designs. The style grew  with the beginnings of
-    Islam to satify a need for Muslims to codify the Koran.  @@
-    The script has some variations as <em>Al Mouthafar</em>, <em>Al
-    Mukhamal</em>, <em>Al Handassi</em>...)@@</dd>
+    architectural designs. The style grew  with the beginning of
+    Islam to satisfy a need for Muslims to codify the Kor'an. <br>
+</dd>
 
-    <dt>Thuluth</dt>
+    <dt>Thuluth  (ثلث)</dt>
 
-    <dd><img alt="Thuluth script" src="images/thuluth.jpg" style=
-    " width: 280px; height: 64px;" align="right" /> (The third.) One
-    of the finest Arabic scripts by its beauty and sight.
-    Recognizable by the fact that the letters and words are highly
-    interleaved in its complex form. May be the most difficult style to write (requiring a significant amount of skill), both in terms of its letters and in terms
+    <dd>
+ (The third.) Recognizable by the fact that the letters and words are highly
+    interleaved in its complex form. May be the most difficult style to 
+write (requiring a significant amount of skill), both in terms of its 
+letters and in terms
     of its structure and composition.</dd>
 
-    <dt>Naskh</dt>
+    <dt>Naskh  (نسخ)</dt>
 
-    <dd><img style=" width: 240px; height: 50px;" src=
-    "images/naskh.jpg" alt="Naskh script" align="right" /> One of
+    <dd> One of
     the clearest styles of all, with clearly distinguished letters
     which facilitate  reading and  pronunciation. Can be
     written at small sizes (traditionally using pens made of reeds and
     ink), which suits  the production of longer texts used for boards
     and books intended for the general population, especially the
-    Koran. Currently <em>Naskh</em> is considered the standard script
-    for almost all the Arabic and Muslim world.</dd>
+    Kor'an.<del></del></dd>
 
-    <dt>Riqaʻh (رقعة‎)</dt>
+    <dt>Ruqʻa (رقعة‎)</dt>
 
-    <dd><img style=" width: 240px; height: 63px;" src=
-    "images/riqa.jpg" alt="Riqa script" align="right" /> Takes its name from a pitcher(?), made of gazelle's leather.
-    Designed to be used for education, for everyday (not artistic) writing
+    <dd> A handwritten style still commonly used in Arabic countries, and recognisable by its bold-like letters written above the writing line.  
+    Designed to be used for education, for everyday writing
     and adopted in the offices (<em>Diwan</em>) of the Ottoman
-    Empire.</dd>
+    Empire. One of it's feature is that calligraphers have kept it and did not derived variations from it</dd>
 
-    <dt>Taʻlīq</dt>
+    <dt>Taʻlīq  (تعليق)</dt>
 
-    <dd> <img alt="Nastaaliq script" src=
-    "images/nastaaliq.jpg" style=" width: 240px; height: 50px;"
-    align="right" />Also known as  <em>Farsi</em>(Iran), Taʻlīq(hanging) combines <em>Naskh</em> and Riqaʻh.
+    <dd> Also known as  <em>Farsi </em>(Iran), <em>Taʻlīq</em> (hanging) combines <em>Naskh</em> and <em>Riqaʻ</em>.
     A beautiful script characterized by the precision and stretch of
-    its letters, its clarity, and its lack of complexity. Considered
-    as one of the best scripts in the world, it is favored by many
-    Arab calligraphers. Designed for Persian language, until
+    its letters, its clarity, and its lack of complexity. Designed for Persian language, until
     replaced by <em>Nastaʻlīq</em></dd>
 
-    <dt>Diwani</dt>
+    <dt>Diwani (ديواني)<br>
+</dt>
 
-    <dd><img style=" width: 260px; height: 47px;" src=
-    "images/diwani.jpg" alt="Diwani script" align="right" /> Used
+    <dd> Used
     by the Ottman court (<em>Diwan</em>) to write official documents.
-    Still in use today (e.g. hand written documents by moroccan
+    Some variations of it are still in use today (e.g. hand written documents by some
     religious officials).</dd>
-
+</dl>
 <p>We can add other font styles to this list, such as the following.</p>
-    <dt>Nastaaliq Farissi</dt>
+<dl>
 
-    <dd><img alt="Nastaaliq script" src=
-    "images/nastaaliq.jpg"
-    style=" width: 240px; height: 50px;" align="right" /> (TBD as
-    persian version of <em>Taʻliq</em>, derived from <em>Naskh</em> and
+
+
+    <dt>Nasta'liq or Farissi (فارسي)<br>
+</dt>
+
+    <dd>&nbsp;Persian version of <em>Taʻliq</em>, derived from <em>Naskh</em> and
     <em>Taaʻliq</em> and developed in the 8th and 9th centuries. It
-    is like a <em>Taaʻliq</em> but easier to write and read...</dd>
+    is like a <em>Taaʻliq</em> but easier to write and read.</dd>
 
-    <dt>Rabat aka  Maghribi</dt>
+    <dt>Rabat aka  Maghribi&nbsp; (رباط او مغربي‎)<br>
+</dt>
 
-    <dd><img style=" width: 211px; height: 89px;" src=
-    "images/maghribi.jpg" alt="Maghribi script" align="right" />
+    <dd><img style="width: 214px; height: 53px;" src="images/basmalaMaghribi.png" alt="Maghribi script" align="right">
     Western Islamic world of North Africa and Spain. Used for
-    writing the Koran as well as other scientific, legal and
-    religious manuscripts<br />
-    Not much used today.</dd>
-  </dl>
+    writing the Kor'an as well as other scientific, legal and
+    religious manuscripts. Used in some very official printings in Morocco. <br>
+</dd>
+  
+</dl>
+
 </section>
 
-<section id="h_script_and_typography">
-  <h3>Arabic script and Typography</h3>
 
-  <p>Arabic typography is a challenging domain. The reasons include both technical and historical/cultural factors.  Arabic
-  typography was influenced by Western printing techniques. However not all
-  typographic concepts apply all to the Arabic script (see below)
-  and some characteristics should be handled carefully even if only
-  for better readability.</p>
+<section id="h_arabic_script_and_typography">
+  <h3>Arabic Script and Typography</h3>
 
-  <p>For it's simplicity and easy reading, <span style=
-  "font-style: italic;">Naskh</span> style is the most used style
-  of writing Arabic scripts. How could typography, which came late
+  
+<p>Arabic script has some characteristics that are challenging for 
+Typographer and font designers. Examples bellow, shows some 
+characteristics should be handled carefully. How could typography, which came late
   to Arabic world, then follow the tradition of the many authors /
   artists who manually shaped the Arabic writing over decades? even
-  in it's simplest Naskh style?</p>
+  in it's simplest <span style="font-style: italic;">Naskh</span> style?
 
-  <p>However,  Arabic  has some characteristics that are
-  challenging for Typographer and font designers. As for any
-  language, a font does not need to be only readable but also
-  elegant.</p>
-  <p class="ednote">Most of the above seems repetitive and i'm not clear what needs to be said.</p>
+  </p>
+
 
 <ol>
   <li>
@@ -381,23 +382,19 @@
   <p>Letters may  join through a finely inclined line</p>
 
   <div style="margin-left: 40px;">
-    <img style=" width: 132px; height: 62px;" alt="slope baseline"
-    src=
-    "images/yastabchiro.jpg" />
+    <img style=" width: 132px; height: 62px;" alt="slope baseline" src="images/yastabchiro.jpg">
   </div>
 
   <p>or  two, square-ended lines</p>
 
   <div style="margin-left: 40px;">
-    <img style=" width: 92px; height: 79px;" alt=
-    "two level baselin" src=
-    "images/yastami3o.jpg" /><br />
+    <img style=" width: 92px; height: 79px;" alt="two level baselin" src="images/yastami3o.jpg"><br>
     </div>
-  Multilevel baselines don't occur in all fonts. The above examples use the Arabic Typesetting font. Compare those examples to to more typical fonts:<br />
+  Multilevel baselines don't occur in all fonts. The above examples use 
+the Arabic Typesetting font. Compare those examples to to more typical 
+fonts:<br>
 
-  <p style="margin-left: 40px;"><img style=
-  "width: 110px; height: 93px;" alt="normal Font" src=
-  "images/yastabchiroNormal.jpg" /></p>
+  <p style="margin-left: 40px;"><img style="width: 110px; height: 93px;" alt="normal Font" src="images/yastabchiroNormal.jpg"></p>
 </li>
 <li>
   <p><strong>2. Multi-context joining</strong></p>
@@ -408,9 +405,7 @@
   appearance in each combination.</p>
 
 <figure>
-    <img style="width: 324px; height: 79px;" alt=
-    "Different initial shape of noon" src=
-    "images/differentInitialNoon.jpg" />
+    <img style="width: 324px; height: 79px;" alt="Different initial shape of noon" src="images/differentInitialNoon.jpg">
     <figcaption>Initial letter noon, showing many
   different forms.</figcaption>
   </figure>
@@ -426,48 +421,37 @@
   in that one raises a kind of stroke. This property of raising a
   stroke is common for a number of letters (beh, teh, noon, theh) which 
   are taller than their connected letters in order to be distinguished
-  in some contexts, such as<img style="width: 37px; height: 31px;" alt=
-  "Beh with stroke before seen" src=
-  "images/bsl.jpg" align=
-  "middle" /> vs. <img style="width: 43px; height: 39px;" alt=
-  "Beh without stroke after seen" src=
-  "images/sbl.jpg" align=
-  "middle" /> , or to resolve ambiguity. See also the section about teeth letters
+  in some contexts, such as<img style="width: 37px; height: 31px;" alt="Beh with stroke before seen" src="images/bsl.jpg" align="middle"> vs. <img style="width: 43px; height: 39px;" alt="Beh without stroke after seen" src="images/sbl.jpg" align="middle"> , or to resolve ambiguity. See also the section about teeth letters
   below.</p>
 </li>
 <li>
-  <p><strong>3. Words as groups of letters<br /></strong></p>
+  <p><strong>3. Words as groups of letters<br></strong></p>
 
   <p>A word shape is not (only) a "horizontal" connections of
   letters, but of groups of letters (syntagmes??).</p>
 
   <p>Example two words in some nice Naskh font.</p>
 
-  <table summary="" style="margin-left: 40px;" >
+  <table  style="margin-left: 40px;">
     <caption align="bottom">
       Groups of letters are colored blue or red
     </caption>
 
     <tbody>
       <tr>
-        <td style=" text-align: center; width: 40%;"><img style=
-        "width: 76px; height: 46px;" alt=
-        "Aleph and two groups of letters to form a word" src=
-        "images/barmajaAmiri.jpg" /></td>
+        <td style=" text-align: center; width: 40%;"><img style="width: 76px; height: 46px;" alt="Aleph and two groups of letters to form a word" src="images/barmajaAmiri.jpg"></td>
 
-        <td style="vertical-align: top;"></td>
+        <td style="vertical-align: top;"><br>
+</td>
 
-        <td style="text-align: center;width:40%;"><img style=
-        " width: 127px; height: 57px;" alt=
-        "two other group of letters" src=
-        "images/stimrarihimaArabicTypesetting.jpg" /></td>
+        <td style="text-align: center;width:40%;"><img style=" width: 127px; height: 57px;" alt="two other group of letters" src="images/stimrarihimaArabicTypesetting.jpg"></td>
       </tr>
     </tbody>
   </table>
 
   <p>To compare with the same words in more usual font:</p>
 
-  <table summary="" style="margin-left: 40px;" border="0">
+  <table style="margin-left: 40px;">
     <caption align="bottom">
       Can't really say letter groups. Rather a "horizontal sequence
       of letters of almost same width".
@@ -475,15 +459,9 @@
 
     <tbody>
       <tr>
-        <td style="text-align: center; width:40%;"><img style=
-        " width: 98px; height: 43px;" alt=
-        "same word in more normal font" src=
-        "images/barmajaDefault.png" /></td>
+        <td style="text-align: center; width:40%;"><img style=" width: 98px; height: 43px;" alt="same word in more normal font" src="images/barmajaDefault.png"></td>
 
-        <td style=" text-align: center; width: 40%;"><img style=
-        " width: 144px; height: 46px;" alt=
-        "same word in default font" src=
-        "images/stimrarihimaDefault.jpg" /></td>
+        <td style=" text-align: center; width: 40%;"><img style=" width: 144px; height: 46px;" alt="same word in default font" src="images/stimrarihimaDefault.jpg"></td>
       </tr>
     </tbody>
   </table>
@@ -497,40 +475,32 @@
   <p>Groups of letters may also join vertically (top down) instead
   of right to left. And not all fonts permit this.</p>
 
-  <table summary="" style="margin-left: 40px;">
+  <table style="margin-left: 40px;">
     <tbody>
       <tr>
-        <td style=" text-align: center;"><img style=
-        "width: 65px; height: 70px;" alt="Vertical joining" src=
-        "images/vertivalJoin.jpg"
-        align="middle" /></td>
+        <td style=" text-align: center;"><img style="width: 65px; height: 70px;" alt="Vertical joining" src="images/vertivalJoin.jpg" align="middle"></td>
 
         <td style=" text-align: center;">vs.</td>
 
-        <td style=" text-align: center;"><img style=
-        "width: 69px; height: 46px;" alt="horizontal joing" src=
-        "images/horizontalJoin.jpg"
-        align="middle" /></td>
+        <td style=" text-align: center;"><img style="width: 69px; height: 46px;" alt="horizontal joing" src="images/horizontalJoin.jpg" align="middle"></td>
       </tr>
 
       <tr>
         <td style="text-align: center;">Joining happens almost
-        vertical<br />
-        (Amiri font)</td>
+        vertical</td>
 
-        <td></td>
+        <td>
+</td>
 
         <td style="text-align: center;">Joining happens
-        horizontal<br />
-        (Normal font)</td>
+        horizontal</td>
       </tr>
     </tbody>
   </table>      
 
 
   <p>Once again, some fonts try standard ligatures, but this is not
-  ligature. This is rather good writing practice, and it is like an
-  art.@@</p>
+  ligature. This is rather (good) writing practice/style.</p>
 
   <p>One should note that all this characteristics has not only an
   aesthetic side, but also play a role in justification. It is at
@@ -545,9 +515,7 @@
   teeth.</p>
 
   <div style="margin-left: 40px;">
-    <img style=" width: 276px; height: 74px;" alt="Teeth letters"
-    src=
-    "images/teeth.jpg" /><br />
+    <img style=" width: 276px; height: 74px;" alt="Teeth letters" src="images/teeth.jpg">
   </div>
 
   <p>Even in the teeth context letter shape may vary. It's not the
@@ -555,23 +523,55 @@
   figures.</p>
 </li>
 </ol>
-  <p>@@@</p>
+  
 </section>
 
-<section id="h_font_choice">
-  <h3><span style="font-weight: bold;">Font choice</span></h3>@@
-  Consider readability and accessibility when styling and using
-  newer fonts<br />
-  @@ shapes and proportions (the size issue) if mixed texts<br />
-  @@ justifications ...
-</section>
+<section id="h_fonts">
+  <h3><span style="font-weight: bold;">Fonts</span></h3>
+<p>Arabic script 
+counts 26 letters, and mostly 19 basic shapes. Since letters change 
+according to their position in the word, Arabic set of glyph may range 
+to more than one hundred shapes. If one count possible ligatures, and 
+different combination of joining forms (see above), the number of glyph 
+can increase further. Not sure that typeface design can accommodate all needs, even though some present typefaces can run hundred of shapes.</p>
 
+<p>
+Early typefaces, some still in use today, were designed with some 
+facilities. Designer of those differs in their simplification 
+hypothesis. For example, one of the first approach is to use "type writer style", 
+that is a same glyph for different positions in a word. This is the case for initial 
+and medial shape for most of the letters (example here). It is generally the browser 
+default font for Arabic script. A more unifying approach is the use of a single and detached 
+glyph for each letter without joining (todo example here). Other approach were used resulting 
+in more or less visually practical fonts.</p>
+
+<p>
+Nowadays, there is a large choice of fonts, and one can choose the
+ font that best suits to one's typographical desire. However, one may 
+also wishes to take into account some non typographical 
+considerations like: (TBD later on)</p>
+
+<ul>
+  <li>Accessibility (readability and visibility) ... </li>
+  <li>The kind of device with small screen (for example, larger loop and teeth height, small descenders etc...), although font actually appear better on smartphones</li>
+  <li>Font style for titles and banners and alike (small number of words), may differ from the style for content text (long text).</li>
+  <li>Shapes and proportions (the size issue) in mixed texts</li>
+  <li>Some fonts might give another opportunity for line justification than the one based on word spacing (todo example MHMD).
+  </li>
+  <li>etc...</li>
+</ul>
+</section>
+  </section>
   </section>
 
 
 
-  </section>
-  <section id="h_characters_and_words">
+
+
+
+
+  
+<section id="h_characters_and_words">
     <h2><a href="#h_characters_and_words">Characters and Words</a></h2>
 <section id="h_diacritics">
     <h3><a href="#h_diacritics">Diacritics</a></h3>
@@ -579,12 +579,17 @@
     <section class="questions">
       <p>Issues/questions:</p>
       <ul>
-        <li>Some applications allow adjustment of the distance between the diacritics and the base character. Is this a requirement for most text systems?</li>
+        <li>Some applications allow adjustment of the distance between 
+the diacritics and the base character. Is this a requirement for most 
+text systems?</li>
         <li>What about adjustment to the horizontal position of the diacritic?</li>
-        <li>Should it be possible to influence whether a font places the kasra below the base character or immediately below the shadda, when combined with the latter?</li>
+        <li>Should it be possible to influence whether a font places the
+ kasra below the base character or immediately below the shadda, when 
+combined with the latter?</li>
       </ul>
     </section>
   </section>
+
  <section>
     <p>Topic Keywords:</p>
     <ul>
@@ -620,40 +625,66 @@
 
 
 
+
+
   
 
 
 
   
 
-  <section id="h_lines_and_paragraphs">
+  
+<section id="h_lines_and_paragraphs">
     <h2><a href="#h_lines_and_paragraphs">Lines and Paragraphs</a></h2>
 
   <section id="h_line_breaking">
     <h3><a href="#h_line_breaking">Line breaking</a></h3>
     <p>When Arabic text doesn't fit within the available line width, the text is wrapped to the next line between words. </p>
-    <p>In bidirectional text, if a line break occurs between a sequence of words that are progressing in a left-to-right direction the first line will be filled with LTR words that come at the start of the phrase in the order spoken (ie. not the visual order when laid out in a single line). This is because it is never correct to read lines from bottom to top. A similar rearrangement is required when a sequence of right-to-left words is split at the end of a line in an overall LTR context.</p>
+    <p>In bidirectional text, if a line break occurs between a sequence 
+of words that are progressing in a left-to-right direction the first 
+line will be filled with LTR words that come at the start of the phrase 
+in the order spoken (ie. not the visual order when laid out in a single 
+line). This is because it is never correct to read lines from bottom to 
+top. A similar rearrangement is required when a sequence of 
+right-to-left words is split at the end of a line in an overall LTR 
+context.</p>
     <section class="questions">
       <p>Issues/questions:</p>
       <ul>
         <li>In Urdu words are not necessarily bounded by spaces. What method is used for determining appropriate break points in this case?</li>
         <li>What other characters besides SPACE constitute break points for automatic line wrapping?</li>
         <li>What are the rules for hyphenation in Arabic script text?</li>
-        <li>The CSS Text spec <a href="https://drafts.csswg.org/css-text-3/#example-953e914f">says</a> &quot;When shaping scripts such as Arabic are allowed to break within words due to hyphenation, the characters must still be shaped as if the word were not broken.&quot; The example shows Uighur text with a hyphen at the end of a line and with shaped characters at line end and start. Is this normal in Arabic and Persian text also?</li>
-        <li>In some styles of CJK typesetting, English words are allowed to break between any two letters, rather than only at spaces or hyphenation points. Are the rules different form Arabic script text?</li>
-        <li>The CSS spec <a href="https://drafts.csswg.org/css-text-3/#example-b3227dab">says</a> &quot;When shaping scripts such as Arabic are allowed to break within words due to break-all, the characters must still be shaped as if the word were not broken.&quot; Is this true?</li>
-        <li>The CSS <a href="https://drafts.csswg.org/css-text-3/#hanging-punctuation-property">hanging-punctuation</a> property allows the arabic comma and arabic full stop to hang in the margin, rather than wrapping them to the next line. Is this appropriate?</li>
+        <li>The CSS Text spec <a href="https://drafts.csswg.org/css-text-3/#example-953e914f">says</a>
+ "When shaping scripts such as Arabic are allowed to break within words 
+due to hyphenation, the characters must still be shaped as if the word 
+were not broken." The example shows Uighur text with a hyphen at the end
+ of a line and with shaped characters at line end and start. Is this 
+normal in Arabic and Persian text also?</li>
+        <li>In some styles of CJK typesetting, English words are allowed
+ to break between any two letters, rather than only at spaces or 
+hyphenation points. Are the rules different form Arabic script text?</li>
+        <li>The CSS spec <a href="https://drafts.csswg.org/css-text-3/#example-b3227dab">says</a>
+ "When shaping scripts such as Arabic are allowed to break within words 
+due to break-all, the characters must still be shaped as if the word 
+were not broken." Is this true?</li>
+        <li>The CSS <a href="https://drafts.csswg.org/css-text-3/#hanging-punctuation-property">hanging-punctuation</a>
+ property allows the arabic comma and arabic full stop to hang in the 
+margin, rather than wrapping them to the next line. Is this appropriate?</li>
       </ul>
     </section>
   </section>
 
 <section id="h_justification">
       <h3><a href="#h_justification">Justification and elongation</a></h3>
-      <p>There are a number of different ways to produce justified text in Arabic. In some cases several of these methods may be combined. In other cases, certain methods are disallowed.</p>
+      <p>There are a number of different ways to produce justified text 
+in Arabic. In some cases several of these methods may be combined. In 
+other cases, certain methods are disallowed.</p>
       <p>Typical methods include:</p>
       <ul>
         <li>Expansion or contraction of inter-word spaces.</li>
-        <li>Expansion or contraction of intra-word spaces, ie. the space following a character in the middle of a word that doesn't join with the character that follows it.</li>
+        <li>Expansion or contraction of intra-word spaces, ie. the space
+ following a character in the middle of a word that doesn't join with 
+the character that follows it.</li>
         <li>Use of wider glyph forms for certain characters.</li>
         <li>Stretching of the joins between characters, known as 'kashida'.</li>
         <li>Use of ligated forms, to reduce space taken by characters on a line.</li>
@@ -664,9 +695,17 @@
           <li>What are the rules for elongation of inter-character baselines, and how do they differ from one font style to another?</li>
           <li>When is it appropriate to use which method? </li>
           <li>Is the tatweel character useful?</li>
-          <li>What should happen if an application uses a ruq'ah font as a fallback, which cannot allow for word elongation? Does the application need to automatically know that it should not stretch words when using this font style?</li>
+          <li>What should happen if an application uses a ruq'ah font as
+ a fallback, which cannot allow for word elongation? Does the 
+application need to automatically know that it should not stretch words 
+when using this font style?</li>
           <li>How does an application or person decide which methods to use, and where, to justify text?</li>
-          <li>The CSS Text spec says: that, apart from elongation, applications &quot;must assume that no justification opportunity exists between any pair of typographic letter units in cursive script (regardless of whether they join). &quot; Is this correct? InDesign, for example, allows alterations of gaps in the middle of a word where one character doesn't join with the following character.</li>
+          <li>The CSS Text spec says: that, apart from elongation, 
+applications "must assume that no justification opportunity exists 
+between any pair of typographic letter units in cursive script 
+(regardless of whether they join). " Is this correct? InDesign, for 
+example, allows alterations of gaps in the middle of a word where one 
+character doesn't join with the following character.</li>
           <li>Should the CSS <a href="https://drafts.csswg.org/css-text-3/#cursive-tracking">letter-spacing property</a> have any effect on Arabic script text?</li>
         </ul>
       </section>
@@ -678,8 +717,12 @@
       <section class="questions">
         <p>Issues/questions:</p>
         <ul>
-          <li>When a list on an Arabic page contains an item that is completely composed of LTR text, should the list item be right- or left-aligned on the page?</li>
-          <li>If a list item is left-sligned on an Arabic page because it contains only LTR text, should the list item counter be to the right or to the left?</li>
+          <li>When a list on an Arabic page contains an item that is 
+completely composed of LTR text, should the list item be right- or 
+left-aligned on the page?</li>
+          <li>If a list item is left-sligned on an Arabic page because 
+it contains only LTR text, should the list item counter be to the right 
+or to the left?</li>
         </ul>
       </section>
     </section>
@@ -697,8 +740,7 @@
       rules.</li>
       <li><strong>Tab setting:</strong></li>
       <li>
-        <strong>Justification and Elongation/Tatweel/Kashida:</strong> Common <a href=
-        "#def_justify" class="termref">justification</a> considerations. Patterns of application of
+        <strong>Justification and Elongation/Tatweel/Kashida:</strong> Common <a href="#def_justify" class="termref">justification</a> considerations. Patterns of application of
         tatweel; e.g. only between or after certain characters or grapheme clusters, number of
         tatweels allowed per line or word, current length of a word and location of it prior to
         tatweel, flexibility of patterns according to font-families and typographic styles.
@@ -711,9 +753,12 @@
       etc.</li>
     </ul>
   </section>
+
+
   
   
-  <section id="h_pages">
+  
+<section id="h_pages">
     <h2><a href="#h_pages">Pages</a></h2>
     <p>Topic Keywords:</p>
     <ul>
@@ -736,7 +781,10 @@
       <li><strong>Specimens and examples:</strong></li>
     </ul>
   </section>
-  <section id="h_document">
+
+
+  
+<section id="h_document">
     <h2>Document</h2>
     <p>Topic Keywords:</p>
     <ul>
@@ -748,9 +796,17 @@
       <li><strong>Appendices:</strong> Bibliographies, glossaries, endnotes, etc.</li>
     </ul>
   </section>
-	<section class="appendix" id="characters-tables">
+
+
+	
+<section class="appendix" id="characters-tables">
 		<h2>Characters</h2>
-		<p>The following tables list Unicode characters used for Arabic script, excluding ASCII. Each table has two columns named <span class="qterm">Ar</span> and <span class="qterm">Fa</span> which denote which characters are used for Arabic or Persian languages, respectively. A black circle (●) under each of these two columns means that a character is used for that language. A white circle (○) denotes a character that is auxiliary for that language. An X mark (✕) means the character is not used for that language.</p>
+		<p>The following tables list Unicode characters used for Arabic script, excluding ASCII. Each table has two columns named <span class="qterm">Ar</span> and <span class="qterm">Fa</span>
+ which denote which characters are used for Arabic or Persian languages,
+ respectively. A black circle (●) under each of these two columns means 
+that a character is used for that language. A white circle (○) denotes a
+ character that is auxiliary for that language. An X mark (✕) means the 
+character is not used for that langauge.</p>
 		<h3>Alphabetical characters</h3>
 		<table class="characters">
 			<thead>
@@ -764,350 +820,350 @@
 			</thead>
 			<tbody>
 				<tr id="def_U+0621">
-					<td lang="ar" class="rtlTermCell">ء</td>
+					<td class="rtlTermCell" lang="ar">ء</td>
 					<td class="uname">U+0621</td>
 					<td class="uname">ARABIC LETTER HAMZA</td>
 					<td class="langMark">●</td>
 					<td class="langMark">●</td>
 				</tr>
 				<tr id="def_U+0622">
-					<td lang="ar" class="rtlTermCell">آ</td>
+					<td class="rtlTermCell" lang="ar">آ</td>
 					<td class="uname">U+0622</td>
 					<td class="uname">ARABIC LETTER ALEF WITH MADDA ABOVE</td>
 					<td class="langMark">●</td>
 					<td class="langMark">●</td>
 				</tr>
 				<tr id="def_U+0623">
-					<td lang="ar" class="rtlTermCell">أ</td>
+					<td class="rtlTermCell" lang="ar">أ</td>
 					<td class="uname">U+0623</td>
 					<td class="uname">ARABIC LETTER ALEF WITH HAMZA ABOVE</td>
 					<td class="langMark">●</td>
 					<td class="langMark">●</td>
 				</tr>
 				<tr id="def_U+0624">
-					<td lang="ar" class="rtlTermCell">ؤ</td>
+					<td class="rtlTermCell" lang="ar">ؤ</td>
 					<td class="uname">U+0624</td>
 					<td class="uname">ARABIC LETTER WAW WITH HAMZA ABOVE</td>
 					<td class="langMark">●</td>
 					<td class="langMark">●</td>
 				</tr>
 				<tr id="def_U+0625">
-					<td lang="ar" class="rtlTermCell">إ</td>
+					<td class="rtlTermCell" lang="ar">إ</td>
 					<td class="uname">U+0625</td>
 					<td class="uname">ARABIC LETTER ALEF WITH HAMZA BELOW</td>
 					<td class="langMark">●</td>
 					<td class="langMark">○</td>
 				</tr>
 				<tr id="def_U+0626">
-					<td lang="ar" class="rtlTermCell">ئ</td>
+					<td class="rtlTermCell" lang="ar">ئ</td>
 					<td class="uname">U+0626</td>
 					<td class="uname">ARABIC LETTER YEH WITH HAMZA ABOVE</td>
 					<td class="langMark">●</td>
 					<td class="langMark">●</td>
 				</tr>
 				<tr id="def_U+0627">
-					<td lang="ar" class="rtlTermCell">ا</td>
+					<td class="rtlTermCell" lang="ar">ا</td>
 					<td class="uname">U+0627</td>
 					<td class="uname">ARABIC LETTER ALEF</td>
 					<td class="langMark">●</td>
 					<td class="langMark">●</td>
 				</tr>
 				<tr id="def_U+0628">
-					<td lang="ar" class="rtlTermCell">ب</td>
+					<td class="rtlTermCell" lang="ar">ب</td>
 					<td class="uname">U+0628</td>
 					<td class="uname">ARABIC LETTER BEH</td>
 					<td class="langMark">●</td>
 					<td class="langMark">●</td>
 				</tr>
 				<tr id="def_U+0629">
-					<td lang="ar" class="rtlTermCell">ة</td>
+					<td class="rtlTermCell" lang="ar">ة</td>
 					<td class="uname">U+0629</td>
 					<td class="uname">ARABIC LETTER TEH MARBUTA</td>
 					<td class="langMark">●</td>
 					<td class="langMark">●</td>
 				</tr>
 				<tr id="def_U+062A">
-					<td lang="ar" class="rtlTermCell">ت</td>
+					<td class="rtlTermCell" lang="ar">ت</td>
 					<td class="uname">U+062A</td>
 					<td class="uname">ARABIC LETTER TEH</td>
 					<td class="langMark">●</td>
 					<td class="langMark">●</td>
 				</tr>
 				<tr id="def_U+062B">
-					<td lang="ar" class="rtlTermCell">ث</td>
+					<td class="rtlTermCell" lang="ar">ث</td>
 					<td class="uname">U+062B</td>
 					<td class="uname">ARABIC LETTER THEH</td>
 					<td class="langMark">●</td>
 					<td class="langMark">●</td>
 				</tr>
 				<tr id="def_U+062C">
-					<td lang="ar" class="rtlTermCell">ج</td>
+					<td class="rtlTermCell" lang="ar">ج</td>
 					<td class="uname">U+062C</td>
 					<td class="uname">ARABIC LETTER JEEM</td>
 					<td class="langMark">●</td>
 					<td class="langMark">●</td>
 				</tr>
 				<tr id="def_U+062D">
-					<td lang="ar" class="rtlTermCell">ح</td>
+					<td class="rtlTermCell" lang="ar">ح</td>
 					<td class="uname">U+062D</td>
 					<td class="uname">ARABIC LETTER HAH</td>
 					<td class="langMark">●</td>
 					<td class="langMark">●</td>
 				</tr>
 				<tr id="def_U+062E">
-					<td lang="ar" class="rtlTermCell">خ</td>
+					<td class="rtlTermCell" lang="ar">خ</td>
 					<td class="uname">U+062E</td>
 					<td class="uname">ARABIC LETTER KHAH</td>
 					<td class="langMark">●</td>
 					<td class="langMark">●</td>
 				</tr>
 				<tr id="def_U+062F">
-					<td lang="ar" class="rtlTermCell">د</td>
+					<td class="rtlTermCell" lang="ar">د</td>
 					<td class="uname">U+062F</td>
 					<td class="uname">ARABIC LETTER DAL</td>
 					<td class="langMark">●</td>
 					<td class="langMark">●</td>
 				</tr>
 				<tr id="def_U+0630">
-					<td lang="ar" class="rtlTermCell">ذ</td>
+					<td class="rtlTermCell" lang="ar">ذ</td>
 					<td class="uname">U+0630</td>
 					<td class="uname">ARABIC LETTER THAL</td>
 					<td class="langMark">●</td>
 					<td class="langMark">●</td>
 				</tr>
 				<tr id="def_U+0631">
-					<td lang="ar" class="rtlTermCell">ر</td>
+					<td class="rtlTermCell" lang="ar">ر</td>
 					<td class="uname">U+0631</td>
 					<td class="uname">ARABIC LETTER REH</td>
 					<td class="langMark">●</td>
 					<td class="langMark">●</td>
 				</tr>
 				<tr id="def_U+0632">
-					<td lang="ar" class="rtlTermCell">ز</td>
+					<td class="rtlTermCell" lang="ar">ز</td>
 					<td class="uname">U+0632</td>
 					<td class="uname">ARABIC LETTER ZAIN</td>
 					<td class="langMark">●</td>
 					<td class="langMark">●</td>
 				</tr>
 				<tr id="def_U+0633">
-					<td lang="ar" class="rtlTermCell">س</td>
+					<td class="rtlTermCell" lang="ar">س</td>
 					<td class="uname">U+0633</td>
 					<td class="uname">ARABIC LETTER SEEN</td>
 					<td class="langMark">●</td>
 					<td class="langMark">●</td>
 				</tr>
 				<tr id="def_U+0634">
-					<td lang="ar" class="rtlTermCell">ش</td>
+					<td class="rtlTermCell" lang="ar">ش</td>
 					<td class="uname">U+0634</td>
 					<td class="uname">ARABIC LETTER SHEEN</td>
 					<td class="langMark">●</td>
 					<td class="langMark">●</td>
 				</tr>
 				<tr id="def_U+0635">
-					<td lang="ar" class="rtlTermCell">ص</td>
+					<td class="rtlTermCell" lang="ar">ص</td>
 					<td class="uname">U+0635</td>
 					<td class="uname">ARABIC LETTER SAD</td>
 					<td class="langMark">●</td>
 					<td class="langMark">●</td>
 				</tr>
 				<tr id="def_U+0636">
-					<td lang="ar" class="rtlTermCell">ض</td>
+					<td class="rtlTermCell" lang="ar">ض</td>
 					<td class="uname">U+0636</td>
 					<td class="uname">ARABIC LETTER DAD</td>
 					<td class="langMark">●</td>
 					<td class="langMark">●</td>
 				</tr>
 				<tr id="def_U+0637">
-					<td lang="ar" class="rtlTermCell">ط</td>
+					<td class="rtlTermCell" lang="ar">ط</td>
 					<td class="uname">U+0637</td>
 					<td class="uname">ARABIC LETTER TAH</td>
 					<td class="langMark">●</td>
 					<td class="langMark">●</td>
 				</tr>
 				<tr id="def_U+0638">
-					<td lang="ar" class="rtlTermCell">ظ</td>
+					<td class="rtlTermCell" lang="ar">ظ</td>
 					<td class="uname">U+0638</td>
 					<td class="uname">ARABIC LETTER ZAH</td>
 					<td class="langMark">●</td>
 					<td class="langMark">●</td>
 				</tr>
 				<tr id="def_U+0639">
-					<td lang="ar" class="rtlTermCell">ع</td>
+					<td class="rtlTermCell" lang="ar">ع</td>
 					<td class="uname">U+0639</td>
 					<td class="uname">ARABIC LETTER AIN</td>
 					<td class="langMark">●</td>
 					<td class="langMark">●</td>
 				</tr>
 				<tr id="def_U+063A">
-					<td lang="ar" class="rtlTermCell">غ</td>
+					<td class="rtlTermCell" lang="ar">غ</td>
 					<td class="uname">U+063A</td>
 					<td class="uname">ARABIC LETTER GHAIN</td>
 					<td class="langMark">●</td>
 					<td class="langMark">●</td>
 				</tr>
 				<tr id="def_U+0641">
-					<td lang="ar" class="rtlTermCell">ف</td>
+					<td class="rtlTermCell" lang="ar">ف</td>
 					<td class="uname">U+0641</td>
 					<td class="uname">ARABIC LETTER FEH</td>
 					<td class="langMark">●</td>
 					<td class="langMark">●</td>
 				</tr>
 				<tr id="def_U+0642">
-					<td lang="ar" class="rtlTermCell">ق</td>
+					<td class="rtlTermCell" lang="ar">ق</td>
 					<td class="uname">U+0642</td>
 					<td class="uname">ARABIC LETTER QAF</td>
 					<td class="langMark">●</td>
 					<td class="langMark">●</td>
 				</tr>
 				<tr id="def_U+0643">
-					<td lang="ar" class="rtlTermCell">ك</td>
+					<td class="rtlTermCell" lang="ar">ك</td>
 					<td class="uname">U+0643</td>
 					<td class="uname">ARABIC LETTER KAF</td>
 					<td class="langMark">●</td>
 					<td class="langMark">○</td>
 				</tr>
 				<tr id="def_U+0644">
-					<td lang="ar" class="rtlTermCell">ل</td>
+					<td class="rtlTermCell" lang="ar">ل</td>
 					<td class="uname">U+0644</td>
 					<td class="uname">ARABIC LETTER LAM</td>
 					<td class="langMark">●</td>
 					<td class="langMark">●</td>
 				</tr>
 				<tr id="def_U+0645">
-					<td lang="ar" class="rtlTermCell">م</td>
+					<td class="rtlTermCell" lang="ar">م</td>
 					<td class="uname">U+0645</td>
 					<td class="uname">ARABIC LETTER MEEM</td>
 					<td class="langMark">●</td>
 					<td class="langMark">●</td>
 				</tr>
 				<tr id="def_U+0646">
-					<td lang="ar" class="rtlTermCell">ن</td>
+					<td class="rtlTermCell" lang="ar">ن</td>
 					<td class="uname">U+0646</td>
 					<td class="uname">ARABIC LETTER NOON</td>
 					<td class="langMark">●</td>
 					<td class="langMark">●</td>
 				</tr>
 				<tr id="def_U+0647">
-					<td lang="ar" class="rtlTermCell">ه</td>
+					<td class="rtlTermCell" lang="ar">ه</td>
 					<td class="uname">U+0647</td>
 					<td class="uname">ARABIC LETTER HEH</td>
 					<td class="langMark">●</td>
 					<td class="langMark">●</td>
 				</tr>
 				<tr id="def_U+0648">
-					<td lang="ar" class="rtlTermCell">و</td>
+					<td class="rtlTermCell" lang="ar">و</td>
 					<td class="uname">U+0648</td>
 					<td class="uname">ARABIC LETTER WAW</td>
 					<td class="langMark">●</td>
 					<td class="langMark">●</td>
 				</tr>
 				<tr id="def_U+0649">
-					<td lang="ar" class="rtlTermCell">ى</td>
+					<td class="rtlTermCell" lang="ar">ى</td>
 					<td class="uname">U+0649</td>
 					<td class="uname">ARABIC LETTER ALEF MAKSURA</td>
 					<td class="langMark">●</td>
 					<td class="langMark">○</td>
 				</tr>
 				<tr id="def_U+064A">
-					<td lang="ar" class="rtlTermCell">ي</td>
+					<td class="rtlTermCell" lang="ar">ي</td>
 					<td class="uname">U+064A</td>
 					<td class="uname">ARABIC LETTER YEH</td>
 					<td class="langMark">●</td>
 					<td class="langMark">○</td>
 				</tr>
 				<tr id="def_U+066F">
-					<td lang="ar" class="rtlTermCell">ٯ</td>
+					<td class="rtlTermCell" lang="ar">ٯ</td>
 					<td class="uname">U+066F</td>
 					<td class="uname">ARABIC LETTER DOTLESS QAF</td>
 					<td class="langMark">○</td>
 					<td class="langMark">✕</td>
 				</tr>
 				<tr id="def_U+0671">
-					<td lang="ar" class="rtlTermCell">ٱ</td>
+					<td class="rtlTermCell" lang="ar">ٱ</td>
 					<td class="uname">U+0671</td>
 					<td class="uname">ARABIC LETTER ALEF WASLA</td>
 					<td class="langMark">✕</td>
 					<td class="langMark">○</td>
 				</tr>
 				<tr id="def_U+067E">
-					<td lang="ar" class="rtlTermCell">پ</td>
+					<td class="rtlTermCell" lang="ar">پ</td>
 					<td class="uname">U+067E</td>
 					<td class="uname">ARABIC LETTER PEH</td>
 					<td class="langMark">○</td>
 					<td class="langMark">●</td>
 				</tr>
 				<tr id="def_U+0686">
-					<td lang="ar" class="rtlTermCell">چ</td>
+					<td class="rtlTermCell" lang="ar">چ</td>
 					<td class="uname">U+0686</td>
 					<td class="uname">ARABIC LETTER TCHEH</td>
 					<td class="langMark">○</td>
 					<td class="langMark">●</td>
 				</tr>
 				<tr id="def_U+0698">
-					<td lang="ar" class="rtlTermCell">ژ</td>
+					<td class="rtlTermCell" lang="ar">ژ</td>
 					<td class="uname">U+0698</td>
 					<td class="uname">ARABIC LETTER JEH</td>
 					<td class="langMark">○</td>
 					<td class="langMark">●</td>
 				</tr>
 				<tr id="def_U+069C">
-					<td lang="ar" class="rtlTermCell">ڜ</td>
+					<td class="rtlTermCell" lang="ar">ڜ</td>
 					<td class="uname">U+069C</td>
 					<td class="uname">ARABIC LETTER SEEN WITH THREE DOTS BELOW AND THREE DOTS ABOVE</td>
 					<td class="langMark">○</td>
 					<td class="langMark">✕</td>
 				</tr>
 				<tr id="def_U+06A2">
-					<td lang="ar" class="rtlTermCell">ڢ</td>
+					<td class="rtlTermCell" lang="ar">ڢ</td>
 					<td class="uname">U+06A2</td>
 					<td class="uname">ARABIC LETTER FEH WITH DOT MOVED BELOW</td>
 					<td class="langMark">○</td>
 					<td class="langMark">✕</td>
 				</tr>
 				<tr id="def_U+06A4">
-					<td lang="ar" class="rtlTermCell">ڤ</td>
+					<td class="rtlTermCell" lang="ar">ڤ</td>
 					<td class="uname">U+06A4</td>
 					<td class="uname">ARABIC LETTER VEH</td>
 					<td class="langMark">○</td>
 					<td class="langMark">✕</td>
 				</tr>
 				<tr id="def_U+06A5">
-					<td lang="ar" class="rtlTermCell">ڥ</td>
+					<td class="rtlTermCell" lang="ar">ڥ</td>
 					<td class="uname">U+06A5</td>
 					<td class="uname">ARABIC LETTER FEH WITH THREE DOTS BELOW</td>
 					<td class="langMark">○</td>
 					<td class="langMark">✕</td>
 				</tr>
 				<tr id="def_U+06A7">
-					<td lang="ar" class="rtlTermCell">ڧ</td>
+					<td class="rtlTermCell" lang="ar">ڧ</td>
 					<td class="uname">U+06A7</td>
 					<td class="uname">ARABIC LETTER QAF WITH DOT ABOVE</td>
 					<td class="langMark">○</td>
 					<td class="langMark">✕</td>
 				</tr>
 				<tr id="def_U+06A8">
-					<td lang="ar" class="rtlTermCell">ڨ</td>
+					<td class="rtlTermCell" lang="ar">ڨ</td>
 					<td class="uname">U+06A8</td>
 					<td class="uname">ARABIC LETTER QAF WITH THREE DOTS ABOVE</td>
 					<td class="langMark">○</td>
 					<td class="langMark">✕</td>
 				</tr>
 				<tr id="def_U+06A9">
-					<td lang="ar" class="rtlTermCell">ک</td>
+					<td class="rtlTermCell" lang="ar">ک</td>
 					<td class="uname">U+06A9</td>
 					<td class="uname">ARABIC LETTER KEHEH</td>
 					<td class="langMark">○</td>
 					<td class="langMark">●</td>
 				</tr>
 				<tr id="def_U+06AF">
-					<td lang="ar" class="rtlTermCell">گ</td>
+					<td class="rtlTermCell" lang="ar">گ</td>
 					<td class="uname">U+06AF</td>
 					<td class="uname">ARABIC LETTER GAF</td>
 					<td class="langMark">○</td>
 					<td class="langMark">●</td>
 				</tr>
 				<tr id="def_U+06CC">
-					<td lang="ar" class="rtlTermCell">ی</td>
+					<td class="rtlTermCell" lang="ar">ی</td>
 					<td class="uname">U+06CC</td>
 					<td class="uname">ARABIC LETTER FARSI YEH</td>
 					<td class="langMark">○</td>
@@ -1115,7 +1171,6 @@
 				</tr>
 			</tbody>
 		</table>
-                <p>Even while <span class="uname">U+0641 ARABIC LETTER FEH</span> (<span lang="ar" dir="rtl">ف</span>) and <span class="uname">U+06A2 ARABIC LETTER FEH WITH DOT MOVED BELOW</span> (<span lang="ar" dir="rtl">ڢ</span>) are defined as two separate Unicode characters, they both represent the same Arabic letter. These different forms of the same letter are used in different typographical styles. The same situation exists for <span class="uname">U+0642 ARABIC LETTER QAF</span> (<span lang="ar" dir="rtl">ق</span>) and <span class="uname">U+06A7 ARABIC LETTER QAF WITH DOT ABOVE</span> (<span lang="ar" dir="rtl">ڧ</span>).</p>
 		<h3>Diacritics</h3>
 		<table class="characters">
 			<thead>
@@ -1129,8 +1184,8 @@
 			</thead>
 			<tbody>
 				<tr id="def_U+064B">
-					<td lang="ar" class="rtlTermCell">
-						<img src="images/characters/U+064B.svg" alt="ً" class="charimage" />
+					<td class="rtlTermCell" lang="ar">
+						<img src="images/characters/U+064B.svg" alt="ً" class="charimage">
 					</td>
 					<td class="uname">U+064B</td>
 					<td class="uname">ARABIC FATHATAN</td>
@@ -1138,8 +1193,8 @@
 					<td class="langMark">●</td>
 				</tr>
 				<tr id="def_U+064C">
-					<td lang="ar" class="rtlTermCell">
-						<img src="images/characters/U+064C.svg" alt="ٌ" class="charimage" />
+					<td class="rtlTermCell" lang="ar">
+						<img src="images/characters/U+064C.svg" alt="ٌ" class="charimage">
 					</td>
 					<td class="uname">U+064C</td>
 					<td class="uname">ARABIC DAMMATAN</td>
@@ -1147,8 +1202,8 @@
 					<td class="langMark">●</td>
 				</tr>
 				<tr id="def_U+064D">
-					<td lang="ar" class="rtlTermCell">
-						<img src="images/characters/U+064D.svg" alt="ٍ" class="charimage" />
+					<td class="rtlTermCell" lang="ar">
+						<img src="images/characters/U+064D.svg" alt="ٍ" class="charimage">
 					</td>
 					<td class="uname">U+064D</td>
 					<td class="uname">ARABIC KASRATAN</td>
@@ -1156,8 +1211,8 @@
 					<td class="langMark">●</td>
 				</tr>
 				<tr id="def_U+064E">
-					<td lang="ar" class="rtlTermCell">
-						<img src="images/characters/U+064E.svg" alt="َ" class="charimage" />
+					<td class="rtlTermCell" lang="ar">
+						<img src="images/characters/U+064E.svg" alt="َ" class="charimage">
 					</td>
 					<td class="uname">U+064E</td>
 					<td class="uname">ARABIC FATHA</td>
@@ -1165,8 +1220,8 @@
 					<td class="langMark">○</td>
 				</tr>
 				<tr id="def_U+064F">
-					<td lang="ar" class="rtlTermCell">
-						<img src="images/characters/U+064F.svg" alt="ُ" class="charimage" />
+					<td class="rtlTermCell" lang="ar">
+						<img src="images/characters/U+064F.svg" alt="ُ" class="charimage">
 					</td>
 					<td class="uname">U+064F</td>
 					<td class="uname">ARABIC DAMMA</td>
@@ -1174,8 +1229,8 @@
 					<td class="langMark">○</td>
 				</tr>
 				<tr id="def_U+0650">
-					<td lang="ar" class="rtlTermCell">
-						<img src="images/characters/U+0650.svg" alt="ِ" class="charimage" />
+					<td class="rtlTermCell" lang="ar">
+						<img src="images/characters/U+0650.svg" alt="ِ" class="charimage">
 					</td>
 					<td class="uname">U+0650</td>
 					<td class="uname">ARABIC KASRA</td>
@@ -1183,8 +1238,8 @@
 					<td class="langMark">○</td>
 				</tr>
 				<tr id="def_U+0651">
-					<td lang="ar" class="rtlTermCell">
-						<img src="images/characters/U+0651.svg" alt="ّ" class="charimage" />
+					<td class="rtlTermCell" lang="ar">
+						<img src="images/characters/U+0651.svg" alt="ّ" class="charimage">
 					</td>
 					<td class="uname">U+0651</td>
 					<td class="uname">ARABIC SHADDA</td>
@@ -1192,8 +1247,8 @@
 					<td class="langMark">●</td>
 				</tr>
 				<tr id="def_U+0652">
-					<td lang="ar" class="rtlTermCell">
-						<img src="images/characters/U+0652.svg" alt="ْ" class="charimage" />
+					<td class="rtlTermCell" lang="ar">
+						<img src="images/characters/U+0652.svg" alt="ْ" class="charimage">
 					</td>
 					<td class="uname">U+0652</td>
 					<td class="uname">ARABIC SUKUN</td>
@@ -1201,8 +1256,8 @@
 					<td class="langMark">○</td>
 				</tr>
 				<tr id="def_U+0653">
-					<td lang="ar" class="rtlTermCell">
-						<img src="images/characters/U+0653.svg" alt="ٓ" class="charimage" />
+					<td class="rtlTermCell" lang="ar">
+						<img src="images/characters/U+0653.svg" alt="ٓ" class="charimage">
 					</td>
 					<td class="uname">U+0653</td>
 					<td class="uname">ARABIC MADDAH ABOVE</td>
@@ -1210,8 +1265,8 @@
 					<td class="langMark">○</td>
 				</tr>
 				<tr id="def_U+0654">
-					<td lang="ar" class="rtlTermCell">
-						<img src="images/characters/U+0654.svg" alt="ٔ" class="charimage" />
+					<td class="rtlTermCell" lang="ar">
+						<img src="images/characters/U+0654.svg" alt="ٔ" class="charimage">
 					</td>
 					<td class="uname">U+0654</td>
 					<td class="uname">ARABIC HAMZA ABOVE</td>
@@ -1219,8 +1274,8 @@
 					<td class="langMark">●</td>
 				</tr>
 				<tr id="def_U+0655">
-					<td lang="ar" class="rtlTermCell">
-						<img src="images/characters/U+0655.svg" alt="ٕ" class="charimage" />
+					<td class="rtlTermCell" lang="ar">
+						<img src="images/characters/U+0655.svg" alt="ٕ" class="charimage">
 					</td>
 					<td class="uname">U+0655</td>
 					<td class="uname">ARABIC HAMZA BELOW</td>
@@ -1228,8 +1283,8 @@
 					<td class="langMark">○</td>
 				</tr>
 				<tr id="def_U+0670">
-					<td lang="ar" class="rtlTermCell">
-						<img src="images/characters/U+0670.svg" alt="ٰ" class="charimage" />
+					<td class="rtlTermCell" lang="ar">
+						<img src="images/characters/U+0670.svg" alt="ٰ" class="charimage">
 					</td>
 					<td class="uname">U+0670</td>
 					<td class="uname">ARABIC LETTER SUPERSCRIPT ALEF</td>
@@ -1251,140 +1306,140 @@
 			</thead>
 			<tbody>
 				<tr id="def_U+0660">
-					<td lang="ar" class="rtlTermCell">٠</td>
+					<td class="rtlTermCell" lang="ar">٠</td>
 					<td class="uname">U+0660</td>
 					<td class="uname">ARABIC-INDIC DIGIT ZERO</td>
 					<td class="langMark">●</td>
 					<td class="langMark">✕</td>
 				</tr>
 				<tr id="def_U+0661">
-					<td lang="ar" class="rtlTermCell">١</td>
+					<td class="rtlTermCell" lang="ar">١</td>
 					<td class="uname">U+0661</td>
 					<td class="uname">ARABIC-INDIC DIGIT ONE</td>
 					<td class="langMark">●</td>
 					<td class="langMark">✕</td>
 				</tr>
 				<tr id="def_U+0662">
-					<td lang="ar" class="rtlTermCell">٢</td>
+					<td class="rtlTermCell" lang="ar">٢</td>
 					<td class="uname">U+0662</td>
 					<td class="uname">ARABIC-INDIC DIGIT TWO</td>
 					<td class="langMark">●</td>
 					<td class="langMark">✕</td>
 				</tr>
 				<tr id="def_U+0663">
-					<td lang="ar" class="rtlTermCell">٣</td>
+					<td class="rtlTermCell" lang="ar">٣</td>
 					<td class="uname">U+0663</td>
 					<td class="uname">ARABIC-INDIC DIGIT THREE</td>
 					<td class="langMark">●</td>
 					<td class="langMark">✕</td>
 				</tr>
 				<tr id="def_U+0664">
-					<td lang="ar" class="rtlTermCell">٤</td>
+					<td class="rtlTermCell" lang="ar">٤</td>
 					<td class="uname">U+0664</td>
 					<td class="uname">ARABIC-INDIC DIGIT FOUR</td>
 					<td class="langMark">●</td>
 					<td class="langMark">✕</td>
 				</tr>
 				<tr id="def_U+0665">
-					<td lang="ar" class="rtlTermCell">٥</td>
+					<td class="rtlTermCell" lang="ar">٥</td>
 					<td class="uname">U+0665</td>
 					<td class="uname">ARABIC-INDIC DIGIT FIVE</td>
 					<td class="langMark">●</td>
 					<td class="langMark">✕</td>
 				</tr>
 				<tr id="def_U+0666">
-					<td lang="ar" class="rtlTermCell">٦</td>
+					<td class="rtlTermCell" lang="ar">٦</td>
 					<td class="uname">U+0666</td>
 					<td class="uname">ARABIC-INDIC DIGIT SIX</td>
 					<td class="langMark">●</td>
 					<td class="langMark">✕</td>
 				</tr>
 				<tr id="def_U+0667">
-					<td lang="ar" class="rtlTermCell">٧</td>
+					<td class="rtlTermCell" lang="ar">٧</td>
 					<td class="uname">U+0667</td>
 					<td class="uname">ARABIC-INDIC DIGIT SEVEN</td>
 					<td class="langMark">●</td>
 					<td class="langMark">✕</td>
 				</tr>
 				<tr id="def_U+0668">
-					<td lang="ar" class="rtlTermCell">٨</td>
+					<td class="rtlTermCell" lang="ar">٨</td>
 					<td class="uname">U+0668</td>
 					<td class="uname">ARABIC-INDIC DIGIT EIGHT</td>
 					<td class="langMark">●</td>
 					<td class="langMark">✕</td>
 				</tr>
 				<tr id="def_U+0669">
-					<td lang="ar" class="rtlTermCell">٩</td>
+					<td class="rtlTermCell" lang="ar">٩</td>
 					<td class="uname">U+0669</td>
 					<td class="uname">ARABIC-INDIC DIGIT NINE</td>
 					<td class="langMark">●</td>
 					<td class="langMark">✕</td>
 				</tr>
 				<tr id="def_U+06F0">
-					<td lang="ar" class="rtlTermCell">۰</td>
+					<td class="rtlTermCell" lang="ar">۰</td>
 					<td class="uname">U+06F0</td>
 					<td class="uname">EXTENDED ARABIC-INDIC DIGIT ZERO</td>
 					<td class="langMark">✕</td>
 					<td class="langMark">●</td>
 				</tr>
 				<tr id="def_U+06F1">
-					<td lang="ar" class="rtlTermCell">۱</td>
+					<td class="rtlTermCell" lang="ar">۱</td>
 					<td class="uname">U+06F1</td>
 					<td class="uname">EXTENDED ARABIC-INDIC DIGIT ONE</td>
 					<td class="langMark">✕</td>
 					<td class="langMark">●</td>
 				</tr>
 				<tr id="def_U+06F2">
-					<td lang="ar" class="rtlTermCell">۲</td>
+					<td class="rtlTermCell" lang="ar">۲</td>
 					<td class="uname">U+06F2</td>
 					<td class="uname">EXTENDED ARABIC-INDIC DIGIT TWO</td>
 					<td class="langMark">✕</td>
 					<td class="langMark">●</td>
 				</tr>
 				<tr id="def_U+06F3">
-					<td lang="ar" class="rtlTermCell">۳</td>
+					<td class="rtlTermCell" lang="ar">۳</td>
 					<td class="uname">U+06F3</td>
 					<td class="uname">EXTENDED ARABIC-INDIC DIGIT THREE</td>
 					<td class="langMark">✕</td>
 					<td class="langMark">●</td>
 				</tr>
 				<tr id="def_U+06F4">
-					<td lang="ar" class="rtlTermCell">۴</td>
+					<td class="rtlTermCell" lang="ar">۴</td>
 					<td class="uname">U+06F4</td>
 					<td class="uname">EXTENDED ARABIC-INDIC DIGIT FOUR</td>
 					<td class="langMark">✕</td>
 					<td class="langMark">●</td>
 				</tr>
 				<tr id="def_U+06F5">
-					<td lang="ar" class="rtlTermCell">۵</td>
+					<td class="rtlTermCell" lang="ar">۵</td>
 					<td class="uname">U+06F5</td>
 					<td class="uname">EXTENDED ARABIC-INDIC DIGIT FIVE</td>
 					<td class="langMark">✕</td>
 					<td class="langMark">●</td>
 				</tr>
 				<tr id="def_U+06F6">
-					<td lang="ar" class="rtlTermCell">۶</td>
+					<td class="rtlTermCell" lang="ar">۶</td>
 					<td class="uname">U+06F6</td>
 					<td class="uname">EXTENDED ARABIC-INDIC DIGIT SIX</td>
 					<td class="langMark">✕</td>
 					<td class="langMark">●</td>
 				</tr>
 				<tr id="def_U+06F7">
-					<td lang="ar" class="rtlTermCell">۷</td>
+					<td class="rtlTermCell" lang="ar">۷</td>
 					<td class="uname">U+06F7</td>
 					<td class="uname">EXTENDED ARABIC-INDIC DIGIT SEVEN</td>
 					<td class="langMark">✕</td>
 					<td class="langMark">●</td>
 				</tr>
 				<tr id="def_U+06F8">
-					<td lang="ar" class="rtlTermCell">۸</td>
+					<td class="rtlTermCell" lang="ar">۸</td>
 					<td class="uname">U+06F8</td>
 					<td class="uname">EXTENDED ARABIC-INDIC DIGIT EIGHT</td>
 					<td class="langMark">✕</td>
 					<td class="langMark">●</td>
 				</tr>
 				<tr id="def_U+06F9">
-					<td lang="ar" class="rtlTermCell">۹</td>
+					<td class="rtlTermCell" lang="ar">۹</td>
 					<td class="uname">U+06F9</td>
 					<td class="uname">EXTENDED ARABIC-INDIC DIGIT NINE</td>
 					<td class="langMark">✕</td>
@@ -1405,126 +1460,126 @@
 			</thead>
 			<tbody>
 				<tr id="def_U+00AB">
-					<td lang="ar" class="rtlTermCell">«</td>
+					<td class="rtlTermCell" lang="ar">«</td>
 					<td class="uname">U+00AB</td>
 					<td class="uname">LEFT-POINTING DOUBLE ANGLE QUOTATION MARK</td>
 					<td class="langMark">✕</td>
 					<td class="langMark">●</td>
 				</tr>
 				<tr id="def_U+00BB">
-					<td lang="ar" class="rtlTermCell">»</td>
+					<td class="rtlTermCell" lang="ar">»</td>
 					<td class="uname">U+00BB</td>
 					<td class="uname">RIGHT-POINTING DOUBLE ANGLE QUOTATION MARK</td>
 					<td class="langMark">✕</td>
 					<td class="langMark">●</td>
 				</tr>
 				<tr id="def_U+00D7">
-					<td lang="ar" class="rtlTermCell">×</td>
+					<td class="rtlTermCell" lang="ar">×</td>
 					<td class="uname">U+00D7</td>
 					<td class="uname">MULTIPLICATION SIGN</td>
 					<td class="langMark">✕</td>
 					<td class="langMark">●</td>
 				</tr>
 				<tr id="def_U+00F7">
-					<td lang="ar" class="rtlTermCell">÷</td>
+					<td class="rtlTermCell" lang="ar">÷</td>
 					<td class="uname">U+00F7</td>
 					<td class="uname">DIVISION SIGN</td>
 					<td class="langMark">✕</td>
 					<td class="langMark">○</td>
 				</tr>
 				<tr id="def_U+060C">
-					<td lang="ar" class="rtlTermCell">،</td>
+					<td class="rtlTermCell" lang="ar">،</td>
 					<td class="uname">U+060C</td>
 					<td class="uname">ARABIC COMMA</td>
 					<td class="langMark">●</td>
 					<td class="langMark">●</td>
 				</tr>
 				<tr id="def_U+061B">
-					<td lang="ar" class="rtlTermCell">؛</td>
+					<td class="rtlTermCell" lang="ar">؛</td>
 					<td class="uname">U+061B</td>
 					<td class="uname">ARABIC SEMICOLON</td>
 					<td class="langMark">●</td>
 					<td class="langMark">●</td>
 				</tr>
 				<tr id="def_U+061F">
-					<td lang="ar" class="rtlTermCell">؟</td>
+					<td class="rtlTermCell" lang="ar">؟</td>
 					<td class="uname">U+061F</td>
 					<td class="uname">ARABIC QUESTION MARK</td>
 					<td class="langMark">●</td>
 					<td class="langMark">●</td>
 				</tr>
 				<tr id="def_U+0640">
-					<td lang="ar" class="rtlTermCell">ـ</td>
+					<td class="rtlTermCell" lang="ar">ـ</td>
 					<td class="uname">U+0640</td>
 					<td class="uname">ARABIC TATWEEL</td>
 					<td class="langMark">✕</td>
 					<td class="langMark">●</td>
 				</tr>
 				<tr id="def_U+066A">
-					<td lang="ar" class="rtlTermCell">٪</td>
+					<td class="rtlTermCell" lang="ar">٪</td>
 					<td class="uname">U+066A</td>
 					<td class="uname">ARABIC PERCENT SIGN</td>
 					<td class="langMark">✕</td>
 					<td class="langMark">●</td>
 				</tr>
 				<tr id="def_U+066B">
-					<td lang="ar" class="rtlTermCell">٫</td>
+					<td class="rtlTermCell" lang="ar">٫</td>
 					<td class="uname">U+066B</td>
 					<td class="uname">ARABIC DECIMAL SEPARATOR</td>
 					<td class="langMark">✕</td>
 					<td class="langMark">●</td>
 				</tr>
 				<tr id="def_U+066C">
-					<td lang="ar" class="rtlTermCell">٬</td>
+					<td class="rtlTermCell" lang="ar">٬</td>
 					<td class="uname">U+066C</td>
 					<td class="uname">ARABIC THOUSANDS SEPARATOR</td>
 					<td class="langMark">✕</td>
 					<td class="langMark">●</td>
 				</tr>
 				<tr id="def_U+2010">
-					<td lang="ar" class="rtlTermCell">‐</td>
+					<td class="rtlTermCell" lang="ar">‐</td>
 					<td class="uname">U+2010</td>
 					<td class="uname">HYPHEN</td>
 					<td class="langMark">●</td>
 					<td class="langMark">●</td>
 				</tr>
 				<tr id="def_U+2013">
-					<td lang="ar" class="rtlTermCell">–</td>
+					<td class="rtlTermCell" lang="ar">–</td>
 					<td class="uname">U+2013</td>
 					<td class="uname">EN DASH</td>
 					<td class="langMark">●</td>
 					<td class="langMark">✕</td>
 				</tr>
 				<tr id="def_U+2014">
-					<td lang="ar" class="rtlTermCell">—</td>
+					<td class="rtlTermCell" lang="ar">—</td>
 					<td class="uname">U+2014</td>
 					<td class="uname">EM DASH</td>
 					<td class="langMark">●</td>
 					<td class="langMark">✕</td>
 				</tr>
 				<tr id="def_U+2026">
-					<td lang="ar" class="rtlTermCell">…</td>
+					<td class="rtlTermCell" lang="ar">…</td>
 					<td class="uname">U+2026</td>
 					<td class="uname">HORIZONTAL ELLIPSIS</td>
 					<td class="langMark">✕</td>
 					<td class="langMark">●</td>
 				</tr>
 				<tr id="def_U+2039">
-					<td lang="ar" class="rtlTermCell">‹</td>
+					<td class="rtlTermCell" lang="ar">‹</td>
 					<td class="uname">U+2039</td>
 					<td class="uname">SINGLE LEFT-POINTING ANGLE QUOTATION MARK</td>
 					<td class="langMark">✕</td>
 					<td class="langMark">●</td>
 				</tr>
 				<tr id="def_U+203A">
-					<td lang="ar" class="rtlTermCell">›</td>
+					<td class="rtlTermCell" lang="ar">›</td>
 					<td class="uname">U+203A</td>
 					<td class="uname">SINGLE RIGHT-POINTING ANGLE QUOTATION MARK</td>
 					<td class="langMark">✕</td>
 					<td class="langMark">●</td>
 				</tr>
 				<tr id="def_U+2212">
-					<td lang="ar" class="rtlTermCell">−</td>
+					<td class="rtlTermCell" lang="ar">−</td>
 					<td class="uname">U+2212</td>
 					<td class="uname">MINUS SIGN</td>
 					<td class="langMark">✕</td>
@@ -1545,8 +1600,8 @@
 			</thead>
 			<tbody>
 				<tr id="def_U+200C">
-					<td lang="ar" class="rtlTermCell">
-						<img src="images/characters/U+200C.svg" alt="‌" class="charimage" />
+					<td class="rtlTermCell" lang="ar">
+						<img src="images/characters/U+200C.svg" alt="‌" class="charimage">
 					</td>
 					<td class="uname">U+200C</td>
 					<td class="uname">ZERO WIDTH NON-JOINER</td>
@@ -1554,8 +1609,8 @@
 					<td class="langMark">●</td>
 				</tr>
 				<tr id="def_U+200D">
-					<td lang="ar" class="rtlTermCell">
-						<img src="images/characters/U+200D.svg" alt="‍" class="charimage" />
+					<td class="rtlTermCell" lang="ar">
+						<img src="images/characters/U+200D.svg" alt="‍" class="charimage">
 					</td>
 					<td class="uname">U+200D</td>
 					<td class="uname">ZERO WIDTH JOINER</td>
@@ -1563,8 +1618,8 @@
 					<td class="langMark">●</td>
 				</tr>
 				<tr id="def_U+200E">
-					<td lang="ar" class="rtlTermCell">
-						<img src="images/characters/U+200E.svg" alt="‎" class="charimage" />
+					<td class="rtlTermCell" lang="ar">
+						<img src="images/characters/U+200E.svg" alt="‎" class="charimage">
 					</td>
 					<td class="uname">U+200E</td>
 					<td class="uname">LEFT-TO-RIGHT MARK</td>
@@ -1572,8 +1627,8 @@
 					<td class="langMark">○</td>
 				</tr>
 				<tr id="def_U+200F">
-					<td lang="ar" class="rtlTermCell">
-						<img src="images/characters/U+200F.svg" alt="‏" class="charimage" />
+					<td class="rtlTermCell" lang="ar">
+						<img src="images/characters/U+200F.svg" alt="‏" class="charimage">
 					</td>
 					<td class="uname">U+200F</td>
 					<td class="uname">RIGHT-TO-LEFT MARK</td>
@@ -1581,8 +1636,8 @@
 					<td class="langMark">○</td>
 				</tr>
 				<tr id="def_U+2028">
-					<td lang="ar" class="rtlTermCell">
-						<img src="images/characters/U+2028.svg" alt=" " class="charimage" />
+					<td class="rtlTermCell" lang="ar">
+						<img src="images/characters/U+2028.svg" alt=" " class="charimage">
 					</td>
 					<td class="uname">U+2028</td>
 					<td class="uname">LINE SEPARATOR</td>
@@ -1590,8 +1645,8 @@
 					<td class="langMark">○</td>
 				</tr>
 				<tr id="def_U+2029">
-					<td lang="ar" class="rtlTermCell">
-						<img src="images/characters/U+2029.svg" alt=" " class="charimage" />
+					<td class="rtlTermCell" lang="ar">
+						<img src="images/characters/U+2029.svg" alt=" " class="charimage">
 					</td>
 					<td class="uname">U+2029</td>
 					<td class="uname">PARAGRAPH SEPARATOR</td>
@@ -1599,8 +1654,8 @@
 					<td class="langMark">○</td>
 				</tr>
 				<tr id="def_U+202A">
-					<td lang="ar" class="rtlTermCell">
-						<img src="images/characters/U+202A.svg" alt="‪" class="charimage" />
+					<td class="rtlTermCell" lang="ar">
+						<img src="images/characters/U+202A.svg" alt="‪" class="charimage">
 					</td>
 					<td class="uname">U+202A</td>
 					<td class="uname">LEFT-TO-RIGHT EMBEDDING</td>
@@ -1608,8 +1663,8 @@
 					<td class="langMark">○</td>
 				</tr>
 				<tr id="def_U+202B">
-					<td lang="ar" class="rtlTermCell">
-						<img src="images/characters/U+202B.svg" alt="‫" class="charimage" />
+					<td class="rtlTermCell" lang="ar">
+						<img src="images/characters/U+202B.svg" alt="‫" class="charimage">
 					</td>
 					<td class="uname">U+202B</td>
 					<td class="uname">RIGHT-TO-LEFT EMBEDDING</td>
@@ -1617,8 +1672,8 @@
 					<td class="langMark">○</td>
 				</tr>
 				<tr id="def_U+202C">
-					<td lang="ar" class="rtlTermCell">
-						<img src="images/characters/U+202C.svg" alt="‬" class="charimage" />
+					<td class="rtlTermCell" lang="ar">
+						<img src="images/characters/U+202C.svg" alt="‬" class="charimage">
 					</td>
 					<td class="uname">U+202C</td>
 					<td class="uname">POP DIRECTIONAL FORMATTING</td>
@@ -1626,8 +1681,8 @@
 					<td class="langMark">○</td>
 				</tr>
 				<tr id="def_U+202D">
-					<td lang="ar" class="rtlTermCell">
-						<img src="images/characters/U+202D.svg" alt="‭" class="charimage" />
+					<td class="rtlTermCell" lang="ar">
+						<img src="images/characters/U+202D.svg" alt="‭" class="charimage">
 					</td>
 					<td class="uname">U+202D</td>
 					<td class="uname">LEFT-TO-RIGHT OVERRIDE</td>
@@ -1635,8 +1690,8 @@
 					<td class="langMark">○</td>
 				</tr>
 				<tr id="def_U+202E">
-					<td lang="ar" class="rtlTermCell">
-						<img src="images/characters/U+202E.svg" alt="‮" class="charimage" />
+					<td class="rtlTermCell" lang="ar">
+						<img src="images/characters/U+202E.svg" alt="‮" class="charimage">
 					</td>
 					<td class="uname">U+202E</td>
 					<td class="uname">RIGHT-TO-LEFT OVERRIDE</td>
@@ -1644,8 +1699,8 @@
 					<td class="langMark">○</td>
 				</tr>
 				<tr id="def_U+2060">
-					<td lang="ar" class="rtlTermCell">
-						<img src="images/characters/U+2060.svg" alt="⁠" class="charimage" />
+					<td class="rtlTermCell" lang="ar">
+						<img src="images/characters/U+2060.svg" alt="⁠" class="charimage">
 					</td>
 					<td class="uname">U+2060</td>
 					<td class="uname">WORD JOINER</td>
@@ -1653,8 +1708,8 @@
 					<td class="langMark">●</td>
 				</tr>
 				<tr id="def_U+2066">
-					<td lang="ar" class="rtlTermCell">
-						<img src="images/characters/U+2066.svg" alt="⁦" class="charimage" />
+					<td class="rtlTermCell" lang="ar">
+						<img src="images/characters/U+2066.svg" alt="⁦" class="charimage">
 					</td>
 					<td class="uname">U+2066</td>
 					<td class="uname">LEFT-TO-RIGHT ISOLATE</td>
@@ -1662,8 +1717,8 @@
 					<td class="langMark">○</td>
 				</tr>
 				<tr id="def_U+2067">
-					<td lang="ar" class="rtlTermCell">
-						<img src="images/characters/U+2067.svg" alt="⁧" class="charimage" />
+					<td class="rtlTermCell" lang="ar">
+						<img src="images/characters/U+2067.svg" alt="⁧" class="charimage">
 					</td>
 					<td class="uname">U+2067</td>
 					<td class="uname">RIGHT-TO-LEFT ISOLATE</td>
@@ -1671,8 +1726,8 @@
 					<td class="langMark">○</td>
 				</tr>
 				<tr id="def_U+2068">
-					<td lang="ar" class="rtlTermCell">
-						<img src="images/characters/U+2068.svg" alt="⁨" class="charimage" />
+					<td class="rtlTermCell" lang="ar">
+						<img src="images/characters/U+2068.svg" alt="⁨" class="charimage">
 					</td>
 					<td class="uname">U+2068</td>
 					<td class="uname">FIRST STRONG ISOLATE</td>
@@ -1680,8 +1735,8 @@
 					<td class="langMark">○</td>
 				</tr>
 				<tr id="def_U+2069">
-					<td lang="ar" class="rtlTermCell">
-						<img src="images/characters/U+2069.svg" alt="⁩" class="charimage" />
+					<td class="rtlTermCell" lang="ar">
+						<img src="images/characters/U+2069.svg" alt="⁩" class="charimage">
 					</td>
 					<td class="uname">U+2069</td>
 					<td class="uname">POP DIRECTIONAL ISOLATE</td>
@@ -1689,8 +1744,8 @@
 					<td class="langMark">○</td>
 				</tr>
 				<tr id="def_U+FEFF">
-					<td lang="ar" class="rtlTermCell">
-						<img src="images/characters/U+FEFF.svg" alt="﻿" class="charimage" />
+					<td class="rtlTermCell" lang="ar">
+						<img src="images/characters/U+FEFF.svg" alt="﻿" class="charimage">
 					</td>
 					<td class="uname">U+FEFF</td>
 					<td class="uname">ZERO WIDTH NO-BREAK SPACE</td>
@@ -1699,12 +1754,16 @@
 				</tr>
 			</tbody>
 		</table>
-		<p>Unicode 6.3 introduced directional isolate characters to replace the more complicated directional embedding characters. These new characters are in the process of being supported in applications and their usage is encouraged over the old embedding characters. <span class="uname">U+202A LEFT-TO-RIGHT EMBEDDING</span>, <span class="uname">U+202B RIGHT-TO-LEFT EMBEDDING</span>, <span class="uname">U+202C POP DIRECTIONAL FORMATTING</span>, <span class="uname">U+202D LEFT-TO-RIGHT OVERRIDE</span>, <span class="uname">U+202E RIGHT-TO-LEFT OVERRIDE</span> are the old embedding characters and <span class="uname">U+2066 LEFT‑TO‑RIGHT ISOLATE</span>, <span class="uname">U+2067 RIGHT‑TO‑LEFT ISOLATE</span>, <span class="uname">U+2068 FIRST STRONG ISOLATE</span>, and <span class="uname">U+2069 POP DIRECTIONAL ISOLATE</span> are the new isolate characters.</p>
+		<p>Unicode 6.3 introduced directional isolate characters to replace 
+the more complicated directional embedding characters. These new 
+characters are in the process of being supported in applications and 
+their usage is encouraged over the old embedding characters. <span class="uname">U+202A LEFT-TO-RIGHT EMBEDDING</span>, <span class="uname">U+202B RIGHT-TO-LEFT EMBEDDING</span>, <span class="uname">U+202C POP DIRECTIONAL FORMATTING</span>, <span class="uname">U+202D LEFT-TO-RIGHT OVERRIDE</span>, <span class="uname">U+202E RIGHT-TO-LEFT OVERRIDE</span> are the old embedding characters and <span class="uname">U+2066 LEFT‑TO‑RIGHT ISOLATE</span>, <span class="uname">U+2067 RIGHT‑TO‑LEFT ISOLATE</span>, <span class="uname">U+2068 FIRST STRONG ISOLATE</span>, and <span class="uname">U+2069 POP DIRECTIONAL ISOLATE</span> are the new isolate characters.</p>
 		<p>Also, character <span class="uname">U+FEFF ZERO WIDTH NO-BREAK SPACE</span> is deprecated and should be replaced with <span class="uname">U+2060 WORD JOINER</span>.</p>
-                <h3>Resources</h3>
-                <p>These lists are a combination of exemplar characters available in ICU4J library and The Unicode CLDR for each language. For Persian, a national Iranian standard, ISIRI 6219, was used as well.</p>
 	</section>
-  <section class="appendix" id="glossary">
+
+
+  
+<section class="appendix" id="glossary">
     <h2>Glossary</h2>
     <table class="glossary">
       <thead>
@@ -1720,19 +1779,22 @@
           <td>alignment</td>
           <td class="rtlTermCell">مُحاذاة، تَرصِيف</td>
           <td class="rtlTermCell">هم‌ترازی</td>
-          <td></td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_alphanumeric">
           <td>alphanumeric</td>
           <td class="rtlTermCell">أَبجَدِي عَدَدِي</td>
           <td class="rtlTermCell">الفبایی عددی</td>
-          <td></td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_appendix">
           <td>appendix</td>
           <td class="rtlTermCell">مُلحَق</td>
           <td class="rtlTermCell">ضمیمه</td>
-          <td></td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_arabicnumerals">
           <td>arabic numerals</td>
@@ -1745,25 +1807,29 @@
           <td>ascender</td>
           <td class="rtlTermCell">صاعد</td>
           <td class="rtlTermCell">خط صعود، کرسی بالا</td>
-          <td></td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_asterisk">
           <td>asterisk</td>
           <td class="rtlTermCell">نجمة</td>
           <td class="rtlTermCell">ستاره</td>
-          <td></td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_autospacing">
           <td>auto spacing</td>
           <td class="rtlTermCell">تباعد، فراغ آلي</td>
           <td class="rtlTermCell">فاصله‌گذاری خودکار</td>
-          <td></td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_backmargin">
           <td>back margin</td>
           <td class="rtlTermCell">هامش، الهامش الخلفي</td>
           <td class="rtlTermCell">حاشیهٔ داخلی</td>
-          <td></td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_backmatter">
           <td>back matter</td>
@@ -1776,7 +1842,8 @@
           <td>bad break</td>
           <td class="rtlTermCell">قطع سيئ</td>
           <td class="rtlTermCell">شکستن بد، سطرشکنی بد</td>
-          <td></td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_baseline">
           <td>baseline</td>
@@ -1813,13 +1880,15 @@
           <td>block quotation</td>
           <td class="rtlTermCell">كتلة اقتباس، مربع اقتباس</td>
           <td class="rtlTermCell">نقل‌قول&nbsp;پاراگرافی</td>
-          <td></td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_bodytype">
           <td>body type</td>
           <td class="rtlTermCell">الخط الرئيسي</td>
           <td class="rtlTermCell">حروف بدنه</td>
-          <td></td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_bold">
           <td>bold</td>
@@ -1831,7 +1900,8 @@
           <td>boldface</td>
           <td class="rtlTermCell">خط عريض، بنط عريض</td>
           <td class="rtlTermCell">حرف سیاه</td>
-          <td></td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_boundontheleft-handside">
           <td>bound on the left-hand side</td>
@@ -1849,13 +1919,15 @@
           <td>bounding box</td>
           <td class="rtlTermCell">الصندوق المحيط</td>
           <td class="rtlTermCell">کادر محیطی</td>
-          <td></td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_box">
           <td>box</td>
           <td class="rtlTermCell">صندوق</td>
           <td class="rtlTermCell">کادر، جعبه</td>
-          <td></td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_braces">
           <td>braces</td>
@@ -1880,19 +1952,22 @@
           <td>broadside</td>
           <td class="rtlTermCell">وضع جانبي</td>
           <td class="rtlTermCell">یک‌رو</td>
-          <td></td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_bullet">
           <td>bullet</td>
           <td class="rtlTermCell">رمز نقطي</td>
-          <td class="rtlTermCell"></td>
+          <td class="rtlTermCell"><br>
+</td>
           <td>centered dot</td>
         </tr>
         <tr id="def_calligraphy">
           <td>calligraphy</td>
           <td class="rtlTermCell">فن الخط، الخط</td>
           <td class="rtlTermCell">خوشنویسی</td>
-          <td></td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_caption">
           <td>caption</td>
@@ -1916,20 +1991,24 @@
         <tr id="def_cellpadding">
           <td>cell padding</td>
           <td class="rtlTermCell">حشو الخلية، حشو الخانة</td>
-          <td class="rtlTermCell"></td>
+          <td class="rtlTermCell"><br>
+</td>
           <td>Spaces between line and cell in tables.</td>
         </tr>
         <tr id="def_centeredalignment">
           <td>centered alignment</td>
           <td class="rtlTermCell">توسيط</td>
           <td class="rtlTermCell">ترازبندی وسط‌چین</td>
-          <td></td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_centereddot">
           <td>centered dot</td>
           <td class="rtlTermCell">نقطة موسّطة</td>
-          <td class="rtlTermCell"></td>
-          <td></td>
+          <td class="rtlTermCell"><br>
+</td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_centering">
           <td>centering</td>
@@ -1942,31 +2021,36 @@
           <td>chapter</td>
           <td class="rtlTermCell">فصل، باب</td>
           <td class="rtlTermCell">فصل</td>
-          <td></td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_character">
           <td>character</td>
           <td class="rtlTermCell">حرف</td>
           <td class="rtlTermCell">حرف</td>
-          <td></td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_charactercount">
           <td>character count</td>
           <td class="rtlTermCell">عدد الأحرف</td>
           <td class="rtlTermCell">تعداد حروف</td>
-          <td></td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_characterframe">
           <td>character frame</td>
           <td class="rtlTermCell">إطار الحرف</td>
-          <td class="rtlTermCell"></td>
+          <td class="rtlTermCell"><br>
+</td>
           <td>Rectangular area occupied by a character when it is set solid.</td>
         </tr>
         <tr id="def_characterset">
           <td>character set</td>
           <td class="rtlTermCell">مجموعة حروف</td>
           <td class="rtlTermCell">مجموعهٔ حروف</td>
-          <td></td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_charactershape">
           <td>character shape</td>
@@ -1986,19 +2070,23 @@
           <td>closing bracket</td>
           <td class="rtlTermCell">قوس إغلاق</td>
           <td class="rtlTermCell">کروشه بسته</td>
-          <td></td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_codepoint">
           <td>code point</td>
           <td class="rtlTermCell">نقطة ترميز</td>
-          <td class="rtlTermCell"></td>
-          <td></td>
+          <td class="rtlTermCell"><br>
+</td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_colon">
           <td>colon</td>
           <td class="rtlTermCell">نقطتين</td>
           <td class="rtlTermCell">دونقطه</td>
-          <td></td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_column">
           <td>column</td>
@@ -2015,21 +2103,24 @@
         <tr id="def_columnspanning">
           <td>column spanning</td>
           <td class="rtlTermCell">عبر الأعمدة</td>
-          <td class="rtlTermCell"></td>
+          <td class="rtlTermCell"><br>
+</td>
           <td>A setting style of illustrations, tables, etc., over hanging to multiple
           columns.</td>
         </tr>
         <tr id="def_columnspanningheading">
           <td>column spanning heading</td>
           <td class="rtlTermCell">رأس عبر الأعمدة</td>
-          <td class="rtlTermCell"></td>
+          <td class="rtlTermCell"><br>
+</td>
           <td>Headings using multiple columns.</td>
         </tr>
         <tr id="def_comma">
           <td>comma</td>
           <td class="rtlTermCell">فاصلة</td>
           <td class="rtlTermCell">ویرگول</td>
-          <td></td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_composition">
           <td>composition</td>
@@ -2042,7 +2133,8 @@
           <td>compound word</td>
           <td class="rtlTermCell">کلمة مرکبة</td>
           <td class="rtlTermCell">کلمهٔ مرکب</td>
-          <td></td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_continuouspagination">
           <td>continuous pagination</td>
@@ -2058,43 +2150,52 @@
           <td>control characters</td>
           <td class="rtlTermCell">حروف تحكم</td>
           <td class="rtlTermCell">حروف کنترلی</td>
-          <td></td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_copy">
           <td>copy</td>
           <td class="rtlTermCell">نسخة</td>
           <td class="rtlTermCell">نسخه</td>
-          <td></td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_cover">
           <td>cover</td>
           <td class="rtlTermCell">غلاف</td>
           <td class="rtlTermCell">جلد</td>
-          <td></td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_cut-inheading">
           <td>cut-in heading</td>
-          <td class="rtlTermCell"></td>
-          <td class="rtlTermCell"></td>
+          <td class="rtlTermCell"><br>
+</td>
+          <td class="rtlTermCell"><br>
+</td>
           <td>A style of headings. Headings do not occupy the full lines, but share lines area with
           following main text lines.</td>
         </tr>
         <tr id="def_dash">
           <td>dash</td>
           <td class="rtlTermCell">واصلة</td>
-          <td class="rtlTermCell"></td>
-          <td></td>
+          <td class="rtlTermCell"><br>
+</td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_dedication">
           <td>dedication</td>
           <td class="rtlTermCell">إهداء</td>
           <td class="rtlTermCell">اهدائیه</td>
-          <td></td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_descenderline">
           <td>descender line</td>
           <td class="rtlTermCell">خط النازل</td>
-          <td class="rtlTermCell"></td>
+          <td class="rtlTermCell"><br>
+</td>
           <td>A descender is the part of a letter extending below the base line, as in 'g', 'j',
           'p', 'q', or 'y'. A descender line is a virtual line drawn at the bottom of descender
           parallel to base line.</td>
@@ -2103,43 +2204,52 @@
           <td>diacritical marks</td>
           <td class="rtlTermCell">علامات التشكيل</td>
           <td class="rtlTermCell">اِعراب، نشانه‌های حروف</td>
-          <td></td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_diagonalfraction">
           <td>diagonal fraction</td>
           <td class="rtlTermCell">الكَسْرُ القُطْري</td>
-          <td class="rtlTermCell"></td>
-          <td></td>
+          <td class="rtlTermCell"><br>
+</td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_diagram">
           <td>diagram</td>
           <td class="rtlTermCell">رسم بياني، رسم تخطيطي</td>
           <td class="rtlTermCell">نمودار</td>
-          <td></td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_discretionaryhyphen">
           <td>discretionary hyphen</td>
           <td class="rtlTermCell">واصلة لينة</td>
-          <td class="rtlTermCell"></td>
+          <td class="rtlTermCell"><br>
+</td>
           <td>See "soft hyphen".</td>
         </tr>
         <tr id="def_display">
           <td>display</td>
           <td class="rtlTermCell">عرض</td>
           <td class="rtlTermCell">نمایش</td>
-          <td></td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_displaytype">
           <td>display type</td>
           <td class="rtlTermCell">نوع العرض</td>
-          <td class="rtlTermCell"></td>
-          <td></td>
+          <td class="rtlTermCell"><br>
+</td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_document">
           <td>document</td>
           <td class="rtlTermCell">وثيقة، مستند</td>
           <td class="rtlTermCell">سند</td>
-          <td></td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_dpi">
           <td>dpi</td>
@@ -2150,14 +2260,16 @@
         <tr id="def_easternarabicnumerals">
           <td>eastern arabic numerals</td>
           <td class="rtlTermCell">الأرقام العربية المشرقية</td>
-          <td class="rtlTermCell"></td>
+          <td class="rtlTermCell"><br>
+</td>
           <td>٠ ١ ٢ ٣ ٤ ٥ ٦ ٧ ٨ ٩</td>
         </tr>
         <tr id="def_ellipsis">
           <td>ellipsis</td>
           <td class="rtlTermCell">علامة القطع، القطع</td>
           <td class="rtlTermCell">سه‌نقطه</td>
-          <td></td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_EM">
           <td>EM</td>
@@ -2200,12 +2312,14 @@
           <td>encoding</td>
           <td class="rtlTermCell">ترميز</td>
           <td class="rtlTermCell">کدنگاری</td>
-          <td></td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_endnote">
           <td>endnote</td>
           <td class="rtlTermCell">التعليق الختامي، حاشية</td>
-          <td class="rtlTermCell"></td>
+          <td class="rtlTermCell"><br>
+</td>
           <td>A set of notes placed at the end of a part, chapter, section, paragraph and so on, or
           at the end of a book.</td>
         </tr>
@@ -2213,7 +2327,8 @@
           <td>epigraph</td>
           <td class="rtlTermCell">كتابة منقوشة، اقتباس</td>
           <td class="rtlTermCell">سرلوحه</td>
-          <td></td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_Europeannumerals">
           <td>European numerals</td>
@@ -2225,51 +2340,62 @@
         <tr id="def_exceptiondictionary">
           <td>exception dictionary</td>
           <td class="rtlTermCell">قاموس استثناءات</td>
-          <td class="rtlTermCell"></td>
-          <td></td>
+          <td class="rtlTermCell"><br>
+</td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_exclamationmarks">
           <td>exclamation marks</td>
           <td class="rtlTermCell">علامة تعجب</td>
           <td class="rtlTermCell">علامت تعجب</td>
-          <td></td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_figure">
           <td>figure</td>
           <td class="rtlTermCell">شكل</td>
           <td class="rtlTermCell">تصویر</td>
-          <td></td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_first-lineindent">
           <td>first-line indent</td>
           <td class="rtlTermCell">مسافة السطر الأول</td>
           <td class="rtlTermCell">تورفتگی خط اول</td>
-          <td></td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_fixed-width">
           <td>fixed-width</td>
           <td class="rtlTermCell">ثابت العرض</td>
-          <td class="rtlTermCell"></td>
+          <td class="rtlTermCell"><br>
+</td>
           <td>A characteristic of a font where the same character advance is assigned for all
           glyphs.</td>
         </tr>
         <tr id="def_flushleftalignment">
           <td>flush left alignment</td>
           <td class="rtlTermCell">محاذاة إلى اليمين</td>
-          <td class="rtlTermCell"></td>
-          <td></td>
+          <td class="rtlTermCell"><br>
+</td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_flushrightalignment">
           <td>flush right alignment</td>
           <td class="rtlTermCell">محاذاة إلى اليسار</td>
-          <td class="rtlTermCell"></td>
-          <td></td>
+          <td class="rtlTermCell"><br>
+</td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_folio">
           <td>folio</td>
           <td class="rtlTermCell">ورقة، صفحة</td>
           <td class="rtlTermCell">شمارهٔ صفحه</td>
-          <td></td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_font">
           <td>font</td>
@@ -2281,13 +2407,16 @@
           <td>font family/typeface family</td>
           <td class="rtlTermCell">عائلة خطوط</td>
           <td class="rtlTermCell">خانوادهٔ فونت</td>
-          <td></td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_fontmetrics">
           <td>font metrics</td>
           <td class="rtlTermCell">مقاييس الخط</td>
-          <td class="rtlTermCell"></td>
-          <td></td>
+          <td class="rtlTermCell"><br>
+</td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_foot">
           <td>foot</td>
@@ -2300,13 +2429,15 @@
           <td>foot/bottom margin</td>
           <td class="rtlTermCell">الهامش الأسفل</td>
           <td class="rtlTermCell">حاشیهٔ پایینی</td>
-          <td></td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_footer">
           <td>footer</td>
           <td class="rtlTermCell">تذييل الصفحة</td>
           <td class="rtlTermCell">پاصفحه</td>
-          <td></td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_footnote">
           <td>footnote</td>
@@ -2325,13 +2456,16 @@
           <td>format</td>
           <td class="rtlTermCell">تنسيق، هيئة</td>
           <td class="rtlTermCell">شکل‌بندی، شکل</td>
-          <td></td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_fraction">
           <td>fraction</td>
           <td class="rtlTermCell">كسر</td>
-          <td class="rtlTermCell"></td>
-          <td></td>
+          <td class="rtlTermCell"><br>
+</td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_frontmatter">
           <td>front matter</td>
@@ -2343,7 +2477,8 @@
         <tr id="def_full-width">
           <td>full-width</td>
           <td class="rtlTermCell">تام العرض</td>
-          <td class="rtlTermCell"></td>
+          <td class="rtlTermCell"><br>
+</td>
           <td>a) Relative index for the length which is equal to a given character size. b)
           Character frame which character advance is equal to the amount referred to as a). A
           full-width character frame is square in shape by definition.</td>
@@ -2351,32 +2486,41 @@
         <tr id="def_glyph">
           <td>glyph</td>
           <td class="rtlTermCell">محرف</td>
-          <td class="rtlTermCell"></td>
-          <td></td>
+          <td class="rtlTermCell"><br>
+</td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_goldenrectangle">
           <td>golden rectangle</td>
-          <td class="rtlTermCell"></td>
+          <td class="rtlTermCell"><br>
+</td>
           <td class="rtlTermCell">مستطیل طلایی</td>
-          <td></td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_goldensection">
           <td>golden section</td>
-          <td class="rtlTermCell"></td>
+          <td class="rtlTermCell"><br>
+</td>
           <td class="rtlTermCell">بخش طلایی</td>
-          <td></td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_Greekletters">
           <td>Greek letters</td>
           <td class="rtlTermCell">حروف يونانية</td>
           <td class="rtlTermCell">حروف یونانی</td>
-          <td></td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_gridalignment">
           <td>grid alignment</td>
-          <td class="rtlTermCell"></td>
+          <td class="rtlTermCell"><br>
+</td>
           <td class="rtlTermCell">هم‌ترازی شطرنجی</td>
-          <td></td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_gutter">
           <td>gutter</td>
@@ -2401,20 +2545,26 @@
         <tr id="def_hangline">
           <td>hang line</td>
           <td class="rtlTermCell">سطر معلق</td>
-          <td class="rtlTermCell"></td>
-          <td></td>
+          <td class="rtlTermCell"><br>
+</td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_hangingindentation">
           <td>hanging indentation</td>
           <td class="rtlTermCell">تعليق المسافة البادئة</td>
-          <td class="rtlTermCell"></td>
-          <td></td>
+          <td class="rtlTermCell"><br>
+</td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_hangingpunctuation">
           <td>hanging punctuation</td>
           <td class="rtlTermCell">تعليق علامات الترقيم</td>
-          <td class="rtlTermCell"></td>
-          <td></td>
+          <td class="rtlTermCell"><br>
+</td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_head">
           <td>head</td>
@@ -2427,13 +2577,15 @@
           <td>head/top margin</td>
           <td class="rtlTermCell">هامش علوي</td>
           <td class="rtlTermCell">حاشیهٔ بالا</td>
-          <td></td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_header">
           <td>header</td>
           <td class="rtlTermCell">رأس</td>
           <td class="rtlTermCell">سرصفحه</td>
-          <td></td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_heading">
           <td>heading</td>
@@ -2445,13 +2597,16 @@
         <tr id="def_headline">
           <td>headline</td>
           <td class="rtlTermCell">عنوان رئيسي</td>
-          <td class="rtlTermCell"></td>
-          <td></td>
+          <td class="rtlTermCell"><br>
+</td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_headnote">
           <td>headnote</td>
           <td class="rtlTermCell">تقدمة</td>
-          <td class="rtlTermCell"></td>
+          <td class="rtlTermCell"><br>
+</td>
           <td>A kind of notes in vertical writing style, head area in kihon-hanmen is kept
           beforehand, and notes are set with smaller size font than main text.</td>
         </tr>
@@ -2459,7 +2614,8 @@
           <td>hierarchy</td>
           <td class="rtlTermCell">تسلسل هرمي، ترتيب هرمي</td>
           <td class="rtlTermCell">سلسله‌مراتب</td>
-          <td></td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_horizontalwritingmode">
           <td>horizontal writing mode</td>
@@ -2472,26 +2628,31 @@
           <td>hyphen</td>
           <td class="rtlTermCell">واصلة</td>
           <td class="rtlTermCell">نیمخط</td>
-          <td></td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_hyphenation">
           <td>hyphenation</td>
           <td class="rtlTermCell">واصلة، المقطعيّة</td>
-          <td class="rtlTermCell"></td>
+          <td class="rtlTermCell"><br>
+</td>
           <td>A method of breaking a line by dividing a Western word at the end of a line and
           adding a hyphen at the end of the first half of the syllable.</td>
         </tr>
         <tr id="def_hyphenationandjustification">
           <td>hyphenation and justification</td>
           <td class="rtlTermCell">الواصلة والمحاذاة</td>
-          <td class="rtlTermCell"></td>
+          <td class="rtlTermCell"><br>
+</td>
           <td>Also abbreviated as H&amp;J</td>
         </tr>
         <tr id="def_hyphenationroutine">
           <td>hyphenation routine</td>
           <td class="rtlTermCell">إجراء الواصلة</td>
-          <td class="rtlTermCell"></td>
-          <td></td>
+          <td class="rtlTermCell"><br>
+</td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_illustrations">
           <td>illustrations</td>
@@ -2504,7 +2665,8 @@
           <td>indentation</td>
           <td class="rtlTermCell">إزاحة، مسافة بادئة</td>
           <td class="rtlTermCell">فاصلهٔ سرِ سطر، تورفتگی سرِ سطر</td>
-          <td></td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_independentpagination">
           <td>independent pagination</td>
@@ -2524,61 +2686,74 @@
           <td>initial</td>
           <td class="rtlTermCell">أولي</td>
           <td class="rtlTermCell">آغازین</td>
-          <td></td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_inlinedirection">
           <td>inline direction</td>
           <td class="rtlTermCell">الاتجاه السطري</td>
-          <td class="rtlTermCell"></td>
+          <td class="rtlTermCell"><br>
+</td>
           <td>Text direction in a line.</td>
         </tr>
         <tr id="def_input">
           <td>input</td>
           <td class="rtlTermCell">إدخال</td>
           <td class="rtlTermCell">ورودی</td>
-          <td></td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_inseparablecharactersrule">
           <td>inseparable characters rule</td>
-          <td class="rtlTermCell"></td>
-          <td class="rtlTermCell"></td>
+          <td class="rtlTermCell"><br>
+</td>
+          <td class="rtlTermCell"><br>
+</td>
           <td>A line adjustment rule that prohibits inserting any space between specific
           combinations of characters.</td>
         </tr>
         <tr id="def_interpunct">
           <td>interpunct</td>
-          <td class="rtlTermCell"></td>
-          <td class="rtlTermCell"></td>
-          <td></td>
+          <td class="rtlTermCell"><br>
+</td>
+          <td class="rtlTermCell"><br>
+</td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_italics">
           <td>italics</td>
           <td class="rtlTermCell">مائل</td>
           <td class="rtlTermCell">ایتالیک</td>
-          <td></td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_itemization">
           <td>itemization</td>
           <td class="rtlTermCell">وضع بنود، تبويب، عناصر</td>
-          <td class="rtlTermCell"></td>
+          <td class="rtlTermCell"><br>
+</td>
           <td>To list ordered or unordered items one under the other.</td>
         </tr>
         <tr id="def_justifiedalignment">
           <td>justified alignment</td>
           <td class="rtlTermCell">محاذاة على الجانبين، مساواة</td>
           <td class="rtlTermCell">هم‌ترازی میزان</td>
-          <td></td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_kashida">
           <td>kashida</td>
           <td class="rtlTermCell">الكشيدة، التطويل</td>
           <td class="rtlTermCell">کشیده</td>
-          <td></td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_labelname">
           <td>label name</td>
           <td class="rtlTermCell">اسم بطاقة العنونة</td>
-          <td class="rtlTermCell"></td>
+          <td class="rtlTermCell"><br>
+</td>
           <td>Text following or followed by numbers for illustrations, tables, headings and running
           headings.</td>
         </tr>
@@ -2586,31 +2761,37 @@
           <td>Latin letters</td>
           <td class="rtlTermCell">حروف لاتينية</td>
           <td class="rtlTermCell">حروف لاتین</td>
-          <td></td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_layout">
           <td>layout</td>
           <td class="rtlTermCell">نسق، تصميم</td>
           <td class="rtlTermCell">قالب‌بندی</td>
-          <td></td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_leading">
           <td>leading</td>
           <td class="rtlTermCell">قيادي</td>
-          <td class="rtlTermCell"></td>
-          <td></td>
+          <td class="rtlTermCell"><br>
+</td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_letterface">
           <td>letter face</td>
           <td class="rtlTermCell">صورة الحرف</td>
-          <td class="rtlTermCell"></td>
+          <td class="rtlTermCell"><br>
+</td>
           <td>Area in which glyph is drawn.</td>
         </tr>
         <tr id="def_lettering">
           <td>lettering</td>
           <td class="rtlTermCell">ترقين، كتابة</td>
           <td class="rtlTermCell">طراحی حروف</td>
-          <td></td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_letterpressprinting">
           <td>letterpress printing</td>
@@ -2622,19 +2803,23 @@
           <td>letterspacing</td>
           <td class="rtlTermCell">تباعد الحروف</td>
           <td class="rtlTermCell">فاصلهٔ حروف</td>
-          <td></td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_ligature">
           <td>ligature</td>
           <td class="rtlTermCell">ضمد</td>
-          <td class="rtlTermCell"></td>
-          <td></td>
+          <td class="rtlTermCell"><br>
+</td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_line">
           <td>line</td>
           <td class="rtlTermCell">سطر</td>
           <td class="rtlTermCell">خط</td>
-          <td></td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_lineadjustment">
           <td>line adjustment</td>
@@ -2646,7 +2831,8 @@
         <tr id="def_lineadjustmentbyhangingpunctuation">
           <td>line adjustment by hanging punctuation</td>
           <td class="rtlTermCell">محاذاة السطر بتعليق علامات الترقيم</td>
-          <td class="rtlTermCell"></td>
+          <td class="rtlTermCell"><br>
+</td>
           <td>A line breaking rule to avoid commas or full stops at a line head (which is
           prohibited in Japanese typography) by taking them back to the end of the previous line
           beyond the specified line length.</td>
@@ -2654,14 +2840,16 @@
         <tr id="def_lineadjustmentbyinter-characterspaceexpansion">
           <td>line adjustment by inter-character space expansion</td>
           <td class="rtlTermCell">محاذاة السطر بتوسيع مساحة بين المحارف</td>
-          <td class="rtlTermCell"></td>
+          <td class="rtlTermCell"><br>
+</td>
           <td>A line breaking rule that aligns both edges of a line by expanding inter-character
           spaces. .</td>
         </tr>
         <tr id="def_linebreakingrules">
           <td>line breaking rules</td>
           <td class="rtlTermCell">قواعد كسر السطر</td>
-          <td class="rtlTermCell"></td>
+          <td class="rtlTermCell"><br>
+</td>
           <td>A set of rules to avoid prohibited layout in Japanese typography, such as "line-start
           prohibition rule", "line-end prohibition rule", inseparable or unbreakable character
           sequences and so on.</td>
@@ -2687,7 +2875,8 @@
         <tr id="def_linefeed">
           <td>line feed</td>
           <td class="rtlTermCell">تغذية السطر</td>
-          <td class="rtlTermCell"></td>
+          <td class="rtlTermCell"><br>
+</td>
           <td>The distance between two adjacent lines measured by their reference points.</td>
         </tr>
         <tr id="def_linegap">
@@ -2718,7 +2907,8 @@
           <td>line height</td>
           <td class="rtlTermCell">ارتفاع الخط</td>
           <td class="rtlTermCell">ارتفاع خط</td>
-          <td></td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_linelength">
           <td>line length</td>
@@ -2731,32 +2921,39 @@
         <tr id="def_linespacing">
           <td>line spacing</td>
           <td class="rtlTermCell">تباعد الأسطر</td>
-          <td class="rtlTermCell"></td>
-          <td></td>
+          <td class="rtlTermCell"><br>
+</td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_line-endprohibitionrule">
           <td>line-end prohibition rule</td>
           <td class="rtlTermCell">قاعدة حظر نهاية السطر</td>
-          <td class="rtlTermCell"></td>
+          <td class="rtlTermCell"><br>
+</td>
           <td>A line breaking rule that prohibits specific characters at a line end.</td>
         </tr>
         <tr id="def_line-startprohibitionrule">
           <td>line-start prohibition rule</td>
           <td class="rtlTermCell">قاعدة حظر بداية السطر</td>
-          <td class="rtlTermCell"></td>
+          <td class="rtlTermCell"><br>
+</td>
           <td>A line breaking rule that prohibits specific characters at a line head.</td>
         </tr>
         <tr id="def_list">
           <td>list</td>
           <td class="rtlTermCell">قائمة، لائحة</td>
           <td class="rtlTermCell">فهرست</td>
-          <td></td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_longdash">
           <td>long dash</td>
           <td class="rtlTermCell">شرطة طويلة</td>
-          <td class="rtlTermCell"></td>
-          <td></td>
+          <td class="rtlTermCell"><br>
+</td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_maintext">
           <td>main text</td>
@@ -2772,24 +2969,28 @@
           <td>margin</td>
           <td class="rtlTermCell">هامش</td>
           <td class="rtlTermCell">حاشیه</td>
-          <td></td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_measure">
           <td>measure</td>
           <td class="rtlTermCell">قياس</td>
           <td class="rtlTermCell">مقیاس، اندازه</td>
-          <td></td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_measurement">
           <td>measurement</td>
           <td class="rtlTermCell">قياس</td>
           <td class="rtlTermCell">اندازه‌گیری</td>
-          <td></td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_mixedtextcomposition">
           <td>mixed text composition</td>
           <td class="rtlTermCell">تركيبة النص المختلِط</td>
-          <td class="rtlTermCell"></td>
+          <td class="rtlTermCell"><br>
+</td>
           <td>a) To interleave Japanese text with Western text in a line (Japanese and Western
           mixed text composition). b) To compose text with different sizes of characters (mixed
           size composition). c) To compose text with different typefaces (mixed typeface
@@ -2799,13 +3000,15 @@
           <td>mixing typefaces</td>
           <td class="rtlTermCell">خلط أنماط الخطوط</td>
           <td class="rtlTermCell">ترکیب قلم‌ها</td>
-          <td></td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_modulargrid">
           <td>modular grid</td>
           <td class="rtlTermCell">شبكة وحدات، شبكة مركبة من وحدات</td>
           <td class="rtlTermCell">شطرنجی مُدولی</td>
-          <td></td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_multi-columnformat">
           <td>multi-column format</td>
@@ -2819,7 +3022,8 @@
           <td>multi-column grid</td>
           <td class="rtlTermCell">شبكة متعددة الأعمدة</td>
           <td class="rtlTermCell">شطرنجی چندستونی</td>
-          <td></td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_multivolumework">
           <td>multivolume work</td>
@@ -2844,20 +3048,26 @@
         <tr id="def_no-breaktext">
           <td>no-break text</td>
           <td class="rtlTermCell">عدم تفكُّك النص، نص دون اِنفِكاك</td>
-          <td class="rtlTermCell"></td>
-          <td></td>
+          <td class="rtlTermCell"><br>
+</td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_nonbreakinghyphen">
           <td>nonbreaking hyphen</td>
           <td class="rtlTermCell">واصلة غير منقسمة</td>
-          <td class="rtlTermCell"></td>
-          <td></td>
+          <td class="rtlTermCell"><br>
+</td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_nonbreakingwordspace">
           <td>nonbreaking word space</td>
           <td class="rtlTermCell">فضاء كلمة غير منقسمة</td>
-          <td class="rtlTermCell"></td>
-          <td></td>
+          <td class="rtlTermCell"><br>
+</td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_note">
           <td>note</td>
@@ -2881,7 +3091,8 @@
           <td>numerals</td>
           <td class="rtlTermCell">الأعداد</td>
           <td class="rtlTermCell">اعداد</td>
-          <td></td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_oneemspace">
           <td>one em space</td>
@@ -2905,49 +3116,62 @@
           <td>opening brackets</td>
           <td class="rtlTermCell">فتح قوسين</td>
           <td class="rtlTermCell">کروشه باز</td>
-          <td></td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_opticalsize">
           <td>optical size</td>
           <td class="rtlTermCell">حجم بصري</td>
-          <td class="rtlTermCell"></td>
-          <td></td>
+          <td class="rtlTermCell"><br>
+</td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_opticalspacing">
           <td>optical spacing</td>
           <td class="rtlTermCell">تباعد بصري</td>
-          <td class="rtlTermCell"></td>
-          <td></td>
+          <td class="rtlTermCell"><br>
+</td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_orientation">
           <td>orientation</td>
           <td class="rtlTermCell">اتجاه</td>
           <td class="rtlTermCell">جهت</td>
-          <td></td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_ornament">
           <td>ornament</td>
           <td class="rtlTermCell">زخرفة</td>
           <td class="rtlTermCell">تزئینی</td>
-          <td></td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_outdent">
           <td>outdent</td>
           <td class="rtlTermCell">إلغاء التأخير، إلغاء الإزاحة</td>
-          <td class="rtlTermCell"></td>
-          <td></td>
+          <td class="rtlTermCell"><br>
+</td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_overhang">
           <td>overhang</td>
           <td class="rtlTermCell">عبء</td>
-          <td class="rtlTermCell"></td>
-          <td></td>
+          <td class="rtlTermCell"><br>
+</td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_overrun">
           <td>overrun</td>
           <td class="rtlTermCell">تجاوز، اجتياح</td>
-          <td class="rtlTermCell"></td>
-          <td></td>
+          <td class="rtlTermCell"><br>
+</td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_page">
           <td>page</td>
@@ -2958,7 +3182,8 @@
         <tr id="def_pagebreak">
           <td>page break</td>
           <td class="rtlTermCell">فاصل صفحة</td>
-          <td class="rtlTermCell"></td>
+          <td class="rtlTermCell"><br>
+</td>
           <td>To end a page even if it is not full and to start a new page with the next paragraph,
           a new heading and so on.</td>
         </tr>
@@ -2979,7 +3204,8 @@
           <td>pagination</td>
           <td class="rtlTermCell">ترقيم الصفحات</td>
           <td class="rtlTermCell">صفحه‌شماری</td>
-          <td></td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_paragraph">
           <td>paragraph</td>
@@ -3004,25 +3230,29 @@
           <td>paragraph indent</td>
           <td class="rtlTermCell">هامش الفقرة، المسافة البادئة للفقرة</td>
           <td class="rtlTermCell">تورفتگی پاراگراف</td>
-          <td></td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_parenthesis">
           <td>parenthesis</td>
           <td class="rtlTermCell">أقواس</td>
           <td class="rtlTermCell">پرانتز</td>
-          <td></td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_period">
           <td>period</td>
           <td class="rtlTermCell">نقطه</td>
           <td class="rtlTermCell">نقطه</td>
-          <td></td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_pixel">
           <td>pixel</td>
           <td class="rtlTermCell">بكسل، بيكسل</td>
           <td class="rtlTermCell">پیکسل</td>
-          <td></td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_point">
           <td>point</td>
@@ -3035,31 +3265,38 @@
         <tr id="def_polyglot">
           <td>polyglot</td>
           <td class="rtlTermCell">متعدد اللغات</td>
-          <td class="rtlTermCell"></td>
-          <td></td>
+          <td class="rtlTermCell"><br>
+</td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_printingtypes">
           <td>printing types</td>
           <td class="rtlTermCell">أنواع الطباعة</td>
-          <td class="rtlTermCell"></td>
+          <td class="rtlTermCell"><br>
+</td>
           <td>Movable type used for letterpress printing.</td>
         </tr>
         <tr id="def_proportional">
           <td>proportional</td>
           <td class="rtlTermCell">متناسب</td>
-          <td class="rtlTermCell"></td>
+          <td class="rtlTermCell"><br>
+</td>
           <td>A characteristic of a font where character advance is different per glyph.</td>
         </tr>
         <tr id="def_proportionalfonts">
           <td>proportional fonts</td>
           <td class="rtlTermCell">الخطوط المتناسبة</td>
-          <td class="rtlTermCell"></td>
-          <td></td>
+          <td class="rtlTermCell"><br>
+</td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_punctuationmarks">
           <td>punctuation marks</td>
           <td class="rtlTermCell">علامات الترقيم</td>
-          <td class="rtlTermCell"></td>
+          <td class="rtlTermCell"><br>
+</td>
           <td>A general term referring to the symbols used in text composition to help make the
           meaning of text clearer, as in commas, full stops, question marks, brackets, diereses and
           so on.</td>
@@ -3067,8 +3304,10 @@
         <tr id="def_quad">
           <td>quad</td>
           <td class="rtlTermCell">رباعية</td>
-          <td class="rtlTermCell"></td>
-          <td></td>
+          <td class="rtlTermCell"><br>
+</td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_quarterem">
           <td>quarter em</td>
@@ -3092,56 +3331,71 @@
           <td>question mark</td>
           <td class="rtlTermCell">علامة استفهام</td>
           <td class="rtlTermCell">علامت سوال</td>
-          <td></td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_quotation">
           <td>quotation</td>
           <td class="rtlTermCell">اقتباس</td>
-          <td class="rtlTermCell"></td>
+          <td class="rtlTermCell"><br>
+</td>
           <td>Excerps from other published works.</td>
         </tr>
         <tr id="def_rag">
           <td>rag</td>
           <td class="rtlTermCell">خرقة؟</td>
-          <td class="rtlTermCell"></td>
-          <td></td>
+          <td class="rtlTermCell"><br>
+</td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_referencemarks">
           <td>reference marks</td>
           <td class="rtlTermCell">العلامات المرجعية</td>
-          <td class="rtlTermCell"></td>
+          <td class="rtlTermCell"><br>
+</td>
           <td>A symbol or short run of text attached to a specific part of text, to which notes are
           provided followed by the corresponding marks.</td>
         </tr>
         <tr id="def_referencenumber">
           <td>reference number</td>
           <td class="rtlTermCell">الرقم المرجعي</td>
-          <td class="rtlTermCell"></td>
-          <td></td>
+          <td class="rtlTermCell"><br>
+</td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_reversepagination">
           <td>reverse pagination</td>
           <td class="rtlTermCell">ترقيم الصفحات عكسي</td>
-          <td class="rtlTermCell"></td>
+          <td class="rtlTermCell"><br>
+</td>
           <td>Numbering pages of a book backwards.</td>
         </tr>
         <tr id="def_reversedtype">
           <td>reversed type</td>
           <td class="rtlTermCell">نوع عكس</td>
-          <td class="rtlTermCell"></td>
-          <td></td>
+          <td class="rtlTermCell"><br>
+</td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_river">
           <td>river</td>
           <td class="rtlTermCell">نهر</td>
-          <td class="rtlTermCell"></td>
-          <td></td>
+          <td class="rtlTermCell"><br>
+</td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_riverofwhite">
           <td>river of white</td>
-          <td class="rtlTermCell"></td>
-          <td class="rtlTermCell"></td>
-          <td></td>
+          <td class="rtlTermCell"><br>
+</td>
+          <td class="rtlTermCell"><br>
+</td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_Romannumerals">
           <td>Roman numerals</td>
@@ -3153,85 +3407,110 @@
           <td>romanization</td>
           <td class="rtlTermCell">الكتابة بالحروف اللاتينية</td>
           <td class="rtlTermCell">لاتین‌نویسی</td>
-          <td></td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_rule">
           <td>rule</td>
           <td class="rtlTermCell">قاعدة</td>
-          <td class="rtlTermCell"></td>
-          <td></td>
+          <td class="rtlTermCell"><br>
+</td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_runback">
           <td>run back</td>
           <td class="rtlTermCell">تشغيل مرة أخرى</td>
-          <td class="rtlTermCell"></td>
-          <td></td>
+          <td class="rtlTermCell"><br>
+</td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_rundown">
           <td>run down</td>
           <td class="rtlTermCell">انقلب</td>
-          <td class="rtlTermCell"></td>
-          <td></td>
+          <td class="rtlTermCell"><br>
+</td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_runin">
           <td>run in</td>
           <td class="rtlTermCell">تشغيل في</td>
-          <td class="rtlTermCell"></td>
-          <td></td>
+          <td class="rtlTermCell"><br>
+</td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_run-inheading">
           <td>run-in heading</td>
           <td class="rtlTermCell">عنوان بدون انقطاع</td>
-          <td class="rtlTermCell"></td>
+          <td class="rtlTermCell"><br>
+</td>
           <td>A kind of heading style to continue main text just after the heading without line
           break.</td>
         </tr>
         <tr id="def_runaround">
           <td>runaround</td>
           <td class="rtlTermCell">انسياب</td>
-          <td class="rtlTermCell"></td>
-          <td></td>
+          <td class="rtlTermCell"><br>
+</td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_runningfeet">
           <td>running feet</td>
           <td class="rtlTermCell">تشغيل أسفل؟؟</td>
-          <td class="rtlTermCell"></td>
-          <td></td>
+          <td class="rtlTermCell"><br>
+</td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_runningheads">
           <td>running heads</td>
           <td class="rtlTermCell">تشغيل رؤوس؟؟</td>
-          <td class="rtlTermCell"></td>
-          <td></td>
+          <td class="rtlTermCell"><br>
+</td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_runover">
           <td>runover</td>
           <td class="rtlTermCell">تشغيل أكثر</td>
-          <td class="rtlTermCell"></td>
-          <td></td>
+          <td class="rtlTermCell"><br>
+</td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_scale">
           <td>scale</td>
           <td class="rtlTermCell">مقياس، نطاق</td>
-          <td class="rtlTermCell"></td>
-          <td></td>
+          <td class="rtlTermCell"><br>
+</td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_script">
           <td>script</td>
           <td class="rtlTermCell">النص، الكتابة</td>
-          <td class="rtlTermCell"></td>
-          <td></td>
+          <td class="rtlTermCell"><br>
+</td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_secondindenetation">
           <td>second indenetation</td>
           <td class="rtlTermCell">المسافة البادئة الثانية</td>
-          <td class="rtlTermCell"></td>
-          <td></td>
+          <td class="rtlTermCell"><br>
+</td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_secondlevelheading">
           <td>second level heading</td>
           <td class="rtlTermCell">عنوان المستوى الثاني</td>
-          <td class="rtlTermCell"></td>
+          <td class="rtlTermCell"><br>
+</td>
           <td>Second level and middle size heading between first level heading and third level
           heading.</td>
         </tr>
@@ -3239,56 +3518,69 @@
           <td>semicolon</td>
           <td class="rtlTermCell">فاصلة منقوطة</td>
           <td class="rtlTermCell">نقطه‌ویرگول</td>
-          <td></td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_sentence">
           <td>sentence</td>
           <td class="rtlTermCell">جملة</td>
           <td class="rtlTermCell">جمله</td>
-          <td></td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_sideheads">
           <td>sideheads</td>
           <td class="rtlTermCell">رؤوس الجانب</td>
-          <td class="rtlTermCell"></td>
-          <td></td>
+          <td class="rtlTermCell"><br>
+</td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_singlelinealignmentmethod">
           <td>single line alignment method</td>
           <td class="rtlTermCell">سطر واحد طريقة محاذاة</td>
-          <td class="rtlTermCell"></td>
+          <td class="rtlTermCell"><br>
+</td>
           <td>To align a run of text that is shorter than a given line length to designated
           positions.</td>
         </tr>
         <tr id="def_singlerunningheadmethod">
           <td>single running head method</td>
           <td class="rtlTermCell">تشغيل واحد طريقة الرأس</td>
-          <td class="rtlTermCell"></td>
+          <td class="rtlTermCell"><br>
+</td>
           <td>A method that puts running heads only on odd pages.</td>
         </tr>
         <tr id="def_sinkage">
           <td>sinkage</td>
           <td class="rtlTermCell">جماح sinkage</td>
-          <td class="rtlTermCell"></td>
-          <td></td>
+          <td class="rtlTermCell"><br>
+</td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_softhyphen">
           <td>soft hyphen</td>
           <td class="rtlTermCell">واصلة لينة، اصلة تقديرية</td>
-          <td class="rtlTermCell"></td>
-          <td></td>
+          <td class="rtlTermCell"><br>
+</td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_solidus">
           <td>solidus</td>
           <td class="rtlTermCell">الخط المائل</td>
-          <td class="rtlTermCell"></td>
-          <td></td>
+          <td class="rtlTermCell"><br>
+</td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_sorting">
           <td>sorting</td>
           <td class="rtlTermCell">الترتيب</td>
           <td class="rtlTermCell">ترتیب</td>
-          <td></td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_space">
           <td>space</td>
@@ -3302,48 +3594,59 @@
           <td>spacing</td>
           <td class="rtlTermCell">التباعد</td>
           <td class="rtlTermCell">فاصله‌گذاری</td>
-          <td></td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_spine">
           <td>spine</td>
           <td class="rtlTermCell">العمود</td>
-          <td class="rtlTermCell"></td>
-          <td></td>
+          <td class="rtlTermCell"><br>
+</td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_spread">
           <td>spread</td>
           <td class="rtlTermCell">انتشار</td>
-          <td class="rtlTermCell"></td>
+          <td class="rtlTermCell"><br>
+</td>
           <td>Any two facing pages when opening a book and the like.</td>
         </tr>
         <tr id="def_stem">
           <td>stem</td>
           <td class="rtlTermCell">جذع</td>
-          <td class="rtlTermCell"></td>
-          <td></td>
+          <td class="rtlTermCell"><br>
+</td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_style">
           <td>style</td>
           <td class="rtlTermCell">أسلوب، النمط</td>
           <td class="rtlTermCell">شیوه</td>
-          <td></td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_styleguide">
           <td>style guide</td>
           <td class="rtlTermCell">دليل النمط</td>
           <td class="rtlTermCell">شیوه‌نامه</td>
-          <td></td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_subheads">
           <td>subheads</td>
           <td class="rtlTermCell">العناوين الفرعية</td>
-          <td class="rtlTermCell"></td>
-          <td></td>
+          <td class="rtlTermCell"><br>
+</td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_subscript(inferior)">
           <td>subscript (inferior)</td>
           <td class="rtlTermCell">نص منخفض (أقل شأنا)</td>
-          <td class="rtlTermCell"></td>
+          <td class="rtlTermCell"><br>
+</td>
           <td>Smaller face of characters, attached to the lower right or the lower left of a normal
           size character.</td>
         </tr>
@@ -3356,32 +3659,40 @@
         <tr id="def_superiornumeral">
           <td>superior numeral</td>
           <td class="rtlTermCell">الرقم العلوي</td>
-          <td class="rtlTermCell"></td>
-          <td></td>
+          <td class="rtlTermCell"><br>
+</td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_superscript(superior)">
           <td>superscript (superior)</td>
           <td class="rtlTermCell">نص مرتفع (أعلى)</td>
-          <td class="rtlTermCell"></td>
+          <td class="rtlTermCell"><br>
+</td>
           <td>Smaller face of characters, attached to the upper right or the upper left of a normal
           size character.</td>
         </tr>
         <tr id="def_symbol">
           <td>symbol</td>
           <td class="rtlTermCell">رمز</td>
-          <td class="rtlTermCell"></td>
-          <td></td>
+          <td class="rtlTermCell"><br>
+</td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_tab">
           <td>tab</td>
           <td class="rtlTermCell">التبويب</td>
-          <td class="rtlTermCell"></td>
-          <td></td>
+          <td class="rtlTermCell"><br>
+</td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_tabsetting">
           <td>tab setting</td>
           <td class="rtlTermCell">وضع علامة التبويب</td>
-          <td class="rtlTermCell"></td>
+          <td class="rtlTermCell"><br>
+</td>
           <td>A method of line composition to align one or more runs of text to designated
           positions on a line.</td>
         </tr>
@@ -3403,14 +3714,17 @@
         <tr id="def_tailmargin">
           <td>tail margin</td>
           <td class="rtlTermCell">هامش الذيل</td>
-          <td class="rtlTermCell"></td>
-          <td></td>
+          <td class="rtlTermCell"><br>
+</td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_text">
           <td>text</td>
           <td class="rtlTermCell">نص</td>
           <td class="rtlTermCell">متن</td>
-          <td></td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_textdirection">
           <td>text direction</td>
@@ -3421,56 +3735,70 @@
         <tr id="def_thinspace">
           <td>thin space</td>
           <td class="rtlTermCell">مساحة رقيقة</td>
-          <td class="rtlTermCell"></td>
-          <td></td>
+          <td class="rtlTermCell"><br>
+</td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_thirdlevelheading">
           <td>third level heading</td>
           <td class="rtlTermCell">عنوان المستوى الثالث</td>
-          <td class="rtlTermCell"></td>
+          <td class="rtlTermCell"><br>
+</td>
           <td>Headings for smallest or minimum unit of main text in books.</td>
         </tr>
         <tr id="def_toplevelheading">
           <td>top level heading</td>
           <td class="rtlTermCell">عنوان أعلى مستوى</td>
-          <td class="rtlTermCell"></td>
+          <td class="rtlTermCell"><br>
+</td>
           <td>Headings for largest or muximum unit of main text in books.</td>
         </tr>
         <tr id="def_tracking">
           <td>tracking</td>
           <td class="rtlTermCell">تتبع</td>
-          <td class="rtlTermCell"></td>
-          <td></td>
+          <td class="rtlTermCell"><br>
+</td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_transliteration">
           <td>transliteration</td>
           <td class="rtlTermCell">الترجمة الصوتية</td>
           <td class="rtlTermCell">حرف‌نویسی</td>
-          <td></td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_trimsize">
           <td>trim size</td>
           <td class="rtlTermCell">حجم التقليم، حجم القَصِّ</td>
-          <td class="rtlTermCell"></td>
+          <td class="rtlTermCell"><br>
+</td>
           <td>Dimensions of a full page in a publication, including margins.</td>
         </tr>
         <tr id="def_typepage">
           <td>type page</td>
           <td class="rtlTermCell">نوع الصفحة</td>
-          <td class="rtlTermCell"></td>
-          <td></td>
+          <td class="rtlTermCell"><br>
+</td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_typesizes">
           <td>type sizes</td>
           <td class="rtlTermCell">نوع الأحجام</td>
-          <td class="rtlTermCell"></td>
-          <td></td>
+          <td class="rtlTermCell"><br>
+</td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_typestyles">
           <td>type styles</td>
           <td class="rtlTermCell">أنماط الكتابة</td>
-          <td class="rtlTermCell"></td>
-          <td></td>
+          <td class="rtlTermCell"><br>
+</td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_type-picking">
           <td>type-picking</td>
@@ -3492,38 +3820,45 @@
           <td>typesetting</td>
           <td class="rtlTermCell">تنضيد، تَنْضِيدُ الحُرُوفِ الْمَطْبَعِيَّةِ</td>
           <td class="rtlTermCell">حروفچینی</td>
-          <td></td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_typography">
           <td>typography</td>
           <td class="rtlTermCell">طباعة الحروف، أسلوب الطباعة</td>
           <td class="rtlTermCell">تایپوگرافی</td>
-          <td></td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_unbreakablecharactersrule">
           <td>unbreakable characters rule</td>
           <td class="rtlTermCell">قاعدة أحرف غير قابلة للكسر</td>
-          <td class="rtlTermCell"></td>
+          <td class="rtlTermCell"><br>
+</td>
           <td>A line breaking rule that prohibits breaking a line between consecutive dashes or
           leaders, or between other specific combinations of characters.</td>
         </tr>
         <tr id="def_underline">
           <td>underline</td>
           <td class="rtlTermCell">تسطير من تحت</td>
-          <td class="rtlTermCell"></td>
+          <td class="rtlTermCell"><br>
+</td>
           <td>A line drawn under a character or a run of text in horizontal writing mode.</td>
         </tr>
         <tr id="def_unicameral">
           <td>unicameral</td>
           <td class="rtlTermCell">أحادى المجلس</td>
-          <td class="rtlTermCell"></td>
-          <td></td>
+          <td class="rtlTermCell"><br>
+</td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_Unicode">
           <td>Unicode</td>
           <td class="rtlTermCell">يونيكود</td>
           <td class="rtlTermCell">یونی‌کُد</td>
-          <td></td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_verticalwritingmode">
           <td>vertical writing mode</td>
@@ -3536,68 +3871,87 @@
           <td>volume</td>
           <td class="rtlTermCell">حجم</td>
           <td class="rtlTermCell">جلد</td>
-          <td></td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_weight">
           <td>weight</td>
           <td class="rtlTermCell">ثقل</td>
-          <td class="rtlTermCell"></td>
+          <td class="rtlTermCell"><br>
+</td>
           <td>A measurement of the thickness of fonts.</td>
         </tr>
         <tr id="def_Westernalphabet">
           <td>Western alphabet</td>
           <td class="rtlTermCell">الأبجدية الغربية</td>
-          <td class="rtlTermCell"></td>
-          <td></td>
+          <td class="rtlTermCell"><br>
+</td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_Westernlanguages">
           <td>Western languages</td>
           <td class="rtlTermCell">أرملة</td>
-          <td class="rtlTermCell"></td>
-          <td></td>
+          <td class="rtlTermCell"><br>
+</td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_widow">
           <td>widow</td>
           <td class="rtlTermCell">تعديل أرملة</td>
-          <td class="rtlTermCell"></td>
+          <td class="rtlTermCell"><br>
+</td>
           <td>The term in Western text layout to describe that the last line of a paragraph with
           only a few words appears at the top of a new page or a column.</td>
         </tr>
         <tr id="def_widowadjustment">
           <td>widow adjustment</td>
           <td class="rtlTermCell">تقسيم كلمة</td>
-          <td class="rtlTermCell"></td>
+          <td class="rtlTermCell"><br>
+</td>
           <td>A method of line composition to adjust lines in a paragraph so that the last line
           consists of more than a given number of characters.</td>
         </tr>
         <tr id="def_worddivision">
           <td>word division</td>
           <td class="rtlTermCell">قسم كلمة</td>
-          <td class="rtlTermCell"></td>
-          <td></td>
+          <td class="rtlTermCell"><br>
+</td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_wordspace">
           <td>word space</td>
           <td class="rtlTermCell">مساحة كلمة</td>
-          <td class="rtlTermCell"></td>
-          <td></td>
+          <td class="rtlTermCell"><br>
+</td>
+          <td><br>
+</td>
         </tr>
         <tr id="def_x-height">
           <td>x-height</td>
           <td class="rtlTermCell">س الارتفاع</td>
-          <td class="rtlTermCell"></td>
-          <td></td>
+          <td class="rtlTermCell"><br>
+</td>
+          <td><br>
+</td>
         </tr>
       </tbody>
     </table>
   </section>
-  <section class="appendix" id="acknowledgements">
+
+
+  
+<section class="appendix" id="acknowledgements">
     <h2>Acknowledgements</h2>
     <p>Special thanks to the following people who contributed to this document (contributors' names
     listed in in alphabetic order).</p>
     <p class="acknowledgement">This Person, That Person, etc</p>
-    <p data-lang="en">Please find the latest info of the contributors at the <a href=
-    "https://github.com/w3c/alreq/graphs/contributors">GitHub contributors list</a>.</p>
+    <p data-lang="en">Please find the latest info of the contributors at the <a href="https://github.com/w3c/alreq/graphs/contributors">GitHub contributors list</a>.</p>
   </section>
-</body>
-</html>
+
+
+
+
+</body></html>
