@@ -148,10 +148,15 @@
       <p>When the main script is Arabic, the layout and structure of pages and documents are also set from right to left.</p>
       <p><a href="http://www.unicode.org/reports/tr9/">Unicode Standard Annex #9, Unicode Bidirectional Algorithm</a> details an algorithm for rendering right-to-left text and covers a myriad of situations in mixing different kinds of characters. A simpler explanation of the basics of the algorithm exists in the W3C article <a href="http://www.w3.org/International/articles/inline-bidi-markup/uba-basics">Unicode Bidirectional Algorithm basics</a>. You can refer to these documents for more information about Unicode’s bidirectional algorithm.</p>
       <p>A brief overview of the bidirectional (<span class="qterm">bidi</span> for short) algorithm follows, because the direction is an essential part of how Arabic script is used.</p>
-      <p>The logical order of a text is the order in which its characters are usually typed and read. This is the order used for saving texts in digital format. This visual order is the order of characters when the text is represented in its written form. <a href="#logical_visual_order"></a> shows the difference between the two, with logical order visualized from left to right. The goal of the bidi algorithm is to convert the logical order to visual order to prepare the texts for rendering.</p>
-      <figure id="logical_visual_order">
-        <img src="images/logical-visual-order.svg" alt="Logical and visual order" width="90%">
-        <figcaption>Logical and visual order</figcaption>
+      <p>The characters of a text are digitally stored and transferred in the same order that they are typed by a user. This is the order in which the text is read and pronounced by people and held in memory by software applications, as shown in <a href="#order_in_memory"></a> for a sample text.</p>
+      <figure id="order_in_memory">
+        <img src="images/order-in-memory.svg" alt="The order of characters in memory" width="90%">
+        <figcaption>The order of characters in memory</figcaption>
+      </figure>
+      <p>But the order used when displaying text is different. The purpose of the bidi algorithm is to find display positions for the characters of a text. These positions are solely used for displaying texts. <a href="#order_when_displayed"></a> shows the same sample text when prepared for display with the bidi algorithm.</p>
+      <figure id="order_when_displayed">
+        <img src="images/order-when-displayed.svg" alt="The order of characters when displayed" width="90%">
+        <figcaption>The order of characters when displayed</figcaption>
       </figure>
       <p>An initial step of the process involves determining each paragraph’s <span class="qterm">base direction</span>: whether the paragraph is left-to-right or right-to-left. The base direction is either explicitly set by the author, inherited from the page, or (typically for user-generated content) detected based on the content of the paragraph. The base direction has two important uses later in the process.</p>
       <p>The next step is to split the text into <span class="qterm">directional runs</span>. Each directional run is a sequence of characters with the same direction.</p>
