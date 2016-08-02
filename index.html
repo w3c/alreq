@@ -693,17 +693,34 @@ margin, rather than wrapping them to the next line. Is this appropriate?</li>
     </section>
   </section>
 
-<section id="h_justification">
-      <h3><a href="#h_justification">Justification and elongation</a></h3>
-      <p>There are a number of different ways to produce justified text 
-in Arabic. In some cases several of these methods may be combined. In 
-other cases, certain methods are disallowed.</p>
+  <section id="h_justification">
+    <h2><a href="#h_justification">Justification</a></h2>
+
+    <div class="note">
+      <h3>Notes, Links, …</h3>
+      <ul>
+        <li>Drop “elongation” from title of this section. It’s one of the mechanisms used for justification.</li>
+        <li>Make sure “elongation,” “kashida,” and “tatweel,” have correct definitions in our glossary.</li>
+        <li><a href="http://www.w3.org/2016/06/28-alreq-minutes.html">Discussion at ALReq meeting on 28 June, 2016</a></li>
+        <li><a href="http://quod.lib.umich.edu/j/jep/3336451.0013.105?rgn=main;view=fulltext">Justify Just or Just Justify</a></li>
+        <li><a href="http://www.tug.org/TUGboat/tb27-2/tb87benatia.pdf">Arabic text justification</a></li>
+        <li>Thomas Milo’s “Arabic script and typography: A brief historical view”</li>
+        <li><a href="http://www.decotype.com/pdfs/Tasmeem_Manual.pdf">Tasmeem Manual</a></li>
+        <li><a href="https://www.microsoft.com/middleeast/msdn/JustifyingText-CSS.aspx">Justifying Text using Cascading Style Sheets (CSS) in Internet Explorer 5.5</a></li>
+        <li><strong>TODO:</strong> Improve the images.</li>
+      </ul>
+
+      <hr />
+
+      <p>There are a number of different ways to produce justified text
+        in Arabic. In some cases several of these methods may be combined. In
+        other cases, certain methods are disallowed.</p>
       <p>Typical methods include:</p>
       <ul>
         <li>Expansion or contraction of inter-word spaces.</li>
         <li>Expansion or contraction of intra-word spaces, ie. the space
- following a character in the middle of a word that doesn't join with 
-the character that follows it.</li>
+          following a character in the middle of a word that doesn't join with
+          the character that follows it.</li>
         <li>Use of wider glyph forms for certain characters.</li>
         <li>Stretching of the joins between characters, known as 'kashida'.</li>
         <li>Use of ligated forms, to reduce space taken by characters on a line.</li>
@@ -715,20 +732,76 @@ the character that follows it.</li>
           <li>When is it appropriate to use which method? </li>
           <li>Is the tatweel character useful?</li>
           <li>What should happen if an application uses a ruq'ah font as
- a fallback, which cannot allow for word elongation? Does the 
-application need to automatically know that it should not stretch words 
-when using this font style?</li>
+            a fallback, which cannot allow for word elongation? Does the
+            application need to automatically know that it should not stretch words
+            when using this font style?</li>
           <li>How does an application or person decide which methods to use, and where, to justify text?</li>
-          <li>The CSS Text spec says: that, apart from elongation, 
-applications "must assume that no justification opportunity exists 
-between any pair of typographic letter units in cursive script 
-(regardless of whether they join). " Is this correct? InDesign, for 
-example, allows alterations of gaps in the middle of a word where one 
-character doesn't join with the following character.</li>
+          <li>The CSS Text spec says: that, apart from elongation,
+            applications "must assume that no justification opportunity exists
+            between any pair of typographic letter units in cursive script
+            (regardless of whether they join). " Is this correct? InDesign, for
+            example, allows alterations of gaps in the middle of a word where one
+            character doesn't join with the following character.</li>
           <li>Should the CSS <a href="https://drafts.csswg.org/css-text-3/#cursive-tracking">letter-spacing property</a> have any effect on Arabic script text?</li>
         </ul>
       </section>
+    </div>
+    <p>Of the four basic justification methods (flush left, flush right, justified, and centered), justified is the most challenging, as it requires changing the widths of the lines to a pre-defined measure.</p>
+    <p>In Arabic there are six mechanisms for changing the width of a line of text. Each one has its limitations and considerations on when and how it can be applied. Furthermore, different typographers and calligraphers have divergent preferences for these mechanisms.</p>
+
+    <section id="h_adjusting_inter_word_spaces">
+      <h2>Adjusting Inter-Word Spaces</h2>
+      <p>This is the same mechanism widely used when justifying Latin scripts, where the width of the spaces between the words can be increased or decreased to change the width of the line.</p>
+      <figure>
+        <img src="images/adjusting-inter-word-spaces.svg" alt="Aligning lines by increasing and decreasing spaces between the words." width="90%" />
+        <figcaption>Aligning lines by increasing and decreasing spaces between the words.</figcaption>
+      </figure>
+      <p>Minimum and maximum widths define boundaries for how much spaces can be shrunk or stretched. When it is not possible to stay within these values, the spaces stretch pass the maximum width.</p>
+      <p>Depending solely on this mechanism for aligning lines in a justified paragraph can lead to unpleasant results, such as rivers (multiple stretched spaces appearing vertically close to each other and forming a white gap inside the paragraph) and uneven distribution of spaces between different lines. Hence, typographers generally use other mechanisms as well to minimize the effect of adjusting inter-word spaces.</p>
     </section>
+
+    <section id="h_adjusting_intra_word_spaces">
+      <h2>Adjusting Intra-Word Spaces</h2>
+      <p>This solution alters the space between letters of each word to change the width of the text. Like adjusting inter-word spaces, this is used for Latin scripts as well, but using it for Arabic script involves considerations specific to Arabic.</p>
+      <p>The first consideration is to exclude the spaces between joined letters, which, obviously, can ruin the cursive joining of the letters.</p>
+      <figure>
+        <img src="images/spacing-joined-letters.svg" alt="Adjusting space between joined letters creates unwanted results." />
+        <figcaption>Adjusting space between joined letters creates unwanted results.</figcaption>
+      </figure>
+      <p>As a result, inter-word spacing can only happen between groups of letters in a word that are not joined.</p>
+      <figure>
+        <img src="images/adjusting-intra-word-spaces.png" alt="Altering intra-word spaces between unjoined letters." />
+        <figcaption>Altering intra-word spaces between unjoined letters.</figcaption>
+      </figure>
+      <p>Depending on the writing style and the typeface in use, different amounts of alteration to the intra-word space is acceptable for Arabic. Some writing styles allow more liberal adjustments to the closeness of the letter groups, while others can only accept small adjustments in this regard.</p>
+    </section>
+
+    <section>
+      <h2>Alternative Shapes</h2>
+      <p>In addition to the four joining forms (isolated, initial, medial, and final), each Arabic letter can come with different shapes while preserving its joining form. For instance, a typeface or writing style can offer two or more shapes for the final form of a single letter.</p>
+      <p>These variant shapes usually have variant widths and hence can be used to adjust the width of the line.</p>
+      <figure>
+        <img src="images/alternative-letter-shapes.png" alt="Three alternative shapes for changing the width of the text." />
+        <figcaption>Three alternative shapes for changing the width of the text.</figcaption>
+      </figure>
+    </section>
+
+    <section>
+      <h2>Ligatures</h2>
+    </section>
+
+    <section>
+      <h2>Kashida</h2>
+    </section>
+
+    <section>
+      <h2>Tatweel</h2>
+    </section>
+
+    <section>
+      <h2>Combination of the Mechanisms</h2>
+    </section>
+  </section>
 
     <section id="h_para_line_alignment">
       <h3><a href="#h_para_line_alignment">Paragraph and line alignment</a></h3>
