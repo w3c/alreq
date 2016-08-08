@@ -768,7 +768,8 @@ margin, rather than wrapping them to the next line. Is this appropriate?</li>
         <img src="images/adjusting-inter-word-spaces.svg" alt="Aligning lines by increasing and decreasing spaces between the words." width="90%" />
         <figcaption>Aligning lines by increasing and decreasing spaces between the words.</figcaption>
       </figure>
-      <p>Minimum and maximum widths define boundaries for how much spaces can be shrunk or stretched. When it is not possible to stay within these values, the spaces stretch pass the maximum width.</p>
+      <p>A minimum width is defined for how much the space can be shrunk, because putting the words too close to each other creates aesthetic and legibility problems.</p>
+      <p>Stretching the space too wide is also undesirable, but is utilized as a last resort when it is not possible to use other solutions to make fully justified paragraphs. In some applications a maximum width for the inter-word space is defined as a soft limit (compared to minimum width which is a hard limit). Reaching the maximum width makes the software to try to use other solutions for justification. If no other solution could yield the required result, the software would fall back to inter-word spacing and stretch the space past the maximum width.</p>
       <p>Depending solely on this mechanism for aligning lines in a justified paragraph can lead to unpleasant results, such as rivers (multiple stretched spaces appearing vertically close to each other and forming a white gap inside the paragraph) and uneven distribution of spaces between different lines. Hence, typographers generally use other mechanisms as well to minimize the effect of adjusting inter-word spaces.</p>
     </section>
 
