@@ -17,7 +17,7 @@ String fIn = 'resources/alreq-glossary.tsv'
 File fOut = new File('out.html')
 
 Sql db = Sql.newInstance("jdbc:h2:mem:db1", "org.h2.Driver")
-db.execute("CREATE TABLE temp AS SELECT * FROM CSVREAD('" + fIn + "', null, 'charset=UTF-16LE fieldSeparator=\t')")
+db.execute("CREATE TABLE temp AS SELECT * FROM CSVREAD('" + fIn + "', null, 'charset=UTF-8 fieldSeparator=\t')")
 String selectQuery = "SELECT * FROM temp WHERE PRIORITY IN (1, 2)"
 
 StringWriter writer = new StringWriter()
@@ -42,9 +42,9 @@ markup.section(class: 'appendix', id: "glossary") {
                     { row ->
                         tr(id: "def_${row['TERMINOLOGY'].replaceAll(' ', '')}") {
                             td row['TERMINOLOGY']
-                            td (lang: 'ar', row['ARABIC'])
+                            td (lang: 'ar', dir:'rtl', row['ARABIC'])
                             td (lang: 'und-Latn-t-ar-m0-alaloc-2012', row['ARABIC TRANSLITERATION'])
-                            td (lang: 'fa', row['PERSIAN'] != null ? row['PERSIAN'] : '')
+                            td (lang: 'fa', dir:'rtl', row['PERSIAN'] != null ? row['PERSIAN'] : '')
                             td (lang: 'und-Latn-t-fa-m0-ungen-2012', row['PERSIAN TRANSLITERATION'] != null ? row['PERSIAN TRANSLITERATION'] : '')
                             td row['DEFINITION'] != null ? row['DEFINITION'] : ''
                         }

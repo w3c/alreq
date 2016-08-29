@@ -120,10 +120,10 @@
     <h2>Arabic Script Overview</h2>
     <p>Topic Keywords:</p>
     <ul>
-      <li><strong>Characters:</strong> Listing the characters—alphabet, diacritics, numerals, and
+      <li><del><strong>Characters:</strong> Listing the characters—alphabet, diacritics, numerals, and
       punctuations—which are used with Arabic script. Distinguishing which character is used with
-      which language. Provide sources for the classification (e.g. CLDR exemplar data).</li>
-      <li><strong>Direction:</strong> Breif description of bidi. Reference to further reading.</li>
+      which language. Provide sources for the classification (e.g. CLDR exemplar data).</del></li>
+      <li><del><strong>Direction:</strong> Breif description of bidi. Reference to further reading.</del></li>
       <li>
         <del><strong>Joining:</strong> Describe the joining/non-joining behavour and ligatures
         briefly and refer to Unicode Standard for in-detail description.</del>
@@ -144,15 +144,34 @@
     </section>
     <section id="h_direction">
       <h2>Direction</h2>
-			<p>Arabic script is written from right to left. Please refer to Unicode Standard Annex #9,
-			Unicode Bidirectional Algorithm, for detailed information on how to render right-to-left
-			texts and mixing right-to-left and left-to-right texts.</p>
-
-			<p>Numbers are written from left to right, as is text in a script that is normally
-			left-to-right.</p>
-
-			<p>The effects of writing from right to left on page layout and document structure are
-			discussed in the following sections of this document.</p>
+      <p>Arabic script is written from right to left. Numbers, even Arabic numbers, are written from left to right, as is text in a script that is normally left-to-right.</p>
+      <p>When the main script is Arabic, the layout and structure of pages and documents are also set from right to left.</p>
+      <p><a href="http://www.unicode.org/reports/tr9/">Unicode Standard Annex #9, Unicode Bidirectional Algorithm</a> details an algorithm for rendering right-to-left text and covers a myriad of situations in mixing different kinds of characters. A simpler explanation of the basics of the algorithm exists in the W3C article <a href="http://www.w3.org/International/articles/inline-bidi-markup/uba-basics">Unicode Bidirectional Algorithm basics</a>. You can refer to these documents for more information about Unicode’s bidirectional algorithm.</p>
+      <p>A brief overview of the bidirectional (<span class="qterm">bidi</span> for short) algorithm follows, because the direction is an essential part of how Arabic script is used.</p>
+      <p>The characters of a text are digitally stored and transferred in the same order that they are typed by a user. This is the order in which the text is read and pronounced by people and held in memory by software applications, as shown in <a href="#order_in_memory"></a> for a sample text.</p>
+      <figure id="order_in_memory">
+        <img src="images/order-in-memory.svg" alt="The order of characters in memory" width="90%">
+        <figcaption>The order of characters in memory</figcaption>
+      </figure>
+      <p>But the order used when displaying text is different. The purpose of the bidi algorithm is to find display positions for the characters of a text. These positions are solely used for displaying texts. <a href="#order_when_displayed"></a> shows the same sample text when prepared for display with the bidi algorithm.</p>
+      <figure id="order_when_displayed">
+        <img src="images/order-when-displayed.svg" alt="The order of characters when displayed" width="90%">
+        <figcaption>The order of characters when displayed</figcaption>
+      </figure>
+      <p>An initial step of the process involves determining each paragraph’s <span class="qterm">base direction</span>: whether the paragraph is left-to-right or right-to-left. The base direction is either explicitly set by the author, inherited from the page, or (typically for user-generated content) detected based on the content of the paragraph. The base direction has two important uses later in the process.</p>
+      <p>The next step is to split the text into <span class="qterm">directional runs</span>. Each directional run is a sequence of characters with the same direction.</p>
+      <figure id="directional_runs">
+        <img src="images/directional-runs.svg" alt="Splitting a text into 3 directional runs" width="90%">
+        <figcaption>Splitting a text into 3 directional runs</figcaption>
+      </figure>
+      <p>Inside each run, all the characters follow the same order. The runs themselves are ordered for visual representation from left to right or from right to left, depending on the base direction of the paragraph. <a href="#order_of_directional_runs"></a> demonstrates an example of this. This is the first effect of the base direction.</p>
+      <figure id="order_of_directional_runs">
+        <img src="images/order-of-directional-runs.svg" alt="The effect of base direction on the order of runs" width="90%">
+        <figcaption>The effect of base direction on the order of runs</figcaption>
+      </figure>
+      <p>Unicode has a <span class="qterm">bidi category</span> property defined for each character that is used to determine the direction of each character. All the Arabic letters are marked as right-to-left characters, while Latin characters have the left-to-right category.</p>
+      <p>Some characters, mostly punctuations, are <span class="qterm">neutral</span>. The direction of these characters is derived from their surrounding characters. If a neutral character is surrounded by characters of the same direction (e.g. an space surrounded by Arabic letters), it gets the direction of its neighbors. Otherwise (e.g. a space between an Arabic and a Latin, or a neutral character appearing at the start or the end of a paragraph), the neutral character gets its direction from the paragraph’s base direction. This is another effect of the base direction in the bidi algorithm.</p>
+      <p>The above explanation of the bidi algorithm is highly simplified, to convey only the essentials of how Arabic text is transformed for rendering. The actual algorithm deals with many more character types and edge cases. Please refer to <a href="http://www.w3.org/International/articles/inline-bidi-markup/uba-basics">Unicode Bidirectional Algorithm basics</a> for more information or <a href="http://www.unicode.org/reports/tr9/">Unicode Standard Annex #9, Unicode Bidirectional Algorithm</a> for the official detailed documentation.</p>
     </section>
     <section id="h_joining">
       <h2>Joining</h2>
@@ -193,10 +212,21 @@
         Right joining characters only join to their previous (right-side) character. These
         characters only have isolated and final shapes, for they don’t join to their next
         character.</p>
+        <figure id="right_joining_letter">
+          <img src="images/right-joining-letter.svg" alt="Right-joining letters only have two forms of final and isolated." width="50%">
+          <figcaption>Right-joining letters only have two forms of final and isolated.</figcaption>
+        </figure>
         <p>Almost all the non-alphabetical characters are <span class="qterm">non-joining</span>.
         The few exceptions will be discussed in this document.</p>
         <p>Please refer to The Unicode Standard Version 8.0, Section 9.2, for full explanation of
         Arabic cursive joining.</p>
+        <section id="h_joining_and_spacing">
+          <h2>Joining and Intra-Word Spaces</h2>
+          <p>The only spaces inside Arabic words are created near characters that are not
+            dual-joining. When adjusing intra-word spaces (i.e. the space inside the words) only
+            these spaces can be adjusted. Moving two joined characters closer to or further from
+            each other creates undesirable results.</p>
+        </section>
       </section>
       <section id="h_ligatures">
         <h2>Ligatures</h2>
@@ -674,17 +704,34 @@ margin, rather than wrapping them to the next line. Is this appropriate?</li>
     </section>
   </section>
 
-<section id="h_justification">
-      <h3><a href="#h_justification">Justification and elongation</a></h3>
-      <p>There are a number of different ways to produce justified text 
-in Arabic. In some cases several of these methods may be combined. In 
-other cases, certain methods are disallowed.</p>
+  <section id="h_justification">
+    <h2><a href="#h_justification">Justification</a></h2>
+
+    <div class="note">
+      <h3>Notes, Links, …</h3>
+      <ul>
+        <li>Drop “elongation” from title of this section. It’s one of the mechanisms used for justification.</li>
+        <li>Make sure “elongation,” “kashida,” and “tatweel,” have correct definitions in our glossary.</li>
+        <li><a href="http://www.w3.org/2016/06/28-alreq-minutes.html">Discussion at ALReq meeting on 28 June, 2016</a></li>
+        <li><a href="http://quod.lib.umich.edu/j/jep/3336451.0013.105?rgn=main;view=fulltext">Justify Just or Just Justify</a></li>
+        <li><a href="http://www.tug.org/TUGboat/tb27-2/tb87benatia.pdf">Arabic text justification</a></li>
+        <li>Thomas Milo’s “Arabic script and typography: A brief historical view”</li>
+        <li><a href="http://www.decotype.com/pdfs/Tasmeem_Manual.pdf">Tasmeem Manual</a></li>
+        <li><a href="https://www.microsoft.com/middleeast/msdn/JustifyingText-CSS.aspx">Justifying Text using Cascading Style Sheets (CSS) in Internet Explorer 5.5</a></li>
+        <li><strong>TODO:</strong> Improve the images.</li>
+      </ul>
+
+      <hr />
+
+      <p>There are a number of different ways to produce justified text
+        in Arabic. In some cases several of these methods may be combined. In
+        other cases, certain methods are disallowed.</p>
       <p>Typical methods include:</p>
       <ul>
         <li>Expansion or contraction of inter-word spaces.</li>
         <li>Expansion or contraction of intra-word spaces, ie. the space
- following a character in the middle of a word that doesn't join with 
-the character that follows it.</li>
+          following a character in the middle of a word that doesn't join with
+          the character that follows it.</li>
         <li>Use of wider glyph forms for certain characters.</li>
         <li>Stretching of the joins between characters, known as 'kashida'.</li>
         <li>Use of ligated forms, to reduce space taken by characters on a line.</li>
@@ -696,20 +743,83 @@ the character that follows it.</li>
           <li>When is it appropriate to use which method? </li>
           <li>Is the tatweel character useful?</li>
           <li>What should happen if an application uses a ruq'ah font as
- a fallback, which cannot allow for word elongation? Does the 
-application need to automatically know that it should not stretch words 
-when using this font style?</li>
+            a fallback, which cannot allow for word elongation? Does the
+            application need to automatically know that it should not stretch words
+            when using this font style?</li>
           <li>How does an application or person decide which methods to use, and where, to justify text?</li>
-          <li>The CSS Text spec says: that, apart from elongation, 
-applications "must assume that no justification opportunity exists 
-between any pair of typographic letter units in cursive script 
-(regardless of whether they join). " Is this correct? InDesign, for 
-example, allows alterations of gaps in the middle of a word where one 
-character doesn't join with the following character.</li>
+          <li>The CSS Text spec says: that, apart from elongation,
+            applications "must assume that no justification opportunity exists
+            between any pair of typographic letter units in cursive script
+            (regardless of whether they join). " Is this correct? InDesign, for
+            example, allows alterations of gaps in the middle of a word where one
+            character doesn't join with the following character.</li>
           <li>Should the CSS <a href="https://drafts.csswg.org/css-text-3/#cursive-tracking">letter-spacing property</a> have any effect on Arabic script text?</li>
         </ul>
       </section>
+    </div>
+    <p>Of the four basic justification methods (flush left, flush right, justified, and centered), justified is the most challenging, as it requires changing the widths of the lines to a pre-defined measure. <span class="qterm">Measure</span> refers to the width of a column of text. In a justified paragraph the width of all the lines should be the same as the paragraph’s measure (except, of course, the list line).</p>
+    <p>In Arabic there are six mechanisms for changing the width of a line of text. Each one has its limitations and considerations on when and how it can be applied. Furthermore, different typographers and calligraphers have divergent preferences for these mechanisms.</p>
+    <p>An important factor in the application of these mechanisms is they success in creating an even <span class="qterm">color</span>. The color of the text refers to the amount of ink/blackness used to print or show a block of text. Color describes the density of the text against its background. Poorly justifying paragraphs can create uneven distribution of color.</p>
+    <p>These mechanisms are not exclusive. Quite the contrary, they are commonly used simultaneously to produce better justified paragraphs. Combination of these mechanisms is discussed in <a href="#h_combination_of_the_mechanisms">Combination of the Mechanisms</a>.</p>
+
+    <section id="h_adjusting_inter_word_spaces">
+      <h2>Adjusting Inter-Word Spaces</h2>
+      <p>This is the same mechanism widely used when justifying Latin scripts, where the width of the spaces between the words can be increased or decreased to change the width of the line.</p>
+      <figure>
+        <img src="images/adjusting-inter-word-spaces.svg" alt="Aligning lines by increasing and decreasing spaces between the words." width="90%" />
+        <figcaption>Aligning lines by increasing and decreasing spaces between the words.</figcaption>
+      </figure>
+      <p>A minimum width is defined for how much the space can be shrunk, because putting the words too close to each other creates aesthetic and legibility problems.</p>
+      <p>Stretching the space too wide is also undesirable, but is utilized as a last resort when it is not possible to use other solutions to make fully justified paragraphs. In some applications a maximum width for the inter-word space is defined as a soft limit (compared to minimum width which is a hard limit). Reaching the maximum width makes the software to try to use other solutions for justification. If no other solution could yield the required result, the software would fall back to inter-word spacing and stretch the space past the maximum width.</p>
+      <p>Depending solely on this mechanism for aligning lines in a justified paragraph can lead to unpleasant results, such as rivers (multiple stretched spaces appearing vertically close to each other and forming a white gap inside the paragraph) and uneven distribution of color in the paragraph. Hence, typographers generally use other mechanisms as well to minimize the effect of adjusting inter-word spaces.</p>
     </section>
+
+    <section id="h_adjusting_intra_word_spaces">
+      <h2>Adjusting Intra-Word Spaces</h2>
+      <p>This solution alters the space between letters of each word to change the width of the text. Like adjusting inter-word spaces, this is used for Latin scripts as well, but using it for Arabic script involves considerations specific to Arabic. As noted in <a href="#h_joining_and_spacing">Joining and Intra-Word Spaces</a>, the principal consideration is that gaps between characters only exist for those letters that join only to the right, such as <span class="lettername">dal</span> and <span class="lettername">reh</span> . Adjustment of intra-word space is not relevant where one letter is joined to its neighbors.</p>
+      <figure>
+        <img src="images/adjusting-intra-word-spaces.png" alt="Altering intra-word spaces between unjoined letters." />
+        <figcaption>Altering intra-word spaces between unjoined letters.</figcaption>
+      </figure>
+      <p>Depending on the writing style and the typeface in use, different amounts of alteration to the intra-word space is acceptable for Arabic. Some writing styles allow more liberal adjustments to the closeness of the letter groups, while others can only accept small adjustments in this regard. In any case, much smaller adjustments can be used for intra-word spacing in comparison for inter-word spacing, which naturally is wider and tolerate bigger adjustments.</p>
+    </section>
+
+    <section>
+      <h2>Alternative Shapes</h2>
+      <p>In addition to the four joining forms (isolated, initial, medial, and final), each Arabic letter can come with different shapes while preserving its joining form. For instance, a typeface or writing style can offer two or more shapes for the final form of a single letter.</p>
+      <p>These variant shapes usually have variant widths and hence can be used to adjust the width of the line.</p>
+      <figure>
+        <img src="images/alternative-letter-shapes.png" alt="Alternative shapes for changing the width of the text." />
+        <figcaption>Alternative shapes for changing the width of the text.</figcaption>
+      </figure>
+      <p>An advantage of using alternative letter shapes when justifying paragraphs is that it does not involve modifying default properties of the typeface (width of space or other characters). Instead, it is using shapes that are part of the typeface and are in harmony with other shapes in the lines.</p>
+      <p>But excessive use of alternative shapes, such as using multiple very wide alternatives close to each other, can create unnatural results.</p>
+      <p>It is not possible to justify paragraphs using only alternative letter shapes, because these shapes have predefined widths. For example, if a line should get 25 points wider, it is impossible to achieve that by using alternative letter shapes that are, say, 10 or 20 or 30 points wider than the default shapes. But these shapes can make the lines closer to measure, thus reducing the usage of other mechanisms.</p>
+    </section>
+
+    <section>
+      <h2>Ligatures</h2>
+      <p>Some Arabic fonts, following the writing styles that use special shapes when joining certain letters, provide a rich number of ligatures. These ligatures can be used in paragraph justification, since they usually reduce the widths of the words.</p>
+      <figure>
+        <img src="images/different-ligatures.png" alt="Various ligatures reducing the widths of the words" />
+        <figcaption>Various ligatures reducing the widths of the words</figcaption>
+      </figure>
+      <p>But existence of the ligatures in a font does not mean that they can be used freely. A font may provide some of its ligatures for creating an artistic style, which would be unsuitable for texts requiring optimum legibility.</p>
+      <p>For that reason, the user should be able to select which sets of ligatures can be used for justification. Fonts can offer predefined sets of ligatures to simplify this process.</p>
+    </section>
+
+    <section>
+      <h2>Kashida</h2>
+    </section>
+
+    <section>
+      <h2>Tatweel</h2>
+    </section>
+
+    <section id="h_combination_of_the_mechanisms">
+      <h2>Combination of the Mechanisms</h2>
+    </section>
+  </section>
 
     <section id="h_para_line_alignment">
       <h3><a href="#h_para_line_alignment">Paragraph and line alignment</a></h3>
