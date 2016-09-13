@@ -149,3 +149,13 @@ table.characters tr td .charimage {
 table.characters tr td.langMark {
     text-align: center;
 }
+.flexContainer {
+	display: flex;
+	flex-flow: row-reverse nowrap;
+}
+.flexContainer>* {
+	flex: 2;	
+}.flexContainer figure {
+	flex: 1;
+	margin: 0;
+}

@@ -2,7 +2,7 @@
 
 <html lang="en">
 <head>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta charset="utf-8">
 
   <title>Arabic Layout Requirements</title>
   <script src="https://www.w3.org/Tools/respec/respec-w3c-common" async="" class="remove" type="text/javascript">
@@ -61,7 +61,7 @@
   <link rel="stylesheet" href="local.css" type="text/css">
 </head>
 
-<body class="h-entry" role="document" id="respecDocument">
+<body>
   <div id="abstract">
     <p>This document describes requirements for the layout and presentation of text in languages that use the Arabic script when they are used by Web standards and technologies, such as HTML, CSS, Mobile Web, Digital Publications, and Unicode.</p>
   </div>
@@ -267,86 +267,91 @@
 
           <dt>Kufi (كوفي)</dt>
 
-          <dd>
+          <dd class="flexContainer">
 	    <figure class="floatedFigure">
 	      <img style="width: 200px; height: 147px;" src="images/kufiExampleQuran.jpg" alt="Kufi script">
-	      <figcaption></figcaption>
+	      <figcaption>Kufi example.</figcaption>
 	    </figure>
-	    
-	      One of the oldest and best known Arabic scripts. It is characterized by its decorative and pronounced geometric forms, well adapted for architectural designs. The style grew with the beginning of Islam to satisfy a need for Muslims to codify the Kor'an.</dd>
+	      <p>One of the oldest and best known Arabic scripts. It is characterized by its decorative and pronounced geometric forms, well adapted for architectural designs. The style grew with the beginning of Islam to satisfy a need for Muslims to codify the Kor'an.</p>
+          </dd>
 
           <dt>Thuluth (ثلث)</dt>
 
-          <dd>
+          <dd class="flexContainer">
 	    <figure class="floatedFigure">
 	      <img style="width: 132px; height: 173px;" src="images/basmalahThuluth.png" alt="Thuluth script">
-	      <figcaption></figcaption>
+	      <figcaption>Thuluth example.</figcaption>
 	    </figure>
 
-	    (The third.) Recognizable by the fact that the letters and words are highly interleaved in its complex form. May be the most difficult style to write (requiring a significant amount of skill), both in terms of its letters and in terms of its structure and composition.</dd>
+<p>(The third.) Recognizable by the fact that the letters and words are highly interleaved in its complex form. May be the most difficult style to write (requiring a significant amount of skill), both in terms of its letters and in terms of its structure and composition.</p>
+	</dd>
 
           <dt>Naskh (نسخ)</dt>
 
-          <dd>
+          <dd class="flexContainer">
 	    <figure class="floatedFigure">
 	      <img style="width: 147px; height: 166px;" src="images/naskhQuran2.png" alt="Naskh script">
-	      <figcaption></figcaption>
+	      <figcaption>Nask example.</figcaption>
 	    </figure>
-
-	      One of the clearest styles of all, with clearly distinguished letters which facilitate reading and pronunciation. Can be written at small sizes (traditionally using pens made of reeds and ink), which suits the production of longer texts used for boards and books intended for the general population, especially the Kor'an.</dd>
+        <p>One of the clearest styles of all, with clearly distinguished letters which facilitate reading and pronunciation. Can be written at small sizes (traditionally using pens made of reeds and ink), which suits the production of longer texts used for boards and books intended for the general population, especially the Kor'an.</p>
+          </dd>
 
           <dt>Ruqʻa (رقعة‎)</dt>
 
-          <dd>
+          <dd class="flexContainer">
 	    <figure class="floatedFigure">
 	      <img style="width: 129px; height: 168px;" src="images/Ruq_ah.gif" alt="Ruq'a script">
-	      <figcaption></figcaption>
+	      <figcaption>Ruqʻa example.</figcaption>
 	    </figure>
-	      A handwritten style still commonly used in Arabic countries, and recognisable by its bold-like letters written above the writing line. Designed to be used for education, for everyday writing and adopted in the offices (<em>Diwan</em>) of the Ottoman Empire. One of it's feature is that calligraphers have kept it and did not derived variations from it</dd>
+	      <p>A handwritten style still commonly used in Arabic countries, and recognisable by its bold-like letters written above the writing line. Designed to be used for education, for everyday writing and adopted in the offices (<em>Diwan</em>) of the Ottoman Empire. One of it's feature is that calligraphers have kept it and did not derived variations from it.</p>
+          </dd>
 
           <dt>Taʻlīq (تعليق)</dt>
 
-          <dd>
+          <dd class="flexContainer">
 	    <figure class="floatedFigure">
 	    <img style="width: 200px; height: 121px;" src="images/taliq.jpg" alt="Ta'liq script">
-	      <figcaption></figcaption>
+	      <figcaption>Taʻlīq example.</figcaption>
 	    </figure>
 
-	    Also known as <em>Farsi</em> (Iran), <em>Taʻlīq</em> (hanging). A beautiful script characterized by the precision and stretch of its letters, its clarity, and its lack of complexity. Designed for Persian language, until replaced by <em>Nastaʻlīq</em></dd>
+	    <p>Also known as <em>Farsi</em> (Iran), <em>Taʻlīq</em> (hanging). A beautiful script characterized by the precision and stretch of its letters, its clarity, and its lack of complexity. Designed for Persian language, until replaced by <em>Nastaʻlīq</em>.</p>
+        </dd>
 
           <dt>Diwani (ديواني)</dt>
 
-          <dd>
+          <dd class="flexContainer">
 	    <figure class="floatedFigure">
 	    <img style="width: 250px; height: 101px;" src="images/diwani.png" alt="Diwani script">
-	      <figcaption></figcaption>
+	      <figcaption>Diwani example.</figcaption>
 	    </figure>
 
-	    Used by the Ottman court (<em>Diwan</em>) to write official documents. Some variations of it are still in use today (e.g. hand written documents by some religious officials).</dd>
+	    <p>Used by the Ottman court (<em>Diwan</em>) to write official documents. Some variations of it are still in use today (e.g. hand written documents by some religious officials).</p></dd>
         </dl>
 
         <p>We can add other font styles to this list, such as the following :</p>
 
         <dl>
-          <dt>Nasta'liq or Farissi (فارسي)</dt>
+          <dt>Nastaʻliq (نستعلیق)</dt>
 
-          <dd>
+          <dd class="flexContainer">
 	    <figure class="floatedFigure">
 	      <img style="width: 130px; height: 130px;" src="images/nastaliq.jpg" alt="Nastaliq script">
-	      <figcaption></figcaption>
+	      <figcaption>Nastaʻliq example.</figcaption>
 	    </figure>
 
-	      Persian version of <em>Taʻliq</em>, derived from <em>Naskh</em> and <em>Taaʻliq</em> and developed in the 8th and 9th centuries. It is like a <em>Taaʻliq</em> but easier to write and read.</dd>
+	      <p>Persian version of <em>Taʻliq</em>, derived from <em>Naskh</em> and <em>Taaʻliq</em> and developed in the 8th and 9th centuries. It is like a <em>Taaʻliq</em> but easier to write and read.</p>
+          </dd>
 
           <dt>Rabat aka Maghribi (رباط او مغربي‎)</dt>
 
-          <dd>
+          <dd class="flexContainer">
 	    <figure class="floatedFigure">
 	      <img style="width: 170px; height: 177px;" src="images/maghribi2.jpg" alt="Maghribi script">
-	      <figcaption></figcaption>
+	      <figcaption>Maghribi example.</figcaption>
 	    </figure>
 
-	      Western Islamic world of North Africa and Spain. Used for writing the Kor'an as well as other scientific, legal and religious manuscripts. Used in some very official printings in Morocco.</dd>
+	      <p>Western Islamic world of North Africa and Spain. Used for writing the Kor'an as well as other scientific, legal and religious manuscripts. Used in some very official printings in Morocco.</p>
+          </dd>
         </dl>
 
         <p><cite>Images are from Wikipedia...</cite></p><!--389-->
