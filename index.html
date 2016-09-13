@@ -3,7 +3,6 @@
 <html lang="en">
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta charset="utf-8">
 
   <title>Arabic Layout Requirements</title>
   <script src="https://www.w3.org/Tools/respec/respec-w3c-common" async="" class="remove" type="text/javascript">
@@ -136,7 +135,7 @@
       <p>The characters of a text are digitally stored and transferred in the same order that they are typed by a user. This is the order in which the text is read and pronounced by people and held in memory by software applications, as shown in <a href="#order_in_memory"></a> for a sample text.</p>
 
       <figure id="order_in_memory">
-        <img src="images/order-in-memory.svg" alt="The order of characters in memory" width="90%">
+        <img src="images/order-in-memory.svg" alt="The order of characters in memory">
 
         <figcaption>The order of characters in memory</figcaption>
       </figure>
@@ -144,7 +143,7 @@
       <p>But the order used when displaying text is different. The purpose of the bidi algorithm is to find display positions for the characters of a text. These positions are solely used for displaying texts. <a href="#order_when_displayed"></a> shows the same sample text when prepared for display with the bidi algorithm.</p>
 
       <figure id="order_when_displayed">
-        <img src="images/order-when-displayed.svg" alt="The order of characters when displayed" width="90%">
+        <img src="images/order-when-displayed.svg" alt="The order of characters when displayed">
 
         <figcaption>The order of characters when displayed</figcaption>
       </figure>
@@ -154,7 +153,7 @@
       <p>The next step is to split the text into <span class="qterm">directional runs</span>. Each directional run is a sequence of characters with the same direction.</p>
 
       <figure id="directional_runs">
-        <img src="images/directional-runs.svg" alt="Splitting a text into 3 directional runs" width="90%">
+        <img src="images/directional-runs.svg" alt="Splitting a text into 3 directional runs">
 
         <figcaption>Splitting a text into 3 directional runs</figcaption>
       </figure>
@@ -162,7 +161,7 @@
       <p>Inside each run, all the characters follow the same order. The runs themselves are ordered for visual representation from left to right or from right to left, depending on the base direction of the paragraph. <a href="#order_of_directional_runs"></a> demonstrates an example of this. This is the first effect of the base direction.</p>
 
       <figure id="order_of_directional_runs">
-        <img src="images/order-of-directional-runs.svg" alt="The effect of base direction on the order of runs" width="90%">
+        <img src="images/order-of-directional-runs.svg" alt="The effect of base direction on the order of runs">
 
         <figcaption>The effect of base direction on the order of runs</figcaption>
       </figure>
@@ -195,7 +194,7 @@
         <p>shows all four shapes of character <span class="uname">U+0645 ARABIC LETTER MEEM</span> (<span dir="rtl" lang="ar">م</span>).</p>
 
         <figure id="letter_shapes">
-          <img src="images/letter-shapes.png" alt="Four different shapes for joining to previous or succeeding letters" width="90%">
+          <img src="images/letter-shapes.png" alt="Four different shapes for joining to previous or succeeding letters">
 
           <figcaption>Four different shapes for joining to previous or succeeding letters</figcaption>
         </figure>
@@ -203,7 +202,7 @@
         <p>For each Arabic letter, based on the joining behavior of its neighbors, one of its shapes is used in writing. demonstrates how letters join to form a word.</p>
 
         <figure id="joining_process">
-          <img src="images/joining-process.png" alt="Joining letters by using their various shapes" width="90%">
+          <img src="images/joining-process.png" alt="Joining letters by using their various shapes">
 
           <figcaption>Joining letters by using their various shapes</figcaption>
         </figure>
@@ -211,7 +210,7 @@
         <p>There are different categories of characters based on their joining behavior, but most of the Arabic letters are either <span class="qterm">dual joining</span> or <span class="qterm">right joining</span>. Dual joining characters can join from both sides. Like the character in image 1, these types of characters have all the four shapes mentioned above. Right joining characters only join to their previous (right-side) character. These characters only have isolated and final shapes, for they don’t join to their next character.</p>
 
         <figure id="right_joining_letter">
-          <img src="images/right-joining-letter.svg" alt="Right-joining letters only have two forms of final and isolated." width="50%">
+          <img src="images/right-joining-letter.svg" alt="Right-joining letters only have two forms of final and isolated.">
 
           <figcaption>Right-joining letters only have two forms of final and isolated.</figcaption>
         </figure>
@@ -233,7 +232,7 @@
         <p>Almost all the writing styles of Arabic script use a special shape when letters <span class="lettername">lam</span> and <span class="lettername">alef</span> are joined. Most Arabic fonts include mandatory ligatures for this combination. Ignoring this ligature, as shown in , leads to wrong rendering of text.</p>
 
         <figure id="laam-alef-ligature">
-          <img src="images/laam-alef-ligature.png" alt="Correct and wrong ways of rendering letter lam followed by letter alef" width="90%">
+          <img src="images/laam-alef-ligature.png" alt="Correct and wrong ways of rendering letter lam followed by letter alef">
 
           <figcaption>Correct and wrong ways of rendering letter <span class="lettername">lam</span> followed by letter <span class="lettername">alef</span></figcaption>
         </figure>
@@ -343,7 +342,7 @@
 
             <p>Fonts don't always comply with or respect this kind of <span class="qterm">tuning</span>. To do so, fonts need many glyphs in order to adapt to each context. In more modern typefaces some of these connections are implemented by ligatures, but ligatures can't capture or cover all joining behavior.</p>
 
-            <p>In the two left most words, the initial noon differs in that one raises a kind of stroke. This property of raising a stroke is common for a number of letters (beh, teh, noon, theh) which are taller than their connected letters in order to be distinguished in some contexts, such as<img style="width: 37px; height: 31px;" alt="Beh with stroke before seen" src="images/bsl.jpg" align="middle"> vs. <img style="width: 43px; height: 39px;" alt="Beh without stroke after seen" src="images/sbl.jpg" align="middle"> , or to resolve ambiguity. See also the section about teeth letters below.</p>
+            <p>In the two left most words, the initial noon differs in that one raises a kind of stroke. This property of raising a stroke is common for a number of letters (beh, teh, noon, theh) which are taller than their connected letters in order to be distinguished in some contexts, such as<img style="float: middle; width: 37px; height: 31px;" alt="Beh with stroke before seen" src="images/bsl.jpg"> vs. <img style="float: middle; width: 43px; height: 39px;" alt="Beh without stroke after seen" src="images/sbl.jpg"> , or to resolve ambiguity. See also the section about teeth letters below.</p>
           </li>
 
           <li>
@@ -354,7 +353,7 @@
             <p>Example two words in some nice Naskh font.</p>
 
             <table style="margin-left: 40px;">
-              <caption align="bottom">
+              <caption style="text-align: bottom;">
                 Groups of letters are colored blue or red
               </caption>
 
@@ -372,7 +371,7 @@
             <p>To compare with the same words in more usual font:</p>
 
             <table style="margin-left: 40px;">
-              <caption align="bottom">
+              <caption style="text-align: bottom;">
                 Can't really say letter groups. Rather a "horizontal sequence of letters of almost same width".
               </caption>
 
@@ -396,11 +395,11 @@
             <table style="margin-left: 40px;">
               <tbody>
                 <tr>
-                  <td style=" text-align: center;"><img style="width: 65px; height: 70px;" alt="Vertical joining" src="images/vertivalJoin.jpg" align="middle"></td>
+                  <td style=" text-align: center;"><img style="text-align: middle; width: 65px; height: 70px;" alt="Vertical joining" src="images/vertivalJoin.jpg"></td>
 
                   <td style=" text-align: center;">vs.</td>
 
-                  <td style=" text-align: center;"><img style="width: 69px; height: 46px;" alt="horizontal joing" src="images/horizontalJoin.jpg" align="middle"></td>
+                  <td style=" text-align: center;"><img style="text-align: middle; width: 69px; height: 46px;" alt="horizontal joing" src="images/horizontalJoin.jpg"></td>
                 </tr>
 
                 <tr>
@@ -603,7 +602,7 @@
         <p>This is the same mechanism widely used when justifying Latin scripts, where the width of the spaces between the words can be increased or decreased to change the width of the line.</p>
 
         <figure>
-          <img src="images/adjusting-inter-word-spaces.svg" alt="Aligning lines by increasing and decreasing spaces between the words." width="90%">
+          <img src="images/adjusting-inter-word-spaces.svg" alt="Aligning lines by increasing and decreasing spaces between the words.">
 
           <figcaption>Aligning lines by increasing and decreasing spaces between the words.</figcaption>
         </figure>
