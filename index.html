@@ -718,14 +718,70 @@
 
       <section>
         <h2>Kashida</h2>
+
+        <p>Kashida refers to extending the horizontal connection between joined letters.</p>
+
+        <figure>
+          <img src="images/kashida.png" alt="Two words extended with kashida.">
+
+          <figcaption>Two words extended with kashida.</figcaption>
+        </figure>
+
+        <p>This is a feature deeply related with the cursive nature of Arabic script. Kashida is an interesting tool for paragraph justification. It is more flexible than alternative letter shapes and ligatures, because it is not restricted to a limited number of predefined widths. At the same time, it has relatively less effect on the text color than spacing.</p>
+
+        <p>But a proper implementation of kashida involves a number of limitations and considerations.</p>
+
+        <p>Excessive use of kashida or applying very long kashidas results in uneven color. Also, horizontal or vertical proximity of numerous kashida creates an unnatural color.</p>
+
+        <figure>
+          <img src="images/too-much-kashida.png" alt="Unpleasant result of excessive use of kashida.">
+
+          <figcaption>Unpleasant result of excessive use of kashida.</figcaption>
+        </figure>
+
+        <p>Kashida is not always straight. Some fonts may require curvilinear kashidas, which require more advanced implementations.</p>
+
+        <figure>
+          <img src="images/curvilinear-kashida.gif" alt="Curvilinear kashida">
+
+          <figcaption>Curvilinear kashida</figcaption>
+        </figure>
+
+        <p>Typographers can have preferred places for applying kashidas. In other words, instead of applying kashida between every joined pair of letters, they want it at certain joins.</p>
+
+        <figure>
+          <img src="images/tanzil.png" alt="There are multiple joins in this word, but only one is selected for kashida.">
+
+          <figcaption>There are multiple joins in this word, but only one is selected for kashida.</figcaption>
+        </figure>
+
+        <p>Another preference is avoiding multiple kashidas in a single word.</p>
       </section>
 
       <section>
         <h2>Tatweel</h2>
+
+        <p>Tatweel is a dual-joining character that can be inserted between two joined letters to widen their connection. In The Unicode Standard, tatweel is represented as <span class="uname">U+0640 ARABIC TATWEEL</span> (<span dir="rtl" lang="ar">ـ</span>).</p>
+
+        <figure>
+          <img src="images/tatweel.svg" alt="Tatweel">
+
+          <figcaption>Tatweel</figcaption>
+        </figure>
+
+        <p>Tatweel extends letter connections in a fashion similar to kashida, but in a much more limited way. It is a character that has to be in the text or inserted like other characters. It has a predefined width, like any other character.</p>
+
+        <p>Yet it is much simpler to implement, since it acts like normal Arabic characters and does not require special treatment. For this reason, it can be considered useful specially in constrained implementations like fixed-width environments.</p>
       </section>
 
       <section id="h_combination_of_the_mechanisms">
         <h2>Combination of the Mechanisms</h2>
+
+        <p>Each of the above six mechanisms have their own limitations and side effects. Utilizing only one of them for justifying paragraphs can create undesirable results. Multiple mechanisms can be used at the same time to work around their limitations and minimize their side effects.</p>
+
+        <p>Since Arabic provides various mechanisms that can be used for justification, an advanced implementation that supports all or most of the above features can produce exemplary justifications. More limited applications can combine what is available.</p>
+
+        <p>Preferences for each mechanisms can depend on the document and text and the preference of the typographers and users. Implementations can enable users to prioritize and control the mechanisms mentioned above.</p>
       </section>
     </section>
 
