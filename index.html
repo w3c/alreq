@@ -577,10 +577,10 @@
     </section>
 
     <section id="h_justification">
-      <h2><a href="#h_justification">Justification</a></h2>
+      <h3><a href="#h_justification">Justification</a></h3>
 
       <div class="note">
-        <h3>Notes, Links, …</h3>
+        <h4>Notes, Links, …</h4>
 
         <ul>
           <li>Drop “elongation” from title of this section. It’s one of the mechanisms used for justification.</li>
@@ -640,16 +640,16 @@
         </section>
       </div>
 
-      <p>Of the four basic justification methods (flush left, flush right, justified, and centered), justified is the most challenging, as it requires changing the widths of the lines to a pre-defined measure. <span class="qterm">Measure</span> refers to the width of a column of text. In a justified paragraph the width of all the lines should be the same as the paragraph’s measure (except, of course, the list line).</p>
+      <p>Of the four basic justification methods (flush left, flush right, justified, and centered), justified is the most challenging, as it requires changing the widths of the lines to a pre-defined measure. <span class="qterm">Measure</span> refers to the width of a column of text. In a justified paragraph the width of all the lines should be the same as the paragraph’s measure (except, of course, the last line).</p>
 
       <p>In Arabic there are six mechanisms for changing the width of a line of text. Each one has its limitations and considerations on when and how it can be applied. Furthermore, different typographers and calligraphers have divergent preferences for these mechanisms.</p>
 
-      <p>An important factor in the application of these mechanisms is they success in creating an even <span class="qterm">color</span>. The color of the text refers to the amount of ink/blackness used to print or show a block of text. Color describes the density of the text against its background. Poorly justifying paragraphs can create uneven distribution of color.</p>
+      <p>An important factor in the application of these mechanisms is their success in creating an even <span class="qterm">color</span>. The color of the text refers to the amount of ink/blackness used to print or show a block of text. Color describes the density of the text against its background. Poorly justifying paragraphs can create uneven distribution of color.</p>
 
       <p>These mechanisms are not exclusive. Quite the contrary, they are commonly used simultaneously to produce better justified paragraphs. Combination of these mechanisms is discussed in <a href="#h_combination_of_the_mechanisms">Combination of the Mechanisms</a>.</p>
 
       <section id="h_adjusting_inter_word_spaces">
-        <h2>Adjusting Inter-Word Spaces</h2>
+        <h4>Adjusting Inter-Word Spaces</h4>
 
         <p>This is the same mechanism widely used when justifying Latin scripts, where the width of the spaces between the words can be increased or decreased to change the width of the line.</p>
 
@@ -667,7 +667,7 @@
       </section>
 
       <section id="h_adjusting_intra_word_spaces">
-        <h2>Adjusting Intra-Word Spaces</h2>
+        <h4>Adjusting Intra-Word Spaces</h4>
 
         <p>This solution alters the space between letters of each word to change the width of the text. Like adjusting inter-word spaces, this is used for Latin scripts as well, but using it for Arabic script involves considerations specific to Arabic. As noted in <a href="#h_joining_and_spacing">Joining and Intra-Word Spaces</a>, the principal consideration is that gaps between characters only exist for those letters that join only to the right, such as <span class="lettername">dal</span> and <span class="lettername">reh</span> . Adjustment of intra-word space is not relevant where one letter is joined to its neighbors.</p>
 
@@ -680,8 +680,8 @@
         <p>Depending on the writing style and the typeface in use, different amounts of alteration to the intra-word space is acceptable for Arabic. Some writing styles allow more liberal adjustments to the closeness of the letter groups, while others can only accept small adjustments in this regard. In any case, much smaller adjustments can be used for intra-word spacing in comparison for inter-word spacing, which naturally is wider and tolerate bigger adjustments.</p>
       </section>
 
-      <section>
-        <h2>Alternative Shapes</h2>
+      <section id="h_alternative_shapes">
+        <h4>Alternative Shapes</h4>
 
         <p>In addition to the four joining forms (isolated, initial, medial, and final), each Arabic letter can come with different shapes while preserving its joining form. For instance, a typeface or writing style can offer two or more shapes for the final form of a single letter.</p>
 
@@ -700,8 +700,8 @@
         <p>It is not possible to justify paragraphs using only alternative letter shapes, because these shapes have predefined widths. For example, if a line should get 25 points wider, it is impossible to achieve that by using alternative letter shapes that are, say, 10 or 20 or 30 points wider than the default shapes. But these shapes can make the lines closer to measure, thus reducing the usage of other mechanisms.</p>
       </section>
 
-      <section>
-        <h2>Ligatures</h2>
+      <section id="h_justification_ligatures">
+        <h4>Ligatures</h4>
 
         <p>Some Arabic fonts, following the writing styles that use special shapes when joining certain letters, provide a rich number of ligatures. These ligatures can be used in paragraph justification, since they usually reduce the widths of the words.</p>
 
@@ -716,16 +716,72 @@
         <p>For that reason, the user should be able to select which sets of ligatures can be used for justification. Fonts can offer predefined sets of ligatures to simplify this process.</p>
       </section>
 
-      <section>
-        <h2>Kashida</h2>
+      <section id="h_justification_kashida">
+        <h4>Kashida</h4>
+
+        <p>Kashida refers to extending the horizontal connection between joined letters.</p>
+
+        <figure>
+          <img src="images/kashida.png" alt="Two words extended with kashida.">
+
+          <figcaption>Two words extended with kashida.</figcaption>
+        </figure>
+
+        <p>This is a feature deeply related with the cursive nature of Arabic script. Kashida is an interesting tool for paragraph justification. It is more flexible than alternative letter shapes and ligatures, because it is not restricted to a limited number of predefined widths. At the same time, it has relatively less effect on the text color than spacing.</p>
+
+        <p>But a proper implementation of kashida involves a number of limitations and considerations.</p>
+
+        <p>Excessive use of kashida or applying very long kashidas results in uneven color. Also, horizontal or vertical proximity of numerous kashida creates an unnatural color.</p>
+
+        <figure>
+          <img src="images/too-much-kashida.png" alt="Unpleasant result of excessive use of kashida.">
+
+          <figcaption>Unpleasant result of excessive use of kashida.</figcaption>
+        </figure>
+
+        <p>Kashida is not always straight. Some fonts may require curvilinear kashidas, which require more advanced implementations.</p>
+
+        <figure>
+          <img src="images/curvilinear-kashida.gif" alt="Curvilinear kashida">
+
+          <figcaption>Curvilinear kashida</figcaption>
+        </figure>
+
+        <p>Typographers can have preferred places for applying kashidas. In other words, instead of applying kashida between every joined pair of letters, they want it at certain joins.</p>
+
+        <figure>
+          <img src="images/tanzil.png" alt="There are multiple joins in this word, but only one is selected for kashida.">
+
+          <figcaption>There are multiple joins in this word, but only one is selected for kashida.</figcaption>
+        </figure>
+
+        <p>Another preference is avoiding multiple kashidas in a single word.</p>
       </section>
 
-      <section>
-        <h2>Tatweel</h2>
+      <section id="h_justification_tatweel">
+        <h4>Tatweel</h4>
+
+        <p>Tatweel is a dual-joining character that can be inserted between two joined letters to widen their connection. In The Unicode Standard, tatweel is represented as <span class="uname">U+0640 ARABIC TATWEEL</span> (<span dir="rtl" lang="ar">ـ</span>).</p>
+
+        <figure>
+          <img src="images/tatweel.svg" alt="Tatweel">
+
+          <figcaption>Tatweel</figcaption>
+        </figure>
+
+        <p>Tatweel extends letter connections in a fashion similar to kashida, but in a much more limited way. It is a character that has to be in the text or inserted like other characters. It has a predefined width, like any other character.</p>
+
+        <p>Yet it is much simpler to implement, since it acts like normal Arabic characters and does not require special treatment. For this reason, it can be considered useful specially in constrained implementations like fixed-width environments.</p>
       </section>
 
       <section id="h_combination_of_the_mechanisms">
-        <h2>Combination of the Mechanisms</h2>
+        <h4>Combination of the Mechanisms</h4>
+
+        <p>Each of the above six mechanisms have their own limitations and side effects. Utilizing only one of them for justifying paragraphs can create undesirable results. Multiple mechanisms can be used at the same time to work around their limitations and minimize their side effects.</p>
+
+        <p>Since Arabic provides various mechanisms that can be used for justification, an advanced implementation that supports all or most of the above features can produce exemplary justifications. More limited applications can combine what is available.</p>
+
+        <p>Preferences for each mechanisms can depend on the document and text and the preference of the typographers and users. Implementations can enable users to prioritize and control the mechanisms mentioned above.</p>
       </section>
     </section>
 
