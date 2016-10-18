@@ -101,6 +101,16 @@
       <p>Unicode also has a partial set of <em>non-semantic</em> encoded characters for the Arabic script, under blocks <em>Arabic Presentation Forms-A</em> and <em>Arabic Presentation Forms-B</em>, which are deprecated and should not be used in general interchange.</p>
     </section>
 
+    <section id="h_characters">
+      <h3>Characters</h3>
+
+      <p>Arabic script uses Arabic alphabet, diacritics, numbers, punctuations and symbols, and control characters. Appendix <a href="#characters-tables"></a> lists these characters.</p>
+
+      <p>The majority of these characters are common among different languages. There are two different set of digits for 0–9 (<span class="uname">U+0660</span>–<span class="uname">U+0669</span> and <span class="uname">U+06F0</span>–<span class="uname">U+06F9</span>) used by different languages. Most of the alphabetical characters are used by all the languages using Arabic scripts, but there are exceptions, such as the Arabic letter <span class="lettername">yeh</span> being represented with two different characters, <span class="uname">U+064A ARABIC LETTER YEH</span> (<span lang="ar" dir="rtl">ي</span>) and <span class="uname">U+06CC ARABIC LETTER FARSI YEH</span> (<span lang="ar" dir="rtl">ی</span>). These differences among the character sets of each language are marked in the appendix tables.</p>
+
+      <p>Control characters are used to produce the correct spelling of the words or to ensure correct combination with left-to-right content. Consequently, they should be preserved when storing and displaying texts.</p>
+    </section>
+
     <section id="h_direction">
       <h3>Direction</h3>
 
@@ -171,7 +181,7 @@
           <li><strong>Final shape:</strong> Used when the letter is joined only to its previous (right-side) letter.</li>
         </ul>
 
-        <p>shows all four shapes of character <span class="uname">U+0645 ARABIC LETTER MEEM</span> (<span dir="rtl" lang="ar">م</span>).</p>
+        <p><a href="#letter_shapes"></a> shows all four shapes of character <span class="uname">U+0645 ARABIC LETTER MEEM</span> (<span dir="rtl" lang="ar">م</span>).</p>
 
         <figure id="letter_shapes">
           <img src="images/letter-shapes.png" alt="Four different shapes for joining to previous or succeeding letters">
@@ -179,7 +189,7 @@
           <figcaption>Four different shapes for joining to previous or succeeding letters</figcaption>
         </figure>
 
-        <p>For each Arabic letter, based on the joining behavior of its neighbors, one of its shapes is used in writing. demonstrates how letters join to form a word.</p>
+        <p>For each Arabic letter, based on the joining behavior of its neighbors, one of its shapes is used in writing. <a href="#joining_process"></a> demonstrates how letters join to form a word.</p>
 
         <figure id="joining_process">
           <img src="images/joining-process.png" alt="Joining letters by using their various shapes">
@@ -209,7 +219,7 @@
       <section id="h_ligatures">
         <h4>Ligatures</h4>
 
-        <p>Almost all the writing styles of Arabic script use a special shape when letters <span class="lettername">lam</span> and <span class="lettername">alef</span> are joined. Most Arabic fonts include mandatory ligatures for this combination. Ignoring this ligature, as shown in , leads to wrong rendering of text.</p>
+        <p>Almost all the writing styles of Arabic script use a special shape when letters <span class="lettername">lam</span> and <span class="lettername">alef</span> are joined. Most Arabic fonts include mandatory ligatures for this combination. Ignoring this ligature, as shown in <a href="#laam-alef-ligature"></a>, leads to wrong rendering of text.</p>
 
         <figure id="laam-alef-ligature">
           <img src="images/laam-alef-ligature.png" alt="Correct and wrong ways of rendering letter lam followed by letter alef">
@@ -219,6 +229,19 @@
 
         <p>This shape is not limited to the combination of <span class="uname">U+0644 ARABIC LETTER LAM</span> (<span dir="rtl" lang="ar">ل</span>) with <span class="uname">U+0627 ARABIC LETTER ALEF</span> (<span dir="rtl" lang="ar">ا</span>). Variations of letter <span class="lettername">alef</span> such as <span class="uname">U+0622 ARABIC LETTER ALEF WITH MADDA ABOVE</span> (<span dir="rtl" lang="ar">آ</span>) and <span class="uname">U+0623 ARABIC LETTER ALEF WITH HAMZA ABOVE</span> (<span dir="rtl" lang="ar">أ</span>) and also variations of letter <span class="lettername">lam</span> follow the same rules as well. Combination with diacritics does not affect these ligatures. Each of these ligatures also provides a special shape for joining from its right side (to the preceding letter).</p>
       </section>
+    </section>
+
+    <section id="h_diacritics">
+      <h3>Diacritics</h3>
+      <p>More than one diacritics can appear after a single character subsequently and all of them should be applied over the same character. Font files usually define special shapes or positioning for combination of diacritics. These extra information should be applied in rendering texts.</p>
+      <p><a href="#combining_diacritics"></a> shows an example, where, according to this font’s specification, combining U+0651 ARABIC SHADDA and U+0650 ARABIC KASRA changes their positions. Various font files may require different transformations.</p>
+      <figure id="combining_diacritics">
+        <img src="images/combining-diacritics.png" alt=
+             "Diacritics could be combined in Arabic script." width="90%">
+        <figcaption>
+          Diacritics could be combined in Arabic script.
+        </figcaption>
+      </figure>
     </section>
 
     <section id="h_font_and_typographical_considerations">
