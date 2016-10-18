@@ -246,6 +246,18 @@
             <figcaption>Applying transparency to Arabic letters should not expose their joining overlaps.</figcaption>
           </figure>
         </section>
+
+        <section id="h_joining_and_text_border">
+          <h5>Text border</h5>
+
+          <p>When adding text border, simply adding a border to each letter shape fails to produce the proper result for Arabic. A joined letter should not be separated from its joined neighbors by adding border. Like transparency, a way to avoid this is to unify glyph paths into a single big path for all the letters that are joined and add border around that path.</p>
+
+          <figure id="joining-and-text-border">
+            <img src="images/joining-and-text-border.svg" alt="Text border should not expose joinings.">
+
+            <figcaption>Text border should not expose joinings.</figcaption>
+          </figure>
+        </section>
       </section>
     </section>
 
