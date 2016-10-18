@@ -227,7 +227,7 @@
       <section id="h_visual_styles_and_joining">
         <h4>Applying visual styles to joined letters</h4>
 
-        <p>The cursive nature of the Arabic script requires more attention when styling individual letters.</p>
+        <p>The cursive nature of the Arabic script requires more attention when applying some visual styles to the texts. It mostly occurs when the implementation assumes letters as separated shapes and does not account for cursive scripts.</p>
 
         <section id="h_joining_and_spacing">
           <h5>Joining and Intra-Word Spaces</h5>
@@ -238,7 +238,7 @@
         <section id="h_joining_and_transparency">
           <h5>Transparency</h5>
 
-          <p>Arabic fonts achieve joining by overlapping letters. A left-joining letter extends out of its bounding box from the left side and a right-joining letter extends out of its bounding box from the right side. Making each letter transparent exposes these overlapping joinings. This should be avoided. Joining the paths of the joined letter into a single shape can remove the overlappings and create the good results.</p>
+          <p>Arabic fonts achieve joining by overlapping letters. A left-joining letter extends out of its bounding box from the left side and a right-joining letter extends out of its bounding box from the right side. Making each letter transparent can expose these overlapping joinings, which should be avoided. Joining the paths of the joined letter into a single shape can remove the overlappings and create the good results.</p>
 
           <figure id="joining-and-transparency">
             <img src="images/joining-and-transparency.svg" alt="Applying transparency to Arabic letters should not expose their joining overlaps.">
@@ -250,7 +250,7 @@
         <section id="h_joining_and_text_border">
           <h5>Text border</h5>
 
-          <p>When adding text border, simply adding a border to each letter shape fails to produce the proper result for Arabic. A joined letter should not be separated from its joined neighbors by adding border. Like transparency, a way to avoid this is to unify glyph paths into a single big path for all the letters that are joined and add border around that path.</p>
+          <p>When adding text border, simply adding a border to each letter shape fails to produce the proper result for the Arabic script. A joined letter should not be separated from its joined neighbors by adding border. Like transparency, a way to avoid this is to unify glyph paths into a single big path for all the letters that are joined and add border around that path.</p>
 
           <figure id="joining-and-text-border">
             <img src="images/joining-and-text-border.svg" alt="Text border should not expose joinings.">
