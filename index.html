@@ -229,6 +229,24 @@
 
         <p>The only spaces inside Arabic words are created near characters that are not dual-joining. When adjusing intra-word spaces (i.e. the space inside the words) only these spaces can be adjusted. Moving two joined characters closer to or further from each other creates undesirable results.</p>
       </section>
+
+      <section id="h_visual_styles_and_joining">
+        <h4>Applying visual styles to joined letters</h4>
+
+        <p>The cursive nature of the Arabic script requires more attention when styling individual letters.</p>
+
+        <section id="h_joining_and_transparency">
+          <h5>Transparency</h5>
+
+          <p>Arabic fonts achieve joining by overlapping letters. A left-joining letter extends out of its bounding box from the left side and a right-joining letter extends out of its bounding box from the right side. Making each letter transparent exposes these overlapping joinings. This should be avoided. Joining the paths of the joined letter into a single shape can remove the overlappings and create the good results.</p>
+
+          <figure id="joining-and-transparency">
+            <img src="images/joining-and-transparency.svg" alt="Applying transparency to Arabic letters should not expose their joining overlaps.">
+
+            <figcaption>Applying transparency to Arabic letters should not expose their joining overlaps.</figcaption>
+          </figure>
+        </section>
+      </section>
     </section>
 
     <section id="h_diacritics">
