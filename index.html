@@ -208,12 +208,6 @@
         <p>Almost all the non-alphabetical characters are <span class="qterm">non-joining</span>. The few exceptions will be discussed in this document.</p>
 
         <p>Please refer to The Unicode Standard Version 8.0, Section 9.2, for full explanation of Arabic cursive joining.</p>
-
-        <section id="h_joining_and_spacing">
-          <h5>Joining and Intra-Word Spaces</h5>
-
-          <p>The only spaces inside Arabic words are created near characters that are not dual-joining. When adjusing intra-word spaces (i.e. the space inside the words) only these spaces can be adjusted. Moving two joined characters closer to or further from each other creates undesirable results.</p>
-        </section>
       </section>
 
       <section id="h_ligatures">
@@ -578,15 +572,60 @@
     </section>
 
     <section id="h_letterhighlights">
+      <h3>Special requirements when dealing with cursive glyphs</h3>
       <h3><a href="#h_letterhighlights">Special requirements when dealing with cursive glyphs</a></h3>
-      <p>It may be necessary to highlight a part of a cursive word. For example, this is the logo of the largest telecommunications provider in Oman.</p>
-      <figure><img src="images/omantel.jpg" alt="Omantel logo"/>
-      <figcaption>Colour changes across joining characters in the logo for Omantel.</figcaption>
-      </figure>
-      
-      <p>&lt;add Mostafa's text at https://github.com/w3c/alreq/issues/4 here also&gt;</p>
-      <p>In other cases, effects such as transparency and borders on glyphs need to be handled with care.</p>
-      <p>&lt;add Mostafa's examples at https://github.com/w3c/alreq/issues/3&gt;</p>
+
+      <p>The cursive nature of the Arabic script requires more attention when applying some visual styles to the texts. It mostly occurs when the implementation assumes letters as separated shapes and does not account for cursive scripts.</p>
+
+      <section id="h_joining_and_spacing">
+        <h4>Joining and Intra-Word Spaces</h4>
+
+        <p>The only spaces inside Arabic words are created near characters that are not dual-joining. When adjusing intra-word spaces (i.e. the space inside the words) only these spaces can be adjusted. Moving two joined characters closer to or further from each other creates undesirable results.</p>
+      </section>
+
+      <section id="h_joining_and_transparency">
+        <h4>Transparency</h4>
+
+        <p>Arabic fonts achieve joining by overlapping letters. A left-joining letter extends out of its bounding box from the left side and a right-joining letter extends out of its bounding box from the right side. Making each letter transparent can expose these overlapping joinings, which should be avoided. Joining the paths of the joined letter into a single shape can remove the overlappings and create the good results.</p>
+
+        <figure id="joining-and-transparency">
+          <img src="images/joining-and-transparency.svg" alt="Applying transparency to Arabic letters should not expose their joining overlaps.">
+
+          <figcaption>Applying transparency to Arabic letters should not expose their joining overlaps.</figcaption>
+        </figure>
+      </section>
+
+      <section id="h_joining_and_text_border">
+        <h4>Text border</h4>
+
+        <p>When adding text border, simply adding a border to each letter shape fails to produce the proper result for the Arabic script. A joined letter should not be separated from its joined neighbors by adding border. Like transparency, a way to avoid this is to unify glyph paths into a single big path for all the letters that are joined and add border around that path.</p>
+
+        <figure id="joining-and-text-border">
+          <img src="images/joining-and-text-border.svg" alt="Text border should not expose joinings.">
+
+          <figcaption>Text border should not expose joinings.</figcaption>
+        </figure>
+      </section>
+
+      <section id="h_styling_individual_letters">
+        <h4>Styling individual letters</h4>
+
+        <p>For educational, technical, or even aesthetic reasons, users might want to apply a specific style to a single letter (or a few letters) in a word. For example, <a href="#omantel_logo_photo"></a> is the logo of the largest telecommunications provider in Oman.</p>
+
+        <figure id="omantel_logo_photo">
+          <img src="images/omantel.jpg" alt="Omantel logo"/>
+
+          <figcaption>Colour changes across joining characters in the logo for Omantel.</figcaption>
+        </figure>
+
+        <p>This should not break the letter’s joining with its neighbors, as shown in <a href="#styling-individual-letters"></a>.</p>
+
+        <figure id="styling-individual-letters">
+          <img src="images/styling-individual-letters.svg" alt="Applying style to a single letter should not interfere with its joining properties.">
+
+          <figcaption>Applying style to a single letter should not interfere with its joining properties.</figcaption>
+        </figure>
+      </section>
     </section>
 
 
