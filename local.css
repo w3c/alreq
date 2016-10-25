@@ -21,7 +21,6 @@ h4  {
 .leadin {
   font-weight: bold;
 }
-
 ins {
   background-color: #99FF99;
   text-decoration: none;
@@ -71,6 +70,12 @@ a.termref:active {
   text-decoration:none;
   border-bottom: 1px dotted #FC0;
 }
+a .fig-title { 
+	display: none;
+	}
+a .figno:after {
+	content: '';
+	}
 
 .qterm:before, .qchar:before { content: "‘"; }
 

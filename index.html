@@ -81,20 +81,20 @@
   </div>
 
   <section id="h_introduction">
-    <h2>Introduction</h2>
+    <h2><a href="#h_introduction">Introduction</a></h2>
 
     <section id="h_about_this_document">
-      <h3>About this document</h3>
+      <h3><a href="#h_about_this_document">About this document</a></h3>
 
       <p>Some text goes here.</p>
     </section>
   </section>
 
   <section id="h_arabic_script_overview">
-    <h2>Arabic Script Overview</h2>
+    <h2><a href="#h_arabic_script_overview">Arabic Script Overview</a></h2>
 
     <section id="h_encoding">
-      <h3>Encoding</h3>
+      <h3><a href="#h_encoding">Encoding</a></h3>
 
       <p>Arabic script is encoded in the Unicode standard <em>semantically</em>, meaning that every letter receives only a single Unicode character, no matter how many different contextual shapes it may exhibit.</p>
 
@@ -102,7 +102,7 @@
     </section>
 
     <section id="h_characters">
-      <h3>Characters</h3>
+      <h3><a href="#h_characters">Characters</a></h3>
 
       <p>Arabic script uses Arabic alphabet, diacritics, numbers, punctuations and symbols, and control characters. Appendix <a href="#characters-tables"></a> lists these characters.</p>
 
@@ -112,7 +112,7 @@
     </section>
 
     <section id="h_direction">
-      <h3>Direction</h3>
+      <h3><a href="#h_direction">Direction</a></h3>
 
       <p>Arabic script is written from right to left. Numbers, even Arabic numbers, are written from left to right, as is text in a script that is normally left-to-right.</p>
 
@@ -164,7 +164,7 @@
     </section>
 
     <section id="h_joining">
-      <h3>Joining</h3>
+      <h3><a href="#h_joining">Joining</a></h3>
 
       <section id="h_joining_behavior_of_characters">
         <h4>Joining Behavior of Characters</h4>
@@ -232,7 +232,7 @@
     </section>
 
     <section id="h_diacritics">
-      <h3>Diacritics</h3>
+      <h3><a href="#h_diacritics">Diacritics</a></h3>
       <p>More than one diacritics can appear after a single character subsequently and all of them should be applied over the same character. Font files usually define special shapes or positioning for combination of diacritics. These extra information should be applied in rendering texts.</p>
       <p><a href="#combining_diacritics"></a> shows an example, where, according to this font’s specification, combining U+0651 ARABIC SHADDA and U+0650 ARABIC KASRA changes their positions. Various font files may require different transformations.</p>
       <figure id="combining_diacritics">
@@ -245,7 +245,7 @@
     </section>
 
     <section id="h_font_and_typographical_considerations">
-      <h3>Font and Typographical considerations</h3>
+      <h3><a href="#h_font_and_typographical_considerations">Font and Typographical considerations</a></h3>
 
       <section id="h_arabic_style_and_calligraphy">
         <h4>Arabic Style and Calligraphy</h4>
@@ -511,10 +511,10 @@
   </section>
 
   <section id="h_characters_and_words">
-    <h2>Characters and Words</h2>
+    <h2><a href="#h_characters_and_words">Characters and Words</a></h2>
 
     <section id="h_punctuation">
-      <h3>Punctuation</h3>
+      <h3><a href="#h_punctuation">Punctuation</a></h3>
       <div class="questions">
         <p>Issues/questions:</p>
 
@@ -527,7 +527,7 @@
     </section>
 
     <section id="h_segmentation">
-      <h3>Text segmentation</h3>
+      <h3><a href="#h_segmentation">Text segmentation</a></h3>
       <p>Word, sentence and paragraph boundaries are largely deliminated by spaces and punctuation as in most Latin script text.</p>
       <p>However, there are exceptions, such as the "و" conjunction in Arabic orthography, "ل" before a non-Arabic script noun, and the misuse of space in place of ZWNJ in some Arabic script languages.</p>
       <div class="questions">
@@ -540,8 +540,8 @@
       </div>
     </section>
 
-    <section id="h_diacritics">
-      <h3>Positioning diacritics relative to base characters</h3>
+    <section id="h_diacritic_position">
+      <h3><a href="#h_diacritics">Positioning diacritics relative to base characters</a></h3>
       <p>In Arabic script text it is unusual to use diacritics for vowel information and for consonant lengthening. If they are used, however, there are different approaches to their placement relative to the base characters they modify. Some fonts display short vowel diacritics at the same height, while others vary the height according to the base character.</p>
       <p>Another potential difference arises when a short i vowel diacritic is used with a shadda. In some cases the vowel diacritic remains below the base letter, whereas in other cases the vowel diacritic appears above the base letter, but under the shadda (so that it can be distinguished from the short a vowel diacritic, which appears above the shadda).</p>
 
@@ -559,7 +559,7 @@
     </section>
 
     <section id="h_letterspacing">
-      <h3>Letter-spacing</h3>
+      <h3><a href="#h_letterspacing">Letter-spacing</a></h3>
       <p>There are situations where  Arabic text is stretched for reasons other than justification. Common instances include:</p>
       <ul>
       <li>In  a heading, or a word on a street sign to make it more visible.</li>
@@ -578,11 +578,12 @@
     </section>
 
     <section id="h_letterhighlights">
-      <h3>Special requirements when dealing with cursive glyphs</h3>
+      <h3><a href="#h_letterhighlights">Special requirements when dealing with cursive glyphs</a></h3>
       <p>It may be necessary to highlight a part of a cursive word. For example, this is the logo of the largest telecommunications provider in Oman.</p>
       <figure><img src="images/omantel.jpg" alt="Omantel logo"/>
       <figcaption>Colour changes across joining characters in the logo for Omantel.</figcaption>
       </figure>
+      
       <p>&lt;add Mostafa's text at https://github.com/w3c/alreq/issues/4 here also&gt;</p>
       <p>In other cases, effects such as transparency and borders on glyphs need to be handled with care.</p>
       <p>&lt;add Mostafa's examples at https://github.com/w3c/alreq/issues/3&gt;</p>
@@ -590,7 +591,7 @@
 
 
     <section id="h_italicetc">
-      <h3>Handling oblique and italicised text in Arabic</h3>
+      <h3><a href="#h_italicetc">Handling oblique and italicised text in Arabic</a></h3>
       <p>Describe the problem here.</p>
       <div class="questions">
         <p>Issues/questions:</p>
@@ -603,7 +604,7 @@
     </section>
 
     <section id="h_mixedscript">
-      <h3>Considerations for mixed-script text</h3>
+      <h3><a href="#h_mixedscript">Considerations for mixed-script text</a></h3>
       <p>Arabic ascenders and descenders extend much further than those of the Latin script, and care must be taken to correctly align text in the different scripts when they appear together.</p>
       <div class="questions">
         <p>Issues/questions:</p>
@@ -616,7 +617,7 @@
 
 
     <section id="h_numbers">
-      <h3>Arabic numbering</h3>
+      <h3><a href="#h_numbers">Arabic numbering</a></h3>
       <p>Arabic script uses non-European digits for numbers in certain locales and situations.</p>
       <p>Arabic digits are also used for counters (see ).</p>
     <div class="questions">
@@ -632,10 +633,10 @@
   </section>
 
   <section id="h_lines_and_paragraphs">
-<h2>Lines and Paragraphs</h2>
+<h2><a href="#h_lines_and_paragraphs">Lines and Paragraphs</a></h2>
 
     <section id="h_line_breaking">
-      <h3>Line breaking</h3>
+      <h3><a href="#h_line_breaking">Line breaking</a></h3>
 
       <p>When Arabic text doesn't fit within the available line width, the text is wrapped to the next line between words.</p>
 
@@ -689,7 +690,7 @@
     </section>
 
     <section id="h_justification">
-      <h3>Justification</h3>
+      <h3><a href="#h_justification">Justification</a></h3>
 
       <div class="note">
         <h4>Notes, Links, …</h4>
@@ -898,7 +899,7 @@
     </section>
 
     <section id="h_para_line_alignment">
-      <h3>Paragraph and line alignment</h3>
+      <h3><a href="#h_para_line_alignment">Paragraph and line alignment</a></h3>
 
       <p>Lines of Arabic script text are normally right aligned within the page.</p>
 
@@ -916,7 +917,7 @@
   
   
   <section id="h_tabs">
-    <h3>Tab settings</h3>
+    <h3><a href="#h_tabs">Tab settings</a></h3>
 <div class="questions">
   <p>Issues/questions:</p>
   <ul>
@@ -926,7 +927,7 @@
   </section>
   
   <section id="h_firstletter">
-    <h3>Styling the initial text in a paragraph</h3>
+    <h3><a href="#h_firstletter">Styling the initial text in a paragraph</a></h3>
 <div class="questions">
   <p>Issues/questions:</p>
   <ul>
@@ -938,7 +939,7 @@
   
   
   <section id="h_counters">
-    <h3>Counters, lists, etc</h3>
+    <h3><a href="#h_counters">Counters, lists, etc</a></h3>
 <p>Arabic script text may use special counter styles for lists, numbering headings, pages, etc., based on Arabic script characters. </p>
 <div class="questions">
   <p>Issues/questions:</p>
@@ -951,7 +952,7 @@
   
   
   <section id="h_paragraphspecial">
-    <h3>Special cases</h3>
+    <h3><a href="#h_paragraphspecial">Special cases</a></h3>
 <div class="questions">
   <p>Issues/questions:</p>
   <ul>
@@ -963,7 +964,7 @@
   </section>
 
   <section id="h_pages">
-    <h2>Pages</h2>
+    <h2><a href="#h_pages">Pages</a></h2>
 
 
     <p>Topic Keywords:</p>
@@ -1000,7 +1001,7 @@
   </section>
 
   <section id="h_document">
-    <h2>Document</h2>
+    <h2><a href="#h_document">Document</a></h2>
 
     <p>Topic Keywords:</p>
 
@@ -1020,12 +1021,12 @@
   </section>
 
   <section class="appendix" id="characters-tables">
-    <h2>Characters</h2>
+    <h2><a href="#characters-tables">Characters</a></h2>
 
     <p>The following tables list Unicode characters used for Arabic script, excluding ASCII. Each table has two columns named <span class="qterm">Ar</span> and <span class="qterm">Fa</span> which denote which characters are used for Arabic or Persian languages, respectively. A black circle (●) under each of these two columns means that a character is used for that language. A white circle (○) denotes a character that is auxiliary for that language. An X mark (✕) means the character is not used for that langauge.</p>
 
     <section id="h_character_tables_alphabetical_characters">
-      <h3>Alphabetical characters</h3>
+      <h3><a href="#h_character_tables_alphabetical_characters">Alphabetical characters</a></h3>
 
       <table class="characters">
         <thead>
@@ -1647,7 +1648,7 @@
     </section>
 
     <section id="h_character_tables_diacritics">
-      <h3>Diacritics</h3>
+      <h3><a href="#h_character_tables_diacritics">Diacritics</a></h3>
 
       <table class="characters">
         <thead>
@@ -1813,7 +1814,7 @@
     </section>
 
     <section id="h_character_tables_numeral_characters">
-      <h3>Numeral characters</h3>
+      <h3><a href="#h_character_tables_numeral_characters">Numeral characters</a></h3>
 
       <table class="characters">
         <thead>
@@ -2075,7 +2076,7 @@
     </section>
 
     <section id="h_character_tables_punctuations_and_symbols">
-      <h3>Punctuations and symbols</h3>
+      <h3><a href="#h_character_tables_punctuations_and_symbols">Punctuations and symbols</a></h3>
 
       <table class="characters">
         <thead>
@@ -2313,7 +2314,7 @@
     </section>
 
     <section id="h_character_tables_control_characters">
-      <h3>Control characters</h3>
+      <h3><a href="#h_character_tables_control_characters">Control characters</a></h3>
 
       <table class="characters">
         <thead>
@@ -2544,7 +2545,7 @@
   </section>
 
   <section class="appendix" id="glossary">
-    <h2>Glossary</h2>
+    <h2><a href="#glossary">Glossary</a></h2>
 
     <table class="glossary">
       <thead>
@@ -5544,7 +5545,7 @@
   </section>
 
   <section class="appendix" id="acknowledgements">
-    <h2>Acknowledgements</h2>
+    <h2><a href="#acknowledgements">Acknowledgements</a></h2>
 
     <p>Special thanks to the following people who contributed to this document (contributors' names listed in in alphabetic order).</p>
 
