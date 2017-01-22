@@ -68,7 +68,7 @@ markup.section(class: 'appendix', id: "characters-tables") {
 					tr(id: "def_${row['UCS']}") {
 						if (row['hasImage']) {
 							td (class: 'rtlTermCell', lang: 'ar') {
-								img (src: 'images/characters/'+row['UCS']+'.svg', alt: row['Character'], class: 'charimage')
+								img (src: 'images/characters/'+row['UCS']+'.svg', alt: row['Name'], class: 'charimage')
 							}
 						} else {
 							td (class: 'rtlTermCell', lang: 'ar', row['Character'])
