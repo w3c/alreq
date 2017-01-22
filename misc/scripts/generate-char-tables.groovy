@@ -3,7 +3,7 @@
         @GrabConfig(systemClassLoader = true)
         ])
 
-			
+
 import au.com.bytecode.opencsv.CSVReader
 import groovy.xml.MarkupBuilder
 
@@ -67,11 +67,11 @@ markup.section(class: 'appendix', id: "characters-tables") {
 				{ row ->
 					tr(id: "def_${row['UCS']}") {
 						if (row['hasImage']) {
-							td (lang: 'ar', class: 'rtlTermCell') {
+							td (class: 'rtlTermCell', lang: 'ar') {
 								img (src: 'images/characters/'+row['UCS']+'.svg', alt: row['Character'], class: 'charimage')
 							}
 						} else {
-							td (lang: 'ar', class: 'rtlTermCell', row['Character'])
+							td (class: 'rtlTermCell', lang: 'ar', row['Character'])
 						}
 						td (class: 'uname', row['UCS'])
 						td (class: 'uname', row['Name'])
