@@ -1,38 +1,25 @@
 #Arabic Layout Requirements document#
 
-Development version: http://w3c.github.io/alreq/
+###Documents
+- [Editor's copy](https://w3c.github.io/alreq/)
 
-This document is being developed by the [Arabic Layout Task
-Force](http://www.w3.org/International/groups/arabic-layout/) and the [W3C
-Internationalization Working Group](http://www.w3.org/International/core/).
+###Feedback
+Please use the [GitHub issue list](https://github.com/w3c/alreq/issues) to send feedback about this document.
 
-Feedback about the content of this document can be submitted via issues or pull
-request in this GitHub repo. 
+###Following
+To follow the work, you can 'Watch' this repository using the control above, or subscribe to the [public-i18n-arabic](https://lists.w3.org/Archives/Public/public-i18n-arabic/) mailing list, which is notified once a day about changes to the repo. The [www-international](https://lists.w3.org/Archives/Public/www-international/) list is also notified daily. (Please use github issues rather than the mailing list to send feedback.) Meeting minutes are sent to public-i18n-arabic.
 
-If you prefer, you can also send comments to
-[public-i18n-arabic@w3.org](mailto:public-i18n-arabic-request@w3.org?subject=subscribe).
-You can also view the archives of this mailing list
-[here](http://lists.w3.org/Archives/Public/public-i18n-arabic/).
+###Contributing
 
-##Editorial guidelines:##
+All contributors should read and agree with [CONTRIBUTING.md](https://github.com/w3c/hlreq/blob/gh-pages/CONTRIBUTING.md).
 
-###Markup tips###
+Task force _members_ are expert contributors who participate actively in producing the work of the group, regularly contributing text and advice to create the outputs, and participating in meetings. For more information about becoming a task force member contact [Richard Ishida](mailto:ishida@w3.org). We welcome participation requests.
 
-Ids should go on section elements, not `hx` elements.
+Editors should be familiar with and use the following:
 
-```
-<section id="h_my_heading">
-<h2>My heading</h2>
-```
+- [Github guidelines for working with i18n documents](http://w3c.github.io/i18n-activity/guidelines/github)
+- [Editorial guidelines for working with i18n documents](http://w3c.github.io/i18n-activity/guidelines/editing)
 
-Ids on `dfn` elements should start with `def_`.
-
-Use the following markup for Unicode codepoint names:
-
-```
-<span class="uname">U+3002 IDEOGRAPHIC FULL STOP</span> [。]
-```
-
-For additional ideas about markup and styling in Internationalization Activity
-documents, especially wrt inline markup conventions, see
-http://www.w3.org/International/docs/styleguide
+###Links
+- [Task Force Home Page](https://w3c.github.io/i18n-activity/alreq/)
+- [Charter](https://www.w3.org/International/groups/arabic-layout/charter.html)
