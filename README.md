@@ -2,6 +2,7 @@
 
 ###Documents
 - [Editor's copy](https://w3c.github.io/alreq/)
+- [Glossary source](https://docs.google.com/spreadsheets/d/1nSxYKQm_mKroCmxU4fyJ-g70Eo1_mF89yHZg8YNOuzc/edit#gid=0) (temporary Google spreadsheet)
 
 ###Feedback
 Please use the [GitHub issue list](https://github.com/w3c/alreq/issues) to send feedback about this document.
