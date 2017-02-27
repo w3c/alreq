@@ -24,3 +24,4 @@ Editors should be familiar with and use the following:
 ###Links
 - [Task Force Home Page](https://w3c.github.io/i18n-activity/alreq/)
 - [Charter](https://www.w3.org/International/groups/arabic-layout/charter.html)
+- [Action tracker](https://www.w3.org/International/groups/arabic-layout/track/actions/open)
