@@ -43,9 +43,9 @@ markup.section(class: 'appendix', id: "glossary") {
                         tr(id: "def_${row['TERMINOLOGY'].replaceAll(' ', '')}") {
                             td row['TERMINOLOGY']
                             td (lang: 'ar', dir:'rtl', row['ARABIC'])
-                            td (lang: 'und-Latn-t-ar-m0-alaloc-2012', row['ARABIC TRANSLITERATION'])
+                            td (lang: 'ar-Latn-t-ar-m0-alaloc-2012', row['ARABIC TRANSLITERATION'])
                             td (lang: 'fa', dir:'rtl', row['PERSIAN'] != null ? row['PERSIAN'] : '')
-                            td (lang: 'und-Latn-t-fa-m0-ungen-2012', row['PERSIAN TRANSLITERATION'] != null ? row['PERSIAN TRANSLITERATION'] : '')
+                            td (lang: 'fa-Latn-t-fa-m0-ungen-2012', row['PERSIAN TRANSLITERATION'] != null ? row['PERSIAN TRANSLITERATION'] : '')
                             td row['DEFINITION'] != null ? row['DEFINITION'] : ''
                         }
                     }
