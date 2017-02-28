@@ -152,14 +152,25 @@ table.characters tr td .charimage {
 }
 
 table.characters tr td.langMark {
-    text-align: center;
+  text-align: center;
+  font-size: large;
 }
+table.characters tr td.langMarkYes, span.langMarkYes {
+  color: #008F4C;
+}
+table.characters tr td.langMarkAuxiliary, span.langMarkAuxiliary {
+  color: #0057A1;
+}
+table.characters tr td.langMarkNo, span.langMarkNo {
+  color: #C61D20;
+}
+
 .flexContainer {
 	display: flex;
 	flex-flow: row-reverse nowrap;
 }
 .flexContainer>* {
-	flex: 2;	
+	flex: 2;
 }.flexContainer figure {
 	flex: 1;
 	margin: 0;

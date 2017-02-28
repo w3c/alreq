@@ -34,6 +34,8 @@ tables.each {
 	}
 }
 
+markToClassName = ['✓': 'langMarkYes', '✲': 'langMarkAuxiliary', '✕': 'langMarkNo']
+
 tables.each {
 	it['rows'].each {
 		Boolean hasImage = new File('resources/char-images/'+it['UCS']+'.svg').exists()
@@ -75,8 +77,8 @@ markup.section(class: 'appendix', id: "characters-tables") {
 						}
 						td (class: 'uname', row['UCS'])
 						td (class: 'uname', row['Name'])
-						td (class: 'langMark', row['Ar'])
-						td (class: 'langMark', row['Fa'])
+						td (class: 'langMark '+markToClassName[row['Ar']], row['Ar'])
+						td (class: 'langMark '+markToClassName[row['Fa']], row['Fa'])
 					}
 				}
 			}
