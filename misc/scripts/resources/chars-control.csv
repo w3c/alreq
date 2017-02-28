@@ -1,4 +1,7 @@
 "Character","UCS","Name","Ar","Fa"
+"
+","U+000A","<control>","✕","✓"
+"","U+000D","<control>","✕","✓"
 "‌","U+200C","ZERO WIDTH NON-JOINER","✕","✓"
 "‍","U+200D","ZERO WIDTH JOINER","✕","✓"
 "‎","U+200E","LEFT-TO-RIGHT MARK","✲","✲"
