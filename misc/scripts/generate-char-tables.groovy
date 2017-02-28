@@ -35,6 +35,8 @@ tables.each {
 }
 
 markToClassName = ['✓': 'langMarkYes', '✲': 'langMarkAuxiliary', '✕': 'langMarkNo']
+markToTooltipAr = ['✓': 'Used for Arabic', '✲': 'Auxiliary for Arabic', '✕': 'Not used for Arabic']
+markToTooltipFa = ['✓': 'Used for Persian', '✲': 'Auxiliary for Persian', '✕': 'Not used for Persian']
 
 tables.each {
 	it['rows'].each {
@@ -77,8 +79,8 @@ markup.section(class: 'appendix', id: "characters-tables") {
 						}
 						td (class: 'uname', row['UCS'])
 						td (class: 'uname', row['Name'])
-						td (class: 'langMark '+markToClassName[row['Ar']], row['Ar'])
-						td (class: 'langMark '+markToClassName[row['Fa']], row['Fa'])
+						td (class: 'langMark '+markToClassName[row['Ar']], title: markToTooltipAr[row['Ar']], row['Ar'])
+						td (class: 'langMark '+markToClassName[row['Fa']], title: markToTooltipFa[row['Fa']], row['Fa'])
 					}
 				}
 			}
