@@ -3,7 +3,7 @@
         @GrabConfig(systemClassLoader = true)
         ])
 
-			
+
 import au.com.bytecode.opencsv.CSVReader
 import groovy.xml.MarkupBuilder
 
@@ -33,6 +33,10 @@ tables.each {
 		it['rows'].add(m)
 	}
 }
+
+markToClassName = ['✓': 'langMarkYes', '✲': 'langMarkAuxiliary', '✕': 'langMarkNo']
+markToTooltipAr = ['✓': 'Used for Arabic', '✲': 'Auxiliary for Arabic', '✕': 'Not used for Arabic']
+markToTooltipFa = ['✓': 'Used for Persian', '✲': 'Auxiliary for Persian', '✕': 'Not used for Persian']
 
 tables.each {
 	it['rows'].each {
@@ -67,16 +71,16 @@ markup.section(class: 'appendix', id: "characters-tables") {
 				{ row ->
 					tr(id: "def_${row['UCS']}") {
 						if (row['hasImage']) {
-							td (lang: 'ar', class: 'rtlTermCell') {
-								img (src: 'images/characters/'+row['UCS']+'.svg', alt: row['Character'], class: 'charimage')
+							td (class: 'rtlTermCell', lang: 'ar') {
+								img (src: 'images/characters/'+row['UCS']+'.svg', alt: row['Name'], class: 'charimage')
 							}
 						} else {
-							td (lang: 'ar', class: 'rtlTermCell', row['Character'])
+							td (class: 'rtlTermCell', lang: 'ar', row['Character'])
 						}
 						td (class: 'uname', row['UCS'])
 						td (class: 'uname', row['Name'])
-						td (class: 'langMark', row['Ar'])
-						td (class: 'langMark', row['Fa'])
+						td (class: 'langMark '+markToClassName[row['Ar']], title: markToTooltipAr[row['Ar']], row['Ar'])
+						td (class: 'langMark '+markToClassName[row['Fa']], title: markToTooltipFa[row['Fa']], row['Fa'])
 					}
 				}
 			}
