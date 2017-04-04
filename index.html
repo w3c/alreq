@@ -56,6 +56,40 @@
       // Team Contact.
       wgPatentURI:  "https://www.w3.org/2004/01/pp-impl/32113/status",
       // !!!! IMPORTANT !!!! MAKE THE ABOVE BLINK IN YOUR HEAD
+
+      localBiblio: {
+
+        "BIDI": {
+          "authors": [
+            "Mark Davis",
+            "Aharon Lanin",
+            "Andrew Glass"
+          ],
+          "href": "http://www.unicode.org/reports/tr9/",
+          "publisher": "Unicode Consortium",
+          "status": "Unicode Standard Annex #9",
+          "title": "Unicode Bidirectional Algorithm",
+          "id": "BIDI",
+        },
+
+        "UBA-BASICS": {
+          "authors": [
+            "Richard Ishida",
+          ],
+          "href": "https://www.w3.org/International/articles/inline-bidi-markup/uba-basics",
+          "publisher": "World Wide Web Consortium",
+          "title": "Unicode Bidirectional Algorithm basics",
+          "id": "UBA-BASICS",
+        },
+
+        "UNICODE": {
+          "href": "http://www.unicode.org/versions/latest/",
+          "publisher": "The Unicode Consortium",
+          "title": "The Unicode Standard",
+          "id": "UNICODE"
+        }
+
+      },
     };
   </script>
   <link rel="stylesheet" href="local.css" type="text/css">
@@ -118,7 +152,9 @@
 
       <p>When the main script is Arabic, the layout and structure of pages and documents are also set from right to left.</p>
 
-      <p><a href="http://www.unicode.org/reports/tr9/">Unicode Standard Annex #9, Unicode Bidirectional Algorithm</a> details an algorithm for rendering right-to-left text and covers a myriad of situations in mixing different kinds of characters. A simpler explanation of the basics of the algorithm exists in the W3C article <a href="https://www.w3.org/International/articles/inline-bidi-markup/uba-basics">Unicode Bidirectional Algorithm basics</a>. You can refer to these documents for more information about Unicode’s bidirectional algorithm.</p>
+      <p><a href="http://www.unicode.org/reports/tr9/">Unicode Bidirectional Algorithm</a> [[!BIDI]] details an algorithm for rendering right-to-left text and covers a myriad of situations in mixing different kinds of characters.
+      A simpler explanation of the basics of the algorithm exists in the W3C article <a href="https://www.w3.org/International/articles/inline-bidi-markup/uba-basics">Unicode Bidirectional Algorithm basics</a>. [[UBA-BASICS]]
+      You can refer to these documents for more information about Unicode’s bidirectional algorithm.</p>
 
       <p>A brief overview of the bidirectional (<span class="qterm">bidi</span> for short) algorithm follows, because the direction is an essential part of how Arabic script is used.</p>
 
@@ -160,7 +196,10 @@
 
       <p>Some characters, mostly punctuations, are <span class="qterm">neutral</span>. The direction of these characters is derived from their surrounding characters. If a neutral character is surrounded by characters of the same direction (e.g. an space surrounded by Arabic letters), it gets the direction of its neighbors. Otherwise (e.g. a space between an Arabic and a Latin, or a neutral character appearing at the start or the end of a paragraph), the neutral character gets its direction from the paragraph’s base direction. This is another effect of the base direction in the bidi algorithm.</p>
 
-      <p>The above explanation of the bidi algorithm is highly simplified, to convey only the essentials of how Arabic text is transformed for rendering. The actual algorithm deals with many more character types and edge cases. Please refer to <a href="https://www.w3.org/International/articles/inline-bidi-markup/uba-basics">Unicode Bidirectional Algorithm basics</a> for more information or <a href="http://www.unicode.org/reports/tr9/">Unicode Standard Annex #9, Unicode Bidirectional Algorithm</a> for the official detailed documentation.</p>
+      <p>The above explanation of the bidi algorithm is highly simplified, to convey only the essentials of how Arabic text is transformed for rendering.
+      The actual algorithm deals with many more character types and edge cases.
+
+      Please refer to <a href="https://www.w3.org/International/articles/inline-bidi-markup/uba-basics">Unicode Bidirectional Algorithm basics</a> [[UBA-BASICS]] for more information or <a href="http://www.unicode.org/reports/tr9/">Unicode Bidirectional Algorithm</a> [[!BIDI]] for the official detailed documentation.</p>
     </section>
 
     <section id="h_joining">
@@ -207,7 +246,7 @@
 
         <p>Almost all the non-alphabetical characters are <span class="qterm">non-joining</span>. The few exceptions will be discussed in this document.</p>
 
-        <p>Please refer to The Unicode Standard Version 8.0, Section 9.2, for full explanation of Arabic cursive joining.</p>
+        <p>Please refer to chapter <a href="http://www.unicode.org/versions/Unicode9.0.0/ch09.pdf">Middle East-I &mdash; Modern and Liturgical Scripts</a> of The Unicode Standard [[!UNICODE]] for full explanation of Arabic cursive joining.</p>
       </section>
 
       <section id="h_ligatures">
