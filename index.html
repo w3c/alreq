@@ -205,63 +205,219 @@
     <section id="h_joining">
       <h3><a href="#h_joining">Joining</a></h3>
 
-      <section id="h_joining_behavior_of_characters">
-        <h4>Joining Behavior of Characters</h4>
+      <p>Arabic script is a cursive writing system; i.e, letters can join to their
+      neighboring letters. Besides the core behavior of the script, there are
+      some details on how content is encoded in Unicode, and some rules around
+      joining behavior when rendering special cases.</p>
 
-        <p>Arabic script is cursive; i.e, characters are joined to their neighbors. For this purpose, each Arabic letter has at most four different shapes that allows it to join to its neighbors: beside the <span class="qterm">isolated</span> form, there are <span class="qterm">initial</span>, <span class="qterm">medial</span>, and <span class="qterm">final</span> forms. Their purposes, as their names suggest, are as follows:</p>
+      <section id="h_joining_forms">
+        <h4>Joining Forms</h4>
 
+        <p>Every Arabic letter has one, two, or four different joining forms,
+        which allow the letter to join to its neighbors, if applicable.
+        These four forms are:</p>
+	
         <ul>
-          <li><strong>Isolated shape:</strong> Used when the letter is not joined to any other letter.</li>
-
-          <li><strong>Initial shape:</strong> Used when the letter is joined only to its next (left-side) letter.</li>
-
-          <li><strong>Medial shape:</strong> Used when the letter is joined from its both sides.</li>
-
-          <li><strong>Final shape:</strong> Used when the letter is joined only to its previous (right-side) letter.</li>
+          <li><strong>Isolated form</strong>, used when the letter does not join to any of the surrounding letters;</li>
+          <li><strong>Initial form</strong>, used when the letter is joining only to its next (left-hand side) letter;</li>
+          <li><strong>Medial form</strong>, used when the letter is joining on both sides, and</li>
+          <li><strong>Final form</strong>, used when the letter is joined only to its previous (right-hand side) letter.</li>
         </ul>
 
-        <p><a href="#letter_shapes"></a> shows all four shapes of character <span class="uname">U+0645 ARABIC LETTER MEEM</span> (<span dir="rtl" lang="ar">م</span>).</p>
+        <p><a href="#letter_meem_shapes"></a> shows samples of all four joining forms for
+        <span class="uname">U+0645 ARABIC LETTER MEEM</span> (<span dir="rtl" lang="ar">م</span>).</p>
 
-        <figure id="letter_shapes">
-          <img src="images/letter-shapes.png" alt="Four different shapes for joining to previous or succeeding letters">
-
-          <figcaption>Four different shapes for joining to previous or succeeding letters</figcaption>
+        <figure id="letter_meem_shapes">
+          <img src="images/letter-shapes.png" alt="Four joinin forms of U+0645 ARABIC LETTER MEEM">
+          <figcaption>Four different letter forms for joining to surrounding letters</figcaption>
         </figure>
 
-        <p>For each Arabic letter, based on the joining behavior of its neighbors, one of its shapes is used in writing. <a href="#joining_process"></a> demonstrates how letters join to form a word.</p>
+        <p>We define the following two groups of joining forms:</p>
+	
+        <ul>
+          <li><strong>Join-to-left forms</strong>: either Initial form or Medial form of a letter, which joins to the left-hand side (next) letter. Other forms are called <span class="qterm">non-join-to-left<span>.</li>
+          <li><strong>Join-to-right forms</strong>: either Medial form or Final form of a letter, which joins to the right-hand side (previous) letter. Other forms are called <span class="qterm">non-join-to-right<span>.</li>
+        </ul>
 
-        <figure id="joining_process">
-          <img src="images/joining-process.png" alt="Joining letters by using their various shapes">
+      </section>
 
-          <figcaption>Joining letters by using their various shapes</figcaption>
-        </figure>
+      <section id="h_joining_categories">
+        <h4>Joining Categories</h4>
 
-        <p>There are different categories of characters based on their joining behavior, but most of the Arabic letters are either <span class="qterm">dual joining</span> or <span class="qterm">right joining</span>. Dual joining characters can join from both sides. Like the character in image 1, these types of characters have all the four shapes mentioned above. Right joining characters only join to their previous (right-side) character. These characters only have isolated and final shapes, for they don’t join to their next character.</p>
+        <p>There are different categories of letters based on their joining
+        behavior:</p>
 
-        <figure id="right_joining_letter">
-          <img src="images/right-joining-letter.svg" alt="Right-joining letters only have two forms of final and isolated.">
+        <ul>
+          <li><strong>Dual-joining letters</strong>: can join from both sides, like the letter in <a href="#letter_meem_shapes"></a>, and has all the four shapes mentioned above.</li>
+          <li><strong>Right-joining letters</strong>: can only join to their previous (right-hand side) letter, and therefore, only have isolated and final shapes. <a href="#letter_reh_shapes"></a> shows samples of both forms for U+0631 ARABIC LETTER REH (ر).</li>
+          <li><strong>Non-joining letters</strong>: cannot join to any surrounding letter, and therefore can only take the isolated form.  <a href="#letter_hamzah_shape"></a> shows a sample of U+0621 ARABIC LETTER HAMZAH (ء) in its only possible form.</li>
+        </ul>
 
+        <figure id="letter_reh_shapes">
+          <img src="images/right-joining-letter.svg" alt="Two joining forms of U+0631 ARABIC LETTER REH.">
           <figcaption>Right-joining letters only have two forms of final and isolated.</figcaption>
         </figure>
 
-        <p>Almost all the non-alphabetical characters are <span class="qterm">non-joining</span>. The few exceptions will be discussed in this document.</p>
+        Most of Arabic letters are either <span class="qterm">dual-joining</span> or <span class="qterm">right-joining</span>.</p>
 
-        <p>Please refer to chapter <a href="http://www.unicode.org/versions/Unicode9.0.0/ch09.pdf">Middle East-I &mdash; Modern and Liturgical Scripts</a> of The Unicode Standard [[!UNICODE]] for full explanation of Arabic cursive joining.</p>
-      </section>
-
-      <section id="h_ligatures">
-        <h4>Ligatures</h4>
-
-        <p>Almost all the writing styles of Arabic script use a special shape when letters <span class="lettername">lam</span> and <span class="lettername">alef</span> are joined. Most Arabic fonts include mandatory ligatures for this combination. Ignoring this ligature, as shown in <a href="#laam-alef-ligature"></a>, leads to wrong rendering of text.</p>
-
-        <figure id="laam-alef-ligature">
-          <img src="images/laam-alef-ligature.png" alt="Correct and wrong ways of rendering letter lam followed by letter alef">
-
-          <figcaption>Correct and wrong ways of rendering letter <span class="lettername">lam</span> followed by letter <span class="lettername">alef</span></figcaption>
+        <figure id="letter_hamzah_shape">
+          <img src="images/TBD.svg" alt="One joining form of U+0621 ARABIC LETTER HAMZAH.">
+          <figcaption>Non-Joining letters only have one form: isolated.</figcaption>
         </figure>
 
-        <p>This shape is not limited to the combination of <span class="uname">U+0644 ARABIC LETTER LAM</span> (<span dir="rtl" lang="ar">ل</span>) with <span class="uname">U+0627 ARABIC LETTER ALEF</span> (<span dir="rtl" lang="ar">ا</span>). Variations of letter <span class="lettername">alef</span> such as <span class="uname">U+0622 ARABIC LETTER ALEF WITH MADDA ABOVE</span> (<span dir="rtl" lang="ar">آ</span>) and <span class="uname">U+0623 ARABIC LETTER ALEF WITH HAMZA ABOVE</span> (<span dir="rtl" lang="ar">أ</span>) and also variations of letter <span class="lettername">lam</span> follow the same rules as well. Combination with diacritics does not affect these ligatures. Each of these ligatures also provides a special shape for joining from its right side (to the preceding letter).</p>
       </section>
+
+      <section id="h_joining_rules">
+        <h4>Joining Rules</h4>
+
+        <p>There are core rules on how letters join to each other in the Arabic script, which stay valid regardless of the medium (hand-writing, typewriter, movable-type, digital, etc):</p>
+
+        <ol>
+          <li>Letters of each word join together whenever possible, implicitly.</li>
+          <li>In some languages, like Persian and Urdu, there are words—mostly, but not limited to, compound words—that require explicit breaks in the joining of letters, although joining would otherwise be possible.</li>
+          <li>In certain cases, a letter can be in a <span class="qterm">join-to-left</span> form without actually connecting to anything on the left, whether there’s any letter or not. This is often seen in list counters, abbreviations, and other cases where letters do not have a word context, or are taken out of their original word context.</li>
+          <li>In rare cases of words splitting where letters are joined, first letter of the second half will be in a <span class="qterm">join-to-right</span> form without any previous letter. This behavior is limited to special cases like blanking specific letters of a word, line breaks in a paragraph, and word breaks across poetry verses. No standalone word can have any letters in <span class="qterm">join-to-right</span> form without joining on the right-hand side.</li>
+        </ol>
+
+        <p><a href="#joining_process"></a> demonstrates how letters join (per Joining Rule 1) to form a word.</p>
+
+        <figure id="joining_process">
+          <img src="images/joining-process.png" alt="Letter BEH and MEEM join to form a word.">
+          <figcaption>Letters join by taking their relevant form.</figcaption>
+        </figure>
+      </section>
+
+      <section id="h_joining_control">
+        <h4>Joining Control</h4>
+
+        <p>Arabic letters are represented in their intended joining forms in hand-writing, typewriters, and old (deprecated) digital encodings of the script. In Unicode, letters are encoded semantically—meaning without any information about their joining form—and therefore there’s need for a mechanism for controlling of the joining behavior of the letters.</p>
+
+        <p>In Unicode, by default, neighbor Arabic letters join together if and only if both letters are able to join towards the other.</p>
+
+        <section id="h_disjoining_enforcement">
+          <h4>Disjoining Enforcement</h4>
+
+          <p>As noted in Joining Rule 2, sometimes two Arabic letters sit next to each other (in one word) which would normally join together, but should not. In Unicode, for such a case, a special character should be used to enforce disjoining of these letters. This character is called <span class="uname">U+200C ZERO WIDTH NON-JOINER</span>, or <span class="qterm">ZWNJ</span> for short.</p>
+
+          <figure id="disjoining_enforcement">
+            <img src="images/TBD.svg" alt="TBD: ZWNJ example.">
+            <figcaption>Example of using <span class="qterm">ZWNJ</span> for <span class="qterm">disjoining enforcement</span>.</figcaption>
+          </figure>
+
+        </section>
+
+        <section id="h_joining_enforcement">
+          <h4>Joining Enforcement</h4>
+
+          <p>Similarly, as noted in Joining Rule 4, sometimes an Arabic letter needs to take a joining form when it would not happen normally. For example, some abbreviation methods us Initial Form of letters, when possible, for every letter in the abbreviation. Again, in Unicode, a special character should be used to enforce joining on this letter. This character is called <span class="uname">U+200D ZERO WIDTH JOINER</span>, or <span class="qterm">ZWJ</span> for short.</p>
+
+          <p>Besides <span class="qterm">ZWJ</span>, there’s another special Unicode character, <span class="uname">U+0640 ARABIC TATWEEL</span>, which enforces joining behavior (join causing) on letters next to it. But, in contrast to <span class="qterm">ZWJ</span>, <span class="qterm">TATWEEL</span> has a glyph shape, looking like a hyphen and usually as wide as the SPACE glyph, which connects to the letters on the main joining line (a.k.a. base-line). So, using <span class="qterm">TATWEEL</span> would give a similar Joining Enforcement behavior, but has a side effect of wider length for the letter, which is not always desired. That’s why it’s highly recommended to only use <span class="qterm">ZWJ</span> for joining control.</p>
+
+          <figure id="joining_enforcement">
+            <img src="images/TBD.svg" alt="TBD: ZWJ example.">
+            <img src="images/TBD.svg" alt="TBD: TATWEEL example.">
+            <figcaption>Example of using <span class="qterm">ZWJ</span> (recommended) and <span class="qterm">TATWEEL</span> (not recommended) for <span class="qterm">joining enforcement</span>.</figcaption>
+          </figure>
+
+        </section>
+
+        In Unicode, <span class="qterm">ZWNJ</span> and <span class="qterm">ZWJ</span> are called <span class="qterm">Joining Control Characters</span>.
+
+        <section id="h_joining_disjoining_enforcement">
+          <h4>Joining-Disjoining Enforcement</h4>
+
+          <p>Two enforcement methods mentioned above can be combined together to form a <span class="qterm">Joining-Disjoining Enforcement</span> method, that enables <span class="qterm">Joining Rule 3</span> for cases when there’s a <span class="qterm">dual-joining</span>/<span class="qterm">right-joining</span> letter after a <span class="qterm">join-to-left</span> letter, which should not be joined to its previous letter.</p>
+
+          <figure id="joining_disjoining_enforcement">
+            <img src="images/TBD.svg" alt="TBD: ZWJ+ZWNJ example.">
+            <figcaption>Example of using <span class="qterm">&lt;ZWJ, ZWNJ&gd;</span> for <span class="qterm">joining-disjoining enforcement</span>.</figcaption>
+          </figure>
+
+        </section>
+
+        <section id="h_context_based_joining">
+          <h4>Context-Based Joining</h4>
+
+          <p>Joining Control is not only managed by the content, but sometimes happens by the word context. For example, a word may be broken between two joined letters because of line break, meaning the content is not changed and only the joining form of letters should be maintained across the break.</p>
+        </section>
+
+      </section>
+
+      <section id="h_joining_segments">
+        <h4>Joining Segments</h4>
+
+        <p>A sequence of letters that join together are called a <span class="qterm">Joining Segment</span>. Regardless of language, <span class="qterm">joining segments</span> have no direct relationship to syllables.</p>
+
+        <p>Two types of joining segments exist: <span class="qterm">closed</span> and <span class="qterm">open</span>.</p>
+
+        <section id="h_closed_joining_segments">
+          <h4>Closed Joining Segments</h4>
+          
+          <p>Joining Segments usually have a closed form, meaning that they start in a <span class="qterm">non-join-to-right</span> form and end in a <span class="qterm">non-join-to-left<span> form. <span class="qterm">Closed joining segments</span> are the result of segments either start and end with their normal behavior (<span class="qterm">Joining Rule 1</span>), or by <span class="qterm">disjoining enforcement</span> (<span class="qterm">Joining Rule 2</span>).</p>
+
+          <p>There are two possible types of closed segments:</p>
+
+          <ul>
+            <li><strong>Single-Letter Closed Segment</strong>, which contains only one letter that is in its Isolated form.</li>
+            <li><strong>Multi-Letter Closed Segment</strong>, which contains more than one letter, starting with an Initial form, zero or more Medial forms, and ending with a Final form.</li>
+          </ul>
+        </section>
+
+        <figure id="closed_joining_segment_example">
+          <img src="images/TBD.svg" alt="TBD: A word with only single-letter closed segments.">
+          <img src="images/TBD.svg" alt="TBD: A word that is just one long multi-letter closed segment.">
+          <figcaption>Examples of closed joining segment types.</figcaption>
+        </figure>
+
+        <section id="h_open_joining_segments">
+          <h4>Open Joining Segments</h4>
+          
+          <p>Under the certain cases, as noted in <span class="qterm">Joining Rules 3 and 4</span>, <span class="qterm">joining segments</span> can start with a <span class="qterm">join-to-right</span> form, or end with an <span class="qterm">join-to-left</span> form, or both.</p>
+
+          <p>There are three possible types of these segments:</p>
+
+          <ul>
+            <li><strong>Open-On-Left Segment</strong>, which contains one or more Dual-Joining letters, starting with an Initial form and continuing with zero or more Medial forms.</li>
+            <li><strong>Open-On-Right Segment</strong>, which starts with zero or more Medial Form letters, and ends with a Final Form letter.</li>
+            <li><strong>Open-On-Both-Sides Segment</strong>, which contains one or more Dual-Joining letters, all in their Medial Form.</li>
+          </ul>
+        </section>
+
+        <figure id="open_joining_segment_example">
+          <img src="images/TBD.svg" alt="TBD: An abbriviation in two methods: closed segments and open-on-left segments.">
+          <img src="images/TBD.svg" alt="TBD: A word with blanked middle part, creating two open segments.">
+          <figcaption>Examples of open joining segment types.</figcaption>
+        </figure>
+
+      </section>
+
+      <section id="h_non_joining_characters">
+        <h4>Non-Joining Characters</h4>
+
+        <p>Arabic Letters, two <span class="qterm">Joining Control Characters</span> (<span class="qterm">ZWNJ</span> and <span class="qterm">ZWJ</span>), and <span class="qterm">TATWEEL</span> are the only characters used in the Arabic writing system with joining behavior.</p>
+
+        <p>Arabic diacritics, other Unicode <span class="qterm">non-spacing marks</span>, and most Unicode <span class="qterm">format control characters</span> are considered <span class="qterm">transparent</span> in joining behavior.</p>
+
+        <p>All other Unicode characters in Arabic script (as well as Latin and many other major scripts) are non-joining and do not take any joining forms other than Isolated.</p>
+
+        <p>For the details of how <span class="qterm">Arabic Cursive Joining algorithm</span> please refer to chapter <a href="http://www.unicode.org/versions/Unicode9.0.0/ch09.pdf">Middle East-I &mdash; Modern and Liturgical Scripts</a> of The Unicode Standard. [[!UNICODE]]</p>
+
+      </section>
+
+    </section>
+
+    <section id="h_ligatures">
+      <h3>Ligatures</h3>
+
+      <p>Almost all the writing styles of Arabic script use a special shape when letters <span class="lettername">lam</span> and <span class="lettername">alef</span> are joined. Most Arabic fonts include mandatory ligatures for this combination. Ignoring this ligature, as shown in <a href="#laam-alef-ligature"></a>, leads to wrong rendering of text.</p>
+
+      <figure id="laam-alef-ligature">
+	<img src="images/laam-alef-ligature.png" alt="Correct and wrong ways of rendering letter lam followed by letter alef">
+
+	<figcaption>Correct and wrong ways of rendering letter <span class="lettername">lam</span> followed by letter <span class="lettername">alef</span></figcaption>
+      </figure>
+
+      <p>This shape is not limited to the combination of <span class="uname">U+0644 ARABIC LETTER LAM</span> (<span dir="rtl" lang="ar">ل</span>) with <span class="uname">U+0627 ARABIC LETTER ALEF</span> (<span dir="rtl" lang="ar">ا</span>). Variations of letter <span class="lettername">alef</span> such as <span class="uname">U+0622 ARABIC LETTER ALEF WITH MADDA ABOVE</span> (<span dir="rtl" lang="ar">آ</span>) and <span class="uname">U+0623 ARABIC LETTER ALEF WITH HAMZA ABOVE</span> (<span dir="rtl" lang="ar">أ</span>) and also variations of letter <span class="lettername">lam</span> follow the same rules as well. Combination with diacritics does not affect these ligatures. Each of these ligatures also provides a special shape for joining from its right side (to the preceding letter).</p>
     </section>
 
     <section id="h_diacritics">
@@ -593,10 +749,10 @@
 
     <section id="h_letterspacing">
       <h3><a href="#h_letterspacing">Letter-spacing</a></h3>
-      <p>There are situations where  Arabic text is stretched for reasons other than justification. Common instances include:</p>
+      <p>There are situations where Arabic text is stretched for reasons other than justification. Common instances include:</p>
       <ul>
-      <li>In  a heading, or a word on a street sign to make it more visible.</li>
-      <li>Alongside a transcriptions, to  make Arabic text the same width.</li>
+      <li>In a heading, or a word on a street sign to make it more visible.</li>
+      <li>Alongside a transcriptions, to make Arabic text the same width.</li>
       <li>To mimic voiced emphasis or drawn out sounds</li>
       </ul>
       <p>These instances do not correspond to letter-spacing in non-cursive scripts, however. Apart from the fact that the stretching is indicated by stretching the baseline between characters, the stretching is not usually equidistant between all characters in the stretched text.</p>
@@ -989,7 +1145,7 @@
           <li>If a list item is left-sligned on an Arabic page because it contains only LTR text, should the list item counter be to the right or to the left?</li>
           <li>Is it common to indent the first line of a paragraph? How much?</li>
         </ul>
-      </div>    
+      </div>
   </section>
   
   
