@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1093px" height="439px" viewBox="0 0 1093 439" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>Laam+alef ligature</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <text font-family="IRMitra" font-size="144" font-weight="normal" fill="#000000">
+            <tspan x="848" y="96">ا</tspan>
+        </text>
+        <text font-family="IRMitra" font-size="144" font-weight="normal" fill="#000000">
+            <tspan x="996" y="96">ل</tspan>
+        </text>
+        <text font-family="SourceSansPro-Regular, Source Sans Pro" font-size="96" font-weight="normal" fill="#D0011B">
+            <tspan x="930" y="120">+</tspan>
+        </text>
+        <text font-family="SourceSansPro-Light, Source Sans Pro" font-size="32" font-weight="300" fill="#000000">
+            <tspan x="826" y="180">U+0627</tspan>
+        </text>
+        <text font-family="SourceSansPro-Light, Source Sans Pro" font-size="32" font-weight="300" fill="#000000">
+            <tspan x="996" y="180">U+0644</tspan>
+        </text>
+        <text font-family="IRMitra" font-size="144" font-weight="normal" fill="#000000">
+            <tspan x="644" y="96">لا</tspan>
+        </text>
+        <text font-family="SourceSansPro-Regular, Source Sans Pro" font-size="96" font-weight="normal" fill="#D0011B">
+            <tspan x="751" y="113">←</tspan>
+        </text>
+        <text font-family="IRMitra" font-size="144" font-weight="normal" fill="#000000">
+            <tspan x="848" y="346">ا</tspan>
+        </text>
+        <text font-family="IRMitra" font-size="144" font-weight="normal" fill="#000000">
+            <tspan x="996" y="346">ل</tspan>
+        </text>
+        <text font-family="SourceSansPro-Regular, Source Sans Pro" font-size="96" font-weight="normal" fill="#D0011B">
+            <tspan x="930" y="370">+</tspan>
+        </text>
+        <text font-family="SourceSansPro-Light, Source Sans Pro" font-size="32" font-weight="300" fill="#000000">
+            <tspan x="826" y="430">U+0627</tspan>
+        </text>
+        <text font-family="SourceSansPro-Light, Source Sans Pro" font-size="32" font-weight="300" fill="#000000">
+            <tspan x="996" y="430">U+0644</tspan>
+        </text>
+        <text font-family="SourceSansPro-Light, Source Sans Pro" font-size="32" font-weight="300" fill="#000000">
+            <tspan x="607" y="430">Initial shape</tspan>
+        </text>
+        <text font-family="SourceSansPro-Light, Source Sans Pro" font-size="32" font-weight="300" fill="#000000">
+            <tspan x="416" y="430">Final shape</tspan>
+        </text>
+        <text font-family="IRMitra" font-size="144" font-weight="normal" fill="#000000">
+            <tspan x="456" y="346">‍ا</tspan>
+        </text>
+        <text font-family="IRMitra" font-size="144" font-weight="normal" fill="#000000">
+            <tspan x="674" y="346">ل‍</tspan>
+        </text>
+        <text font-family="IRMitra" font-size="144" font-weight="normal" fill="#000000">
+            <tspan x="274" y="346">‍ا</tspan>
+        </text>
+        <text font-family="IRMitra" font-size="144" font-weight="normal" fill="#000000">
+            <tspan x="304" y="346">ل‍</tspan>
+        </text>
+        <text font-family="SourceSansPro-Regular, Source Sans Pro" font-size="96" font-weight="normal" fill="#D0011B">
+            <tspan x="562" y="370">+</tspan>
+        </text>
+        <text font-family="SourceSansPro-Regular, Source Sans Pro" font-size="96" font-weight="normal" fill="#D0011B">
+            <tspan x="751" y="363">←</tspan>
+        </text>
+        <text font-family="SourceSansPro-Regular, Source Sans Pro" font-size="96" font-weight="normal" fill="#D0011B">
+            <tspan x="358" y="366">←</tspan>
+        </text>
+        <text font-family="SourceSansPro-Light, Source Sans Pro" font-size="48" font-weight="300" fill="#000000">
+            <tspan x="0" y="83">Correct</tspan>
+        </text>
+        <text font-family="SourceSansPro-Light, Source Sans Pro" font-size="48" font-weight="300" fill="#000000">
+            <tspan x="0" y="313">Wrong</tspan>
+        </text>
+    </g>
+</svg>
