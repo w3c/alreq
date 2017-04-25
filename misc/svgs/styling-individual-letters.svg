@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="452px" height="158px" viewBox="0 0 452 158" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" font-weight="normal">
+        <g transform="translate(-4.000000, -45.000000)">
+            <text font-family="IRMitra" font-size="144">
+                <tspan x="107.859375" y="133" fill="#000000">کل</tspan>
+                <tspan x="51.609375" y="133" fill="#FF0000">م</tspan>
+                <tspan x="0" y="133" fill="#000000">ه</tspan>
+            </text>
+            <text font-family="IRMitra" font-size="144">
+                <tspan x="324.203125" y="133" fill="#000000">کل</tspan>
+                <tspan x="324.203125" y="133" letter-spacing="-10" fill="#000000">‌</tspan>
+                <tspan x="276.046875" y="133" letter-spacing="-5" fill="#FF0000">م‌</tspan>
+                <tspan x="239" y="133" letter-spacing="-5" fill="#000000">ه</tspan>
+            </text>
+            <text font-family="SourceSansPro-Regular, Source Sans Pro" font-size="24" fill="#000000">
+                <tspan x="58" y="197">Correct</tspan>
+            </text>
+            <text font-family="SourceSansPro-Regular, Source Sans Pro" font-size="24" fill="#000000">
+                <tspan x="315" y="197">Wrong</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

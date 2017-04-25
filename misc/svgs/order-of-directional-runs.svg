@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="500px" height="216px" viewBox="0 0 500 216" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 5</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-2.000000, -25.000000)">
+            <g>
+                <g transform="translate(250.000000, 12.000000)">
+                    <text font-family="SourceSansPro-Regular, Source Sans Pro" font-size="48" font-weight="normal" fill="#000000">
+                        <tspan x="0" y="47">one</tspan>
+                    </text>
+                    <polygon fill="#D0011B" transform="translate(37.772000, 82.816000) scale(-1, 1) translate(-37.772000, -82.816000) " points="15.104 95.632 17.12 93.424 7.472 84.448 73.544 84.448 73.544 81.184 7.472 81.184 17.12 72.208 15.104 70 2 82.72 2 82.912"></polygon>
+                    <text font-family="SourceSansPro-Light, Source Sans Pro" font-size="18" font-weight="300" fill="#000000">
+                        <tspan x="30" y="103">1</tspan>
+                    </text>
+                </g>
+                <g transform="translate(340.500000, 0.000000)">
+                    <text font-family="IRMitra" font-size="64" font-weight="normal" fill="#000000">
+                        <tspan x="0" y="59">دو</tspan>
+                    </text>
+                    <polygon fill="#D0011B" points="15.104 107.632 17.12 105.424 7.472 96.448 39.544 96.448 39.544 93.184 7.472 93.184 17.12 84.208 15.104 82 2 94.72 2 94.912"></polygon>
+                    <text font-family="SourceSansPro-Light, Source Sans Pro" font-size="18" font-weight="300" fill="#000000">
+                        <tspan x="20" y="115">2</tspan>
+                    </text>
+                </g>
+                <g transform="translate(398.000000, 13.000000)">
+                    <text font-family="SourceSansPro-Regular, Source Sans Pro" font-size="48" font-weight="normal" fill="#000000">
+                        <tspan x="0" y="47">three</tspan>
+                    </text>
+                    <polygon fill="#D0011B" transform="translate(52.272000, 81.816000) scale(-1, 1) translate(-52.272000, -81.816000) " points="14.104 94.632 16.12 92.424 6.472 83.448 103.544 83.448 103.544 80.184 6.472 80.184 16.12 71.208 14.104 69 1 81.72 1 81.912"></polygon>
+                    <text font-family="SourceSansPro-Light, Source Sans Pro" font-size="18" font-weight="300" fill="#000000">
+                        <tspan x="45" y="102">3</tspan>
+                    </text>
+                </g>
+                <text font-family="SourceSansPro-Light, Source Sans Pro" font-size="32" font-weight="300" fill="#000000">
+                    <tspan x="0" y="49">Left-to-right</tspan>
+                    <tspan x="0" y="89">base direction</tspan>
+                </text>
+            </g>
+            <g transform="translate(1.000000, 125.000000)">
+                <g transform="translate(424.000000, 12.000000)">
+                    <text font-family="SourceSansPro-Regular, Source Sans Pro" font-size="48" font-weight="normal" fill="#000000">
+                        <tspan x="0" y="47">one</tspan>
+                    </text>
+                    <polygon fill="#D0011B" transform="translate(37.772000, 82.816000) scale(-1, 1) translate(-37.772000, -82.816000) " points="15.104 95.632 17.12 93.424 7.472 84.448 73.544 84.448 73.544 81.184 7.472 81.184 17.12 72.208 15.104 70 2 82.72 2 82.912"></polygon>
+                    <text font-family="SourceSansPro-Light, Source Sans Pro" font-size="18" font-weight="300" fill="#000000">
+                        <tspan x="30" y="103">1</tspan>
+                    </text>
+                </g>
+                <g transform="translate(369.500000, 0.000000)">
+                    <text font-family="IRMitra" font-size="64" font-weight="normal" fill="#000000">
+                        <tspan x="0" y="59">دو</tspan>
+                    </text>
+                    <polygon fill="#D0011B" points="15.104 107.632 17.12 105.424 7.472 96.448 39.544 96.448 39.544 93.184 7.472 93.184 17.12 84.208 15.104 82 2 94.72 2 94.912"></polygon>
+                    <text font-family="SourceSansPro-Light, Source Sans Pro" font-size="18" font-weight="300" fill="#000000">
+                        <tspan x="20" y="115">2</tspan>
+                    </text>
+                </g>
+                <g transform="translate(249.000000, 13.000000)">
+                    <text font-family="SourceSansPro-Regular, Source Sans Pro" font-size="48" font-weight="normal" fill="#000000">
+                        <tspan x="0" y="47">three</tspan>
+                    </text>
+                    <polygon fill="#D0011B" transform="translate(52.272000, 81.816000) scale(-1, 1) translate(-52.272000, -81.816000) " points="14.104 94.632 16.12 92.424 6.472 83.448 103.544 83.448 103.544 80.184 6.472 80.184 16.12 71.208 14.104 69 1 81.72 1 81.912"></polygon>
+                    <text font-family="SourceSansPro-Light, Source Sans Pro" font-size="18" font-weight="300" fill="#000000">
+                        <tspan x="45" y="102">3</tspan>
+                    </text>
+                </g>
+                <text font-family="SourceSansPro-Light, Source Sans Pro" font-size="32" font-weight="300" fill="#000000">
+                    <tspan x="0" y="48">Right-to-left</tspan>
+                    <tspan x="0" y="88">base direction</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

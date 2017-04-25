@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="517px" height="154px" viewBox="0 0 517 154" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>Letter shapes</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-1.000000, -87.000000)" fill="#000000">
+            <text font-family="IRMitra" font-size="144" font-weight="normal">
+                <tspan x="435" y="133">م</tspan>
+            </text>
+            <text font-family="IRMitra" font-size="144" font-weight="normal">
+                <tspan x="298" y="133">م‍</tspan>
+            </text>
+            <text font-family="IRMitra" font-size="144" font-weight="normal">
+                <tspan x="0" y="133">‍م</tspan>
+            </text>
+            <text font-family="IRMitra" font-size="144" font-weight="normal">
+                <tspan x="154" y="133">‍م‍</tspan>
+            </text>
+            <text font-family="SourceSansPro-Light, Source Sans Pro" font-size="32" font-weight="300">
+                <tspan x="413" y="240">Isolated</tspan>
+            </text>
+            <text font-family="SourceSansPro-Light, Source Sans Pro" font-size="32" font-weight="300">
+                <tspan x="277" y="240">Initial</tspan>
+            </text>
+            <text font-family="SourceSansPro-Light, Source Sans Pro" font-size="32" font-weight="300">
+                <tspan x="128" y="240">Medial</tspan>
+            </text>
+            <text font-family="SourceSansPro-Light, Source Sans Pro" font-size="32" font-weight="300">
+                <tspan x="3" y="240">Final</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

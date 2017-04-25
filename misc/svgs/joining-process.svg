@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="859px" height="142px" viewBox="0 0 859 142" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>Joining</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <text font-family="IRMitra" font-size="144" font-weight="normal" fill="#000000">
+            <tspan x="613.5" y="49">م</tspan>
+        </text>
+        <text font-family="IRMitra" font-size="144" font-weight="normal" fill="#000000">
+            <tspan x="762" y="49">ب</tspan>
+        </text>
+        <text font-family="SourceSansPro-Regular, Source Sans Pro" font-size="96" font-weight="normal" fill="#D0011B">
+            <tspan x="696" y="73">+</tspan>
+        </text>
+        <text font-family="SourceSansPro-Light, Source Sans Pro" font-size="32" font-weight="300" fill="#000000">
+            <tspan x="592" y="133">U+0645</tspan>
+        </text>
+        <text font-family="SourceSansPro-Light, Source Sans Pro" font-size="32" font-weight="300" fill="#000000">
+            <tspan x="762" y="133">U+0628</tspan>
+        </text>
+        <text font-family="SourceSansPro-Light, Source Sans Pro" font-size="32" font-weight="300" fill="#000000">
+            <tspan x="373" y="133">Initial shape</tspan>
+        </text>
+        <text font-family="SourceSansPro-Light, Source Sans Pro" font-size="32" font-weight="300" fill="#000000">
+            <tspan x="182" y="133">Final shape</tspan>
+        </text>
+        <text font-family="IRMitra" font-size="144" font-weight="normal" fill="#000000">
+            <tspan x="222.5" y="49">‍م</tspan>
+        </text>
+        <text font-family="IRMitra" font-size="144" font-weight="normal" fill="#000000">
+            <tspan x="440" y="49">ب‍</tspan>
+        </text>
+        <text font-family="IRMitra" font-size="144" font-weight="normal" fill="#000000">
+            <tspan x="0.5" y="49">بم</tspan>
+        </text>
+        <text font-family="SourceSansPro-Regular, Source Sans Pro" font-size="96" font-weight="normal" fill="#D0011B">
+            <tspan x="328" y="73">+</tspan>
+        </text>
+        <text font-family="SourceSansPro-Regular, Source Sans Pro" font-size="96" font-weight="normal" fill="#D0011B">
+            <tspan x="517" y="66">←</tspan>
+        </text>
+        <text font-family="SourceSansPro-Regular, Source Sans Pro" font-size="96" font-weight="normal" fill="#D0011B">
+            <tspan x="124" y="69">←</tspan>
+        </text>
+    </g>
+</svg>
