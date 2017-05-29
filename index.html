@@ -509,28 +509,17 @@
 
     <section id="h_punctuation">
       <h3><a href="#h_punctuation">Punctuation</a></h3>
-      <div class="questions">
-        <p>Issues/questions:</p>
-
-        <ul>
-          <li>List of non-ASCII punctuation and description of usage and frequency.</li>
-          <li>Use and positioning of punctuation marks in the sentence. </li>
-          <li>Use of paired punctuation marks.</li>
-        </ul>
-      </div>
+      <div class="issue">List of non-ASCII punctuation and description of usage and frequency.</div>
+      <div class="issue">Use and positioning of punctuation marks in the sentence.</div>
+      <div class="issue">Use of paired punctuation marks.</div>
     </section>
 
     <section id="h_segmentation">
       <h3><a href="#h_segmentation">Text segmentation</a></h3>
       <p>Word, sentence and paragraph boundaries are largely deliminated by spaces and punctuation as in most Latin script text.</p>
       <p>However, there are exceptions, such as the "و" conjunction in Arabic orthography, "ل" before a non-Arabic script noun, and the misuse of space in place of ZWNJ in some Arabic script languages.</p>
-      <div class="questions">
-        <p>Issues/questions:</p>
-
-        <ul>
-          <li>Should all ligatures be selectable as a single unit, or as individual parts corresponding to the underlying characters?</li>
-          <li>Expand on the exceptions.</li>
-        </ul>
+      <div class="issue question">Should all ligatures be selectable as a single unit, or as individual parts corresponding to the underlying characters?</div>
+      <div class="issue">Expand on the exceptions.</div>
       </div>
     </section>
 
@@ -539,16 +528,9 @@
       <p>In Arabic script text it is unusual to use diacritics for vowel information and for consonant lengthening. If they are used, however, there are different approaches to their placement relative to the base characters they modify. Some fonts display short vowel diacritics at the same height, while others vary the height according to the base character.</p>
       <p>Another potential difference arises when a short i vowel diacritic is used with a shadda. In some cases the vowel diacritic remains below the base letter, whereas in other cases the vowel diacritic appears above the base letter, but under the shadda (so that it can be distinguished from the short a vowel diacritic, which appears above the shadda).</p>
 
-      <div class="questions">
-        <p>Issues/questions:</p>
-
-        <ul>
-          <li>Some applications allow adjustment of the distance between the diacritics and the base character. Is this a requirement for most text systems?</li>
-
-          <li>What about adjustment to the horizontal position of the diacritic?</li>
-
-          <li>Should it be possible to influence whether a font places the kasra below the base character or immediately below the shadda, when combined with the latter?</li>
-        </ul>
+      <div class="issue question">Some applications allow adjustment of the distance between the diacritics and the base character. Is this a requirement for most text systems?</div>
+      <div class="issue question">What about adjustment to the horizontal position of the diacritic?</div>
+      <div class="issue question">Should it be possible to influence whether a font places the kasra below the base character or immediately below the shadda, when combined with the latter?</div>
       </div>
     </section>
 
@@ -561,13 +543,8 @@
       <li>To mimic voiced emphasis or drawn out sounds</li>
       </ul>
       <p>These instances do not correspond to letter-spacing in non-cursive scripts, however. Apart from the fact that the stretching is indicated by stretching the baseline between characters, the stretching is not usually equidistant between all characters in the stretched text.</p>
-      <div class="questions">
-        <p>Issues/questions:</p>
-
-        <ul>
-          <li>Is this really letter-spacing, or is it seen as something different?</li>
-          <li>Can we codify any rules for how the elongation happens? Are they the same rules as for justification? (Probably not, in the case of mimicking voice.)</li>
-        </ul>
+      <div class="issue question">Is this really letter-spacing, or is it seen as something different?</div>
+      <div class="issue question">Can we codify any rules for how the elongation happens? Are they the same rules as for justification? (Probably not, in the case of mimicking voice.)</div>
       </div>
     </section>
 
@@ -630,27 +607,15 @@
 
     <section id="h_italicetc">
       <h3><a href="#h_italicetc">Handling oblique and italicised text in Arabic</a></h3>
-      <p>Describe the problem here.</p>
-      <div class="questions">
-        <p>Issues/questions:</p>
-
-        <ul>
-          <li>Which way should oblique/italic text slant in Arabic?</li>
-          <li>Misuse of generic font styles.</li>
-        </ul>
+      <div class="issue question">Which way should oblique/italic text slant in Arabic?</div>
+      <div class="issue question">Misuse of generic font styles.</div>
       </div>
     </section>
 
     <section id="h_mixedscript">
       <h3><a href="#h_mixedscript">Considerations for mixed-script text</a></h3>
       <p>Arabic ascenders and descenders extend much further than those of the Latin script, and care must be taken to correctly align text in the different scripts when they appear together.</p>
-      <div class="questions">
-        <p>Issues/questions:</p>
-
-        <ul>
-          <li>What are the font-size aspects that must be considered in mixed text scenarios?</li>
-        </ul>
-      </div>
+      <div class="issue question">What are the font-size aspects that must be considered in mixed text scenarios?</div>
     </section>
 
 
@@ -658,12 +623,8 @@
       <h3><a href="#h_numbers">Arabic numbering</a></h3>
       <p>Arabic script uses non-European digits for numbers in certain locales and situations.</p>
       <p>Arabic digits are also used for counters (see ).</p>
-    <div class="questions">
-      <p>Issues/questions:</p>
-      <ul>
-        <li>Describe the arabic-indic digits, and when they are used, including the distinction between arabic-indic and eastern-arabic-indic digits.</li>
-        <li>Provide resources and guidelines on how to choose the right set of numerals based on the language.</li>
-      </ul>
+    <div class="issue questions">Describe the arabic-indic digits, and when they are used, including the distinction between arabic-indic and eastern-arabic-indic digits.</div>
+    <div class="issue question">Provide resources and guidelines on how to choose the right set of numerals based on the language.</div>
     </div>
     </section>
 
@@ -680,16 +641,10 @@
 
       <p>In bidirectional text, if a line break occurs between a sequence of words that are progressing in a left-to-right direction the first line will be filled with LTR words that come at the start of the phrase in the order spoken (ie. not the visual order when laid out in a single line). This is because it is never correct to read lines from bottom to top. A similar rearrangement is required when a sequence of right-to-left words is split at the end of a line in an overall LTR context.</p>
 
-      <div class="questions">
-        <p>Issues/questions:</p>
-
-        <ul>
-          <li>In Urdu words are not necessarily bounded by spaces. What method is used for determining appropriate break points in this case?</li>
-
-          <li>What other characters besides SPACE constitute break points for automatic line wrapping?</li>
-
-          <li>What are the rules for hyphenation in Arabic script text?</li>
-
+      <div class="issue question">In Urdu words are not necessarily bounded by spaces. What method is used for determining appropriate break points in this case?</div>
+      <div class="issue question">What other characters besides SPACE constitute break points for automatic line wrapping?</div>
+      <div class="issue question">What are the rules for hyphenation in Arabic script text?
+	<ul>
           <li>The CSS Text spec <a href="https://drafts.csswg.org/css-text-3/#example-953e914f">says</a> "When shaping scripts such as Arabic are allowed to break within words due to hyphenation, the characters must still be shaped as if the word were not broken." The example shows Uighur text with a hyphen at the end of a line and with shaped characters at line end and start. Is this normal in Arabic and Persian text also?</li>
 
           <li>In some styles of CJK typesetting, English words are allowed to break between any two letters, rather than only at spaces or hyphenation points. Are the rules different form Arabic script text?</li>
@@ -698,14 +653,14 @@
 
           <li>The CSS <a href="https://drafts.csswg.org/css-text-3/#hanging-punctuation-property">hanging-punctuation</a> property allows the arabic comma and arabic full stop to hang in the margin, rather than wrapping them to the next line. Is this appropriate?</li>
         </ul>
+	</div>
       </div>
       
       <section id="h_kinsoku">
       <h4><a href="#h_kinsoku">Characters that cannot end or start a line</a></h4>
-      <div class="questions">
-        <p>Issues/questions:</p>
-        <ul>
-          <li>What are they?</li>
+      <div class="issue question">
+	<ul>
+	<li>What are they?</li>
           <li>Are the rules language specific?</li>
           <li>What's the usual course of action to avoid incorrect placement?</li>
           <li>Are the rules applied consistently everywhere?</li>
@@ -715,14 +670,8 @@
 
 	<section id="h_hyphenation">
       <h4>Hyphenation</h4>
-  <div class="questions">
-    <p>Issues/questions:</p>
-
-        <ul>
-          <li>Does Arabic script text use hyphenation? If so, is the use of hyphenation language-specific?</li>
-
-          <li>What are the rules? Are there any general rules that transcend all languages?</li>
-        </ul>
+      <div class="issue question">Does Arabic script text use hyphenation? If so, is the use of hyphenation language-specific?</div>
+      <div class="issue question">What are the rules? Are there any general rules that transcend all languages?</div>
       </div>
     </section>
     </section>
@@ -730,14 +679,12 @@
     <section id="h_justification">
       <h3><a href="#h_justification">Justification</a></h3>
 
+      <div class="issue">Drop “elongation” from title of this section. It’s one of the mechanisms used for justification.</div>
+      <div class="issue">Make sure “elongation,” “kashida,” and “tatweel,” have correct definitions in our glossary.</div>
+      <div class="issue"><strong>TODO:</strong> Improve the images.</div>
+
       <div class="note">
-        <h4>Notes, Links, …</h4>
-
         <ul>
-          <li>Drop “elongation” from title of this section. It’s one of the mechanisms used for justification.</li>
-
-          <li>Make sure “elongation,” “kashida,” and “tatweel,” have correct definitions in our glossary.</li>
-
           <li><a href="https://www.w3.org/2016/06/28-alreq-minutes.html">Discussion at ALReq meeting on 28 June, 2016</a></li>
 
           <li><a href="http://quod.lib.umich.edu/j/jep/3336451.0013.105?rgn=main;view=fulltext">Justify Just or Just Justify</a></li>
@@ -750,9 +697,8 @@
 
           <li><a href="https://www.microsoft.com/middleeast/msdn/JustifyingText-CSS.aspx">Justifying Text using Cascading Style Sheets (CSS) in Internet Explorer 5.5</a></li>
 
-          <li><strong>TODO:</strong> Improve the images.</li>
         </ul>
-        <hr>
+	</div>
 
         <p>There are a number of different ways to produce justified text in Arabic. In some cases several of these methods may be combined. In other cases, certain methods are disallowed.</p>
 
@@ -770,9 +716,7 @@
           <li>Use of ligated forms, to reduce space taken by characters on a line.</li>
         </ul>
 
-        <div class="questions">
-          <p>Issues/questions:</p>
-
+        <div class="issue question">
           <ul>
             <li>What are the rules for elongation of inter-character baselines, and how do they differ from one font style to another?</li>
 
@@ -789,7 +733,6 @@
             <li>Should the CSS <a href="https://drafts.csswg.org/css-text-3/#cursive-tracking">letter-spacing property</a> have any effect on Arabic script text?</li>
           </ul>
         </div>
-      </div>
 
       <p>Of the four basic justification methods (flush left, flush right, justified, and centered), justified is the most challenging, as it requires changing the widths of the lines to a pre-defined measure. <span class="qterm">Measure</span> refers to the width of a column of text. In a justified paragraph the width of all the lines should be the same as the paragraph’s measure (except, of course, the last line).</p>
 
@@ -941,33 +884,24 @@
 
       <p>Lines of Arabic script text are normally right aligned within the page.</p>
 
-      <div class="questions">
-        <p>Issues/questions:</p>
-
-        <ul>
-          <li>When a list on an Arabic page contains an item that is completely composed of LTR text, should the list item be right- or left-aligned on the page?</li>
-
-          <li>If a list item is left-sligned on an Arabic page because it contains only LTR text, should the list item counter be to the right or to the left?</li>
-          <li>Is it common to indent the first line of a paragraph? How much?</li>
-        </ul>
+      <div class="issue question">
+	<ul>
+	<li>When a list on an Arabic page contains an item that is completely composed of LTR text, should the list item be right- or left-aligned on the page?</li>
+	<li>If a list item is left-sligned on an Arabic page because it contains only LTR text, should the list item counter be to the right or to the left?</li>
+	<li>Is it common to indent the first line of a paragraph? How much?</li>
+	</ul>
       </div>    
   </section>
   
   
   <section id="h_tabs">
     <h3><a href="#h_tabs">Tab settings</a></h3>
-<div class="questions">
-  <p>Issues/questions:</p>
-  <ul>
-    <li>What is there to say?</li>
-  </ul>
-  </div>
+    <div class="issue question">What is there to say?</div>
   </section>
   
   <section id="h_firstletter">
     <h3><a href="#h_firstletter">Styling the initial text in a paragraph</a></h3>
-<div class="questions">
-  <p>Issues/questions:</p>
+<div class="issue question">
   <ul>
     <li>Does this apply? If so, is there an equivalent to first-letter styling or is it word-based? </li>
     <li>Is the line initial punctuation included?</li>
@@ -979,8 +913,7 @@
   <section id="h_counters">
     <h3><a href="#h_counters">Counters, lists, etc</a></h3>
 <p>Arabic script text may use special counter styles for lists, numbering headings, pages, etc., based on Arabic script characters. </p>
-<div class="questions">
-  <p>Issues/questions:</p>
+<div class="issue question">
   <ul>
     <li>List the main counter sequences, and how they work. Cf. the <a href="https://www.w3.org/TR/2016/WD-predefined-counter-styles-20160622/#arabic-styles">ready-made counter styles for CSS</a>.</li>
     <li>how to choose the right set of numerals based on the language?</li>
@@ -991,12 +924,7 @@
   
   <section id="h_paragraphspecial">
     <h3><a href="#h_paragraphspecial">Special cases</a></h3>
-<div class="questions">
-  <p>Issues/questions:</p>
-  <ul>
-    <li>poetry, math, vertical text, etc?</li>
-  </ul>
-  </div>
+    <div class="issue question">poetry, math, vertical text, etc?</div>
   </section>
       
   </section>

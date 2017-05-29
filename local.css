@@ -126,8 +126,9 @@ table td {
 }
 
 
-.questions {
-	font-style: italic;
+.question {
+    .issue;
+    font-style: italic;
 }
 
 table.characters {
