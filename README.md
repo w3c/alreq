@@ -12,7 +12,7 @@ To follow the work, you can 'Watch' this repository using the control above, or 
 
 ### Contributing
 
-All contributors should read and agree with [CONTRIBUTING.md](https://github.com/w3c/hlreq/blob/gh-pages/CONTRIBUTING.md).
+All contributors should read and agree with [CONTRIBUTING.md](CONTRIBUTING.md).
 
 Task force _members_ are expert contributors who participate actively in producing the work of the group, regularly contributing text and advice to create the outputs, and participating in meetings. For more information about becoming a task force member contact [Richard Ishida](mailto:ishida@w3.org). We welcome participation requests.
 
