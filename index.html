@@ -2164,54 +2164,39 @@
         </ul>
       </div>
 
-    <section id="h_vertical_text">
-      <h4><a href="#h_vertical_text">Vertical text</a> </h4>
-      <p>There are situations where Arabic text may be written vertical.</p>
-      <ul>
-        <li>When Arabic is embedded in body text (like CJK text or
-          Mongolian) that normally flow vertically.
+     <section id="h_vertical_text">
+        <h4><a href="#h_vertical_text">Vertical text</a> </h4>
+        <p>In situations where short runs of text run vertically, for example on book spines or in table headers, Arabic text is rotated to run along the line. It may be rotated so that the tops of the letters face to the left (read the text from top to bottom) or to the right (read the text from bottom to top).</p>
+        <figure id="fig_vertical_spine"> <img src="images/vertical-fr.png" alt="Vertical Arabic top down"> &nbsp; <img src="images/vertical-en.png" alt="Vertical Arabic bottom up">
+          <figcaption>Vertical Arabic, top-down and bottom-up flow</figcaption>
+        </figure>
+        <p>The flow of text, top-down vs. bottom-up, may depend on regions or authors. The left case in <a href="#fig_vertical_spine"></a>is  a typically francophone style for book spines, whereas the right case is an anglophone style. </p>
+        <section id="h_vertical_embedding">
+          <h5><a href="#h_vertical_embedding">Arabic  embedded in vertically orientated text</a></h5>
+          <p>When Arabic is embedded in body text that is set vertically, such as CJK or Mongolian text,  it is also normally rotated so as to run along the line. Typically, the Arabic text will be read from bottom to top of the line. </p>
+          <p>When the Arabic text spans more than one line, the text is wrapped in the same way as it would be in horizontal text, ie. the first part of the Arabic text is kept on the first line, and subsequent parts of the Arabic text appear on subsequent lines. Therefore, in the case of Mongolian, where lines are read left-to-right, the Arabic text lines are also read left-to-right, whereas in Chinese or Japanese, where vertical lines are normally read right-to-left, the Arabic text lines are also read right-to-left.</p>
           <figure> <img style="width: 64px; height: 220px;" src="https://w3c.github.io/i18n-drafts/articles/vertical-text/index-data/embedded-ar.png"
               alt="embedded Arabic">
-            <figcaption>Arabic text embedded in vertical Chinese.</figcaption> </figure>
-          <p> In such case, Arabic text will run from bottom
-            to top along the line, and letters will lie on their right side
-            (i.e. the top of the letters will be to the right).</p>
-            <p class="question issue">This the default orientation for Arabic. To have it run down the page, one should use <code>writing-mode:sideways-lr</code>.</p>
-        </li>
-        <li>In book spine, table header or side title etc.
-          <figure> <img src="images/vertical-fr.png" alt="Vertical Arabic top down">
-            &nbsp; <img src="images/vertical-en.png" alt="Vertical Arabic bottom up">
-            <figcaption>Vertical Arabic, top-down and bottom-up flow</figcaption>
+            <figcaption>Arabic text embedded in vertical Chinese.</figcaption>
           </figure>
-          <p class="question issue">Choose true images like <a href="https://app.box.com/s/i4j6xx6kn6gu5nt2ha5ynno7qemoxlq4">this
-              one</a>, instead of figurative pics?</p>
-          <p>A typical use of such vertical Arabic is found in book spine. The
-            flow of text, top-down <i>vs</i>. bottom-up may depend on regions or
-            authors. The left case on the figure is rather a francophone style,
-            whereas the right case is an anglophone style. </p>
-          <p>For not mixed texts, the top down approach is how historically
-            Arabic was written vertically. </p>
-        </li>
-        <li>Vertical Arabic may also be found upright (letter by letter).
-          Typical case are the front logo of movies and theaters.
-      <figure> <img  src="images/odeonMovie.png" alt="Arabic Upright on a front movie">
-        <figcaption>Arabic upright on a front movie (see arrow)</figcaption> </figure>
-      <ol>
-        <li>Letters flow from top to bottom (as with Latin  script).
-          Isolated form of letters seems more appropriate here than the joined
-          form. <br>
-        </li>
-        <li>In addition, text decoration like underline should be
-          considered irrelevant (ends up in a vertical bar). Diacritic marks, if any, 
-          must be applied to letters and not appear on separate lines.<br>
-          <p class="question issue">Browsers implementation are different with
-            regard to the first point above. It should be noted, however, that
-            Arabic scripts don't seem to be set upright often.</p>
-        </li>
-      </ol>
-      </li>
-      </ul>
-    </section>
+        </section>
+        <section id="h_vertical_upright">
+          <h5><a href="#h_vertical_upright">Upright vertical Arabic text</a></h5>
+          <p>There are attested cases of Arabic text arranged vertically with the letters upright, for example in signboards for cinemas or theatres. It is not clear, at this point whether this a standard approach for Arabic text, or just an unusual layout that mimics Western typographic approaches.</p>
+          <figure id="fig_upright_vertical"> <img  src="images/odeonMovie.png" alt="Arabic Upright on a front movie">
+            <figcaption>Arabic upright on a front movie (see arrow).</figcaption>
+          </figure>
+          <p>The following should be noted in <a href="#fig_upright_vertical"></a>.</p>
+          <ol>
+            <li>Letters flow from top to bottom (as with Latin  script).</li>
+            <li>Isolated form of letters seems more appropriate here than the joined
+              form.</li>
+            <li>Diacritic marks, if any, must be applied to letters and not appear on separate lines.</li>
+          </ol>
+          <p class="issue">We need to establish whether this is a standard approach or just an oddity. The items in the list above are important to note, however, we need to check whether isolated forms are always used, and the direction is always top to bottom when upright letters are used.</p>
+        </section>
+      </section>
+
 
     </section>
   </section>
