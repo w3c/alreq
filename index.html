@@ -1531,7 +1531,138 @@
       <h3><a href="#h_numbers">Arabic numbering</a>
       </h3>
 
-
+        <section id="h_Arabic_number_writing">
+          <h4><a href="#h_Arabic_number_writing">Arabic number writing</a> </h4>
+          <p>There are mostly two families of <span style="font-family: Waseem;">numerals</span>
+            in Arabic script. One known as European digits aka as Arabic Digits
+            (Unicode range U+0030-U+0039), the second is Arabic-Indic Digits
+            (Unicode range U+0660-U+0669). The latter further gave another
+            sub-notation for Persian/Urdu digits, the Extended (or Eastern)
+            Arabic-Indic Digits (Unicode range U+06F0-U+06F9), in which digits
+            4, 5 and 6 have another glyph. The following table summarizes those
+            families:</p>
+          <figure id="order_in_memory"> <img style="width: 465px; height: 95px;"
+              src="images/Arabic-numeral.png"
+              alt="Arabic Numerals">
+            <figcaption> Different notations for Arabic script digits </figcaption>
+          </figure>
+          <p>Digits on the first row are predominant in Western Arabic regions,
+            while the second row digits are used in most of the Middle-East
+            countries, sometime along with the former. Persian and Urdu mostly
+            use the third category.</p>
+          <p>Arabic numbers are written with the lowest significant digits to
+            the right and the highest digits to the left. That arrangement is
+            identical to the Western one, even though Arabic script is written
+            from right to left. Numbers with many digits use delimiters for the
+            decimal part and thousands separator :</p>
+          <p>Western digits use comma (U+002C) and full stop (U+002E)
+            indifferently as decimal and thousands separator: </p>
+          <ul>
+            <li>1.234,5 in Western (francophone) regions.</li>
+            <li>1,234.5 in Middle-East (anglophone) regions.</li>
+            <li>Thin space (U+2009) or narrow no-break space (U+202F) may also
+              be used as thousands separator.</li>
+          </ul>
+          <p>Arabic-Indic numerals use two specific separators:</p>
+          <ul>
+            <li>Arabic Decimal Separator ٫ (U+066B) like comma.</li>
+            <li>Arabic Thousand Separator ٬ (U+066C).</li>
+            <li>Example : ١٬٢٣٤٫٥&nbsp;.</li>
+          </ul>
+          <p>An important fact to note here is the bidirectional category of
+            these numbers.</p>
+          <ul>
+            <li>European Digits (U+0030 - U+0039) are of category "EN - European
+              number",</li>
+            <li>Arabic-Indic Digits (U+0660 - U+0669) are "AN - Arabic number",</li>
+            <li>Eastern Arabic-Indic Digits (U+06F0 - U+06F9) are classified "EN
+              - European number", differently from their counterpart just above.</li>
+          </ul>
+          <p>The difference in Bidi category between Arabic-Indic digits and
+            Eastern Arabic-Indic digits is due to the difference in Bidi
+            behavior desired in Arabic <i>vs</i>. Persian. </p>
+          <p class="issue"> What is the origin of this decision.</p>
+          <p>As a consequence, a sentence like « Five is written ۵ in Iran and ٥
+            in Egypt », say, will give (in RTL context) </p>
+          <p>« ‫Five is written ۵ in Iran and ٥ in Egypt‬ » </p>
+          <p>requiring the use of markup to correct it. Which is not the case
+            with the sentence « Five is written ۵ in Iran and 5 in Morocco ». </p>
+        </section>
+        <section id="h_Arabic_number_in_other_uses">
+          <h4><a href="#h_Arabic_number_in_other_uses">Arabic number in other
+              uses</a></h4>
+          <p>Numbers do not always appear alone, and may come with other
+            characters like financial symbols, fraction sign, decimals and/or
+            thousands signs (excluding math expressions here). At first, there
+            are proper signs used for the script such as Arabic percent/permille
+            sign ٪ (U+066A) and ؉&nbsp; (U+0609), Arabic decimal " ٫ " (U+66B)
+            and thousands&nbsp; " ٬ " (U+066C) separators, mentioned earlier and
+            mostly used with Arabic-Indics. </p>
+          <p>Numerals can also come separated by or mixed with space or other
+            signs. Example are phone numbers
+            +12&nbsp;34&nbsp;56&nbsp;78&nbsp;89, cars licence plate like
+            123&nbsp;د‎&nbsp;4,&nbsp; quantities 37.5°, &nbsp; ٥٠ كلم (50km)
+            etc. </p>
+          <p>A particular attention is needed here. Firstly, numbers have a weak
+            directionality with regards to Bidi algorithm. For example,
+            alongside a number, certain otherwise neutral characters, such as
+            negative/positive sign, currency or degree symbols, are likely to be
+            treated as part of the number rather than a neutral.</p>
+          <p>Secondly, the placement of the accompanying signs and symbols may
+            depend on regions. Generally Middle East (or anglophone regions) vs.
+            Western (or francophone regions). This is not to mention punctuation
+            signs.</p>
+          <ul>
+            <li> The percent sign is to be placed on the left after the number
+              (٪١٢ not ١٢٪), without space (٪&nbsp;١٢). With European numbers,
+              the % percent sign is sometime used, and placed indifferently on
+              the right or the left of the digits (12% or %12).</li>
+            <li>Arabic decimal and thousand sign obey to the same rule as for
+              European numbers (١٬٢٣٤٫٥٦). European signs are used with
+              European numbers (1.234,56 or 1,234.56).</li>
+            <li>Money or currency signs when they come alongside a number, are
+              to be placed at the left and be treated as part of the number
+              rather than a neutral (€12.3 or €١٢٫٣).</li>
+            <li>Unlike degree sign that is to be placed at the right of the
+              number (37.5°&nbsp;C, ٩٩٫٥°&nbsp;F) or (<span dir="rtl">37.5°&nbsp;م</span>,
+              <span dir="rtl">۹۹٫۵°&nbsp;ف</span>).</li>
+            <li>For quantities measurement, there should a
+              separating space (<span dir="rtl">12&nbsp;كغ</span>, <span dir="rtl">٤٥&nbsp;مم</span>).
+            </li>
+            <li>The same apply when using range of values. (<span dir="rtl">12-15&nbsp;كغ</span>,
+              but <span dir="rtl">12٪-15٪&nbsp;كغ</span>).</li>
+            <li> Solidus sign " / " (U+002F) is used for fraction or ratio
+              notation. Fraction are noted for one-half, say, 2/1 or ٢/١, mostly
+              in RTL mode. There is no standard way, however, and some
+              region/author may write 1/2 for European digits. </li>
+            <p class="issue">May be use image for examples.</p>
+            <li>Notation with Solidus sign " / " are used in:<br>
+              <ul>
+                <li>Notation such as speed "50 km/h"<br>
+                  كم/س ‎ 50</li>
+                <li>Notation such as "Page / Volume", for example a reference to
+                  a page in a volume<br>
+                  ١٢٣/١ for volume ١, page ١٢٣</li>
+                <li>or reference to Quran "Verse / Surah",<br>
+                  ١٣/٩٠ for Surah 90, Verse 13</li>
+                <li>Mark or rank in a classification <br>
+                  20/15 for rank 15 over 20</li>
+                <li>Dates (2017/06/24, ٢٠١٧/٠٦/٢٤)</li>
+                <p class="issue">Look for evidence for some examples</p>
+              </ul>
+            </li>
+          </ul>
+          <p>Other issues</p>
+            <p class="issue"> How to know that a sign (space, comma ...) is a separator or a
+              sign within a number? <code>+12&nbsp;34&nbsp;56&nbsp;78&nbsp;90</code>
+              is a phone number or a sequence of digits? Which may be inverted
+              in RTL. A tip is to use a syntax like <code>12.34.56.78.90</code>
+              or <code>12-34-56-78-90</code> for phones.</p>
+            <p class="issue">May be mention the Decimal Separator Key Symbol " ⎖ " (U+2396),
+              used with keyboards (resembles an apostrophe)</p>
+          </ul>
+        </section>
+      <p><b><i>Old text bellow</i></b></p>
       <p>Arabic script uses non-European digits for numbers in certain locales and situations.</p>
 
 
