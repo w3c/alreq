@@ -24,33 +24,37 @@ StringWriter writer = new StringWriter()
 MarkupBuilder markup = new MarkupBuilder(writer)
 markup.setDoubleQuotes(true)
 
-markup.section(class: 'appendix', id: "glossary") {
-    h2 'Glossary'
-    table(class: 'glossary') {
-        thead {
-            tr {
-                th ('Term')
-                th ('Arabic')
-                th ('Transliterated Arabic')
-                th ('Persian')
-                th ('Transliterated Persian')
-                th ('Definition')
-            }
-        }
-        tbody {
-            db.eachRow(selectQuery)
-                    { row ->
-                        tr(id: "def_${row['TERMINOLOGY'].replaceAll(' ', '')}") {
-                            td row['TERMINOLOGY']
-                            td (lang: 'ar', dir:'rtl', row['ARABIC'])
-                            td (lang: 'ar-Latn-t-ar-m0-alaloc-2012', row['ARABIC TRANSLITERATION'])
-                            td (lang: 'fa', dir:'rtl', row['PERSIAN'] != null ? row['PERSIAN'] : '')
-                            td (lang: 'fa-Latn-t-fa-m0-ungen-2012', row['PERSIAN TRANSLITERATION'] != null ? row['PERSIAN TRANSLITERATION'] : '')
-                            td row['DEFINITION'] != null ? row['DEFINITION'] : ''
+markup.html {
+    body {
+        section(class: 'appendix', id: "glossary") {
+            h2 'Glossary'
+                table(class: 'glossary') {
+                    thead {
+                        tr {
+                            th ('Term')
+                            th ('Arabic')
+                            th ('Transliterated Arabic')
+                            th ('Persian')
+                            th ('Transliterated Persian')
+                            th ('Definition')
                         }
                     }
+                    tbody {
+                        db.eachRow(selectQuery)
+                                { row ->
+                                    tr(id: "def_${row['TERMINOLOGY'].replaceAll(' ', '')}") {
+                                        td row['TERMINOLOGY']
+                                        td (lang: 'ar', dir:'rtl', row['ARABIC'])
+                                        td (lang: 'ar-Latn-t-ar-m0-alaloc-2012', row['ARABIC TRANSLITERATION'])
+                                        td (lang: 'fa', dir:'rtl', row['PERSIAN'] != null ? row['PERSIAN'] : '')
+                                        td (lang: 'fa-Latn-t-fa-m0-ungen-2012', row['PERSIAN TRANSLITERATION'] != null ? row['PERSIAN TRANSLITERATION'] : '')
+                                        td row['DEFINITION'] != null ? row['DEFINITION'] : ''
+                                    }
+                                }
+                    }
+                }
+            }
         }
-    }
 }
 
-fOut.withWriter('UTF-8') { it.write(writer.toString())}
+fOut.withWriter('UTF-8') { it.write(writer.toString().replace("\n", "\n\n"))}
