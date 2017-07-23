@@ -1,4 +1,5 @@
-Terminology	Priority	Arabic	Arabic Transliteration	Persian	Persian Transliteration	Definition	Source	Translation Source (ar)	Translation Source (fa)	Definition Source
+TERMINOLOGY	PRIORITY	ARABIC	ARABIC TRANSLITERATION	PERSIAN	PERSIAN TRANSLITERATION	DEFINITION	SOURCE	TRANSLATION SOURCE (AR)	TRANSLATION SOURCE (FA)	DEFINITION SOURCE
+abbreviation	2	اِخْتِزَالْ	ikhtizāl							
 alignment	1	مُحَاذَاةْ، تَرصِيف	muḥādhāt, tarṣīf	هم‌ترازی	hmtrāzi		[CLREQ]			
 alphabet length	3						[SOLTANI]			
 alphanumeric	1	أَبجَدِي عَدَدِي	abjadī ʻadadī	الفبایی عددی	ālfbāiy addi		[SOLTANI]			
@@ -17,7 +18,7 @@ auto leading	3						[LUPTON]
 back margin	2	الهَامِشْ الخَلْفِي 	al-hāmish al-khalfī	حاشیهٔ داخلی	hāšihٔ dāxli		[SOLTANI]			
 back matter	2	بَيَانَاتْ نِهَايَةْ الكِتَابْ 	bayānāt nihāyat al-kitāb	واحدهای پس از متن	uāhdhāy ps aoez mtn	Appendices, supplements, glossary of terms, index and/or bibliography, and so on, appended at the end of a book.	[JLREQ]			[JLREQ]
 bad break	2	قَطْعْ سَيِّئْ	qaṭʻ sayyi’	شکستن بد، سطرشکنی بد	škstn bd, strškni bd		[SOLTANI]			
-baseline	1	سَطْرُ الأَسَاسْ، خَطْ الاِرْتِكَازْ	satru al-’asās, khaṭ al-irtikāz	خط کرسی	xt krsi	A virtual line on which almost all glyphs in Western fonts are designed to be aligned. 	[JLREQ]			[JIS-Z-8125]
+baseline	1	خَطْ قَاعِدِي، خَطْ الاِرْتِكَازْ، سَطْرُ الأَسَاسْ	khaṭ qāʻidī, khaṭ al-irtikāz, satru al-’asās	خط کرسی	xt krsi	A virtual line on which almost all glyphs in Western fonts are designed to be aligned. 	[JLREQ]			[JIS-Z-8125]
 bibliography	2	المَرَاجِعْ	al-marājiʻ	کتابنامه	ktābnāmh	A list of works and papers related to the subjects in the text. 	[JLREQ]			[JIS-Z-8125]
 base text	3						[CLREQ]			
 baseline grid	3						[LUPTON]			
@@ -70,6 +71,7 @@ character size	1	حَجْمُ الحَرْفْ	ḥajmu al-ḥarf	اندازهٔ 
 closing bracket	1	قَوْسْ  إِغْلَاقْ	qaws ighlāq	کروشه بسته	kruše bsth		[CLREQ]			
 column inch	4						[SOLTANI]			
 code point	1	نُقْطة تَرْمِيزْ	nuqṭat tarmīz				[MAJAM]			
+color	2	لَوْنْ	lawn			Char­ac­ter­is­tics like dark­ness, con­trast, texture that give the an overall impression of how dense or heavy the text appears on the page.				
 colon	1	نُقْطَتَيْنْ	nuqṭatayn	دونقطه	dunqth		[CLREQ]			
 color										
 column	1	عَمُودْ	ʻamūd	ستون	stun	A partition on a page in multi-column format. 	[JLREQ]			[JIS-Z-8125]
@@ -87,6 +89,7 @@ cross reference	3						[SOLTANI]
 curve quotation mark	3						[CLREQ]			
 composition	1	تَرْكِيبْ	tarkīb	حروفچینی و صفحه‌بندی	hrufčini v sfhhbndi	Process of arrangement of text, figures and/or pictures, etc on a page in a desired layout (design) in preparation for printing.	[JLREQ]			[JLREQ]
 compound word	2	كَلِمَة مُرَكَّبَة	kalimah murakkabah	کلمهٔ مرکب	klmhٔ mrkb		[SOLTANI]			
+connection	2	وَصْلْ	waṣl							
 continuous pagination	1	تَرْقِيمْ الصَّفَحَاتْ المُسْتَمِرْ	tarqīm al-ṣṣafaḥāt al-mustamir	صفحه‌شماری پیوسته	sfhhšmāri pivsth	a) To number the pages of a book continuously across all those in the front matter, the text and the back matter. b) To number the pages continuously across those of all books, such as a series published in separate volumes. Also to number the pages continuously across those of all issues of a periodical published in a year, aside from pagination per issue. 	[JLREQ]		[SOLTANI]	[JIS-Z-8125]
 control characters	1	حُرُوفْ تَحَكُّمْ	ḥurūf taḥakkum	حروف کنترلی	hruf kntrli		[MAJAM]			
 desktop publishing	3						[LUPTON]			
@@ -105,7 +108,8 @@ diacritical marks	1	علامات التشكيل	ʻalāmāt al-ttashkīl	اِعر
 diagonal fraction	2	جُزْءْ قُطْرِي	juz’ quṭrī				[FELICI]			
 diagram	2	رَسْمْ بَيَانِي، رَسْمْ تَخْطِيطِي	rasm bayānī, rasm takhṭīṭī	نمودار	nmudār		[SOLTANI]			
 end point	3						[CLREQ]			
-discretionary hyphen	1	وَاصِلَة لَيِّنَة	wāṣilah layyinah			See "soft hyphen".	[FELICI]			
+disconnection	2	فَصْلْ	faṣl							
+discretionary hyphen	1	وَاصِلَة لَيِّنَة	wāṣilah layyinah			See soft hyphen.	[FELICI]			
 endpaper	3						[SOLTANI]			
 entry	3						[SOLTANI]			
 display	2	عَرْضْ	ʻarḍ	نمایش	nmāyš		[SOLTANI]			
@@ -121,6 +125,7 @@ fixed inter-character spacing	3					A text setting with a uniform inter-characte
 ellipsis	1	عَلَامَة القَطْع، القَطْعْ	ʻalāmat al-qaṭʻ, al-qaṭʻ	سه‌نقطه	shnqth		[CLREQ]			
 flush and hang	3						[SOLTANI]			
 drop cap	3						[FELICI]			
+Elongation	2	التَّطْوِيلْ	al-ttaṭwīl							
 EM	2	(وَحَدَةْ قِيَاسْ)  إِمْ، وَحَدَةْ قِيَاسْ النُقْطَة	(waḥadah qīās) im, waḥadat qīās al-nuqṭah	اِم، ضربه	āem, zrbh	Unit in the field of typography, equal to the currently specified point size. A reference to the width of the capital "M"	[SOLTANI]		[SOLTANI]	
 flyleaf	3						[SOLTANI]			
 foldout	3						[SOLTANI]			
@@ -178,6 +183,7 @@ inter-character space	3					Amount of space between two adjacent character frame
 hanging indentation	2	تعليق المسافة البادئة					[LUPTON]			
 hard hyphen	3						[FELICI]			
 hanging punctuation	2	تعليق علامات الترقيم					[LUPTON]			
+harakat	2	حَرَكَاتْ	ḥarakāt			Tashkil marks representing short vowel sounds.				
 head	1	رَأْسْ	ra’s	سَر	sar	a) The top part of a book or a page. b) The top margin between the top edge of a trimmed page and the hanmen (text area) 	[JLREQ]		[SOLTANI]	[JIS-Z-8125]
 head/top margin	1	هَامِشْ عُلْوِي	hāmish ʻulwī	حاشیهٔ بالا	hāšihٔ bālā		[CLREQ]			
 header	1	رَأْسْ	ra’s	سرصفحه	srsfhh		[FELICI]			
@@ -192,11 +198,13 @@ hyphen	1	وَاصِلَة	wāṣilah	نیمخط	nimxt		[LUPTON]		[SOLTANI]
 hyphenation	1	اِسْتِخْدَامْ الوَاصِلَة	istikhdām al-wāṣilah			A method of breaking a line by dividing a Western word at the end of a line and adding a hyphen at the end of the first half of the syllable.	[JLREQ]			[JLREQ]
 hyphenation and justification	2	الوَاصِلَة وَالمُحَاذَاةْ	al-wāṣilah wālmuḥādhāt			Also abbreviated as H&J	[FELICI]			
 hyphenation routine	2	إِجْرَاءْ الوَاصِلَة	ijrā’ al-wāṣilah				[SOLTANI]			
+ihmal	2	إِهْمَالْ	ihmāl			See tashkil				
+ijam	1	إِعْجَامْ	iʻjām			Diacritical marks applied to a basic letter shape (or skeleton) to derive a new letter. For example a dot under a "curve" to get the letter Beh. In Unicode each letter plus ijam combination is encoded as a separate, atomic character.				
 illustrations	1	رَسْمْ تَوْضِيحِي، صُورَة إِيضَاحِيَّة	rasm tawḍīḥī, ṣūrahīḍāḥīyah	تصویر	tsuyr	A general term referring to a diagram, chart, cut, figure, picture and the like, to be used for printed materials.	[JLREQ]		[SOLTANI]	[JLREQ]
 indentation	1	إِزَاحَة، مَسَافَة بَادِئَة 	izāḥah, masāfah bādi’ah	فاصلهٔ سرِ سطر، تورفتگی سرِ سطر	fāslhٔ sre str, turftɡi sre str		[FELICI]		[POOYA]	
 line adjustment by inter-character space reduction	3					A line breaking rule that aligns both edges of a line by removing adjustable spaces such as conditional spaces for punctuation marks. .	[JLREQ]			
 independent pagination	1	تَرْقِيمْ الصَّفَحَاتْ مُسْتَقِلْ	tarqīm al-ṣṣafaḥāt mustaqil	صفحه‌بندی مستقل	sfhhbndi mstql	To number the pages of the front matter, the text and the back matter independently. 	[JLREQ]			[JIS-Z-8125]
-index	1	فَهْرَسْ	fahras	فهرست راهنما	fhrst rāhnmā	A list of terms or subjects with page numbers for where they are referred to in a single or multiple volumes of a book. 	[JLREQ]		[SOLTANI]	[JIS-Z-8125]
+index	1	فِهْرِسْ	fihris	فهرست راهنما	fhrst rāhnmā	A list of terms or subjects with page numbers for where they are referred to in a single or multiple volumes of a book. 	[JLREQ]		[SOLTANI]	[JIS-Z-8125]
 initial	2	أَوَّلِي	awwalī	آغازین	āqāzin		[SOLTANI]			
 inline direction	1	الاِتِّجَاهْ السَّطْرِي	al-ittijāh al-ssaṭrī			Text direction in a line. 	[JLREQ]			[JIS-Z-8125]
 input	1	إِدْخَالْ	idkhāl	ورودی	urudi		[SOLTANI]		[SOLTANI]	
@@ -219,7 +227,7 @@ lettering	2	تَرْقِينْ، كِتَابَة	tarqīn, kitābah	طراحی �
 letterpress printing	1	طِبَاعَةْ الحُرُوفْ	ṭibāʻat al-ḥurūf	چاپ برجسته	čāp brjsth	The traditional printing method using movable type.	[JLREQ]			[JLREQ]
 letterspacing	2	تَبَاعُدْ الحُرُوفْ	tabāʻud al-ḥurūf	فاصلهٔ حروف	fāslhٔ hruf		[LUPTON]			
 medial	3						[CLREQ]			
-ligature	1	رَبْطْ بَيْنَ الحُرُوفْ	rabṭ bayna al-ḥurūf				[LUPTON]			
+ligature	1	رَبْطْ بَيْنَ الحُرُوفْ، تَرْكِيبْ، حَرْفْ مُرَكَّبْ 	rabṭ bayna al-ḥurūf, tarkīb, ḥarf murakkab				[LUPTON]			
 line	1	سَطْرْ	saṭr	خط	xt		[CLREQ]			
 line adjustment	1	مُحَاذَاةْ السَّطْرْ	muḥādhāt al-ssaṭr	تنظیم خط	tnzim xt	A method of aligning both edges of all lines to be the same given length by removing or adding adjustable spaces.	[JLREQ]			[JLREQ]
 line adjustment by hanging punctuation	1	مُحَاذَاة السَّطْرْ  بِتَعْلِيقْ عَلَامَاتْ التَّرْقِيمْ	muḥādhāt al-ssaṭr bitaʻlīq ʻalāmāt al-ttarqīm			A line breaking rule to avoid commas or full stops at a line head (which is prohibited in Japanese typography) by taking them back to the end of the previous line beyond the specified line length. 	[JLREQ]			[JIS-Z-8125]
@@ -245,6 +253,7 @@ list	2	قَائِمَة، لَائِحَة	qā’imah, lā’iḥah	فهرست	f
 long dash	1	شَرْطَة طَوِيلَة	sharṭah ṭawīlah				[CLREQ]			
 loop	3	الدَّوْرَة	al-ddawrah			In typography, the part of a letter or other character consisting of a bowl which serves as a flourisg, as in the bottom portion of the lowercase "g." 		https://blog.29lt.com/2015/07/30/arabic-type-anatomy-typographic-terms/		
 Loop-height	3	اِرْتِفَاعْ الدَّوْرَة	irtifāʻ al-ddawrah					https://blog.29lt.com/2015/07/30/arabic-type-anatomy-typographic-terms/		http://printwiki.org/Loop
+mabsut	2	مَبْسُوطْ	mabsūṭ			Kind of writing style that tends to rigidity and firmness with pronounced angularity.				
 main text	1	نَصْ رَئِيسِي	naṣ ra’īsī	متن اصلی	mtn aoesli	a) The principal part of a book, usually preceded by the front matter, followed by the back matter. b) The principal part of an article excluding figures, tables, heading, notes, leads and so on. c) The content of a page excluding running heads and page numbers. d) The net contents of a book excluding covers, end papers, insets and so on. 	[JLREQ]			[JIS-Z-8125]
 margin	1	هَامِشْ	hāmish	حاشیه	hāših		[SOLTANI]		[SOLTANI]	
 mark up		مصفوفة		نشانگذاری			[SOLTANI]		[SOLTANI]	
@@ -262,6 +271,7 @@ phonetic annotation	3						[CLREQ]
 pica em	3						[SOLTANI]			
 multi-column grid	2	شَبَكَة مُتَعَدِّدَة الأَعْمِدَة	shabakah mutaʻaddidat al-’aʻmidah	شطرنجی چندستونی	štrnji čndstuni		[LUPTON]		[POOYA]	
 multivolume work	2	عَمَلْ مُتَعَدِّدْ الأَجْزاءْ 	ʻamal mutaʻaddid al-’ajz’	اثر چند جلدی	āsr čnd jldi	A set of work published in two or more volumes, as in the complete work or the first/last half volumes.	[JLREQ]			[JLREQ]
+mukawwar	2	مُكَوَّرْ	mukawwar			Kind of writing style, generally opposed to mabsut, that is more flexible and rounded. 				
 new column	1	عَمُودْ جَدِيدْ	ʻamūd jadīd	ستون جدید	stun jdid	In multi-column setting, to change to new column before the end of current column.	[JLREQ]			[JLREQ]
 new recto	2	صَفْحَة يُمْنَى جَدِيدَة	ṣafḥah yumná jadīdah	آغاز در صفحهٔ فرد	āqāz dr sfhhٔ frd	To start a new heading or something on a odd page. 	[JLREQ]		[SOLTANI]	[JIS-Z-8125]
 post-sentence pause punctuation marks	3						[CLREQ]			
@@ -359,6 +369,7 @@ second indenetation	2	المَسَافَة البَادِئَة الثَّانِ
 second level heading	1	عُنْوَانْ المُسْتَوَى الثَّانِي	ʻunwān al-mustawá al-ththānī			Second level and middle size heading between first level heading and third level heading. 	[JLREQ]			[JIS-Z-8125]
 semicolon	1	فَاصِلَة مَنْقُوطَة	fāṣilah manqūṭah	نقطه‌ویرگول	nqthuyrɡul		[LUPTON]			
 sentence	1	جُمْلَة	jumlah	جمله	jmlh		[SOLTANI]			
+shadda	2	شَدَّة	shaddah			A tashkil mark indicating gemination of the base consonant.				
 sideheads	2	رُؤُوسْ الجَانِبْ	ru’ūs al-jānib				[SOLTANI]			
 verso	3						[SOLTANI]			
 single line alignment method	1	طَرِيقَة المُحَاذَاة لِسَطْرٍ وَاحِدْ 	ṭarīqat al-muḥādhāt  lisaṭrin wāḥid			To align a run of text that is shorter than a given line length to designated positions.	[JLREQ]			[JLREQ]
@@ -379,6 +390,7 @@ style guide	1	دَلِيلْ النَّمَطْ	dalīl al-nnamaṭ	شیوه‌ن
 subheads	2	العَنَاوِينْ الفَرْعِيَّة	al-ʻanāwīn al-farʻīyah				[SOLTANI]			
 subscript (inferior)	1	نَصْ مُنْخَفِضْ (أَسْفَلْ)	naṣṣ munkhafiḍ (’asfal)			Smaller face of characters, attached to the lower right or the lower left of a normal size character. 	[JLREQ]			[JIS-Z-8125]
 subtitle	1	عُنْوَانْ فَرْعِي	ʻunwān farʻī	زیرنویس	zirnuys	Secondary title for headings, subtile.	[JLREQ]			[JIS-Z-8125], [JIS-X-4051]
+sukun	2	سُكُونْ	sukūn			A tashkil mark indicating the lack of a vowel after the consonant to which it is attached.				
 superior numeral	2	الرَّقْمْ العُلْوِي	al-rraqm al-ʻulwī				[SOLTANI]			
 superscript (superior)	1	نَصْ مُرْتَفِعْ (أَعْلَى)	naṣṣ murtafiʻ (’aʻlá)			Smaller face of characters, attached to the upper right or the upper left of a normal size character. 	[JLREQ]			[JIS-Z-8125]
 symbol	2	رَمْزْ	ramz				[SOLTANI]			
@@ -388,6 +400,8 @@ table	1	جَدْوَلْ	jadwal	جدول	jdul	Formatted data consisting of chara
 table of contents	1	جَدْوَلْ المُحْتَوَيَاتْ، الفِهْرِسْ	jadwal al-muḥtawayāt, al-fihris	فهرست مطالب	fhrst mtālb	A list of headings of contents of a book in page order or arranged by subjects, with page numbers on which each section begins. 	[JLREQ]			[JIS-Z-8125]
 tail margin	2	الهاَمِشْ الأَسْفَلْ	al-hamish al-’asfal				[SOLTANI]			
 tatweel		تَطْوِيلْ	taṭwīl	کشیده	mtn					
+tanwin	2	تَنْوِينْ	tanwīn			(Derived from Noon). Tashkil marks indicating postnasalized or long vowels at the end of a word, and indicated by doubling the sign of one of the harakat diacritics.				
+tashkil	1	تَشْكِيلْ	tashkīl			Marks that are added to letters to  indicate  vocalisation  of  text or  to  correct pronunciation. In Unicode these are all combining characters applied to a base character.				
 text	1	نَصْ	naṣṣ	متن			[CLREQ]			
 text direction	1	اِتِّجَاهْ النَّصْ	ittijāh al-nnaṣ	جهت متن	jht mtn	Horizontal setting or vertical setting. 	[JLREQ]			[JIS-Z-8125]
 thin space	2	فَرَاغْ رَقِيقْ	farāgh raqīq				[SOLTANI]			
