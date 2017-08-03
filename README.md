@@ -26,3 +26,4 @@ Editors should be familiar with and use the following:
 - [Charter](https://www.w3.org/International/groups/arabic-layout/charter.html)
 - [Action tracker](https://www.w3.org/International/groups/arabic-layout/track/actions/open)
 - [Practical tips for task forces](https://w3c.github.io/i18n-activity/guidelines/process.html)
+- [Meeting info](https://www.w3.org/2017/07/alreq-meeting-info.html)
