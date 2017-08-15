@@ -90,8 +90,20 @@
           "publisher": "The Unicode Consortium",
           "title": "The Unicode Standard",
           "id": "UNICODE"
+        },
+        
+        "W3-ARAB-MATH": {
+          "authors": [
+          	"Azzeddine Lazrek", 
+          	"Mustapha Eddahibi", 
+          	"Khalid Sami", 
+          	"Bruce R. Miller"
+          ],
+          "href": "https://www.w3.org/TR/arabic-math/",
+          "publisher": "World Wide Web Consortium",
+          "title": "Arabic mathematical notation",
+          "id": "W3-ARAB-MATH"
         }
-
       },
     };
   </script>
@@ -1528,7 +1540,7 @@
 
 
     <section id="h_numbers">
-      <h3><a href="#h_numbers">Arabic numbering</a>
+      <h3><a href="#h_numbers">Numbers</a>
       </h3>
 
       <section id="h_naming_conventions">
@@ -1547,34 +1559,84 @@
 	  <li><strong>Arabic-Indic Numerals</strong> are <bdi>٠</bdu>, <bdi>١</bdi>, <bdi>٢</bdi>,
               <bdi>٣</bdi>, <bdi>٤</bdi>, <bdi>٥</bdi>, <bdi>٦</bdi>, <bdi>٧</bdi>, <bdi>٨</bdi>,
               <bdi>٩</bdi>;</li>
-	  <li><strong>Eastern Arabic-Indic Numerals</strong> are ۰, ۱, ۲, ۳, ۴, ۵, ۶, ۷, ۸, ۹;</li>
+          <li><strong>Eastern Arabic-Indic Numerals</strong> are ۰, ۱, ۲, ۳, ۴, ۵, ۶, ۷, ۸, ۹;</li>
+          <li><strong>Extended Arabic-Indic Numerals</strong> same as Eastern Arabic-Indic Numerals.</li>
 	  <li><strong>Western Arabic Numerals</strong> same as European Numerals;</li>
 	  <li><strong>Eastern Arabic Numerals</strong> is used to refer to both Arabic-Indic and
 	    Eastern Arabic-Indic Numerals. Should be avoided due to ambiguity;</li>
 	  <li><strong>Indic Numerals</strong> should be avoided to refer to either of Arabic-Indic
 	    or Eastern Arabic-Indic numerals.</li>
+          <li><strong>Digit</strong>, <strong>Numeral digit</strong>, and <strong>Numeral</strong>
+            are used as synonyms.</li>
 	</ul>
       </section>
 
-        <section id="h_Arabic_number_writing">
-          <h4><a href="#h_Arabic_number_writing">Arabic number writing</a> </h4>
-          <p>There are mostly two families of <span style="font-family: Waseem;">numerals</span>
-            in Arabic script. One known as European digits aka as Arabic Digits
-            (Unicode range U+0030-U+0039), the second is Arabic-Indic Digits
-            (Unicode range U+0660-U+0669). The latter further gave another
-            sub-notation for Persian/Urdu digits, the Extended (or Eastern)
-            Arabic-Indic Digits (Unicode range U+06F0-U+06F9), in which digits
-            4, 5 and 6 have another glyph. The following table summarizes those
-            families:</p>
-          <figure id="order_in_memory"> <img style="width: 465px; height: 95px;"
-              src="images/Arabic-numeral.png"
-              alt="Arabic Numerals">
-            <figcaption> Different notations for Arabic script digits </figcaption>
-          </figure>
-          <p>Digits on the first row are predominant in Western Arabic regions,
-            while the second row digits are used in most of the Middle-East
-            countries, sometime along with the former. Persian and Urdu mostly
-            use the third category.</p>
+        <section id="h_Families_of_Numerals">
+          <h4><a href="#h_Families_of_Numerals">Families of Numerals</a></h4>
+          <p>There are three families of numerals used with languages using the Arabic Script.
+	    The first is known as European Numerals; the second family is Arabic-Indic Numerals.
+	    The third is Eastern Arabic-Indic Numerals. The following table, based on a similar table in
+	    [[W3-ARAB-MATH]] exhibits these three families:</p>
+
+	  <table border="1">
+	    <thead>
+	      <tr>
+		<th>Family</th>
+		<th>Unicode Range</th>
+		<th colspan="10">Numeral Digits</th>
+		<th>Regions in Use</th>
+	      </tr>
+	    </thead>
+	    <tbody>
+	      <tr>
+		<th>Arabic-Indic</th>
+		<td>U+0660..U+0669</td>
+		<td>٠</td>
+		<td>١</td>
+		<td>٢</td>
+		<td>٣</td>
+		<td>٤</td>
+		<td>٥</td>
+		<td>٦</td>
+		<td>٧</td>
+		<td>٨</td>
+		<td>٩</td>
+		<td>Arabic-speaking countries of the Middle-East, eastern Arabic-speaking countries; e.g. Egypt.</td>
+	      </tr>
+
+	      <tr>
+		<th>European</th>
+		<td>U+0030..U+0039</td>
+		<td>0</td>
+		<td>1</td>
+		<td>2</td>
+		<td>3</td>
+		<td>4</td>
+		<td>5</td>
+		<td>6</td>
+		<td>7</td>
+		<td>8</td>
+		<td>9</td>
+		<td>Western Arabic-speaking countries; e.g. Algeria or Morocco.</td>
+	      </tr>
+	      <tr>
+		<th>Eastern Arabic-Indic</th>
+		<td>U+06F0..U+06F9</td>
+		<td>۰</td>
+		<td>۱</td>
+		<td>۲</td>
+		<td>۳</td>
+		<td>۴</td>
+		<td>۵</td>
+		<td>۶</td>
+		<td>۷</td>
+		<td>۸</td>
+		<td>۹</td>
+		<td>Iran and Afghanistan.</td>
+	      </tr>
+	    </tbody>
+	  </table>
+	  
           <p>Arabic numbers are written with the lowest significant digits to
             the right and the highest digits to the left. That arrangement is
             identical to the Western one, even though Arabic script is written
