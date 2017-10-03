@@ -223,18 +223,18 @@
       set from right to left.</p>
 
 
-      <p><a href="http://www.unicode.org/reports/tr9/">Unicode Bidirectional Algorithm</a>
-      [[!BIDI]] details an algorithm for rendering right-to-left text and covers a myriad of
-      situations in mixing different kinds of characters. A simpler explanation of the basics of
-      the algorithm exists in the W3C article <a href=
-      "https://www.w3.org/International/articles/inline-bidi-markup/uba-basics">Unicode
+      <p><dfn data-lt="bidirectional algorithm|bidi algorithm"><a href=
+      "http://www.unicode.org/reports/tr9/">Unicode Bidirectional Algorithm</a></dfn> (or
+      <span class="qterm">bidi algorithm</span>, for short) [[!BIDI]] details an algorithm for
+      rendering right-to-left text and covers a myriad of situations in mixing different kinds of
+      characters. A simpler explanation of the basics of the algorithm exists in the W3C article
+      <a href="https://www.w3.org/International/articles/inline-bidi-markup/uba-basics">Unicode
       Bidirectional Algorithm basics</a>. [[UBA-BASICS]] You can refer to these documents for more
       information about Unicode’s bidirectional algorithm.</p>
 
 
-      <p>A brief overview of the bidirectional (<span class="qterm">bidi</span> for short)
-      algorithm follows, because the direction is an essential part of how Arabic script is
-      used.</p>
+      <p>A brief overview of the <a>bidirectional algorithm</a> follows, because the direction is
+      an essential part of how Arabic script is used.</p>
 
 
       <p>The characters of a text are digitally stored and transferred in the same order that they
@@ -303,9 +303,10 @@
       </figure>
 
 
-      <p>Unicode has a <span class="qterm">bidi category</span> property defined for each character
-      that is used to determine the direction of each character. All the Arabic letters are marked
-      as right-to-left characters, while Latin characters have the left-to-right category.</p>
+      <p>Unicode has a <span class="qterm">bidi class</span> (or <span class="qterm">bidi
+      type</span>) property defined for each character that is used to determine the direction of
+      each character. All the Arabic letters are marked as right-to-left characters, while Latin
+      characters have the left-to-right category.</p>
 
 
       <p>Some characters, mostly punctuations, are <span class="qterm">neutral</span>. The
@@ -347,19 +348,20 @@
 
 
         <ul>
-          <li><strong>Isolated form</strong>, used when the letter does not join to any of the
-          surrounding letters;</li>
+          <li><dfn data-lt="isolated">Isolated form</dfn>, used when the letter does not join to
+          any of the surrounding letters;</li>
 
 
-          <li><strong>Initial form</strong>, used when the letter is joining only to its next
-          (left-hand side) letter;</li>
+          <li><dfn data-lt="initial">Initial form</dfn>, used when the letter is joining only to
+          its next (left-hand side) letter;</li>
 
 
-          <li><strong>Medial form</strong>, used when the letter is joining on both sides, and</li>
+          <li><dfn data-lt="medial">Medial form</dfn>, used when the letter is joining on both
+          sides, and</li>
 
 
-          <li><strong>Final form</strong>, used when the letter is joined only to its previous
-          (right-hand side) letter.</li>
+          <li><dfn data-lt="final">Final form</dfn>, used when the letter is joined only to its
+          previous (right-hand side) letter.</li>
         </ul>
 
 
@@ -381,14 +383,14 @@
 
 
         <ul>
-          <li><strong>Join-to-left forms</strong>: either Initial form or Medial form of a letter,
-          which joins to the left-hand side (next) letter. Other forms are called <span class=
-          "qterm">non-join-to-left</span>.</li>
+          <li><dfn data-lt="join-to-left">Join-to-left forms</dfn>: either Initial form or Medial
+          form of a letter, which joins to the left-hand side (next) letter. Other forms are called
+          <dfn data-lt="non-join-to-left form">non-join-to-left</dfn>.</li>
 
 
-          <li><strong>Join-to-right forms</strong>: either Medial form or Final form of a letter,
-          which joins to the right-hand side (previous) letter. Other forms are called <span class=
-          "qterm">non-join-to-right</span>.</li>
+          <li><dfn data-lt="join-to-right">Join-to-right forms</dfn>: either Medial form or Final
+          form of a letter, which joins to the right-hand side (previous) letter. Other forms are
+          called <dfn data-lt="non-join-to-right form">non-join-to-right</dfn>.</li>
         </ul>
       </section>
 
@@ -398,50 +400,49 @@
         </h4>
 
 
-        <p><span class="qterm">There are different categories of letters based on their joining
-        behavior:</span>
-        </p>
+        <p>There are different categories of letters based on their joining behavior:</p>
 
 
         <ul>
           <li>
-            <strong>Dual-joining letters</strong>: can join from both sides, like the letter in
-            <a href="#letter_meem_shapes"></a>, and has all the four shapes mentioned above.
+            <dfn data-lt="dual-joining">Dual-joining letters</dfn>: can join from both sides, like
+            the letter in <a href="#letter_meem_shapes"></a>, and has all the four shapes mentioned
+            above.
           </li>
 
 
           <li>
-            <strong>Right-joining letters</strong>: can only join to their previous (right-hand
-            side) letter, and therefore, only have isolated and final shapes. <a href=
-            "#letter_reh_shapes"></a> shows samples of both forms for U+0631 ARABIC LETTER REH (ر).
+            <dfn data-lt="right-joining">Right-joining letters</dfn>: can only join to their
+            previous (right-hand side) letter, and therefore, only have <a>isolated</a> and
+            <a>final</a> shapes. <a href="#letter_reh_shapes"></a> shows samples of both forms for
+            U+0631 ARABIC LETTER REH (ر).
           </li>
 
 
           <li>
-            <strong>Non-joining letters</strong>: cannot join to any surrounding letter, and
-            therefore can only take the isolated form. <a href="#letter_hamzah_shape"></a> shows a
-            sample of U+0621 ARABIC LETTER HAMZAH (ء) in its only possible form.
+            <dfn data-lt="non-joining">Non-joining letters</dfn>: cannot join to any surrounding
+            letter, and therefore can only take the <a>isolated</a> form. <a href=
+            "#letter_hamzah_shape"></a> shows a sample of U+0621 ARABIC LETTER HAMZAH (ء) in its
+            only possible form.
           </li>
         </ul>
 
 
         <figure id="letter_reh_shapes">
-          <span class="qterm"><img src="images/right-joining-letter.svg" alt=
-          "Two joining forms of U+0631 ARABIC LETTER REH."></span>
+          <img src="images/right-joining-letter.svg" alt=
+          "Two joining forms of U+0631 ARABIC LETTER REH.">
 
           <figcaption>
-            <span class="qterm">Right-joining letters</span> only have two forms of final and
-            isolated.
+            <a>Right-joining letters</a> only have two forms of <a>final</a> and <a>isolated</a>.
           </figcaption>
         </figure>
-        <span class="qterm">Most of Arabic letters are either <span class=
-        "qterm">dual-joining</span> or <span class="qterm">right-joining</span>.</span>
+        Most of Arabic letters are either <a>dual-joining</a> or <a>right-joining</a>.
 
         <figure id="letter_hamzah_shape">
           <img src="images/TBD.svg" alt="One joining form of U+0621 ARABIC LETTER HAMZAH.">
 
           <figcaption>
-            Non-Joining letters only have one form: isolated.
+            <a>Non-Joining letters</a> only have one form: <a>isolated</a>.
           </figcaption>
         </figure>
       </section>
@@ -457,26 +458,29 @@
 
 
         <ol>
-          <li>Letters of each word join together whenever possible, implicitly.</li>
+          <li id="joining_rule_1">Letters of each word join together whenever possible,
+          implicitly.</li>
 
 
-          <li>In some languages, like Persian and Urdu, there are words—mostly, but not limited to,
-          compound words—that require explicit breaks in the joining of letters, although joining
-          would otherwise be possible.</li>
+          <li id="joining_rule_2">In some languages, like Persian and Urdu, there are words—mostly,
+          but not limited to, compound words—that require explicit breaks in the joining of
+          letters, although joining would otherwise be possible.</li>
 
 
-          <li>In certain cases, a letter can be in a <span class="qterm">join-to-left</span> form
+          <li id="joining_rule_3">In certain cases, a letter can be in a <a>join-to-left</a> form
           without actually connecting to anything on the left, whether there’s any letter or not.
           This is often seen in list counters, abbreviations, and other cases where letters do not
-          have a word context, or are taken out of their original word context.</li>
+          have a word context, or are taken out of their original word context.
+          </li>
 
 
-          <li>In rare cases of words splitting where letters are joined, first letter of the second
-          half will be in a <span class="qterm">join-to-right</span> form without any previous
+          <li id="joining_rule_4">In rare cases of words splitting where letters are joined, first
+          letter of the second half will be in a <a>join-to-right</a> form without any previous
           letter. This behavior is limited to special cases like blanking specific letters of a
           word, line breaks in a paragraph, and word breaks across poetry verses. No standalone
-          word can have any letters in <span class="qterm">join-to-right</span> form without
-          joining on the right-hand side.</li>
+          word can have any letters in <a>join-to-right</a> form without joining on the right-hand
+          side.
+          </li>
         </ol>
 
 
@@ -518,15 +522,15 @@
           one word) which would normally join together, but should not. In Unicode, for such a
           case, a special character should be used to enforce disjoining of these letters. This
           character is called <span class="uname">U+200C ZERO WIDTH NON-JOINER</span>, or
-          <span class="qterm">ZWNJ</span> for short.</p>
+          <dfn>ZWNJ</dfn> for short.</p>
 
 
-          <figure id="disjoining_enforcement">
+          <figure id="fig_disjoining_enforcement">
             <img src="images/TBD.svg" alt="TBD: ZWNJ example.">
 
             <figcaption>
-              Example of using <span class="qterm">ZWNJ</span> for <span class="qterm">disjoining
-              enforcement</span>.
+              Example of using <a>ZWNJ</a> for <a href="h_disjoining_enforcement">disjoining
+              enforcement</a>.
             </figcaption>
           </figure>
         </section>
@@ -541,19 +545,18 @@
           joining form when it would not happen normally. For example, some abbreviation methods us
           Initial Form of letters, when possible, for every letter in the abbreviation. Again, in
           Unicode, a special character should be used to enforce joining on this letter. This
-          character is called <span class="uname">U+200D ZERO WIDTH JOINER</span>, or <span class=
-          "qterm">ZWJ</span> for short.</p>
+          character is called <span class="uname">U+200D ZERO WIDTH JOINER</span>, or
+          <dfn>ZWJ</dfn> for short.</p>
 
 
-          <p>Besides <span class="qterm">ZWJ</span>, there’s another special Unicode character,
-          <span class="uname">U+0640 ARABIC TATWEEL</span>, which enforces joining behavior (join
-          causing) on letters next to it. But, in contrast to <span class="qterm">ZWJ</span>,
-          <span class="qterm">TATWEEL</span> has a glyph shape, looking like a hyphen and usually
-          as wide as the SPACE glyph, which connects to the letters on the main joining line
-          (a.k.a. base-line). So, using <span class="qterm">TATWEEL</span> would give a similar
-          Joining Enforcement behavior, but has a side effect of wider length for the letter, which
-          is not always desired. That’s why it’s highly recommended to only use <span class=
-          "qterm">ZWJ</span> for joining control.</p>
+          <p>Besides <a>ZWJ</a>, there’s another special Unicode character, <span class=
+          "uname">U+0640 ARABIC TATWEEL</span>, which enforces joining behavior (join causing) on
+          letters next to it. But, in contrast to <a>ZWJ</a>, <dfn>TATWEEL</dfn> has a glyph shape,
+          looking like a hyphen and usually as wide as the SPACE glyph, which connects to the
+          letters on the main joining line (a.k.a. base-line). So, using <a>TATWEEL</a> would give
+          a similar Joining Enforcement behavior, but has a side effect of wider length for the
+          letter, which is not always desired. That’s why it’s highly recommended to only use
+          <a>ZWJ</a> for joining control.</p>
 
 
           <figure id="joining_enforcement">
@@ -561,14 +564,12 @@
             "TBD: TATWEEL example.">
 
             <figcaption>
-              Example of using <span class="qterm">ZWJ</span> (recommended) and <span class=
-              "qterm">TATWEEL</span> (not recommended) for <span class="qterm">joining
-              enforcement</span>.
+              Example of using <a>ZWJ</a> (recommended) and <a>TATWEEL</a> (not recommended) for
+              <a href="h_joining_enforcement">joining enforcement</a>.
             </figcaption>
           </figure>
         </section>
-        In Unicode, <span class="qterm">ZWNJ</span> and <span class="qterm">ZWJ</span> are called
-        <span class="qterm">Joining Control Characters</span>.
+        In Unicode, <a>ZWNJ</a> and <a>ZWJ</a> are called <dfn>Joining Control Characters</dfn>.
 
         <section id="h_joining_disjoining_enforcement">
           <h4><a href="#h_joining_disjoining_enforcement">Joining-Disjoining Enforcement</a>
@@ -576,19 +577,18 @@
 
 
           <p>Two enforcement methods mentioned above can be combined together to form a
-          <span class="qterm">Joining-Disjoining Enforcement</span> method, that enables
-          <span class="qterm">Joining Rule 3</span> for cases when there’s a <span class=
-          "qterm">dual-joining</span>/<span class="qterm">right-joining</span> letter after a
-          <span class="qterm">join-to-left</span> letter, which should not be joined to its
-          previous letter.</p>
+          <dfn>Joining-Disjoining Enforcement</dfn> method, that enables <a href=
+          "joining_rule_3">Joining Rule 3</a> for cases when there’s a
+          <a>dual-joining</a>/<a>right-joining</a> letter after a <a>join-to-left</a> letter, which
+          should not be joined to its previous letter.</p>
 
 
           <figure id="joining_disjoining_enforcement">
             <img src="images/TBD.svg" alt="TBD: ZWJ+ZWNJ example.">
 
             <figcaption>
-              Example of using <span class="qterm">&lt;ZWJ, ZWNJ&amp;gd;</span> for <span class=
-              "qterm">joining-disjoining enforcement</span>.
+              Example of using <span class="qterm">&lt;ZWJ, ZWNJ&amp;gd;</span> for
+              <a>joining-disjoining enforcement</a>.
             </figcaption>
           </figure>
         </section>
@@ -612,13 +612,14 @@
         </h4>
 
 
-        <p>A sequence of letters that join together are called a <span class="qterm">Joining
-        Segment</span>. Regardless of language, <span class="qterm">joining segments</span> have no
-        direct relationship to syllables.</p>
+        <p>A sequence of letters that join together are called a <dfn>Joining Segment</dfn>.
+        Regardless of language, <dfn>joining segments</dfn> have no direct relationship to
+        syllables.</p>
 
 
-        <p>Two types of joining segments exist: <span class="qterm">closed</span> and <span class=
-        "qterm">open</span>.</p>
+        <p>Two types of joining segments exist: <dfn data-lt=
+        "closed joining segment|closed joining segments">closed</dfn> and <dfn data-lt=
+        "open joining segment|open joining segments">open</dfn>.</p>
 
 
         <section id="h_closed_joining_segments">
@@ -626,23 +627,23 @@
           </h4>
 
 
-          <p>Joining Segments usually have a closed form, meaning that they start in a <span class=
-          "qterm">non-join-to-right</span> form and end in a <span class="qterm">non-join-to-left
-          <span>form. <span class="qterm">Closed joining segments</span> are the result of segments
-          either start and end with their normal behavior (<span class="qterm">Joining Rule
-          1</span>), or by <span class="qterm">disjoining enforcement</span> (<span class=
-          "qterm">Joining Rule 2</span>).</span></span></p>
+          <p>Joining Segments usually have a closed form, meaning that they start in a
+          <a>non-join-to-right</a> form and end in a <a>non-join-to-left</a> form. <a>Closed
+          joining segments</a> are the result of segments either start and end with their normal
+          behavior (<a href="joining_rule_1">Joining Rule 1</a>), or by <a href=
+          "h_disjoining_enforcement">disjoining enforcement</a> (<a href="joining_rule_2">Joining
+          Rule 2</a>).</p>
 
 
           <p>There are two possible types of closed segments:</p>
 
 
           <ul>
-            <li><strong>Single-Letter Closed Segment</strong>, which contains only one letter that
-            is in its Isolated form.</li>
+            <li><dfn>Single-Letter Closed Segment</dfn>, which contains only one letter that is in
+            its Isolated form.</li>
 
 
-            <li><strong>Multi-Letter Closed Segment</strong>, which contains more than one letter,
+            <li><dfn>Multi-Letter Closed Segment</dfn>, which contains more than one letter,
             starting with an Initial form, zero or more Medial forms, and ending with a Final
             form.</li>
           </ul>
@@ -665,27 +666,25 @@
           </h4>
 
 
-          <p>Under the certain cases, as noted in <span class="qterm">Joining Rules 3 and 4</span>,
-          <span class="qterm">joining segments</span> can start with a <span class=
-          "qterm">join-to-right</span> form, or end with an <span class="qterm">join-to-left</span>
-          form, or both.</p>
+          <p>Under the certain cases, as noted in <a href="joining_rule_3">Joining Rules 3</a>
+          <a href="joining_rule_4">and 4</a>, <a>joining segments</a> can start with a
+          <a>join-to-right</a> form, or end with a <a>join-to-left</a> form, or both.</p>
 
 
           <p>There are three possible types of these segments:</p>
 
 
           <ul>
-            <li><strong>Open-On-Left Segment</strong>, which contains one or more Dual-Joining
-            letters, starting with an Initial form and continuing with zero or more Medial
-            forms.</li>
+            <li><dfn>Open-On-Left Segment</dfn>, which contains one or more Dual-Joining letters,
+            starting with an Initial form and continuing with zero or more Medial forms.</li>
 
 
-            <li><strong>Open-On-Right Segment</strong>, which starts with zero or more Medial Form
+            <li><dfn>Open-On-Right Segment</dfn>, which starts with zero or more Medial Form
             letters, and ends with a Final Form letter.</li>
 
 
-            <li><strong>Open-On-Both-Sides Segment</strong>, which contains one or more
-            Dual-Joining letters, all in their Medial Form.</li>
+            <li><dfn>Open-On-Both-Sides Segment</dfn>, which contains one or more Dual-Joining
+            letters, all in their Medial Form.</li>
           </ul>
         </section>
 
@@ -708,22 +707,21 @@
         </h4>
 
 
-        <p>Arabic Letters, two <span class="qterm">Joining Control Characters</span> (<span class=
-        "qterm">ZWNJ</span> and <span class="qterm">ZWJ</span>), and <span class=
-        "qterm">TATWEEL</span> are the only characters used in the Arabic writing system with
-        joining behavior.</p>
+        <p>Arabic Letters, two <a>Joining Control Characters</a> (<a>ZWNJ</a> and <a>ZWJ</a>), and
+        <a>TATWEEL</a> are the only characters used in the Arabic writing system with joining
+        behavior.</p>
 
 
         <p>Arabic diacritics, other Unicode <span class="qterm">non-spacing marks</span>, and most
-        Unicode <span class="qterm">format control characters</span> are considered <span class=
-        "qterm">transparent</span> in joining behavior.</p>
+        Unicode <span class="qterm">format control characters</span> are considered <dfn data-lt=
+        "joining transparent">transparent</dfn> in joining behavior.</p>
 
 
         <p>All other Unicode characters in Arabic script (as well as Latin and many other major
         scripts) are non-joining and do not take any joining forms other than Isolated.</p>
 
 
-        <p>For the details of how <span class="qterm">Arabic Cursive Joining algorithm</span>
+        <p>For more the details on <span class="qterm">Arabic Cursive Joining algorithm</span>,
         please refer to chapter <a href=
         "http://www.unicode.org/versions/Unicode9.0.0/ch09.pdf">Middle East-I — Modern and
         Liturgical Scripts</a> of The Unicode Standard. [[!UNICODE]]</p>
@@ -824,12 +822,12 @@
         <em>Korʼan</em>.</p>
 
 
-        <p>In general we group under the generic term <em><strong>Naskh</strong></em>
-        (copy/inscription) the scripts which are meant for reading at smaller sizes and are
-        suitable for books and texts to be read, e.g. the <em>Korʼan</em>, and as
-        <em><strong>Kufic</strong></em> the highly stylized font styles used for ornamentation and
-        more styled writings. Nevertheless, the rich evolution of the Arabic script led to the
-        distinctive enumeration of a number of additional named styles.</p>
+        <p>In general we group under the generic term <dfn>Naskh</dfn> (copy/inscription) the
+        scripts which are meant for reading at smaller sizes and are suitable for books and texts
+        to be read, e.g. the <em>Korʼan</em>, and as <dfn>Kufic</dfn> the highly stylized font
+        styles used for ornamentation and more styled writings. Nevertheless, the rich evolution of
+        the Arabic script led to the distinctive enumeration of a number of additional named
+        styles.</p>
 
 
         <p>Similarly, two other generic terms are used to classify styles : <em>Mabsut</em> (<em>wa
@@ -1042,205 +1040,195 @@
         simplest <span style="font-style: italic;">Naskh</span> style?</p>
 
 
-        <ol>
-          <li>
-            <p><strong>Multi-level baselines</strong>
-            </p>
+        <section>
+          <h5>Multi-level baselines</h5>
 
 
-            <p>Letters may join through a finely inclined line</p>
+          <p>Letters may join through a finely inclined line</p>
 
 
-            <div style="margin-left: 40px;"><img style="width: 132px; height: 62px;" alt=
-            "slope baseline" src="images/yastabchiro.jpg">
-            </div>
+          <div style="margin-left: 40px;"><img style="width: 132px; height: 62px;" alt=
+          "slope baseline" src="images/yastabchiro.jpg">
+          </div>
 
 
-            <p>or two, square-ended lines</p>
+          <p>or two, square-ended lines</p>
 
 
-            <div style="margin-left: 40px;"><img style="width: 92px; height: 79px;" alt=
-            "two level baselin" src="images/yastami3o.jpg">
-            </div>
+          <div style="margin-left: 40px;"><img style="width: 92px; height: 79px;" alt=
+          "two level baselin" src="images/yastami3o.jpg">
+          </div>
 
 
-            <p>Multilevel baselines don't occur in all fonts. The above examples use the Arabic
-            Typesetting font. Compare those examples to to more typical fonts:</p>
+          <p>Multilevel baselines don't occur in all fonts. The above examples use the Arabic
+          Typesetting font. Compare those examples to to more typical fonts:</p>
 
 
-            <p style="margin-left: 40px;"><img style="width: 110px; height: 93px;" alt=
-            "normal Font" src="images/yastabchiroNormal.jpg">
-            </p>
-          </li>
+          <p style="margin-left: 40px;"><img style="width: 110px; height: 93px;" alt="normal Font"
+          src="images/yastabchiroNormal.jpg">
+          </p>
+        </section>
 
 
-          <li>
-            <p><strong>Multi-context joining</strong>
-            </p>
+        <section>
+          <h5>Multi-context joining</h5>
 
 
-            <p>Rendering of letters depends not only on their place in the word (initial, medial,
-            final) but also on their neighboring letters, i.e. the letter they join with. Each
-            letter has a different appearance in each combination.</p>
+          <p>Rendering of letters depends not only on their place in the word (initial, medial,
+          final) but also on their neighboring letters, i.e. the letter they join with. Each letter
+          has a different appearance in each combination.</p>
 
 
-            <figure>
-              <img style="width: 324px; height: 79px;" alt="Different initial shape of noon" src=
-              "images/differentInitialNoon.jpg">
+          <figure>
+            <img style="width: 324px; height: 79px;" alt="Different initial shape of noon" src=
+            "images/differentInitialNoon.jpg">
 
-              <figcaption>
-                Initial letter noon, showing many different forms.
-              </figcaption>
-            </figure>
+            <figcaption>
+              Initial letter noon, showing many different forms.
+            </figcaption>
+          </figure>
 
 
-            <p>Fonts don't always comply with or respect this kind of <span class=
-            "qterm">tuning</span>. To do so, fonts need many glyphs in order to adapt to each
-            context. In more modern typefaces some of these connections are implemented by
-            ligatures, but ligatures can't capture or cover all joining behavior.</p>
+          <p>Fonts don't always comply with or respect this kind of <span class=
+          "qterm">tuning</span>. To do so, fonts need many glyphs in order to adapt to each
+          context. In more modern typefaces some of these connections are implemented by ligatures,
+          but ligatures can't capture or cover all joining behavior.</p>
 
 
-            <p>In the two left most words, the initial noon differs in that one raises a kind of
-            stroke. This property of raising a stroke is common for a number of letters (beh, teh,
-            noon, theh) which are taller than their connected letters in order to be distinguished
-            in some contexts, such as<img style="float: middle; width: 37px; height: 31px;" alt=
-            "Beh with stroke before seen" src="images/bsl.jpg"> vs. <img style=
-            "float: middle; width: 43px; height: 39px;" alt="Beh without stroke after seen" src=
-            "images/sbl.jpg"> , or to resolve ambiguity. See also the section about teeth letters
-            below.</p>
-          </li>
+          <p>In the two left most words, the initial noon differs in that one raises a kind of
+          stroke. This property of raising a stroke is common for a number of letters (beh, teh,
+          noon, theh) which are taller than their connected letters in order to be distinguished in
+          some contexts, such as<img style="float: middle; width: 37px; height: 31px;" alt=
+          "Beh with stroke before seen" src="images/bsl.jpg"> vs. <img style=
+          "float: middle; width: 43px; height: 39px;" alt="Beh without stroke after seen" src=
+          "images/sbl.jpg"> , or to resolve ambiguity. See also the section about teeth letters
+          below.</p>
+        </section>
 
 
-          <li>
-            <p><strong>Words as groups of letters</strong>
-            </p>
+        <section>
+          <h5>Words as groups of letters</h5>
 
 
-            <p>A word shape is not (only) a "horizontal" connections of letters, but of groups of
-            letters (syntagmes).</p>
+          <p>A word shape is not (only) a "horizontal" connections of letters, but of groups of
+          letters (syntagmes).</p>
 
 
-            <p>Example two words in some nice Naskh font.</p>
+          <p>Example two words in some nice Naskh font.</p>
 
 
-            <table style="margin-left: 40px;">
-              <caption style="text-align: bottom;">
-                Groups of letters are colored blue or red
-              </caption>
+          <table style="margin-left: 40px;">
+            <caption style="text-align: bottom;">
+              Groups of letters are colored blue or red
+            </caption>
 
 
-              <tbody>
-                <tr>
-                  <td style="text-align: center; width: 40%;"><img style=
-                  "width: 76px; height: 46px;" alt="Aleph and two groups of letters to form a word"
-                  src="images/barmajaAmiri.jpg">
-                  </td>
+            <tbody>
+              <tr>
+                <td style="text-align: center; width: 40%;"><img style="width: 76px; height: 46px;"
+                alt="Aleph and two groups of letters to form a word" src="images/barmajaAmiri.jpg">
+                </td>
 
-                  <td style="text-align: center;width:40%;"><img style=
-                  "width: 127px; height: 57px;" alt="two other group of letters" src=
-                  "images/stimrarihimaArabicTypesetting.jpg">
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+                <td style="text-align: center;width:40%;"><img style="width: 127px; height: 57px;"
+                alt="two other group of letters" src="images/stimrarihimaArabicTypesetting.jpg">
+                </td>
+              </tr>
+            </tbody>
+          </table>
 
 
-            <p>To compare with the same words in more usual font:</p>
+          <p>To compare with the same words in more usual font:</p>
 
 
-            <table style="margin-left: 40px;">
-              <caption style="text-align: bottom;">
-                Can't really say letter groups. Rather a "horizontal sequence of letters of almost
-                same width".
-              </caption>
+          <table style="margin-left: 40px;">
+            <caption style="text-align: bottom;">
+              Can't really say letter groups. Rather a "horizontal sequence of letters of almost
+              same width".
+            </caption>
 
 
-              <tbody>
-                <tr>
-                  <td style="text-align: center; width:40%;"><img style=
-                  "width: 98px; height: 43px;" alt="same word in more normal font" src=
-                  "images/barmajaDefault.png">
-                  </td>
+            <tbody>
+              <tr>
+                <td style="text-align: center; width:40%;"><img style="width: 98px; height: 43px;"
+                alt="same word in more normal font" src="images/barmajaDefault.png">
+                </td>
 
-                  <td style="text-align: center; width: 40%;"><img style=
-                  "width: 144px; height: 46px;" alt="same word in default font" src=
-                  "images/stimrarihimaDefault.jpg">
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+                <td style="text-align: center; width: 40%;"><img style=
+                "width: 144px; height: 46px;" alt="same word in default font" src=
+                "images/stimrarihimaDefault.jpg">
+                </td>
+              </tr>
+            </tbody>
+          </table>
 
 
-            <p>Group combinations cannot be covered by general or usual ligatures.</p>
-          </li>
+          <p>Group combinations cannot be covered by general or usual ligatures.</p>
+        </section>
 
 
-          <li>
-            <p><strong>Vertical</strong> <strong>joining</strong></p>
+        <section>
+          <h5>Vertical joining</h5>
 
 
-            <p>Groups of letters may also "join" vertically (top down) instead of right to left.
-            And not all fonts permit this.</p>
+          <p>Groups of letters may also "join" vertically (top down) instead of right to left. And
+          not all fonts permit this.</p>
 
 
-            <table style="margin-left: 40px;">
-              <tbody>
-                <tr>
-                  <td style="text-align: center;"><img style=
-                  "text-align: middle; width: 65px; height: 70px;" alt="Vertical joining" src=
-                  "images/vertivalJoin.jpg">
-                  </td>
+          <table style="margin-left: 40px;">
+            <tbody>
+              <tr>
+                <td style="text-align: center;"><img style=
+                "text-align: middle; width: 65px; height: 70px;" alt="Vertical joining" src=
+                "images/vertivalJoin.jpg">
+                </td>
 
-                  <td style="text-align: center;">vs.</td>
+                <td style="text-align: center;">vs.</td>
 
-                  <td style="text-align: center;"><img style=
-                  "text-align: middle; width: 69px; height: 46px;" alt="horizontal joing" src=
-                  "images/horizontalJoin.jpg">
-                  </td>
-                </tr>
+                <td style="text-align: center;"><img style=
+                "text-align: middle; width: 69px; height: 46px;" alt="horizontal joing" src=
+                "images/horizontalJoin.jpg">
+                </td>
+              </tr>
 
 
-                <tr>
-                  <td style="text-align: center;">Joining happens almost vertical</td>
+              <tr>
+                <td style="text-align: center;">Joining happens almost vertical</td>
 
-                  <td>
-                  </td>
+                <td>
+                </td>
 
-                  <td style="text-align: center;">Joining happens horizontal</td>
-                </tr>
-              </tbody>
-            </table>
+                <td style="text-align: center;">Joining happens horizontal</td>
+              </tr>
+            </tbody>
+          </table>
 
 
-            <p>Once again, some fonts try standard ligatures, but this is not ligature. This is
-            rather (good) writing practice/style.</p>
+          <p>Once again, some fonts try standard ligatures, but this is not ligature. This is
+          rather (good) writing practice/style.</p>
 
 
-            <p>One should note that all this characteristics has not only an aesthetic side, but
-            also play a role in justification. It is at the discretion of (hand writing) authors to
-            chose the best kind of joining to suit the desired line width. Should then be a general
-            rule on that. But to achieve such justification would require sophisticated
-            algorithms.</p>
-          </li>
+          <p>One should note that all this characteristics has not only an aesthetic side, but also
+          play a role in justification. It is at the discretion of (hand writing) authors to chose
+          the best kind of joining to suit the desired line width. Should then be a general rule on
+          that. But to achieve such justification would require sophisticated algorithms.</p>
+        </section>
 
 
-          <li>
-            <p><strong>The so called teeth letters.</strong>
-            </p>
+        <section>
+          <h5>The so called teeth letters.</h5>
 
 
-            <p>Letters having uniform medial shape, align in a kind of teeth.</p>
+          <p>Letters having uniform medial shape, align in a kind of teeth.</p>
 
 
-            <div style="margin-left: 40px;"><img style="width: 276px; height: 74px;" alt=
-            "Teeth letters" src="images/teeth.jpg">
-            </div>
+          <div style="margin-left: 40px;"><img style="width: 276px; height: 74px;" alt=
+          "Teeth letters" src="images/teeth.jpg">
+          </div>
 
 
-            <p>Even in the teeth context letter shape may vary. It's not the same letters (in red)
-            which raise the stroke in the two figures.</p>
-          </li>
-        </ol>
+          <p>Even in the teeth context letter shape may vary. It's not the same letters (in red)
+          which raise the stroke in the two figures.</p>
+        </section>
       </section>
 
 
@@ -1571,12 +1559,13 @@
 
 
         <ul>
-          <li><strong><span class="qterm">European Numerals</span></strong> are 0, 1, 2, 3, 4, 5,
-          6, 7, 8, 9. They are also referred to as <span class="qterm">Western Arabic
-          Numerals</span> or simply as <span class="qterm">Arabic Numerals</span>. Although these
-          are terminologically correct terms, to avoid confusions we will refrain from using these
-          phrases to refer to these numerals. <span class="qterm">European Numerals</span> or
-          <span class="qterm">ASCII Digits</span> are used instead;</li>
+          <li>
+            <dfn>European Numerals</dfn> are 0, 1, 2, 3, 4, 5, 6, 7, 8, 9. They are also referred
+            to as <a>Western Arabic Numerals</a> or simply as <dfn>Arabic Numerals</dfn>. Although
+            these are terminologically correct terms, to avoid confusions we will refrain from
+            using these phrases to refer to these numerals. <a>European Numerals</a> or <dfn>ASCII
+            numerals</dfn> are used instead;
+          </li>
 
 
           <li><strong><span class="qterm">Arabic-Indic Numerals</span></strong> are <span dir=
@@ -1586,27 +1575,25 @@
           "ltr">٩</span>;</li>
 
 
-          <li><strong><span class="qterm">Eastern Arabic-Indic Numerals</span></strong> are ۰, ۱,
-          ۲, ۳, ۴, ۵, ۶, ۷, ۸, ۹;</li>
+          <li><dfn>Eastern Arabic-Indic Numerals</dfn> are ۰, ۱, ۲, ۳, ۴, ۵, ۶, ۷, ۸, ۹;</li>
 
 
-          <li><strong>Extended Arabic-Indic Numerals</strong> same as Eastern Arabic-Indic
-          Numerals.</li>
+          <li><dfn>Extended Arabic-Indic Numerals</dfn> same as Eastern Arabic-Indic Numerals.</li>
 
 
-          <li><strong>Western Arabic Numerals</strong> same as European Numerals;</li>
+          <li><dfn>Western Arabic Numerals</dfn> same as European Numerals;</li>
 
 
-          <li><strong>Eastern Arabic Numerals</strong> is used to refer to both Arabic-Indic and
-          Eastern Arabic-Indic Numerals. Should be avoided due to ambiguity;</li>
+          <li><dfn>Eastern Arabic Numerals</dfn> is used to refer to both Arabic-Indic and Eastern
+          Arabic-Indic Numerals. Should be avoided due to ambiguity;</li>
 
 
-          <li><strong>Indic Numerals</strong> should be avoided to refer to either of Arabic-Indic
-          or Eastern Arabic-Indic numerals.</li>
+          <li><dfn>Indic Numerals</dfn> should be avoided to refer to either of Arabic-Indic or
+          Eastern Arabic-Indic numerals.</li>
 
 
-          <li><strong>Digit</strong>, <strong>Numeral digit</strong>, and <strong>Numeral</strong>
-          are used as synonyms.</li>
+          <li><dfn>Digit</dfn>, <dfn>Numeral digit</dfn>, and <dfn>Numeral</dfn> are used as
+          synonyms.</li>
         </ul>
       </section>
 
@@ -2172,9 +2159,9 @@
 
       <p>Of the four basic justification methods (flush left, flush right, justified, and
       centered), justified is the most challenging, as it requires changing the widths of the lines
-      to a pre-defined measure. <span class="qterm">Measure</span> refers to the width of a column
-      of text. In a justified paragraph the width of all the lines should be the same as the
-      paragraph’s measure (except, of course, the last line).</p>
+      to a pre-defined measure. <dfn>Measure</dfn> refers to the width of a column of text. In a
+      justified paragraph the width of all the lines should be the same as the paragraph’s measure
+      (except, of course, the last line).</p>
 
 
       <p>In Arabic there are six mechanisms for changing the width of a line of text. Each one has
@@ -2183,10 +2170,9 @@
 
 
       <p>An important factor in the application of these mechanisms is their success in creating an
-      even <span class="qterm">color</span>. The color of the text refers to the amount of
-      ink/blackness used to print or show a block of text. Color describes the density of the text
-      against its background. Poorly justifying paragraphs can create uneven distribution of
-      color.</p>
+      even <dfn>color</dfn>. The color of the text refers to the amount of ink (or blackness) used
+      to print or show a block of text. Color describes the density of the text against its
+      background. Poorly justifying paragraphs can create uneven distribution of color.</p>
 
 
       <p>These mechanisms are not exclusive. Quite the contrary, they are commonly used
