@@ -234,14 +234,14 @@
       </h3>
 
 
-      <p>Arabic script uses Arabic alphabet, diacritics, numbers, punctuations and symbols, and
-      control characters. Appendix <a href="#characters-tables"></a> lists these characters.</p>
+      <p>Appendix <a href="#characters-tables"></a> lists characters used for the Arabic and
+      Persian languages. Characters used for these languages include letters and diacritics, three
+      sets of digits (usage depending on the region), punctuation (some common and some specific to
+      the script), symbols, and Unicode formatting characters.</p>
 
 
-      <p>The majority of these characters are common among different languages. There are two
-      different set of digits for 0–9 (<span class="uname">U+0660</span>–<span class=
-      "uname">U+0669</span> and <span class="uname">U+06F0</span>–<span class=
-      "uname">U+06F9</span>) used by different languages. Most of the alphabetical characters are
+      <p>The majority of these characters are common among different languages. There are three
+      different sets of digits used by different languages. Most of the alphabetical characters are
       used by all the languages using Arabic scripts, but there are exceptions, such as the Arabic
       letter <span class="lettername">yeh</span> being represented with two different characters,
       <span class="uname">U+064A ARABIC LETTER YEH</span> (<span lang="ar" dir="rtl">ي</span>) and
@@ -1606,32 +1606,41 @@
 
         <ul>
           <li>
-            <dfn>European Numerals</dfn> are 0, 1, 2, 3, 4, 5, 6, 7, 8, 9. They are also referred
-            to as <a>Western Arabic Numerals</a> or simply as <dfn>Arabic Numerals</dfn>. Although
-            these are terminologically correct terms, to avoid confusions we will refrain from
-            using these phrases to refer to these numerals. <a>European Numerals</a> or <dfn>ASCII
-            numerals</dfn> are used instead;
+            <dfn data-lt="European digits|ASCII digits">European Numerals</dfn> are 0, 1, 2, 3, 4,
+            5, 6, 7, 8, 9. They are also referred to as <a>Western Arabic Numerals</a> or simply as
+            <a>Arabic Numerals</a>. Although these are terminologically correct terms, to avoid
+            confusions we will refrain from using these phrases to refer to these numerals.
+            <a>European Numerals</a> or <dfn>ASCII numerals</dfn> are used instead.
           </li>
 
 
-          <li><strong><span class="qterm">Arabic-Indic Numerals</span></strong> are <span dir=
+          <li><dfn data-lt="Arabic-Indic digits">Arabic-Indic Numerals</dfn> are <span dir=
           "ltr">٠</span>, <span dir="ltr">١</span>, <span dir="ltr">٢</span>, <span dir=
           "ltr">٣</span>, <span dir="ltr">٤</span>, <span dir="ltr">٥</span>, <span dir=
           "ltr">٦</span>, <span dir="ltr">٧</span>, <span dir="ltr">٨</span>, <span dir=
-          "ltr">٩</span>;</li>
+          "ltr">٩</span>.</li>
 
 
-          <li><dfn>Eastern Arabic-Indic Numerals</dfn> are ۰, ۱, ۲, ۳, ۴, ۵, ۶, ۷, ۸, ۹;</li>
+          <li><dfn data-lt="Eastern Arabic-Indic digits">Eastern Arabic-Indic Numerals</dfn> are ۰,
+          ۱, ۲, ۳, ۴, ۵, ۶, ۷, ۸, ۹.</li>
 
 
-          <li><dfn>Extended Arabic-Indic Numerals</dfn> same as Eastern Arabic-Indic Numerals.</li>
+          <li>
+            <dfn>Extended Arabic-Indic Numerals</dfn> same as <a>Eastern Arabic-Indic Numerals</a>.
+          </li>
 
 
-          <li><dfn>Western Arabic Numerals</dfn> same as European Numerals;</li>
+          <li>
+            <dfn>Western Arabic Numerals</dfn>, or <dfn>Arabic Numerals</dfn> same as <a>European
+            Numerals</a>.
+          </li>
 
 
-          <li><dfn>Eastern Arabic Numerals</dfn> is used to refer to both Arabic-Indic and Eastern
-          Arabic-Indic Numerals. Should be avoided due to ambiguity;</li>
+          <li>
+            <dfn>Eastern Arabic Numerals</dfn> is used to refer to both <a>Arabic-Indic
+            Numerals</a> and <a>Eastern Arabic-Indic Numerals</a>. Should be avoided due to
+            ambiguity.
+          </li>
 
 
           <li><dfn>Indic Numerals</dfn> should be avoided to refer to either of Arabic-Indic or
@@ -1649,10 +1658,13 @@
         </h4>
 
 
-        <p>There are three families of numerals used with languages using the Arabic Script. The
-        first is known as European Numerals; the second family is Arabic-Indic Numerals. The third
-        is Eastern Arabic-Indic Numerals. The following table, based on a similar table in
-        [[W3-ARAB-MATH]] exhibits these three families:</p>
+        <p>There are three families of numerals used with languages using the Arabic Script: the
+        <a>European Numerals</a>, the <a>Arabic-Indic Numerals</a>, and <a>Eastern Arabic-Indic
+        Numerals</a>. The following table, based on a <a href=
+        "https://www.w3.org/TR/2006/NOTE-arabic-math-20060131/#NumberSystems">similar table</a> in
+        [[W3-ARAB-MATH]] exhibits these three families. Those three numerals which have different
+        shapes between <a>Arabic-Indic Numerals</a> and <a>Eastern Arabic-Indic Numerals</a> are
+        highlighted.</p>
 
 
         <table border="1">
@@ -1673,7 +1685,12 @@
             <tr>
               <th>European</th>
 
-              <td>U+0030..U+0039</td>
+              <td><span class="uname">U+0030 DIGIT ZERO
+              <br>
+              ..
+              <br>
+              U+0039 DIGIT NINE</span>
+              </td>
 
               <td>0</td>
 
@@ -1702,7 +1719,12 @@
             <tr>
               <th>Arabic-Indic</th>
 
-              <td>U+0660..U+0669</td>
+              <td><span class="uname">U+0660 ARABIC-INDIC DIGIT ZERO
+              <br>
+              ..
+              <br>
+              U+0669 ARABIC-INDIC DIGIT NINE</span>
+              </td>
 
               <td>٠</td>
 
@@ -1724,15 +1746,19 @@
 
               <td>٩</td>
 
-              <td>Arabic-speaking countries of the Middle-East, eastern Arabic-speaking countries;
-              e.g. Egypt.</td>
+              <td>Eastern Arabic-speaking countries; e.g. Egypt, Saudi Arabia, Iraq.</td>
             </tr>
 
 
             <tr>
               <th>Eastern Arabic-Indic</th>
 
-              <td>U+06F0..U+06F9</td>
+              <td><span class="uname">U+06F0 EXTENDED ARABIC-INDIC DIGIT ZERO
+              <br>
+              ..
+              <br>
+              U+06F9 EXTENDED ARABIC-INDIC DIGIT NINE</span>
+              </td>
 
               <td>۰</td>
 
@@ -1760,84 +1786,89 @@
         </table>
 
 
-        <p>In this table, those three numerals which have different shapes between Arabic-Indic and
-        Eastern Arabic-Indic are highlighted.</p>
+        <p>In all Arabic numeral systems, numbers are written with the lowest significant digits to
+        the right and the highest digits to the left (a.k.a. left to right), though Arabic script
+        is written from right to left.</p>
 
 
-        <p>Arabic numbers are written with the lowest significant digits to the right and the
-        highest digits to the left. That arrangement is identical to the Western one, even though
-        Arabic script is written from right to left. Numbers with many digits use decimal thousands
-        separators.</p>
-
-
-        <p>European digits are used with <span class="uname"><span class="codepoint"><span lang=
-        "en">,</span> [<span class="uname">U+002C COMMA</span>]</span></span> and <span class=
-        "codepoint"><span lang="en">.</span> [<span class="uname">U+002E FULL STOP</span>]</span>
-        as decimal and thousands separator, respectively, or vice versa.</p>
+        <p>An important fact to note here is the <span class="qterm">bidirectional category</span>
+        of these numbers.</p>
 
 
         <ul>
-          <li>1.234,5 in Western (francophone) regions.</li>
-
-
-          <li>1,234.5 in Middle-East (anglophone) regions.</li>
-
-
-          <li>Thin space (U+2009) or narrow no-break space (U+202F) may also be used as thousands
-          separator.</li>
-        </ul>
-
-
-        <p>Arabic-Indic numerals use two specific separators:</p>
-
-
-        <ul>
-          <li><span class="codepoint"><span lang="ar" dir="rtl">٫</span> [<span class=
-          "uname">U+066B ARABIC DECIMAL SEPARATOR</span>]</span>
+          <li>
+            <a>European digits</a> and <a>Eastern Arabic-Indic digits</a> are of category
+            <span class="qterm">EN (European Number)</span>.
           </li>
 
 
-          <li><span class="codepoint"><span lang="ar" dir="rtl">٬</span> [<span class=
-          "uname">U+066C ARABIC THOUSANDS SEPARATOR</span>]</span>
+          <li>
+            <a>Arabic-Indic digits</a> are of category <span class="qterm">AN (Arabic
+            Number)</span>, differently from their counterpart just above.
           </li>
-
-
-          <li>Example : ١٬٢٣٤٫٥&nbsp;.</li>
         </ul>
 
 
-        <p>An important fact to note here is the bidirectional category of these numbers.</p>
+        <p>The difference in bidirectional category between <a>Arabic-Indic digits</a> and
+        <a>Eastern Arabic-Indic digits</a> is due to the difference in the behavior desired in
+        Arabic vs. Persian.</p>
+
+
+        <p>As a consequence, the following sentences, having the similar content, result in a very
+        different ordering in a right-to-left context:</p>
+
+
+        <div class="example" dir="rtl">
+          Five is written ۵ in Iran and ٥ in Egypt.
+        </div>
+
+
+        <div class="example" dir="rtl">
+          Five is written ۵ in Iran and 5 in Morocco.
+        </div>
+      </section>
+
+
+      <p class="issue">What is the origin of this decision. More important, what is the observed
+      effect of these differences in normal Arabic script text?</p>
+
+
+      <section id="h_formatting_of_numerals">
+        <h4><a href="#h_formatting_of_numerals">Formatting of Numerals</a>
+        </h4>
+
+
+        <p><a>European numerals</a> are used with "," (<span class="uname">U+002C COMMA</span>) and
+        "." (<span class="uname">U+002E FULL STOP</span>) as <span class="qterm">decimal
+        separator</span> and <span class="qterm">thousands separator</span>, respectively, or vice
+        versa; depending on the region.</p>
 
 
         <ul>
-          <li>European Digits (U+0030 - U+0039) are of category "EN - European number".</li>
+          <li>1.234,5 in Western regions.</li>
 
 
-          <li>Arabic-Indic Digits (U+0660 - U+0669) are "AN - Arabic number".</li>
+          <li>1,234.5 in Eastern regions.</li>
 
 
-          <li>Eastern Arabic-Indic Digits (U+06F0 - U+06F9) are classified "EN - European number",
-          differently from their counterpart just above.</li>
+          <li>Sometimes, <span class="uname">U+2009 THIN SPACE</span> or <span class="uname">U+202F
+          NARROW NO-BREAK SPACE</span> may also be used as <span class="qterm">thousands
+          separator</span>.</li>
         </ul>
 
 
-        <p>The difference in Bidi category between Arabic-Indic digits and Eastern Arabic-Indic
-        digits is due to the difference in Bidi behavior desired in Arabic <i>vs</i>. Persian.</p>
+        <p><a>Arabic-Indic numerals</a> use two specific separators:</p>
 
 
-        <p class="issue">What is the origin of this decision. More important, what is the observed
-        effect of these differences in normal Arabic script text?</p>
+        <ul>
+          <li>"٫" (<span class="uname">U+066B ARABIC DECIMAL SEPARATOR</span>)</li>
 
 
-        <p>As a consequence, a sentence like « Five is written ۵ in Iran and ٥ in Egypt », say,
-        will give (in RTL context)</p>
+          <li>"٬" (<span class="uname">U+066C ARABIC THOUSANDS SEPARATOR</span>)</li>
 
 
-        <p>« ‫Five is written ۵ in Iran and ٥ in Egypt‬ »</p>
-
-
-        <p>requiring the use of markup to correct it. Which is not the case with the sentence «
-        Five is written ۵ in Iran and 5 in Morocco ».</p>
+          <li>Example: ١٬٢٣٤٫٥&nbsp;.</li>
+        </ul>
       </section>
 
 
