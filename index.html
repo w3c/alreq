@@ -285,11 +285,11 @@
 
       <p>The characters of a text are digitally stored and transferred in the same order that they
       are typed by a user. This is the order in which the text is read and pronounced by people and
-      held in memory by software applications, as shown in <a href="#order_in_memory"></a> for a
-      sample text.</p>
+      held in memory by software applications, as shown in <a href="#figure-order_in_memory"></a>
+      for a sample text.</p>
 
 
-      <figure id="order_in_memory">
+      <figure id="figure-order_in_memory">
         <img src="images/order-in-memory.svg" alt="The order of characters in memory">
 
         <figcaption>
@@ -300,11 +300,11 @@
 
       <p>But the order used when displaying text is different. The purpose of the bidi algorithm is
       to find display positions for the characters of a text. These positions are solely used for
-      displaying texts. <a href="#order_when_displayed"></a> shows the same sample text when
+      displaying texts. <a href="#figure-order_when_displayed"></a> shows the same sample text when
       prepared for display with the bidi algorithm.</p>
 
 
-      <figure id="order_when_displayed">
+      <figure id="figure-order_when_displayed">
         <img src="images/order-when-displayed.svg" alt="The order of characters when displayed">
 
         <figcaption>
@@ -324,7 +324,7 @@
       directional run is a sequence of characters with the same direction.</p>
 
 
-      <figure id="directional_runs">
+      <figure id="figure-directional_runs">
         <img src="images/directional-runs.svg" alt="Splitting a text into 3 directional runs">
 
         <figcaption>
@@ -335,11 +335,11 @@
 
       <p>Inside each run, all the characters follow the same order. The runs themselves are ordered
       for visual representation from left to right or from right to left, depending on the base
-      direction of the paragraph. <a href="#order_of_directional_runs"></a> demonstrates an example
-      of this. This is the first effect of the base direction.</p>
+      direction of the paragraph. <a href="#figure-order_of_directional_runs"></a> demonstrates an
+      example of this. This is the first effect of the base direction.</p>
 
 
-      <figure id="order_of_directional_runs">
+      <figure id="figure-order_of_directional_runs">
         <img src="images/order-of-directional-runs.svg" alt=
         "The effect of base direction on the order of runs">
 
@@ -411,12 +411,12 @@
         </ul>
 
 
-        <p><a href="#letter_meem_shapes"></a> shows samples of all four joining forms for
+        <p><a href="#figure-letter_meem_shapes"></a> shows samples of all four joining forms for
         <span class="uname">U+0645 ARABIC LETTER MEEM</span> (<span dir="rtl" lang=
         "ar">م</span>).</p>
 
 
-        <figure id="letter_meem_shapes">
+        <figure id="figure-letter_meem_shapes">
           <img src="images/letter-shapes.png" alt="Four joinin forms of U+0645 ARABIC LETTER MEEM">
 
           <figcaption>
@@ -452,29 +452,29 @@
         <ul>
           <li>
             <dfn data-lt="dual-joining">Dual-joining letters</dfn>: can join from both sides, like
-            the letter in <a href="#letter_meem_shapes"></a>, and has all the four shapes mentioned
-            above.
+            the letter in <a href="#figure-letter_meem_shapes"></a>, and has all the four shapes
+            mentioned above.
           </li>
 
 
           <li>
             <dfn data-lt="right-joining">Right-joining letters</dfn>: can only join to their
             previous (right-hand side) letter, and therefore, only have <a>isolated</a> and
-            <a>final</a> shapes. <a href="#letter_reh_shapes"></a> shows samples of both forms for
-            U+0631 ARABIC LETTER REH (ر).
+            <a>final</a> shapes. <a href="#figure-letter_reh_shapes"></a> shows samples of both
+            forms for U+0631 ARABIC LETTER REH (ر).
           </li>
 
 
           <li>
             <dfn data-lt="non-joining">Non-joining letters</dfn>: cannot join to any surrounding
             letter, and therefore can only take the <a>isolated</a> form. <a href=
-            "#letter_hamzah_shape"></a> shows a sample of U+0621 ARABIC LETTER HAMZAH (ء) in its
-            only possible form.
+            "#figure-letter_hamzah_shape"></a> shows a sample of U+0621 ARABIC LETTER HAMZAH (ء) in
+            its only possible form.
           </li>
         </ul>
 
 
-        <figure id="letter_reh_shapes">
+        <figure id="figure-letter_reh_shapes">
           <img src="images/right-joining-letter.svg" alt=
           "Two joining forms of U+0631 ARABIC LETTER REH.">
 
@@ -484,7 +484,7 @@
         </figure>
         Most of Arabic letters are either <a>dual-joining</a> or <a>right-joining</a>.
 
-        <figure id="letter_hamzah_shape">
+        <figure id="figure-letter_hamzah_shape">
           <img src="images/TBD.svg" alt="One joining form of U+0621 ARABIC LETTER HAMZAH.">
 
           <figcaption>
@@ -530,11 +530,11 @@
         </ol>
 
 
-        <p><a href="#joining_process"></a> demonstrates how letters join (per Joining Rule 1) to
-        form a word.</p>
+        <p><a href="#figure-joining_process"></a> demonstrates how letters join (per Joining Rule
+        1) to form a word.</p>
 
 
-        <figure id="joining_process">
+        <figure id="figure-joining_process">
           <img src="images/joining-process.png" alt="Letter BEH and MEEM join to form a word.">
 
           <figcaption>
@@ -571,7 +571,7 @@
           <dfn>ZWNJ</dfn> for short.</p>
 
 
-          <figure id="fig_disjoining_enforcement">
+          <figure id="figure-disjoining_enforcement">
             <img src="images/TBD.svg" alt="TBD: ZWNJ example.">
 
             <figcaption>
@@ -605,7 +605,7 @@
           <a>ZWJ</a> for joining control.</p>
 
 
-          <figure id="joining_enforcement">
+          <figure id="figure-joining_enforcement">
             <img src="images/TBD.svg" alt="TBD: ZWJ example."> <img src="images/TBD.svg" alt=
             "TBD: TATWEEL example.">
 
@@ -629,7 +629,7 @@
           should not be joined to its previous letter.</p>
 
 
-          <figure id="joining_disjoining_enforcement">
+          <figure id="figure-joining_disjoining_enforcement">
             <img src="images/TBD.svg" alt="TBD: ZWJ+ZWNJ example.">
 
             <figcaption>
@@ -676,8 +676,8 @@
           <p>Joining Segments usually have a closed form, meaning that they start in a
           <a>non-join-to-right</a> form and end in a <a>non-join-to-left</a> form. <a>Closed
           joining segments</a> are the result of segments either start and end with their normal
-          behavior (<a href="joining_rule_1">Joining Rule 1</a>), or by <a href=
-          "h_disjoining_enforcement">disjoining enforcement</a> (<a href="joining_rule_2">Joining
+          behavior (<a href="#joining_rule_1">Joining Rule 1</a>), or by <a href=
+          "h_disjoining_enforcement">disjoining enforcement</a> (<a href="#joining_rule_2">Joining
           Rule 2</a>).</p>
 
 
@@ -696,7 +696,7 @@
         </section>
 
 
-        <figure id="closed_joining_segment_example">
+        <figure id="figure-closed_joining_segment_example">
           <img src="images/TBD.svg" alt="TBD: A word with only single-letter closed segments.">
           <img src="images/TBD.svg" alt=
           "TBD: A word that is just one long multi-letter closed segment.">
@@ -712,8 +712,8 @@
           </h4>
 
 
-          <p>Under the certain cases, as noted in <a href="joining_rule_3">Joining Rules 3</a>
-          <a href="joining_rule_4">and 4</a>, <a>joining segments</a> can start with a
+          <p>Under the certain cases, as noted in <a href="#joining_rule_3">Joining Rules 3</a>
+          <a href="#joining_rule_4">and 4</a>, <a>joining segments</a> can start with a
           <a>join-to-right</a> form, or end with a <a>join-to-left</a> form, or both.</p>
 
 
@@ -735,7 +735,7 @@
         </section>
 
 
-        <figure id="open_joining_segment_example">
+        <figure id="figure-open_joining_segment_example">
           <img src="images/TBD.svg" alt=
           "TBD: An abbriviation in two methods: closed segments and open-on-left segments.">
           <img src="images/TBD.svg" alt=
@@ -782,10 +782,10 @@
       <p>Almost all the writing styles of Arabic script use a special shape when letters
       <span class="lettername">lam</span> and <span class="lettername">alef</span> are joined. Most
       Arabic fonts include mandatory ligatures for this combination. Ignoring this ligature, as
-      shown in <a href="#laam-alef-ligature"></a>, leads to wrong rendering of text.</p>
+      shown in <a href="#figure-laam-alef-ligature"></a>, leads to wrong rendering of text.</p>
 
 
-      <figure id="laam-alef-ligature">
+      <figure id="figure-laam-alef-ligature">
         <img src="images/laam-alef-ligature.png" alt=
         "Correct and wrong ways of rendering letter lam followed by letter alef">
 
@@ -819,12 +819,12 @@
       rendering texts.</p>
 
 
-      <p><a href="#combining_diacritics"></a> shows an example, where, according to this font’s
-      specification, combining U+0651 ARABIC SHADDA and U+0650 ARABIC KASRA changes their
+      <p><a href="#figure-combining_diacritics"></a> shows an example, where, according to this
+      font’s specification, combining U+0651 ARABIC SHADDA and U+0650 ARABIC KASRA changes their
       positions. Various font files may require different transformations.</p>
 
 
-      <figure id="combining_diacritics">
+      <figure id="figure-combining_diacritics">
         <img src="images/combining-diacritics.png" alt=
         "Diacritics could be combined in Arabic script." width="90%">
 
@@ -1485,7 +1485,7 @@
         a single shape can remove the overlappings and create the good results.</p>
 
 
-        <figure id="joining-and-transparency">
+        <figure id="figure-joining-and-transparency">
           <img src="images/joining-and-transparency.svg" alt=
           "Applying transparency to Arabic letters should not expose their joining overlaps.">
 
@@ -1508,7 +1508,7 @@
         path.</p>
 
 
-        <figure id="joining-and-text-border">
+        <figure id="figure-joining-and-text-border">
           <img src="images/joining-and-text-border.svg" alt=
           "Text border should not expose joinings.">
 
@@ -1526,11 +1526,11 @@
 
         <p>For educational, technical, or even aesthetic reasons, users might want to apply a
         specific style to a single letter (or a few letters) in a word. For example, <a href=
-        "#omantel_logo_photo"></a> is the logo of the largest telecommunications provider in
+        "#figure-omantel_logo_photo"></a> is the logo of the largest telecommunications provider in
         Oman.</p>
 
 
-        <figure id="omantel_logo_photo">
+        <figure id="figure-omantel_logo_photo">
           <img src="images/omantel.jpg" alt="Omantel logo">
 
           <figcaption>
@@ -1540,10 +1540,10 @@
 
 
         <p>This should not break the letter’s joining with its neighbors, as shown in <a href=
-        "#styling-individual-letters"></a>.</p>
+        "#figure-styling-individual-letters"></a>.</p>
 
 
-        <figure id="styling-individual-letters">
+        <figure id="figure-styling-individual-letters">
           <img src="images/styling-individual-letters.svg" alt=
           "Applying style to a single letter should not interfere with its joining properties.">
 
@@ -2631,7 +2631,7 @@
         (read the text from bottom to top).</p>
 
 
-        <figure id="fig_vertical_spine">
+        <figure id="figure-vertical_spine">
           <img style="width: 89px;" src="images/vertical-rotated-left.png" alt=
           "Vertical Arabic top down"> &nbsp; <img style="width: 90px;" src=
           "images/vertical-rotated-right.png" alt="Vertical Arabic bottom up">
@@ -2643,8 +2643,8 @@
 
 
         <p>The flow of text, top-down vs. bottom-up, may depend on regions or authors. The left
-        case in <a href="#fig_vertical_spine"></a>is a typically francophone style for book spines,
-        whereas the right case is an anglophone style.</p>
+        case in <a href="#figure-vertical_spine"></a>is a typically francophone style for book
+        spines, whereas the right case is an anglophone style.</p>
 
 
         <section id="h_vertical_embedding">
@@ -2688,7 +2688,7 @@
           typographic approaches.</p>
 
 
-          <figure id="fig_upright_vertical">
+          <figure id="figure-upright_vertical">
             <img src="images/odeonMovie.png" alt="Arabic Upright on a front movie">
 
             <figcaption>
@@ -2697,7 +2697,7 @@
           </figure>
 
 
-          <p>The following should be noted in <a href="#fig_upright_vertical"></a>.</p>
+          <p>The following should be noted in <a href="#figure-upright_vertical"></a>.</p>
 
 
           <ol>
