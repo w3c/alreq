@@ -147,13 +147,13 @@
   </section>
 
 
-  <section id="h_introduction">
-    <h2><a href="#h_introduction">Introduction</a>
+  <section id="introduction">
+    <h2><a href="#introduction">Introduction</a>
     </h2>
 
 
-    <section id="h_about_this_document">
-      <h3><a href="#h_about_this_document">About this document</a>
+    <section id="about_this_document">
+      <h3><a href="#about_this_document">About this document</a>
       </h3>
 
 
@@ -208,13 +208,13 @@
   </section>
 
 
-  <section id="h_arabic_script_overview">
-    <h2><a href="#h_arabic_script_overview">Arabic Script Overview</a>
+  <section id="arabic_script_overview">
+    <h2><a href="#arabic_script_overview">Arabic Script Overview</a>
     </h2>
 
 
-    <section id="h_encoding">
-      <h3><a href="#h_encoding">Encoding</a>
+    <section id="encoding">
+      <h3><a href="#encoding">Encoding</a>
       </h3>
 
 
@@ -229,8 +229,8 @@
     </section>
 
 
-    <section id="h_characters">
-      <h3><a href="#h_characters">Characters</a>
+    <section id="characters">
+      <h3><a href="#characters">Characters</a>
       </h3>
 
 
@@ -256,8 +256,8 @@
     </section>
 
 
-    <section id="h_direction">
-      <h3><a href="#h_direction">Direction</a>
+    <section id="direction">
+      <h3><a href="#direction">Direction</a>
       </h3>
 
 
@@ -285,11 +285,11 @@
 
       <p>The characters of a text are digitally stored and transferred in the same order that they
       are typed by a user. This is the order in which the text is read and pronounced by people and
-      held in memory by software applications, as shown in <a href="#order_in_memory"></a> for a
-      sample text.</p>
+      held in memory by software applications, as shown in <a href="#figure-order_in_memory"></a>
+      for a sample text.</p>
 
 
-      <figure id="order_in_memory">
+      <figure id="figure-order_in_memory">
         <img src="images/order-in-memory.svg" alt="The order of characters in memory">
 
         <figcaption>
@@ -300,11 +300,11 @@
 
       <p>But the order used when displaying text is different. The purpose of the bidi algorithm is
       to find display positions for the characters of a text. These positions are solely used for
-      displaying texts. <a href="#order_when_displayed"></a> shows the same sample text when
+      displaying texts. <a href="#figure-order_when_displayed"></a> shows the same sample text when
       prepared for display with the bidi algorithm.</p>
 
 
-      <figure id="order_when_displayed">
+      <figure id="figure-order_when_displayed">
         <img src="images/order-when-displayed.svg" alt="The order of characters when displayed">
 
         <figcaption>
@@ -324,7 +324,7 @@
       directional run is a sequence of characters with the same direction.</p>
 
 
-      <figure id="directional_runs">
+      <figure id="figure-directional_runs">
         <img src="images/directional-runs.svg" alt="Splitting a text into 3 directional runs">
 
         <figcaption>
@@ -335,11 +335,11 @@
 
       <p>Inside each run, all the characters follow the same order. The runs themselves are ordered
       for visual representation from left to right or from right to left, depending on the base
-      direction of the paragraph. <a href="#order_of_directional_runs"></a> demonstrates an example
-      of this. This is the first effect of the base direction.</p>
+      direction of the paragraph. <a href="#figure-order_of_directional_runs"></a> demonstrates an
+      example of this. This is the first effect of the base direction.</p>
 
 
-      <figure id="order_of_directional_runs">
+      <figure id="figure-order_of_directional_runs">
         <img src="images/order-of-directional-runs.svg" alt=
         "The effect of base direction on the order of runs">
 
@@ -374,8 +374,8 @@
     </section>
 
 
-    <section id="h_joining">
-      <h3><a href="#h_joining">Joining</a>
+    <section id="joining">
+      <h3><a href="#joining">Joining</a>
       </h3>
 
 
@@ -384,8 +384,8 @@
       encoded in Unicode, and some rules around joining behavior when rendering special cases.</p>
 
 
-      <section id="h_joining_forms">
-        <h4><a href="#h_joining_forms">Joining Forms</a>
+      <section id="joining_forms">
+        <h4><a href="#joining_forms">Joining Forms</a>
         </h4>
 
 
@@ -411,12 +411,12 @@
         </ul>
 
 
-        <p><a href="#letter_meem_shapes"></a> shows samples of all four joining forms for
+        <p><a href="#figure-letter_meem_shapes"></a> shows samples of all four joining forms for
         <span class="uname">U+0645 ARABIC LETTER MEEM</span> (<span dir="rtl" lang=
         "ar">م</span>).</p>
 
 
-        <figure id="letter_meem_shapes">
+        <figure id="figure-letter_meem_shapes">
           <img src="images/letter-shapes.png" alt="Four joinin forms of U+0645 ARABIC LETTER MEEM">
 
           <figcaption>
@@ -441,8 +441,8 @@
       </section>
 
 
-      <section id="h_joining_categories">
-        <h4><a href="#h_joining_categories">Joining Categories</a>
+      <section id="joining_categories">
+        <h4><a href="#joining_categories">Joining Categories</a>
         </h4>
 
 
@@ -452,29 +452,29 @@
         <ul>
           <li>
             <dfn data-lt="dual-joining">Dual-joining letters</dfn>: can join from both sides, like
-            the letter in <a href="#letter_meem_shapes"></a>, and has all the four shapes mentioned
-            above.
+            the letter in <a href="#figure-letter_meem_shapes"></a>, and has all the four shapes
+            mentioned above.
           </li>
 
 
           <li>
             <dfn data-lt="right-joining">Right-joining letters</dfn>: can only join to their
             previous (right-hand side) letter, and therefore, only have <a>isolated</a> and
-            <a>final</a> shapes. <a href="#letter_reh_shapes"></a> shows samples of both forms for
-            U+0631 ARABIC LETTER REH (ر).
+            <a>final</a> shapes. <a href="#figure-letter_reh_shapes"></a> shows samples of both
+            forms for U+0631 ARABIC LETTER REH (ر).
           </li>
 
 
           <li>
             <dfn data-lt="non-joining">Non-joining letters</dfn>: cannot join to any surrounding
             letter, and therefore can only take the <a>isolated</a> form. <a href=
-            "#letter_hamzah_shape"></a> shows a sample of U+0621 ARABIC LETTER HAMZAH (ء) in its
-            only possible form.
+            "#figure-letter_hamzah_shape"></a> shows a sample of U+0621 ARABIC LETTER HAMZAH (ء) in
+            its only possible form.
           </li>
         </ul>
 
 
-        <figure id="letter_reh_shapes">
+        <figure id="figure-letter_reh_shapes">
           <img src="images/right-joining-letter.svg" alt=
           "Two joining forms of U+0631 ARABIC LETTER REH.">
 
@@ -484,7 +484,7 @@
         </figure>
         Most of Arabic letters are either <a>dual-joining</a> or <a>right-joining</a>.
 
-        <figure id="letter_hamzah_shape">
+        <figure id="figure-letter_hamzah_shape">
           <img src="images/TBD.svg" alt="One joining form of U+0621 ARABIC LETTER HAMZAH.">
 
           <figcaption>
@@ -494,8 +494,8 @@
       </section>
 
 
-      <section id="h_joining_rules">
-        <h4><a href="#h_joining_rules">Joining Rules</a>
+      <section id="joining_rules">
+        <h4><a href="#joining_rules">Joining Rules</a>
         </h4>
 
 
@@ -530,11 +530,11 @@
         </ol>
 
 
-        <p><a href="#joining_process"></a> demonstrates how letters join (per Joining Rule 1) to
-        form a word.</p>
+        <p><a href="#figure-joining_process"></a> demonstrates how letters join (per Joining Rule
+        1) to form a word.</p>
 
 
-        <figure id="joining_process">
+        <figure id="figure-joining_process">
           <img src="images/joining-process.png" alt="Letter BEH and MEEM join to form a word.">
 
           <figcaption>
@@ -544,8 +544,8 @@
       </section>
 
 
-      <section id="h_joining_control">
-        <h4><a href="#h_joining_control">Joining Control</a>
+      <section id="joining_control">
+        <h4><a href="#joining_control">Joining Control</a>
         </h4>
 
 
@@ -559,8 +559,8 @@
         letters are able to join towards the other.</p>
 
 
-        <section id="h_disjoining_enforcement">
-          <h4><a href="#h_disjoining_enforcement">Disjoining Enforcement</a>
+        <section id="disjoining_enforcement">
+          <h4><a href="#disjoining_enforcement">Disjoining Enforcement</a>
           </h4>
 
 
@@ -571,19 +571,19 @@
           <dfn>ZWNJ</dfn> for short.</p>
 
 
-          <figure id="fig_disjoining_enforcement">
+          <figure id="figure-disjoining_enforcement">
             <img src="images/TBD.svg" alt="TBD: ZWNJ example.">
 
             <figcaption>
-              Example of using <a>ZWNJ</a> for <a href="h_disjoining_enforcement">disjoining
+              Example of using <a>ZWNJ</a> for <a href="#disjoining_enforcement">disjoining
               enforcement</a>.
             </figcaption>
           </figure>
         </section>
 
 
-        <section id="h_joining_enforcement">
-          <h4><a href="#h_joining_enforcement">Joining Enforcement</a>
+        <section id="joining_enforcement">
+          <h4><a href="#joining_enforcement">Joining Enforcement</a>
           </h4>
 
 
@@ -605,20 +605,20 @@
           <a>ZWJ</a> for joining control.</p>
 
 
-          <figure id="joining_enforcement">
+          <figure id="figure-joining_enforcement">
             <img src="images/TBD.svg" alt="TBD: ZWJ example."> <img src="images/TBD.svg" alt=
             "TBD: TATWEEL example.">
 
             <figcaption>
               Example of using <a>ZWJ</a> (recommended) and <a>TATWEEL</a> (not recommended) for
-              <a href="h_joining_enforcement">joining enforcement</a>.
+              <a href="#joining_enforcement">joining enforcement</a>.
             </figcaption>
           </figure>
         </section>
         In Unicode, <a>ZWNJ</a> and <a>ZWJ</a> are called <dfn>Joining Control Characters</dfn>.
 
-        <section id="h_joining_disjoining_enforcement">
-          <h4><a href="#h_joining_disjoining_enforcement">Joining-Disjoining Enforcement</a>
+        <section id="joining_disjoining_enforcement">
+          <h4><a href="#joining_disjoining_enforcement">Joining-Disjoining Enforcement</a>
           </h4>
 
 
@@ -629,7 +629,7 @@
           should not be joined to its previous letter.</p>
 
 
-          <figure id="joining_disjoining_enforcement">
+          <figure id="figure-joining_disjoining_enforcement">
             <img src="images/TBD.svg" alt="TBD: ZWJ+ZWNJ example.">
 
             <figcaption>
@@ -640,8 +640,8 @@
         </section>
 
 
-        <section id="h_context_based_joining">
-          <h4><a href="#h_context_based_joining">Context-Based Joining</a>
+        <section id="context_based_joining">
+          <h4><a href="#context_based_joining">Context-Based Joining</a>
           </h4>
 
 
@@ -653,8 +653,8 @@
       </section>
 
 
-      <section id="h_joining_segments">
-        <h4><a href="#h_joining_segments">Joining Segments</a>
+      <section id="joining_segments">
+        <h4><a href="#joining_segments">Joining Segments</a>
         </h4>
 
 
@@ -668,16 +668,16 @@
         "open joining segment|open joining segments">open</dfn>.</p>
 
 
-        <section id="h_closed_joining_segments">
-          <h4><a href="#h_closed_joining_segments">Closed Joining Segments</a>
+        <section id="closed_joining_segments">
+          <h4><a href="#closed_joining_segments">Closed Joining Segments</a>
           </h4>
 
 
           <p>Joining Segments usually have a closed form, meaning that they start in a
           <a>non-join-to-right</a> form and end in a <a>non-join-to-left</a> form. <a>Closed
           joining segments</a> are the result of segments either start and end with their normal
-          behavior (<a href="joining_rule_1">Joining Rule 1</a>), or by <a href=
-          "h_disjoining_enforcement">disjoining enforcement</a> (<a href="joining_rule_2">Joining
+          behavior (<a href="#joining_rule_1">Joining Rule 1</a>), or by <a href=
+          "h_disjoining_enforcement">disjoining enforcement</a> (<a href="#joining_rule_2">Joining
           Rule 2</a>).</p>
 
 
@@ -696,7 +696,7 @@
         </section>
 
 
-        <figure id="closed_joining_segment_example">
+        <figure id="figure-closed_joining_segment_example">
           <img src="images/TBD.svg" alt="TBD: A word with only single-letter closed segments.">
           <img src="images/TBD.svg" alt=
           "TBD: A word that is just one long multi-letter closed segment.">
@@ -707,13 +707,13 @@
         </figure>
 
 
-        <section id="h_open_joining_segments">
-          <h4><a href="#h_open_joining_segments">Open Joining Segments</a>
+        <section id="open_joining_segments">
+          <h4><a href="#open_joining_segments">Open Joining Segments</a>
           </h4>
 
 
-          <p>Under the certain cases, as noted in <a href="joining_rule_3">Joining Rules 3</a>
-          <a href="joining_rule_4">and 4</a>, <a>joining segments</a> can start with a
+          <p>Under the certain cases, as noted in <a href="#joining_rule_3">Joining Rules 3</a>
+          <a href="#joining_rule_4">and 4</a>, <a>joining segments</a> can start with a
           <a>join-to-right</a> form, or end with a <a>join-to-left</a> form, or both.</p>
 
 
@@ -735,7 +735,7 @@
         </section>
 
 
-        <figure id="open_joining_segment_example">
+        <figure id="figure-open_joining_segment_example">
           <img src="images/TBD.svg" alt=
           "TBD: An abbriviation in two methods: closed segments and open-on-left segments.">
           <img src="images/TBD.svg" alt=
@@ -748,8 +748,8 @@
       </section>
 
 
-      <section id="h_non_joining_characters">
-        <h4><a href="#h_non_joining_characters">Non-Joining Characters</a>
+      <section id="non_joining_characters">
+        <h4><a href="#non_joining_characters">Non-Joining Characters</a>
         </h4>
 
 
@@ -775,17 +775,17 @@
     </section>
 
 
-    <section id="h_ligatures">
+    <section id="ligatures">
       <h3>Ligatures</h3>
 
 
       <p>Almost all the writing styles of Arabic script use a special shape when letters
       <span class="lettername">lam</span> and <span class="lettername">alef</span> are joined. Most
       Arabic fonts include mandatory ligatures for this combination. Ignoring this ligature, as
-      shown in <a href="#laam-alef-ligature"></a>, leads to wrong rendering of text.</p>
+      shown in <a href="#figure-laam-alef-ligature"></a>, leads to wrong rendering of text.</p>
 
 
-      <figure id="laam-alef-ligature">
+      <figure id="figure-laam-alef-ligature">
         <img src="images/laam-alef-ligature.png" alt=
         "Correct and wrong ways of rendering letter lam followed by letter alef">
 
@@ -808,8 +808,8 @@
     </section>
 
 
-    <section id="h_diacritics">
-      <h3><a href="#h_diacritics">Diacritics</a>
+    <section id="diacritics">
+      <h3><a href="#diacritics">Diacritics</a>
       </h3>
 
 
@@ -819,12 +819,12 @@
       rendering texts.</p>
 
 
-      <p><a href="#combining_diacritics"></a> shows an example, where, according to this font’s
-      specification, combining U+0651 ARABIC SHADDA and U+0650 ARABIC KASRA changes their
+      <p><a href="#figure-combining_diacritics"></a> shows an example, where, according to this
+      font’s specification, combining U+0651 ARABIC SHADDA and U+0650 ARABIC KASRA changes their
       positions. Various font files may require different transformations.</p>
 
 
-      <figure id="combining_diacritics">
+      <figure id="figure-combining_diacritics">
         <img src="images/combining-diacritics.png" alt=
         "Diacritics could be combined in Arabic script." width="90%">
 
@@ -835,14 +835,14 @@
     </section>
 
 
-    <section id="h_font_and_typographical_considerations">
-      <h3><a href="#h_font_and_typographical_considerations">Font and Typographical
+    <section id="font_and_typographical_considerations">
+      <h3><a href="#font_and_typographical_considerations">Font and Typographical
       considerations</a>
       </h3>
 
 
-      <section id="h_arabic_style_and_calligraphy">
-        <h4><a href="#h_arabic_style_and_calligraphy">Arabic Style and Calligraphy</a>
+      <section id="arabic_style_and_calligraphy">
+        <h4><a href="#arabic_style_and_calligraphy">Arabic Style and Calligraphy</a>
         </h4>
 
 
@@ -883,8 +883,8 @@
       </section>
 
 
-      <section id="h_different_writing_styles">
-        <h4><a href="#h_different_writing_styles">Different Writing Styles</a>
+      <section id="different_writing_styles">
+        <h4><a href="#different_writing_styles">Different Writing Styles</a>
         </h4>
 
 
@@ -1074,8 +1074,8 @@
       </section>
 
 
-      <section id="h_arabic_script_and_typography">
-        <h4><a href="#h_arabic_script_and_typography">Arabic Script and Typography</a>
+      <section id="arabic_script_and_typography">
+        <h4><a href="#arabic_script_and_typography">Arabic Script and Typography</a>
         </h4>
 
 
@@ -1278,8 +1278,8 @@
       </section>
 
 
-      <section id="h_fonts">
-        <h4><a href="#h_fonts">Fonts</a>
+      <section id="fonts">
+        <h4><a href="#fonts">Fonts</a>
         </h4>
 
 
@@ -1330,13 +1330,13 @@
   </section>
 
 
-  <section id="h_characters_and_words">
-    <h2><a href="#h_characters_and_words">Characters and Words</a>
+  <section id="characters_and_words">
+    <h2><a href="#characters_and_words">Characters and Words</a>
     </h2>
 
 
-    <section id="h_punctuation">
-      <h3><a href="#h_punctuation">Punctuation</a>
+    <section id="punctuation">
+      <h3><a href="#punctuation">Punctuation</a>
       </h3>
 
 
@@ -1354,8 +1354,8 @@
     </section>
 
 
-    <section id="h_segmentation">
-      <h3><a href="#h_segmentation">Text segmentation</a>
+    <section id="segmentation">
+      <h3><a href="#segmentation">Text segmentation</a>
       </h3>
 
 
@@ -1380,8 +1380,8 @@
     </section>
 
 
-    <section id="h_diacritic_position">
-      <h3><a href="#h_diacritics">Positioning diacritics relative to base characters</a>
+    <section id="diacritic_position">
+      <h3><a href="#diacritics">Positioning diacritics relative to base characters</a>
       </h3>
 
 
@@ -1414,8 +1414,8 @@
     </section>
 
 
-    <section id="h_letterspacing">
-      <h3><a href="#h_letterspacing">Letter-spacing</a>
+    <section id="letterspacing">
+      <h3><a href="#letterspacing">Letter-spacing</a>
       </h3>
 
 
@@ -1451,8 +1451,8 @@
     </section>
 
 
-    <section id="h_letterhighlights">
-      <h3><a href="#h_letterhighlights">Special requirements when dealing with cursive glyphs</a>
+    <section id="letterhighlights">
+      <h3><a href="#letterhighlights">Special requirements when dealing with cursive glyphs</a>
       </h3>
 
 
@@ -1461,8 +1461,8 @@
       shapes and does not account for cursive scripts.</p>
 
 
-      <section id="h_joining_and_spacing">
-        <h4><a href="#h_joining_and_spacing">Joining and Intra-Word Spaces</a>
+      <section id="joining_and_spacing">
+        <h4><a href="#joining_and_spacing">Joining and Intra-Word Spaces</a>
         </h4>
 
 
@@ -1473,8 +1473,8 @@
       </section>
 
 
-      <section id="h_joining_and_transparency">
-        <h4><a href="#h_joining_and_transparency">Transparency</a>
+      <section id="joining_and_transparency">
+        <h4><a href="#joining_and_transparency">Transparency</a>
         </h4>
 
 
@@ -1485,7 +1485,7 @@
         a single shape can remove the overlappings and create the good results.</p>
 
 
-        <figure id="joining-and-transparency">
+        <figure id="figure-joining-and-transparency">
           <img src="images/joining-and-transparency.svg" alt=
           "Applying transparency to Arabic letters should not expose their joining overlaps.">
 
@@ -1496,8 +1496,8 @@
       </section>
 
 
-      <section id="h_joining_and_text_border">
-        <h4><a href="#h_joining_and_text_border">Text border</a>
+      <section id="joining_and_text_border">
+        <h4><a href="#joining_and_text_border">Text border</a>
         </h4>
 
 
@@ -1508,7 +1508,7 @@
         path.</p>
 
 
-        <figure id="joining-and-text-border">
+        <figure id="figure-joining-and-text-border">
           <img src="images/joining-and-text-border.svg" alt=
           "Text border should not expose joinings.">
 
@@ -1519,18 +1519,18 @@
       </section>
 
 
-      <section id="h_styling_individual_letters">
-        <h4><a href="#h_styling_individual_letters">Styling individual letters</a>
+      <section id="styling_individual_letters">
+        <h4><a href="#styling_individual_letters">Styling individual letters</a>
         </h4>
 
 
         <p>For educational, technical, or even aesthetic reasons, users might want to apply a
         specific style to a single letter (or a few letters) in a word. For example, <a href=
-        "#omantel_logo_photo"></a> is the logo of the largest telecommunications provider in
+        "#figure-omantel_logo_photo"></a> is the logo of the largest telecommunications provider in
         Oman.</p>
 
 
-        <figure id="omantel_logo_photo">
+        <figure id="figure-omantel_logo_photo">
           <img src="images/omantel.jpg" alt="Omantel logo">
 
           <figcaption>
@@ -1540,10 +1540,10 @@
 
 
         <p>This should not break the letter’s joining with its neighbors, as shown in <a href=
-        "#styling-individual-letters"></a>.</p>
+        "#figure-styling-individual-letters"></a>.</p>
 
 
-        <figure id="styling-individual-letters">
+        <figure id="figure-styling-individual-letters">
           <img src="images/styling-individual-letters.svg" alt=
           "Applying style to a single letter should not interfere with its joining properties.">
 
@@ -1555,8 +1555,8 @@
     </section>
 
 
-    <section id="h_italicetc">
-      <h3><a href="#h_italicetc">Handling oblique and italicised text in Arabic</a>
+    <section id="italicetc">
+      <h3><a href="#italicetc">Handling oblique and italicised text in Arabic</a>
       </h3>
 
 
@@ -1574,8 +1574,8 @@
     </section>
 
 
-    <section id="h_mixedscript">
-      <h3><a href="#h_mixedscript">Considerations for mixed-script text</a>
+    <section id="mixedscript">
+      <h3><a href="#mixedscript">Considerations for mixed-script text</a>
       </h3>
 
 
@@ -1590,13 +1590,13 @@
     </section>
 
 
-    <section id="h_numbers">
-      <h3><a href="#h_numbers">Numbers</a>
+    <section id="numbers">
+      <h3><a href="#numbers">Numbers</a>
       </h3>
 
 
-      <section id="h_preferred_terminology">
-        <h4><a href="#h_preferred_terminology">Preferred Terminology</a>
+      <section id="preferred_terminology">
+        <h4><a href="#preferred_terminology">Preferred Terminology</a>
         </h4>
 
 
@@ -1653,8 +1653,8 @@
       </section>
 
 
-      <section id="h_families_of_numerals">
-        <h4><a href="#h_families_of_numerals">Families of Numerals</a>
+      <section id="families_of_numerals">
+        <h4><a href="#families_of_numerals">Families of Numerals</a>
         </h4>
 
 
@@ -1872,8 +1872,8 @@
       </section>
 
 
-      <section id="h_Arabic_number_in_other_uses">
-        <h4><a href="#h_Arabic_number_in_other_uses">Arabic number in other uses</a>
+      <section id="Arabic_number_in_other_uses">
+        <h4><a href="#Arabic_number_in_other_uses">Arabic number in other uses</a>
         </h4>
 
 
@@ -2013,13 +2013,13 @@
   </section>
 
 
-  <section id="h_lines_and_paragraphs">
-    <h2><a href="#h_lines_and_paragraphs">Lines and Paragraphs</a>
+  <section id="lines_and_paragraphs">
+    <h2><a href="#lines_and_paragraphs">Lines and Paragraphs</a>
     </h2>
 
 
-    <section id="h_line_breaking">
-      <h3><a href="#h_line_breaking">Line breaking</a>
+    <section id="line_breaking">
+      <h3><a href="#line_breaking">Line breaking</a>
       </h3>
 
 
@@ -2076,8 +2076,8 @@
       </div>
 
 
-      <section id="h_kinsoku">
-        <h4><a href="#h_kinsoku">Characters that cannot end or start a line</a>
+      <section id="kinsoku">
+        <h4><a href="#kinsoku">Characters that cannot end or start a line</a>
         </h4>
 
 
@@ -2098,8 +2098,8 @@
       </section>
 
 
-      <section id="h_hyphenation">
-        <h4><a href="#h_hyphenation">Hyphenation</a>
+      <section id="hyphenation">
+        <h4><a href="#hyphenation">Hyphenation</a>
         </h4>
 
 
@@ -2116,8 +2116,8 @@
     </section>
 
 
-    <section id="h_justification">
-      <h3><a href="#h_justification">Justification</a>
+    <section id="justification">
+      <h3><a href="#justification">Justification</a>
       </h3>
 
 
@@ -2254,12 +2254,11 @@
 
       <p>These mechanisms are not exclusive. Quite the contrary, they are commonly used
       simultaneously to produce better justified paragraphs. Combination of these mechanisms is
-      discussed in <a href="#h_combination_of_the_mechanisms">Combination of the
-      Mechanisms</a>.</p>
+      discussed in <a href="#combination_of_the_mechanisms">Combination of the Mechanisms</a>.</p>
 
 
-      <section id="h_adjusting_inter_word_spaces">
-        <h4><a href="#h_adjusting_inter_word_spaces">Adjusting Inter-Word Spaces</a>
+      <section id="adjusting_inter_word_spaces">
+        <h4><a href="#adjusting_inter_word_spaces">Adjusting Inter-Word Spaces</a>
         </h4>
 
 
@@ -2299,8 +2298,8 @@
       </section>
 
 
-      <section id="h_adjusting_intra_word_spaces">
-        <h4><a href="#h_adjusting_intra_word_spaces">Adjusting Intra-Word Spaces</a>
+      <section id="adjusting_intra_word_spaces">
+        <h4><a href="#adjusting_intra_word_spaces">Adjusting Intra-Word Spaces</a>
         </h4>
 
 
@@ -2332,8 +2331,8 @@
       </section>
 
 
-      <section id="h_alternative_shapes">
-        <h4><a href="#h_alternative_shapes">Alternative Shapes</a>
+      <section id="alternative_shapes">
+        <h4><a href="#alternative_shapes">Alternative Shapes</a>
         </h4>
 
 
@@ -2375,8 +2374,8 @@
       </section>
 
 
-      <section id="h_justification_ligatures">
-        <h4><a href="#h_justification_ligatures">Ligatures</a>
+      <section id="justification_ligatures">
+        <h4><a href="#justification_ligatures">Ligatures</a>
         </h4>
 
 
@@ -2406,8 +2405,8 @@
       </section>
 
 
-      <section id="h_justification_kashida">
-        <h4><a href="#h_justification_kashida">Kashida</a>
+      <section id="justification_kashida">
+        <h4><a href="#justification_kashida">Kashida</a>
         </h4>
 
 
@@ -2478,8 +2477,8 @@
       </section>
 
 
-      <section id="h_justification_tatweel">
-        <h4><a href="#h_justification_tatweel">Tatweel</a>
+      <section id="justification_tatweel">
+        <h4><a href="#justification_tatweel">Tatweel</a>
         </h4>
 
 
@@ -2508,8 +2507,8 @@
       </section>
 
 
-      <section id="h_combination_of_the_mechanisms">
-        <h4><a href="#h_combination_of_the_mechanisms">Combination of the Mechanisms</a>
+      <section id="combination_of_the_mechanisms">
+        <h4><a href="#combination_of_the_mechanisms">Combination of the Mechanisms</a>
         </h4>
 
 
@@ -2531,8 +2530,8 @@
     </section>
 
 
-    <section id="h_para_line_alignment">
-      <h3><a href="#h_para_line_alignment">Paragraph and line alignment</a>
+    <section id="para_line_alignment">
+      <h3><a href="#para_line_alignment">Paragraph and line alignment</a>
       </h3>
 
 
@@ -2555,8 +2554,8 @@
     </section>
 
 
-    <section id="h_tabs">
-      <h3><a href="#h_tabs">Tab settings</a>
+    <section id="tabs">
+      <h3><a href="#tabs">Tab settings</a>
       </h3>
 
 
@@ -2568,8 +2567,8 @@
     </section>
 
 
-    <section id="h_firstletter">
-      <h3><a href="#h_firstletter">Styling the initial text in a paragraph</a>
+    <section id="firstletter">
+      <h3><a href="#firstletter">Styling the initial text in a paragraph</a>
       </h3>
 
 
@@ -2585,8 +2584,8 @@
     </section>
 
 
-    <section id="h_counters">
-      <h3><a href="#h_counters">Counters, lists, etc</a>
+    <section id="counters">
+      <h3><a href="#counters">Counters, lists, etc</a>
       </h3>
 
 
@@ -2608,8 +2607,8 @@
     </section>
 
 
-    <section id="h_paragraphspecial">
-      <h3><a href="#h_paragraphspecial">Special cases</a>
+    <section id="paragraphspecial">
+      <h3><a href="#paragraphspecial">Special cases</a>
       </h3>
 
 
@@ -2620,8 +2619,8 @@
       </div>
 
 
-      <section id="h_vertical_text">
-        <h4><a href="#h_vertical_text">Vertical text</a>
+      <section id="vertical_text">
+        <h4><a href="#vertical_text">Vertical text</a>
         </h4>
 
 
@@ -2631,7 +2630,7 @@
         (read the text from bottom to top).</p>
 
 
-        <figure id="fig_vertical_spine">
+        <figure id="figure-vertical_spine">
           <img style="width: 89px;" src="images/vertical-rotated-left.png" alt=
           "Vertical Arabic top down"> &nbsp; <img style="width: 90px;" src=
           "images/vertical-rotated-right.png" alt="Vertical Arabic bottom up">
@@ -2643,12 +2642,12 @@
 
 
         <p>The flow of text, top-down vs. bottom-up, may depend on regions or authors. The left
-        case in <a href="#fig_vertical_spine"></a>is a typically francophone style for book spines,
+        case in <a href="#figure-vertical_spine"></a>is a typically francophone style for book spines,
         whereas the right case is an anglophone style.</p>
 
 
-        <section id="h_vertical_embedding">
-          <h5><a href="#h_vertical_embedding">Arabic embedded in vertically orientated text</a>
+        <section id="vertical_embedding">
+          <h5><a href="#vertical_embedding">Arabic embedded in vertically orientated text</a>
           </h5>
 
 
@@ -2677,8 +2676,8 @@
         </section>
 
 
-        <section id="h_vertical_upright">
-          <h5><a href="#h_vertical_upright">Upright vertical Arabic text</a>
+        <section id="vertical_upright">
+          <h5><a href="#vertical_upright">Upright vertical Arabic text</a>
           </h5>
 
 
@@ -2688,7 +2687,7 @@
           typographic approaches.</p>
 
 
-          <figure id="fig_upright_vertical">
+          <figure id="figure-upright_vertical">
             <img src="images/odeonMovie.png" alt="Arabic Upright on a front movie">
 
             <figcaption>
@@ -2697,7 +2696,7 @@
           </figure>
 
 
-          <p>The following should be noted in <a href="#fig_upright_vertical"></a>.</p>
+          <p>The following should be noted in <a href="#figure-upright_vertical"></a>.</p>
 
 
           <ol>
@@ -2722,8 +2721,8 @@
   </section>
 
 
-  <section id="h_pages">
-    <h2><a href="#h_pages">Pages</a>
+  <section id="pages">
+    <h2><a href="#pages">Pages</a>
     </h2>
 
 
@@ -2788,8 +2787,8 @@
   </section>
 
 
-  <section id="h_document">
-    <h2><a href="#h_document">Document</a>
+  <section id="document">
+    <h2><a href="#document">Document</a>
     </h2>
 
 
@@ -2844,8 +2843,8 @@
     </ul>
 
 
-    <section id="h_character_tables_alphabetical_characters">
-      <h3><a href="#h_character_tables_alphabetical_characters">Alphabetical characters</a>
+    <section id="character_tables_alphabetical_characters">
+      <h3><a href="#character_tables_alphabetical_characters">Alphabetical characters</a>
       </h3>
 
 
@@ -3519,8 +3518,8 @@
     </section>
 
 
-    <section id="h_character_tables_diacritics">
-      <h3><a href="#h_character_tables_diacritics">Diacritics</a>
+    <section id="character_tables_diacritics">
+      <h3><a href="#character_tables_diacritics">Diacritics</a>
       </h3>
 
 
@@ -3724,8 +3723,8 @@
     </section>
 
 
-    <section id="h_character_tables_numeral_characters">
-      <h3><a href="#h_character_tables_numeral_characters">Numeral characters</a>
+    <section id="character_tables_numeral_characters">
+      <h3><a href="#character_tables_numeral_characters">Numeral characters</a>
       </h3>
 
 
@@ -4009,8 +4008,8 @@
     </section>
 
 
-    <section id="h_character_tables_punctuations_and_symbols">
-      <h3><a href="#h_character_tables_punctuations_and_symbols">Punctuations and symbols</a>
+    <section id="character_tables_punctuations_and_symbols">
+      <h3><a href="#character_tables_punctuations_and_symbols">Punctuations and symbols</a>
       </h3>
 
 
@@ -4283,8 +4282,8 @@
     </section>
 
 
-    <section id="h_character_tables_control_characters">
-      <h3><a href="#h_character_tables_control_characters">Control characters</a>
+    <section id="character_tables_control_characters">
+      <h3><a href="#character_tables_control_characters">Control characters</a>
       </h3>
 
 
