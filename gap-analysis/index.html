@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Arabic Layout Gap Analysis</title>
+  <script src="https://www.w3.org/Tools/respec/respec-w3c-common" async="" class="remove" type="text/javascript">
+</script>
+  <script class="remove" type="text/javascript">
+  var respecConfig = {
+      // specification status (e.g. WD, LCWD, WG-NOTE, etc.). If in doubt use ED.
+      specStatus:           "ED",
+      //publishDate:  		"2015-07-21",
+      //previousPublishDate:  "2014-12-16",
+      //previousMaturity:  "FPWD",
+
+      noRecTrack:           true,
+      shortName:            "alreq-gap",
+      copyrightStart:       "2018",
+      edDraftURI:           "http://w3c.github.io/alreq/gap-analysis/",
+
+      // if this is a LCWD, uncomment and set the end of its review period
+      // lcEnd: "2009-08-05",
+
+      // editors, add as many as you like
+      // only "name" is required
+      editors:  [
+        { name: "Richard Ishida", mailto: "ishida@w3.org", company: "W3C" },
+        { name: "That person", mailto: "them@example.com", company: "CompanyName" },
+      ],
+
+
+      wg:           "Internationalization Working Group",
+      wgURI:        "http://www.w3.org/International/core/",
+      wgPublicList: "public-i18n-arabic",
+      bugTracker: { new: "https://github.com/w3c/alreq/issues", open: "https://github.com/w3c/alreq/issues" } ,
+      otherLinks: [
+        {
+          key: "Github",
+          data: [
+          {
+            value: "repository",
+            href: "https://github.com/w3c/alreq"
+          }
+          ]
+        }
+      ],
+
+      // URI of the patent status for this WG, for Rec-track documents
+      // !!!! IMPORTANT !!!!
+      // This is important for Rec-track documents, do not copy a patent URI from a random
+      // document unless you know what you're doing. If in doubt ask your friendly neighbourhood
+      // Team Contact.
+      wgPatentURI:  "http://www.w3.org/2004/01/pp-impl/32113/status",
+      // !!!! IMPORTANT !!!! MAKE THE ABOVE BLINK IN YOUR HEAD
+    };
+  </script>
+  <link rel="stylesheet" href="/typography/gap-analysis/gapanalysis.css" type="text/css">
+<script type="text/javascript" src="/typography/gap-analysis/gap.js"></script>
+</head>
+
+<body>
+  <div id="abstract">
+    <p>This document reports on the level of support for layout and presentation of text in Arabic and Persian languages when they are used by Web standards and technologies, such as HTML, CSS, Mobile Web, Digital Publications, and Unicode.</p>
+  </div>
+
+  <div id="sotd">
+    <p>This document describes and prioritises gaps for support of Arabic and Persian language layout and text support on the Web and in eBooks. These requirements provide information for Web technologies such as CSS, HTML and digital publications about how to support users of the Arabic script. This document complements the <a href="https://w3c.github.io/alreq/">Text Layout Requirements for the Arabic Script</a>, which describes the requirements for areas where gaps appear.</p>
+
+    <p>The editor's draft of this document is being developed by the <a href="https://w3c.github.io/alreq/">Arabic Layout Task Force</a>, part of the W3C <a href="http://www.w3.org/International/ig/">Internationalization Interest Group</a>. It is published by the <a href="http://www.w3.org/International/core/">Internationalization Working Group</a>. The end target for this document is a Working Group Note.</p>
+
+    <div class="note">
+      <p data-lang="en" style="font-weight: bold; font-size: 120%">Sending comments on this document</p>
+
+      <p data-lang="en">If you wish to make comments regarding this document, please raise them as <a href="https://github.com/w3c/alreq/issues" style="font-size: 120%;">github issues</a>. Only send comments by email if you are unable to raise issues on github (see links below). All comments are welcome.</p>
+
+      <p data-lang="en">To make it easier to track comments, please raise separate issues or emails for each comment, and point to the section you are commenting on&nbsp; using a URL.</p>
+    </div>
+  </div>
+
+  <section id="h_introduction">
+    <h2><a href="#h_introduction">Introduction</a></h2>
+
+    <section id="h_about_this_document">
+      <h3><a href="#h_about_this_document">About this document</a></h3>
+    <div id="insert_intro">
+    </div>
+    <script>document.getElementById('insert_intro').innerHTML = intro;</script>
+    </section>
+  </section>
+<section id="h_characters_and_phrases">
+<h2><a href="#h_characters_and_phrases">Characters and phrases</a></h2>
+    <p>The following is placeholder text, aimed to give suggestions for content. Actual content will depend on the needs of the script being described. Change and reorganize sections and headings and needed.
+</p>
+    
+    
+    
+<section id="encoding">
+      <h3><a href="#encoding">Encoding considerations</a></h3>
+      <p id="encodingPrompt" class="status_prompt"></p>
+      <script>document.getElementById('encodingPrompt').innerHTML = encodingPrompt</script>
+      
+      <p class="ok"></p>
+      
+<p>No issues.</p>
+    </section>
+
+
+
+<section id="fonts">
+      <h3><a href="#fonts">Fonts</a></h3>
+      <p id="fontsPrompt" class="status_prompt"></p>
+      <script>document.getElementById('fontsPrompt').innerHTML = fontsPrompt</script>
+      
+      <p class=""></p>
+      
+      <p>Needs research.</p>
+    </section>
+
+
+
+<section id="fontstyle">
+      <h3><a href="#fontstyle">Fonts styles</a></h3>
+      <p id="fontstylePrompt" class="status_prompt"></p>
+      <script>document.getElementById('fontstylePrompt').innerHTML = fontstylePrompt</script>
+      
+      <p class="advanced"></p>
+      
+<p>There should be means available to control the direction in which 'italicised' or 'oblique' text slants, since in some schools of Arabic script typography, text in these styles need to slant to the left.</p>
+    </section>
+
+
+
+<section id="glyphs">
+      <h3><a href="#glyphs">Glyph control</a></h3>
+<p id="glyphsPrompt" class="status_prompt"></p>
+      <script>document.getElementById('glyphsPrompt').innerHTML = glyphsPrompt</script>
+     
+      <p class="advanced"></p>
+      
+      <p>For advanced typographic purposes, the fixed position of diacritical marks relative to base letter or baseline and the logical stacking behvaior of them might not be sufficient. Therefore, it should be possible to adjust the positioning and combining order and changes to the individual marks when combining. Fonts and other systems may implement the logic needed to result in an optimal presentation of diacritical mark clusters by default.</p>
+    </section>
+
+
+
+<section id="cursive">
+      <h3><a href="#cursive">Cursive text</a></h3>
+<p id="cursivePrompt" class="status_prompt"></p>
+      <script>document.getElementById('cursivePrompt').innerHTML = cursivePrompt</script>
+     
+      <p class="basic"></p>
+      
+      <p>Various changes in styling currently break cursive connections. This should not happen. (Add details).</p>
+    </section>
+
+
+
+<section id="transforms">
+      <h3><a href="#transforms">Transforming characters</a></h3>
+      <p id="transformsPrompt" class="status_prompt"></p>
+      <script>document.getElementById('transformsPrompt').innerHTML = transformsPrompt</script>
+      
+      <p class="na"></p>
+      
+      <p></p>
+    </section>
+
+
+
+<section id="numbers">
+      <h3><a href="#numbers">Number &amp; digits</a></h3>
+      <p id="numbersPrompt" class="status_prompt"></p>
+      <script>document.getElementById('numbersPrompt').innerHTML = numbersPrompt</script>
+      
+      <p class=""></p>
+      
+      <p>Needs research. Not yet clear whether there are issues related to the handling of arabic and eastern arabic script digits.</p>
+    </section>
+
+
+
+<section id="boundaries">
+      <h3><a href="#boundaries">Text boundaries &amp; selection</a></h3>
+      <p id="boundariesPrompt" class="status_prompt"></p>
+      <script>document.getElementById('boundariesPrompt').innerHTML = boundariesPrompt</script>
+      
+      <p class="ok"></p>
+      
+      <p>No issues.</p>
+    </section>
+
+
+
+<section id="quotations">
+      <h3><a href="#quotations">Quotations</a></h3>
+      <p id="quotationsPrompt" class="status_prompt"></p>
+      <script>document.getElementById('quotationsPrompt').innerHTML = quotationsPrompt</script>
+      
+      <p class="basic"></p>
+      
+      <p>In HTML and CSS the styling applied to nested multilingual quotations when using the <code class="kw" translate="no">q</code> element chooses quotation marks based on the language of the text inside the quotation, rather than outside.</p>
+    </section>
+
+
+
+<section id="spacing">
+      <h3><a href="#spacing">Inter-character spacing</a></h3>
+      <p id="spacingPrompt" class="status_prompt"></p>
+      <script>document.getElementById('spacingPrompt').innerHTML = spacingPrompt</script>
+      
+      <p class="basic"></p>
+      
+      <p>It is very common in Arabic script to stretch words or phrases to a particular width (eg. to match a Latin translation or transcription above or below). This is achieved by lengthening the connections between letters, and to some extent by use of wide glyph variants, etc. The rules for which part of the text to stretch and how far are complicated - this is not the even spacing that usually occurs in tracked Latin text. There are currently no mechanisms for managing this process effectively in HTML/CSS.</p>
+    </section>
+
+
+
+<section id="ruby">
+      <h3><a href="#ruby">Ruby annotation</a></h3>
+      <p id="rubyPrompt" class="status_prompt"></p>
+      <script>document.getElementById('rubyPrompt').innerHTML = rubyPrompt</script>
+      
+      <p class="na"></p>
+      
+      <p></p>
+    </section>
+
+
+
+<section id="textdecoration">
+      <h3><a href="#textdecoration">Text decoration</a></h3>
+      <p id="textdecorationPrompt" class="status_prompt"></p>
+      <script>document.getElementById('textdecorationPrompt').innerHTML = textdecorationPrompt</script>
+      
+      <p class="basic"></p>
+      
+      <p>It must be possible to position under- and overlines further away from the baseline than for Latin text. There is not currently a way to achieve effective underlining in a way that works with the Arabic script.</p>
+    </section>
+
+
+
+<section id="emphasis">
+      <h3><a href="#emphasis">Emphasis &amp; highlights</a></h3>
+      <p id="emphasisPrompt" class="status_prompt"></p>
+      <script>document.getElementById('emphasisPrompt').innerHTML = emphasisPrompt</script>
+      
+      <p class="ok"></p>
+      
+      <p>No issues.</p>
+    </section>
+
+
+
+<section id="bidi">
+      <h3><a href="#bidi">Bidirectional text</a></h3>
+      <p id="bidiPrompt" class="status_prompt"></p>
+      <script>document.getElementById('bidiPrompt').innerHTML = bidiPrompt</script>
+      
+      <p class="basic"></p>
+      
+      <p>Edge still doesn't support directional isolation.</p>
+<p>There are questions about how to transmit information about the expected directional behaviour of certain strings.</p>
+<p>RLI, LRI, etc are still not well supported.</p>
+<p>....</p>
+</section>
+
+
+
+<section id="otherinline">
+      <h3><a href="#otherinline">Other inline features</a></h3>
+      <p id="otherinlinePrompt" class="status_prompt"></p>
+      <script>document.getElementById('otherinlinePrompt').innerHTML = otherinlinePrompt</script>
+      
+      <p class=""></p>
+      
+      <p>Needs research</p>
+    </section>
+
+</section>
+
+
+
+
+
+
+<section id="h_lines_and_paragraphs">
+<h2><a href="#h_lines_and_paragraphs">Lines and Paragraphs</a></h2>
+
+ 
+<section id="linebreak">
+      <h3><a href="#linebreak">Line breaking</a></h3>
+      <p id="linebreakPrompt" class="status_prompt"></p>
+      <script>document.getElementById('linebreakPrompt').innerHTML = linebreakPrompt</script>
+      
+      <p class="ok"></p>
+      
+      <p>No issues.</p>
+    </section>
+
+
+
+<section id="hyphenation">
+      <h3><a href="#hyphenation">Hyphenation</a></h3>
+      <p id="hyphenationPrompt" class="status_prompt"></p>
+      <script>document.getElementById('hyphenationPrompt').innerHTML = hyphenationPrompt</script>
+      
+      <p class="na"></p>
+      
+      <p>No hyphenation is used for Arabic when used with Arabic and Persian languages.</p>
+    </section>
+
+
+
+<section id="justification">
+      <h3><a href="#justification">Justification</a></h3>
+      <p id="justificationPrompt" class="status_prompt"></p>
+      <script>document.getElementById('justificationPrompt').innerHTML = justificationPrompt</script>
+      
+      <p class="advanced"></p>
+      
+      <p>Arabic script text uses various strategies for justification, which are different from say Latin script text. CSS doesn't provide any way to manage most of these behaviours. [Not sure whether to mark this a basic or advanced issue.]</p>
+    </section>
+
+
+
+<section id="counters">
+      <h3><a href="#counters">Counters, lists, etc.</a></h3>
+      <p id="countersPrompt" class="status_prompt"></p>
+      <script>document.getElementById('countersPrompt').innerHTML = countersPrompt</script>
+      
+      <p class="basic"></p>
+      
+      <p>Arabic script text uses local counter styles. While some of these are supported by some browsers, the set of symbols used and their order varies by language. Custom counter styles can be created using Firefox only. The CSS spec needs to become a Rec and more browsers need to support it.</p>
+    </section>
+
+
+
+<section id="initialletter">
+      <h3><a href="#initialletter">Initial letter styling</a></h3>
+      <p id="initialletterPrompt" class="status_prompt"></p>
+      <script>document.getElementById('initialletterPrompt').innerHTML = initialletterPrompt</script>
+      
+      <p class="advanced"></p>
+      
+      <p>The parameters for managing initial-letter styling for the Arabic script are not well understood by the technology (for example, how to manage cursiveness across the boundary).</p>
+    </section>
+
+
+
+<section id="baselines">
+      <h3><a href="#baselines">Baselines &amp; inline alignment</a></h3>
+      <p id="baselinesPrompt" class="status_prompt"></p>
+      <script>document.getElementById('baselinesPrompt').innerHTML = baselinesPrompt</script>
+      
+      <p class="ok"></p>
+      
+      <p>No issues.</p>
+    </section>
+
+
+
+<section id="otherpara">
+      <h3><a href="#otherpara">Other paragraph features</a></h3>
+      <p id="otherparaPrompt" class="status_prompt"></p>
+      <script>document.getElementById('otherparaPrompt').innerHTML = otherparaPrompt</script>
+      
+      <p class=""></p>
+      
+      <p>Needs research</p>
+    </section>
+
+</section>
+
+
+
+
+
+
+
+<section id="h_pages">
+    <h2><a href="#h_pages">Layout &amp; pages</a></h2>
+
+<section id="bidilayout">
+      <h3><a href="#bidilayout">Bidirectional layout</a></h3>
+      <p id="bidilayoutPrompt" class="status_prompt"></p>
+      <script>document.getElementById('bidilayoutPrompt').innerHTML = bidilayoutPrompt</script>
+      
+      <p class="basic"></p>
+      
+      <p>There needs to be wider adoption of logical keywords such as start and end, rather than left and right.</p>
+    </section>
+
+
+
+<section id="vertical">
+      <h3><a href="#vertical">Vertical text</a></h3>
+      <p id="verticalPrompt" class="status_prompt"></p>
+      <script>document.getElementById('verticalPrompt').innerHTML = verticalPrompt</script>
+      
+      <p class="na"></p>
+      
+      <p>[We need to clarify whether there is a particular requirement for handling arabic text specially in vertical lines, such as upright glyphs.] [We are also waiting on implementation of sideways values of writing-modes in order to be able to effectively use arabic text in vertical arrangements (such as book spines, table headings, etc), but that is not a problem specific to arabic.]</p>
+    </section>
+
+
+
+<section id="notes">
+      <h3><a href="#notes">Notes, footnotes, etc.</a></h3>
+      <p id="notesPrompt" class="status_prompt"></p>
+      <script>document.getElementById('notesPrompt').innerHTML = notesPrompt</script>
+      
+      <p class=""></p>
+      
+      <p>Needs research</p>
+    </section>
+
+
+
+<section id="pageheaders">
+      <h3><a href="#pageheaders">Page numbering, running headers, etc.</a></h3>
+      <p id="pageheadersPrompt" class="status_prompt"></p>
+      <script>document.getElementById('pageheadersPrompt').innerHTML = pageheadersPrompt</script>
+      
+      <p class=""></p>
+      
+      <p>Needs research</p>
+    </section>
+
+
+
+<section id="xmorepagexxx">
+      <h3><a href="#morepage">Other page layout &amp; pagination features</a></h3>
+      <p id="morepagePrompt" class="status_prompt"></p>
+      <script>document.getElementById('morepagePrompt').innerHTML = morepagePrompt</script>
+      
+      <p class=""></p>
+      
+      <p>Needs research</p>
+    </section>
+</section>
+
+
+
+
+
+
+<section id="h_other">
+    <h2><a href="#h_other">Other</a></h2>
+
+
+<section id="culturespecific">
+      <h3><a href="#culturespecific">Culture-specific features</a></h3>
+      <p id="culturespecificPrompt" class="status_prompt"></p>
+      <script>document.getElementById('culturespecificPrompt').innerHTML = culturespecificPrompt</script>
+      
+      <p class=""></p>
+      
+      <p>Needs research</p>
+    </section>
+
+
+
+<section id="other">
+      <h3><a href="#other">What else?</a></h3>
+      <p id="otherPrompt" class="status_prompt"></p>
+      <script>document.getElementById('otherPrompt').innerHTML = otherPrompt</script>
+      
+      <p class=""></p>
+      
+      <p>Needs research</p>
+    </section>
+    </section>
+<section class="appendix" id="acknowledgements">
+<h2><a href="#acknowledgements">Acknowledgements</a></h2>
+
+    <p>Special thanks to the following people who contributed to this document (contributors' names listed in in alphabetic order).</p>
+
+    <p class="acknowledgement">This Person, That Person, etc</p>
+
+    <p data-lang="en">Please find the latest info of the contributors at the <a href="https://github.com/w3c/hlreq/graphs/contributors">GitHub contributors list</a>.</p>
+  </section>
+</body>
+</html>
