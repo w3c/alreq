@@ -26,8 +26,8 @@
       // editors, add as many as you like
       // only "name" is required
       editors:  [
+        { name: "Shervin Afshar", mailto: "safshar@netflix.com", company: "Netflix" },
         { name: "Richard Ishida", mailto: "ishida@w3.org", company: "W3C" },
-        { name: "That person", mailto: "them@example.com", company: "CompanyName" },
       ],
 
 
@@ -180,13 +180,13 @@
 
 
 
-<section id="numbers" class="tbd">
-<h3>Number &amp; digits</h3>
+<section id="numbers" class="ok">
+    <h3>Numbers &amp; digits</h3>
     <p class="status_prompt">If  the script has its own set of number digits, are there any issues in how they are used? Does the script or language use special format patterns that are problematic?  <a href="http://w3c.github.io/typography/index#numbers">See available information</a> or <a href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20is%3Aopen%20label%3Anumbers%20label%3Atype-info-request">check for currently needed data</a>.</p>
 
 
-    <p> Not yet clear whether there are issues related to the handling of arabic and eastern arabic script digits.</p>
-</section>
+    <p>Internationalization software libraries identify Arabic-Indic numerals as the set of numerals which should be used with text in Arabic language excluding a number of Arabic-speaking countries of Northern and Northwestern Africa which should use Arabic (ASCII) numerals. Surveys of publications, monetary and governmental documents, and manuscripts confirm these precedences. However, there is a considerable diverging trend from these recommendations observable on the web, digital products, and in user-generated content. If not considered in design and implementation of software products dealing with Arabic text, this discrepency could be potentially disadvantageous to the quality of text layout, digital typography, and locale-specific data processing.</p>
+    </section>
 
 
 
@@ -307,8 +307,11 @@
     <p class="status_prompt"> When text in a paragraph needs to have flush lines down both sides, does it follow the rules for your script? Does the script need assistance to conform to a grid pattern? Does your script allow punctuation to hang outside the text box at the start or end of a line? Where adjustments are need to make a line flush, how is that done? Do you shrink/stretch space between words and/or letters? Are word baselines stretched, as in Arabic? <a href="http://w3c.github.io/typography/index#justification">See available information</a> or <a href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20is%3Aopen%20label%3Ajustification%20label%3Atype-info-request">check for currently needed data</a>.</p>
 
 
-    <p>Arabic script text uses various strategies for justification, which are different from say Latin script text. CSS doesn't provide any way to manage most of these behaviours. [Not sure whether to mark this a basic or advanced issue.]</p>
-</section>
+    <p>For justification of Arabic script text, there are various common strategies available. These could be categorized in two major groups; strategies based on adjusting inter-word or inter-character whitespace and strategies based on adjusting the letterforms. </p>
+    <p>A basic implementation must provide at least one of these strategies for adequate  justification results. Advanced implementations should provide users with the necessary means to control the selection of strategies, adjustment of their attributes, and the priority with which they are being applied. </p>
+    <p>Currently, CSS specifications do not provide these advanced features, but recommend that the implementations  select the justification strategy appropriate to the text. </p>
+    <p><a href="https://w3c.github.io/alreq/#h_justification">Arabic Layout Requirement</a> document includes a section dedicated to this topic.</p>
+    </section>
 
 
 
@@ -322,13 +325,13 @@
 
 
 
-<section id="initialletter" class="advanced">
+<section id="initialletter" class="ok">
     <h3>Initial letter styling</h3>
     <p class="status_prompt">Does the browser or ereader correctly handle special styling of the initial letter of a line or paragraph, such as for drop caps or similar? <a href="http://w3c.github.io/typography/index#initial_letter">See available information</a> or <a href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20is%3Aopen%20label%3Ainitial-letter%20label%3Atype-info-request">check for currently needed data</a>.</p>
 
 
-    <p>The parameters for managing initial-letter styling for the Arabic script are not well understood by the technology (for example, how to manage cursiveness across the boundary).</p>
-</section>
+    <p>Although initial letter styling is not an innate feature of the Arabic script, there have been occurences of its usage noted. However, the specifications and guidelines for composition of these decorative elements are undefined or insubstantial; for example, which of the joining forms of letters is to be used or how the joining behaviour is treated accross the boundary between the styled initial letter and rest of the paragraph.</p>
+    </section>
 
 
 
