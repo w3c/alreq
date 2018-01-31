@@ -1,7 +1,8 @@
 # Text Layout Requirements for the Arabic Script
 
 ### Documents
-- [Editor's copy](https://w3c.github.io/alreq/)
+- [Text Layout Requirements for the Arabic Script](https://w3c.github.io/alreq/)
+- [Arabic & Persian Gap Analysis](https://w3c.github.io/alreq/gap-analysis/)
 - [Glossary source](https://docs.google.com/spreadsheets/d/1nSxYKQm_mKroCmxU4fyJ-g70Eo1_mF89yHZg8YNOuzc/edit#gid=0) (temporary Google spreadsheet)
 
 ### Feedback
