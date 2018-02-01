@@ -26,5 +26,5 @@ Editors should be familiar with and use the following:
 - [Task Force Home Page](https://w3c.github.io/alreq/homepage/)
 - [Charter](http://w3c.github.io/alreq/charter/)
 - [Action tracker](https://www.w3.org/International/groups/arabic-layout/track/actions/open)
-- [Practical tips for task forces](https://w3c.github.io/i18n-activity/guidelines/process.html)
+- [Practical tips for task forces](https://w3c.github.io/i18n-activity/guidelines/process.html) (See also the github and editorial guideline above)
 - [Meeting info](https://www.w3.org/2017/07/alreq-meeting-info.html)
