@@ -1,4 +1,4 @@
-# Text Layout Requirements for the Arabic Script
+# Arabic Layout Task Force
 
 ### Documents
 - [Text Layout Requirements for the Arabic Script](https://w3c.github.io/alreq/)
