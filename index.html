@@ -126,7 +126,7 @@
 
 
     <p>The editor's draft of this document is being developed by the <a href=
-    "https://www.w3.org/International/groups/arabic-layout/">Arabic Layout Task Force</a>, part of
+    "http://w3c.github.io/alreq/homepage/">Arabic Layout Task Force</a>, part of
     the W3C <a href="https://www.w3.org/International/ig/">Internationalization Interest Group</a>.
     It is published by the <a href="https://www.w3.org/International/core/">Internationalization
     Working Group</a>. The end target for this document is a Working Group Note.</p>
@@ -163,7 +163,7 @@
   <section id="h_gap_analysis">
   <h4>Gap Analysis</h4>
 
-    <p>This document is pointed to by a separate document, <a href="gap-analysis/">Arabic &amp; Persian Gap Analysis</a>, which describes gaps in support for Arabic and Persian on the Web, and prioritises and describes the impact of those gaps on the user.</p>
+    <p>This document is pointed to by a separate document, <a href="https://w3c.github.io/alreq/gap-analysis/">Arabic &amp; Persian Gap Analysis</a>, which describes gaps in support for Arabic and Persian on the Web, and prioritises and describes the impact of those gaps on the user.</p>
     <p>Wherever an unsupported feature is indentified through the gap analysis process, the requirements for that feature need to be documented. This  document is where those requirements are described.</p>
     <p>This document should contain no reference to a particular technology. For example, it should not say &quot;CSS does/doesn't do such and such&quot;, and it should not describe how a technology, such as CSS, should implement the requirements. It is technology agnostic, so that it will be evergreen, and it simply describes how the script works. The gap analysis document is the appropriate place for all kinds of technology-specific information.</p>
     </section>
@@ -602,7 +602,7 @@
               "ZWNJ example.">
 
             <figcaption>
-              Example of using <a>ZWNJ</a> for <a href="h_disjoining_enforcement">disjoining
+              Example of using <a>ZWNJ</a> for <a href="#h_disjoining_enforcement">disjoining
               enforcement</a>.
             </figcaption>
           </figure>
@@ -642,7 +642,7 @@
 
             <figcaption>
               Example of using <a>ZWJ</a> (recommended) and <a>TATWEEL</a> (not recommended) for
-              <a href="h_joining_enforcement">joining enforcement</a>.
+              <a href="#h_joining_enforcement">joining enforcement</a>.
             </figcaption>
           </figure>
         </section>
@@ -655,7 +655,7 @@
 
           <p>Two enforcement methods mentioned above can be combined together to form a
           <dfn>Joining-Disjoining Enforcement</dfn> method, that enables <a href=
-          "joining_rule_3">Joining Rule 3</a> for cases when there’s a
+          "#joining_rule_3">Joining Rule 3</a> for cases when there’s a
           <a>dual-joining</a>/<a>right-joining</a> letter after a <a>join-to-left</a> letter, which
           should not be joined to its previous letter.</p>
 
@@ -710,7 +710,7 @@
           <a>non-join-to-right</a> form and end in a <a>non-join-to-left</a> form. <a>Closed
           joining segments</a> are the result of segments either start and end with their normal
           behavior (<a href="#joining_rule_1">Joining Rule 1</a>), or by <a href=
-          "h_disjoining_enforcement">disjoining enforcement</a> (<a href="#joining_rule_2">Joining
+          "#h_disjoining_enforcement">disjoining enforcement</a> (<a href="#joining_rule_2">Joining
           Rule 2</a>).</p>
 
 
@@ -864,7 +864,7 @@
 
       <figure id="figure-combining_diacritics">
         <img src="images/combining-diacritics.png" alt=
-        "Diacritics could be combined in Arabic script." width="90%">
+        "Diacritics could be combined in Arabic script." style="width:90%">
 
         <figcaption>
           Diacritics could be combined in Arabic script.
@@ -1182,9 +1182,9 @@
           <p>In the two left most words, the initial noon differs in that one raises a kind of
           stroke. This property of raising a stroke is common for a number of letters (beh, teh,
           noon, theh) which are taller than their connected letters in order to be distinguished in
-          some contexts, such as<img style="float: middle; width: 37px; height: 31px;" alt=
+          some contexts, such as <img style="vertical-align: middle; width: 37px; height: 31px;" alt=
           "Beh with stroke before seen" src="images/bsl.jpg"> vs. <img style=
-          "float: middle; width: 43px; height: 39px;" alt="Beh without stroke after seen" src=
+          "vertical-align: middle; width: 43px; height: 39px;" alt="Beh without stroke after seen" src=
           "images/sbl.jpg"> , or to resolve ambiguity. See also the section about teeth letters
           below.</p>
         </section>
@@ -1202,7 +1202,7 @@
 
 
           <table style="margin-left: 40px;">
-            <caption style="text-align: bottom;">
+            <caption style="vertical-align: bottom;">
               Groups of letters are colored blue or red
             </caption>
 
@@ -1225,7 +1225,7 @@
 
 
           <table style="margin-left: 40px;">
-            <caption style="text-align: bottom;">
+            <caption style="vertical-align: bottom;">
               Can't really say letter groups. Rather a "horizontal sequence of letters of almost
               same width".
             </caption>
@@ -1262,14 +1262,14 @@
             <tbody>
               <tr>
                 <td style="text-align: center;"><img style=
-                "text-align: middle; width: 65px; height: 70px;" alt="Vertical joining" src=
+                "text-align: center; width: 65px; height: 70px;" alt="Vertical joining" src=
                 "images/vertivalJoin.jpg">
                 </td>
 
                 <td style="text-align: center;">vs.</td>
 
                 <td style="text-align: center;"><img style=
-                "text-align: middle; width: 69px; height: 46px;" alt="horizontal joing" src=
+                "text-align: center; width: 69px; height: 46px;" alt="horizontal joing" src=
                 "images/horizontalJoin.jpg">
                 </td>
               </tr>
@@ -1705,7 +1705,7 @@
         highlighted.</p>
 
 
-        <table border="1">
+        <table style="border:1px solid gray">
           <thead>
             <tr>
               <th>Family</th>
@@ -1973,10 +1973,10 @@
           <li><span class="codepoint"><span lang="en">/</span> [<span class="uname">U+002F
           SOLIDUS</span>]</span> is used for fractions or ratio notation. Fractions are noted for
           one-half, say, 2/1 or ٢/١, mostly in RTL mode. There is no standard approach, however,
-          and some region/author may write 1/2 for European digits.</li>
+          and some region/author may write 1/2 for European digits.
 
 
-          <p class="issue">May be use image for examples.</p>
+          <p class="issue">May be use image for examples.</p></li>
 
 
           <li>Notation with Solidus sign " / " are used in:
@@ -2003,11 +2003,10 @@
               <br>
               20/15 for rank 15 over 20</li>
 
+    
+                <li>Dates (2017/06/24, ٢٠١٧/٠٦/٢٤)
 
-              <li>Dates (2017/06/24, ٢٠١٧/٠٦/٢٤)</li>
-
-
-              <p class="issue">Look for evidence for some examples</p>
+                <p class="issue">Look for evidence for some examples</p></li>
             </ul>
           </li>
         </ul>
@@ -2027,7 +2026,7 @@
       </section>
 
 
-      <p><b><i>Old text bellow</i></b>
+      <p><b><i>Old text below</i></b>
       </p>
 
 
@@ -2100,7 +2099,7 @@
           Arabic script text?</li>
 
 
-          <li>The CSS spec <a href="https://drafts.csswg.org/css-text-3/#example-b3227dab">says</a>
+          <li>The CSS spec <a href="https://www.w3.org/TR/css-text-3/#word-break-property">says</a>
           "When shaping scripts such as Arabic are allowed to break within words due to break-all,
           the characters must still be shaped as if the word were not broken." Is this true?
           </li>
@@ -2204,8 +2203,8 @@
 
 
           <li>
-            <a href="https://www.microsoft.com/middleeast/msdn/JustifyingText-CSS.aspx">Justifying
-            Text using Cascading Style Sheets (CSS) in Internet Explorer 5.5</a>
+            Justifying
+            Text using Cascading Style Sheets (CSS) in Internet Explorer 5.5
           </li>
         </ul>
       </div>
