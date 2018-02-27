@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html  lang="en" >
+<head>
+<meta charset="utf-8">
+<title>shaping: border 0</title>
+<meta name="assert" content="Shaping should not be broken across inline box boundaries when border is set to 0.">
+<link rel="author" title="Richard Ishida" href="mailto:ishida@w3.org">
+<link rel="author" title="Shervin Afshar" href="mailto:i@shervinafshar.name">
+<link rel="help" href="https://drafts.csswg.org/css-text/#boundary-shaping">
+<meta name="flags" content="font" />
+<style type="text/css">
+@font-face {
+	font-family: 'csstest_noto';
+	src: url('../../fonts/NotoNaskhArabic-Regular.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+	}
+.test { border: 1px solid #FFFFFF;  margin: 20px;  padding: 10px; width: 3em; font-size: 172px; font-family: "Nassim Arabic"; }
+/* the CSS above is not part of the test */
+  .outline { text-shadow: 5px 0 0 #02D7F6; }
+</style>
+</head>
+<body>
+<p class="instructions">Test passes if all Arabic characters join.</p>
+<div class="test" lang="und-Arab">ع<span class="outline">ع</span>ع</div>
+<div class="test" lang="ar"><span class="outline">كلمة</span></div>
+<div class="test" lang="fa"><span class="outline">کل<span>م</span>ه</span></div> 
+<div class="test" lang="fa"><span class="outline">کلمه</span></div> 
+<!-- Notes:
+This test uses the Noto Naskh Arabic font to control variables related to font choice.
+-->
+</body>
+</html>

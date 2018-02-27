@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html  lang="en" >
+<head>
+<meta charset="utf-8">
+<title>shaping: margin &gt; 0</title>
+<meta name="assert" content="Shaping SHOULD be broken across inline box boundaries when marginis set to a non-zero value.">
+<link rel="author" title="Richard Ishida" href="mailto:ishida@w3.org">
+<link rel="author" title="Shervin Afshar" href="mailto:i@shervinafshar.name">
+<link rel="help" href="https://drafts.csswg.org/css-text/#boundary-shaping">
+<meta name="flags" content="font" />
+<style type="text/css">
+@font-face {
+	font-family: 'csstest_noto';
+	src: url('../../fonts/NotoNaskhArabic-Regular.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+	}
+.test { border: 1px solid #02D7F6;  margin: 20px;  padding: 10px; width: 3em; font-size: 172px; font-family: "csstest_noto"; }
+/* the CSS above is not part of the test */
+.margin { margin: 0.5em; }
+</style>
+</head>
+<body>
+<p class="instructions">Test passes if all Arabic characters DON'T join and middle letter appears in medial form.</p>
+<div class="test" lang="und-Arab">ع<span class="margin">ع</span>ع</div>
+<div class="test" lang="ar">ع<span class="margin">ل</span>م</div>
+<!-- Notes:
+This test uses the Noto Naskh Arabic font to control variables related to font choice.
+-->
+</body>
+</html>
