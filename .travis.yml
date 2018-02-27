@@ -6,8 +6,12 @@ addons:
     packages:
       - openjdk-8-jre  # install Java8 as required by vnu.jar
 
+notifications:
+  email:
+    on_success: never
+
 install:
- - pip install html5validator
+  - pip install html5validator
 
 script:
   - ./misc/scripts/validate-html.sh
