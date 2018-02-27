@@ -168,12 +168,22 @@
 
 
 
-<section id="cursive" class="basic">
+<section id="cursive" class="advanced">
     <h3>Cursive text</h3>
     <p class="status_prompt"> If this script is cursive (eg. Arabic, N'Ko, Syriac, etc), are there problems or needed features related to the handling of cursive text? Do cursive links break if parts of a word are marked up or styled? Do Unicode joiner and non-joiner characters behave as expected? <a href="http://w3c.github.io/typography/index#cursive">See available information</a> or <a href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20is%3Aopen%20label%3Acursive%20label%3Atype-info-request%20label%3Aarabic">check for currently needed data</a>.</p>
 
+    <p>The Arabic script is cursive. This means that letters appear in different forms depending on how they join with their neighbors. Majority of modern software implementations treat Arabic text accordingly. However, for few advanced typographic behaviours, additional considerations are required; for example, adding color highlighting to individual letterforms in a word context without disrupting the joining behaviour, application of text outlining, etc.</p>
 
-    <p>Various changes in styling currently break cursive connections. This should not happen. (Add details).</p>
+    <figure id="figure-2-5-shadow">
+        <img src="images/2-5-shadow.svg" alt="Correct and incorrect renderings of text shadow.">
+
+        <figcaption>
+          Correct and incorrect renderings of text shadow.
+        </figcaption>
+    </figure>
+
+    <p><a href="https://www.w3.org/TR/alreq/#h_letterhighlights">Arabic Layout Requirement</a> document includes a section dedicated to this topic.</p>
+    
 </section>
 
 
