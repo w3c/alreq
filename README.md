@@ -2,11 +2,11 @@
 
 This group exists to explore gaps and requirements for support of Arabic and Persian languages on the Web and in eBooks.
 
-It aims to address the problem that experts don't know how to tell the W3C what problems exist for support of their script on the Web, and the W3C often doesn't know how to contact people who can help when questions arise.
+It aims to address the problem that experts often don't know how to tell the W3C what problems exist for support of their script on the Web, and the W3C often doesn't know how to contact people who can help when questions arise.
 
 Some experts may go a step further, and contribute to a gap-analysis or requirements document.
 
-Topics for discussion are suggested by [the gap-analysis template](http://w3c.github.io/i18n-activity/templates/gap-analysis/gap-analysis_template.html). This work feeds into the [language matrix](http://w3c.github.io/typography/gap-analysis/language-matrix.html) which gives an overview of areas needing attention.
+Topics for discussion are suggested by [the gap-analysis template](http://w3c.github.io/i18n-activity/templates/gap-analysis/gap-analysis_template.html). This work feeds into the [language matrix](http://w3c.github.io/typography/gap-analysis/language-matrix.html) which gives an overview of languages needing attention.
 
 ### Documents
 - [Arabic & Persian Gap Analysis](https://w3c.github.io/alreq/gap-analysis/)
