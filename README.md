@@ -28,10 +28,12 @@ All contributors should read and agree with [CONTRIBUTING.md](CONTRIBUTING.md).
 Group _members_ are expert contributors who participate actively in producing the work of the group, regularly contributing text and advice to create the outputs, and participating in meetings. For more information about becoming a task force member contact [Richard Ishida](mailto:ishida@w3.org). We welcome participation requests.
 
 ### Links
-- [Task Force Home Page](https://w3c.github.io/alreq/homepage/)
+- [Issue tracker](http://w3c.github.io/i18n-activity/textlayout/?filter=arabic)
+- [Github issues](https://github.com/w3c/alreq/issues)
+- [Home Page](https://w3c.github.io/alreq/homepage/)
 - [Charter](http://w3c.github.io/alreq/charter/)
 - [Action tracker](https://www.w3.org/International/groups/arabic-layout/track/actions/open)
-- [Practical tips for task forces](https://w3c.github.io/i18n-activity/guidelines/process.html) (See also the github and editorial guideline above)
+- [Practical tips for task forces](https://w3c.github.io/i18n-activity/guidelines/process.html) (See also the github and editorial guidelines below)
 - [Meeting info](https://www.w3.org/2017/07/alreq-meeting-info.html)
 - [Mail archive](https://lists.w3.org/Archives/Public/public-i18n-arabic/)
 - Contacts: Shervin Afshar, Behnam Esfahbod, [Richard Ishida](mailto:ishida@w3.org)
