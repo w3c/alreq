@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html  lang="en" >
+<head>
+<meta charset="utf-8">
+<title>Allah ligature test</title>
+<link rel="author" title="r12a" href="mailto:ishida@w3.org">
+<style>
+.test, .ref {
+}
+
+/* the CSS below is not part of the test */
+.test, .ref {
+margin: 2em 5%;
+font-size: 2em;
+}
+.test {
+width: 90%;
+font-size: 48px;
+border: 1px solid orange;
+}
+th { font-size: 50%; padding: 10px; text-align: left; }
+th span { font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif"; font-size: 16px; font-weight: normal; font-style: italic;}
+td { padding: .1em .5em; }
+#assertion, .advice { font-style: italic; color: #666; }
+</style>
+</head>
+<body>
+
+<div id="assertion"><b class="assertion">Assertion:</b> A font will produce ligated forms for 'Allah' for the sequence alef, lam, lam, shadda, superscript alif, heh (or heh goal), but not if shadda and sup. alef are missing.</div>
+<div class="advice"><b class="advice">Advice:</b> The right-hand column shows the precomposed character (which ought not to be used). You can change the font for the first row of data using the controls below.</div>
+
+<div class="control">Change the font:<br>
+    <select id="fontList" name="fontList" onchange="document.getElementById('testrow').style.fontFamily=this.value; document.getElementById('fontFamily').textContent=this.value; return false;">
+<option value="0">Select...</option>
+            
+            <optgroup label="Mac fonts ">
+            <option value="Al Bayan">Al Bayan</option>
+            <option value="Baghdad">Baghdad</option>
+            <option value="Decotype Naskh">Decotype Naskh</option>
+            <option value="Geeza Pro">Geeza Pro</option>
+            <option value="KufiStandardGK">KufiStandardGK</option>
+            <option value="Nadeem">Nadeem</option>
+            <option value="Damascus">Damascus</option>
+            </optgroup>
+            
+            <optgroup label="Windows fonts ">
+            <option value="Arabic Typesetting">Arabic Typesetting</option>
+            <option value="Aldhabi">Aldhabi</option>
+            <option value="Andalus">Andalus</option>
+            <option value="Microsoft Uighur">Microsoft Uighur </option>
+            <option value="Sakkal Majalla">Sakkal Majalla</option>
+            <option value="Simplified Arabic">Simplified Arabic</option>
+            <option value="Simplified Arabic Fixed">Simplified Arabic Fixed</option>
+            <option value="Traditional Arabic">Traditional Arabic</option>
+            <option value="Urdu Typesetting">Urdu Typesetting</option>
+            </optgroup>
+            
+            <optgroup label="Google fonts ">
+            <option value="Scheherazade">Scheherazade</option>
+            <option value="Noto Naskh Arabic">Noto Naskh Arabic</option>
+            <option value="Noto Nastaliq Urdu">Noto Nastaliq Urdu</option>
+            <option value="Noto Nastaliq Urdu Draft">Noto Nastaliq Urdu Draft</option>
+            </optgroup>
+            
+            <optgroup label="Other fonts ">
+            <option value="Amiri">Amiri</option>
+            <option value="Arabic Transparent">Arabic Transparent</option>
+            <option value="Farsi Simple">Farsi Simple</option>
+            <option value="Koodak">Koodak</option>
+            <option value="Koodak">Koodak</option>
+            <option value="IranNastaliq">IranNastaliq</option>
+            <option value="mry_KacstQurn">mry_KacstQurn</option>
+            <option value="Nafees Naskh">Nafees Naskh</option>
+            <option value="Nafees Pakistani Naskh">Nafees Pakistani Naskh</option>
+            <option value="Nafees Nastaleeq">Nafees Nastaleeq</option>
+            <option value="Nafees Web Naskh">Nafees Web Naskh</option>
+            <option value="Nastaleeq Like">Nastaleeq Like</option>
+            <option value="Nazli">Nazli</option>
+            <option value="PakType Tehreer">PakType Tehreer</option>
+            <option value="Pashtu Abdaali">Pashtu Abdaali</option>
+            <option value="Pashtu Waziristan">Pashtu Waziristan</option>
+            <option value="Riwaj">Riwaj</option>
+            <option value="Roya">Roya</option>
+            <option value="Terafik">Terafik</option>
+            <option value="Unikurd Tishk">Unikurd Tishk</option>
+            <option value="Unikurd Web">Unikurd Web</option>
+            <option value="Urdu Naskh Unicode">Urdu Naskh Unicode</option>
+            <option value="Urdu Nastaliq Unicode">Urdu Nastaliq Unicode</option>
+            </optgroup>
+            
+            <optgroup label="General fonts ">
+            <option value="Arial">Arial</option>
+            <option value="Arial Unicode MS">Arial Unicode MS</option>
+            <option value="Code2000">Code2000</option>
+            <option value="Courier New">Courier New</option>
+            <option value="DejaVu Sans">DejaVu Sans</option>
+            <option value="Tahoma">Tahoma</option>
+            <option value="Times New Roman">Times New Roman</option>
+            <option value="sans-serif">sans-serif</option>
+            <option value="serif">serif</option>
+            </optgroup>
+       
+</select>
+</div>
+ <div class="control">Add another font:<br>
+      <input name="fontName" id="fontName" value="" onchange="document.getElementById('testrow').style.fontFamily=this.value; document.getElementById('fontFamily').textContent=this.value; return false;">
+</div>
+ 
+<div><b class="instructions">Test passes if</b> the text in each cell produces the same elements as listed in the top row (the styling will be different).</div>
+
+
+
+<div class="test" id="test" lang="ar">
+<table>
+<thead>
+<tr>
+<td>&nbsp;</td>
+<th><span>alef, lam, lam, shadda, s.alif, heh</span><br/>Should ligate</th>
+<th><span>alef, lam, lam, shadda, s.alif, h.goal</span><br/>Should ligate</th>
+<th><span>alef, lam, lam, heh</span><br/>Should NOT ligate</th>
+<th><span>alef, lam, lam, h.goal</span><br/>Should NOT ligate</th>
+<th><span>alef, lam, lam, shadda, heh</span><br/>Should NOT ligate</th>
+<th><span>alef, lam, lam, shadda, h.goal</span><br/>Should NOT ligate</th>
+<th><span>lam, lam, heh</span><br/>Should NOT ligate</th>
+<th><span>lam, lam, h.goal</span><br/>Should NOT ligate</th>
+<th><span>precomposed</span><br/>Should show full form</th>
+
+</tr>
+<tr>
+<td>&nbsp;</td>
+<th>eg. <img src="decomposed.png" alt=""/></th>
+<th>eg. <img src="decomposed_goal.png" alt=""/></th>
+<th>eg. <img src="no_shadda_or_alef.png" alt=""/></th>
+<th>eg. <img src="no_shadda_or_alef_goal.png" alt=""/></th>
+<th>eg. <img src="no_alef.png" alt=""/></th>
+<th>eg. <img src="no_alef_goal.png" alt=""/></th>
+<th>eg. <img src="lam_lam_heh.png" alt=""/></th>
+<th>eg. <img src="lam_lam_heh_goal.png" alt=""/></th>
+<th>eg. <img src="decomposed.png" alt=""/></th>
+
+</tr>
+</thead>
+<tbody>
+<tr id="testrow" style="font-family: 'Noto naskh arabic'">
+<th><span id="fontFamily">Noto naskh arabic</span></th><td>&#x0627;&#x0644;&#x0644;&#x0651;&#x0670;&#x0647;</td>
+<td>&#x0627;&#x0644;&#x0644;&#x0651;&#x0670;&#x06C1;</td>
+<td>&#x0627;&#x0644;&#x0644;&#x0647;</td>
+<td>&#x0627;&#x0644;&#x0644;&#x06C1;</td>
+<td>&#x0627;&#x0644;&#x0644;&#x0651;&#x0647;</td>
+<td>&#x0627;&#x0644;&#x0644;&#x0651;&#x06C1;</td>
+<td>&#x0644;&#x0644;&#x0647;</td>
+<td>&#x0644;&#x0644;&#x06C1;</td>
+<td>&#xFDF2;</td>
+</tr>
+<tr style="font-family: 'Scheherazade'">
+<th><span>Scheherazade</span></th><td>&#x0627;&#x0644;&#x0644;&#x0651;&#x0670;&#x0647;</td>
+<td>&#x0627;&#x0644;&#x0644;&#x0651;&#x0670;&#x06C1;</td>
+<td>&#x0627;&#x0644;&#x0644;&#x0647;</td>
+<td>&#x0627;&#x0644;&#x0644;&#x06C1;</td>
+<td>&#x0627;&#x0644;&#x0644;&#x0651;&#x0647;</td>
+<td>&#x0627;&#x0644;&#x0644;&#x0651;&#x06C1;</td>
+<td>&#x0644;&#x0644;&#x0647;</td>
+<td>&#x0644;&#x0644;&#x06C1;</td>
+<td>&#xFDF2;</td>
+</tr>
+<tr style="font-family:  Amiri">
+<th><span>Amiri</span></th><td>&#x0627;&#x0644;&#x0644;&#x0651;&#x0670;&#x0647;</td>
+<td>&#x0627;&#x0644;&#x0644;&#x0651;&#x0670;&#x06C1;</td>
+<td>&#x0627;&#x0644;&#x0644;&#x0647;</td>
+<td>&#x0627;&#x0644;&#x0644;&#x06C1;</td>
+<td>&#x0627;&#x0644;&#x0644;&#x0651;&#x0647;</td>
+<td>&#x0627;&#x0644;&#x0644;&#x0651;&#x06C1;</td>
+<td>&#x0644;&#x0644;&#x0647;</td>
+<td>&#x0644;&#x0644;&#x06C1;</td>
+<td>&#xFDF2;</td>
+</tr>
+<tr style="font-family:  'Arial'">
+<th><span>Arial</span></th><td>&#x0627;&#x0644;&#x0644;&#x0651;&#x0670;&#x0647;</td>
+<td>&#x0627;&#x0644;&#x0644;&#x0651;&#x0670;&#x06C1;</td>
+<td>&#x0627;&#x0644;&#x0644;&#x0647;</td>
+<td>&#x0627;&#x0644;&#x0644;&#x06C1;</td>
+<td>&#x0627;&#x0644;&#x0644;&#x0651;&#x0647;</td>
+<td>&#x0627;&#x0644;&#x0644;&#x0651;&#x06C1;</td>
+<td>&#x0644;&#x0644;&#x0647;</td>
+<td>&#x0644;&#x0644;&#x06C1;</td>
+<td>&#xFDF2;</td>
+</tr>
+<tr style="font-family:  'Tahoma'">
+<th><span>Tahoma</span></th><td>&#x0627;&#x0644;&#x0644;&#x0651;&#x0670;&#x0647;</td>
+<td>&#x0627;&#x0644;&#x0644;&#x0651;&#x0670;&#x06C1;</td>
+<td>&#x0627;&#x0644;&#x0644;&#x0647;</td>
+<td>&#x0627;&#x0644;&#x0644;&#x06C1;</td>
+<td>&#x0627;&#x0644;&#x0644;&#x0651;&#x0647;</td>
+<td>&#x0627;&#x0644;&#x0644;&#x0651;&#x06C1;</td>
+<td>&#x0644;&#x0644;&#x0647;</td>
+<td>&#x0644;&#x0644;&#x06C1;</td>
+<td>&#xFDF2;</td>
+</tr>
+<tr style="font-family:  'Al Bayan'">
+<th><span>Al Bayan</span></th><td>&#x0627;&#x0644;&#x0644;&#x0651;&#x0670;&#x0647;</td>
+<td>&#x0627;&#x0644;&#x0644;&#x0651;&#x0670;&#x06C1;</td>
+<td>&#x0627;&#x0644;&#x0644;&#x0647;</td>
+<td>&#x0627;&#x0644;&#x0644;&#x06C1;</td>
+<td>&#x0627;&#x0644;&#x0644;&#x0651;&#x0647;</td>
+<td>&#x0627;&#x0644;&#x0644;&#x0651;&#x06C1;</td>
+<td>&#x0644;&#x0644;&#x0647;</td>
+<td>&#x0644;&#x0644;&#x06C1;</td>
+<td>&#xFDF2;</td>
+</tr>
+<tr style="font-family:  'Baghdad'">
+<th><span>Baghdad</span></th><td>&#x0627;&#x0644;&#x0644;&#x0651;&#x0670;&#x0647;</td>
+<td>&#x0627;&#x0644;&#x0644;&#x0651;&#x0670;&#x06C1;</td>
+<td>&#x0627;&#x0644;&#x0644;&#x0647;</td>
+<td>&#x0627;&#x0644;&#x0644;&#x06C1;</td>
+<td>&#x0627;&#x0644;&#x0644;&#x0651;&#x0647;</td>
+<td>&#x0627;&#x0644;&#x0644;&#x0651;&#x06C1;</td>
+<td>&#x0644;&#x0644;&#x0647;</td>
+<td>&#x0644;&#x0644;&#x06C1;</td>
+<td>&#xFDF2;</td>
+</tr>
+<tr style="font-family:  'Decotype Naskh'">
+<th><span>Decotype Naskh</span></th><td>&#x0627;&#x0644;&#x0644;&#x0651;&#x0670;&#x0647;</td>
+<td>&#x0627;&#x0644;&#x0644;&#x0651;&#x0670;&#x06C1;</td>
+<td>&#x0627;&#x0644;&#x0644;&#x0647;</td>
+<td>&#x0627;&#x0644;&#x0644;&#x06C1;</td>
+<td>&#x0627;&#x0644;&#x0644;&#x0651;&#x0647;</td>
+<td>&#x0627;&#x0644;&#x0644;&#x0651;&#x06C1;</td>
+<td>&#x0644;&#x0644;&#x0647;</td>
+<td>&#x0644;&#x0644;&#x06C1;</td>
+<td>&#xFDF2;</td>
+</tr>
+<tr style="font-family:  'Geeza Pro'">
+<th><span>Geeza Pro</span></th><td>&#x0627;&#x0644;&#x0644;&#x0651;&#x0670;&#x0647;</td>
+<td>&#x0627;&#x0644;&#x0644;&#x0651;&#x0670;&#x06C1;</td>
+<td>&#x0627;&#x0644;&#x0644;&#x0647;</td>
+<td>&#x0627;&#x0644;&#x0644;&#x06C1;</td>
+<td>&#x0627;&#x0644;&#x0644;&#x0651;&#x0647;</td>
+<td>&#x0627;&#x0644;&#x0644;&#x0651;&#x06C1;</td>
+<td>&#x0644;&#x0644;&#x0647;</td>
+<td>&#x0644;&#x0644;&#x06C1;</td>
+<td>&#xFDF2;</td>
+</tr>
+<tr style="font-family:  'Nadeem'">
+<th><span>Nadeem</span></th><td>&#x0627;&#x0644;&#x0644;&#x0651;&#x0670;&#x0647;</td>
+<td>&#x0627;&#x0644;&#x0644;&#x0651;&#x0670;&#x06C1;</td>
+<td>&#x0627;&#x0644;&#x0644;&#x0647;</td>
+<td>&#x0627;&#x0644;&#x0644;&#x06C1;</td>
+<td>&#x0627;&#x0644;&#x0644;&#x0651;&#x0647;</td>
+<td>&#x0627;&#x0644;&#x0644;&#x0651;&#x06C1;</td>
+<td>&#x0644;&#x0644;&#x0647;</td>
+<td>&#x0644;&#x0644;&#x06C1;</td>
+<td>&#xFDF2;</td>
+</tr>
+<tr style="font-family:  'Damascus'">
+<th><span>Damascus</span></th><td>&#x0627;&#x0644;&#x0644;&#x0651;&#x0670;&#x0647;</td>
+<td>&#x0627;&#x0644;&#x0644;&#x0651;&#x0670;&#x06C1;</td>
+<td>&#x0627;&#x0644;&#x0644;&#x0647;</td>
+<td>&#x0627;&#x0644;&#x0644;&#x06C1;</td>
+<td>&#x0627;&#x0644;&#x0644;&#x0651;&#x0647;</td>
+<td>&#x0627;&#x0644;&#x0644;&#x0651;&#x06C1;</td>
+<td>&#x0644;&#x0644;&#x0647;</td>
+<td>&#x0644;&#x0644;&#x06C1;</td>
+<td>&#xFDF2;</td>
+</tr>
+<tr style="font-family:  'Arabic Typesetting'">
+<th><span>Arabic Typesetting</span></th><td>&#x0627;&#x0644;&#x0644;&#x0651;&#x0670;&#x0647;</td>
+<td>&#x0627;&#x0644;&#x0644;&#x0651;&#x0670;&#x06C1;</td>
+<td>&#x0627;&#x0644;&#x0644;&#x0647;</td>
+<td>&#x0627;&#x0644;&#x0644;&#x06C1;</td>
+<td>&#x0627;&#x0644;&#x0644;&#x0651;&#x0647;</td>
+<td>&#x0627;&#x0644;&#x0644;&#x0651;&#x06C1;</td>
+<td>&#x0644;&#x0644;&#x0647;</td>
+<td>&#x0644;&#x0644;&#x06C1;</td>
+<td>&#xFDF2;</td>
+</tr>
+<tr style="font-family:  'Aldhabi'">
+<th><span>Aldhabi</span></th><td>&#x0627;&#x0644;&#x0644;&#x0651;&#x0670;&#x0647;</td>
+<td>&#x0627;&#x0644;&#x0644;&#x0651;&#x0670;&#x06C1;</td>
+<td>&#x0627;&#x0644;&#x0644;&#x0647;</td>
+<td>&#x0627;&#x0644;&#x0644;&#x06C1;</td>
+<td>&#x0627;&#x0644;&#x0644;&#x0651;&#x0647;</td>
+<td>&#x0627;&#x0644;&#x0644;&#x0651;&#x06C1;</td>
+<td>&#x0644;&#x0644;&#x0647;</td>
+<td>&#x0644;&#x0644;&#x06C1;</td>
+<td>&#xFDF2;</td>
+</tr>
+<tr style="font-family:  'Andalus'">
+<th><span>Andalus</span></th><td>&#x0627;&#x0644;&#x0644;&#x0651;&#x0670;&#x0647;</td>
+<td>&#x0627;&#x0644;&#x0644;&#x0651;&#x0670;&#x06C1;</td>
+<td>&#x0627;&#x0644;&#x0644;&#x0647;</td>
+<td>&#x0627;&#x0644;&#x0644;&#x06C1;</td>
+<td>&#x0627;&#x0644;&#x0644;&#x0651;&#x0647;</td>
+<td>&#x0627;&#x0644;&#x0644;&#x0651;&#x06C1;</td>
+<td>&#x0644;&#x0644;&#x0647;</td>
+<td>&#x0644;&#x0644;&#x06C1;</td>
+<td>&#xFDF2;</td>
+</tr>
+<tr style="font-family:  'Simplified Arabic'">
+<th><span>Simplified Arabic</span></th><td>&#x0627;&#x0644;&#x0644;&#x0651;&#x0670;&#x0647;</td>
+<td>&#x0627;&#x0644;&#x0644;&#x0651;&#x0670;&#x06C1;</td>
+<td>&#x0627;&#x0644;&#x0644;&#x0647;</td>
+<td>&#x0627;&#x0644;&#x0644;&#x06C1;</td>
+<td>&#x0627;&#x0644;&#x0644;&#x0651;&#x0647;</td>
+<td>&#x0627;&#x0644;&#x0644;&#x0651;&#x06C1;</td>
+<td>&#x0644;&#x0644;&#x0647;</td>
+<td>&#x0644;&#x0644;&#x06C1;</td>
+<td>&#xFDF2;</td>
+</tr>
+<tr style="font-family:  'Traditional Arabic'">
+<th><span>Traditional Arabic</span></th><td>&#x0627;&#x0644;&#x0644;&#x0651;&#x0670;&#x0647;</td>
+<td>&#x0627;&#x0644;&#x0644;&#x0651;&#x0670;&#x06C1;</td>
+<td>&#x0627;&#x0644;&#x0644;&#x0647;</td>
+<td>&#x0627;&#x0644;&#x0644;&#x06C1;</td>
+<td>&#x0627;&#x0644;&#x0644;&#x0651;&#x0647;</td>
+<td>&#x0627;&#x0644;&#x0644;&#x0651;&#x06C1;</td>
+<td>&#x0644;&#x0644;&#x0647;</td>
+<td>&#x0644;&#x0644;&#x06C1;</td>
+<td>&#xFDF2;</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+
+</body>
+</html>
