@@ -1393,13 +1393,29 @@
 
 
     <section id="h_segmentation">
-      <h3><a href="#h_segmentation">Text segmentation</a>
+      <h3><a href="#h_segmentation">Text Segmentation</a>
       </h3>
 
+      <p>Similar to alphabetic orthographical conventions of Latin script, word-boundaries in
+	Arabic script can be distinguished by white space and a specific subset of punctuation
+	marks.</p> 
 
-      <p>Word, sentence and paragraph boundaries are largely deliminated by spaces and punctuation
-      as in most Latin script text.</p>
+      <p>In case of hand-written Latin script text, the word-space boundaries were introduced
+	to improve readability of manuscritpts. This practice first surfaced in seventh and
+	eight century CE and was common by thirteenth and fourteenth.
+	[BURNLEY], [SAENGER]</p>
 
+      <p>The earliest known example of an Arabic text typesetted with movable types which
+	dates back to 1514, lacks word-space boundaries and shows all characteristcs of following
+	the caligraphic tradition. Arabic books typesetted by the end of the century show a
+	progression towards using word-space boundaries and by the end of 18th century, the
+	practice is widespread and common.</p>
+
+      <p>Regardless of writing systems, since these convention have emerged over the course of
+	time and as some believe in response to non-orthographic principles of wordhood
+	[OX-WORD], there are always
+	exceptions existing for them. Some of such special cases and exceptions are detailed
+	below:<p>
 
       <p>However, there are exceptions:
 	<ul>
@@ -1410,16 +1426,23 @@
 	</ul>
       </p>
 
+      <p>Unicode Text Segmentation [[!UAX29]] describes guidelines for determining most significat
+	text boundaries independent of language and orthographic conventions. These guidelines
+	shape a logical set of rules for default boundary determination based on Unicode Standard
+	uniform character model.</p>
+
+      <p>Beyond this default boundary determination model, the locale-specific boundary specifications,
+	including cases which require boundary suppression, are available in
+	[[!CLDR]].</p>
+      
+      <p>For line segmentation (or more precisely, where line breaks are allowed) see section 4.1 and
+	 for details paragraph boundaries see Srction 4.3.</p>
 
       <div class="issue question">
         Should all ligatures be selectable as a single unit, or as individual parts corresponding
         to the underlying characters?
       </div>
 
-
-      <div class="issue">
-        Expand on the exceptions.
-      </div>
     </section>
 
 
