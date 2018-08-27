@@ -212,7 +212,9 @@
     <p class="status_prompt">When you double- or triple-click on the text, is the expected range of characters highlighted? When you move through the text with the cursor, or backspace, etc. do you see the expected behaviour? Are there issues when applying punctuation than could be fixed by the application? (Some of the answers to these questions may be addressed in other sections, such as line-breaking, or initial-letter styling.)  <a href="http://w3c.github.io/typography/index#graphemes">See available information</a>  or <a href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20is%3Aopen%20label%3Aboundaries%20label%3Atype-info-request%20label%3Aarabic">check for currently needed data</a>.</p>
 
 
-    <p></p>
+    <p>Arabic script word boundaries, similar to Latin script, generally can be distinguished by white space and a specific subset of punctuations. There are few excpetions which are listed in <a href="https://w3c.github.io/alreq/#h_segmentation">Arabic Layout Requirement</a> document.</p>
+
+    <p>To enforce a disjoining behavior between the letters which under circumstances of their position normally join, special Unicode character <span class="uname">U+200C ZERO WIDTH NON-JOINER</span> (ZWNJ) is used. This usage is detailed in <a href="https://w3c.github.io/alreq/#h_disjoining_enforcement">Arabic Layout Requirement</a> document. There is also a <a href="tests/boundaries/text_boundary_selection_000.html">test</a> available for it.</p>
 </section>
 
 
