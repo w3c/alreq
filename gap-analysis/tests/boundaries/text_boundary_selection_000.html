@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+<meta charset="utf-8">
+<title>Arabic Text Selection with Double-click</title>
+<link rel="author" title="Shervin Afshar" href="mailto:safshar@netflix.com">
+<style>
+.test { }
+
+/* the CSS below is not part of the test */
+.test  {
+margin: 20px;
+font-size: 4em;
+}
+textarea { width: 50%; height: 6em; font-size: 2em; }
+</style>
+</head>
+<body>
+
+      <div id="assertion"><b class="assertion">Assertion:</b> Double-clicking should select the whole word.</div>
+      <div id="instructions"><b class="instructions">Instructions:</b> Below on each line there are two clusters of letters separated by a space. Double-click anywhere on the rightmost cluster of letter which have ZWNJ within them.</div>
+      <div id="passes"><b class="passes">Test passes if:</b> Upon double-clicking on the rightmost cluster of letters, the whole cluster should be selected.</div>
+    </div>
+
+<div class="test" id="test" lang="und-Arab">
+            <p>کی&#x0200C;خمج پچگ</p> <!-- with &#x0200C; to represent ZWNJ -->
+            <p>کی&#8204;خمج پچگ</p> <!-- with &#8204; to represent ZWNJ -->
+            <p>کی‌خمج پچگ</p> <!-- with explicit character ZWNJ -->
+            <p>کیخمج‌‌‌‌‌خمج‌خمج پچگ</p> <!-- multiple ZWNJs -->
+</div>
+
+
+</body>
+</html>
