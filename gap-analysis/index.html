@@ -203,9 +203,20 @@
 </section>
 
 <section id="cursive_style">
-<h4>Inline elements break cursive shaping</h4><p>When elements surround part of a cursive run of text, and apply styling, the results often break the cursive joins.</p>
+<h4>Inline elements break cursive shaping</h4>
+  <p>When elements surround part of a cursive run of text, and apply styling, the results often break the cursive joins. (See the results of trying to colour individual letters in the illustration below – successful on the left, unsuccessful on the right.)</p>
 <p><img src="images/shaping-1.png" alt=""> <img src="images/shaping-2.png" alt=""></p>
-<p>The expected behaviour is <a href="https://github.com/w3c/csswg-drafts/issues/698">not yet fully confirmed</a> by the CSS spec, and will probably depend on the type of styling that is applied, but there is a level of agreement that something like just colouring a letter shouldn't break the shaping.  <span class="pass">Firefox</span> and <span class="pass">Edge</span> allow you to put a <code class="kw" translate="no">span</code> around a medial letter to colour it without breaking the cursive joins. <span class="fail">Chrome</span> and <span class="fail">Safari</span>, however, break the shaping sequence. (See the results just above – successful on the left, unsuccessful on the right.) See the <a href="https://w3c.github.io/i18n-tests/results/css-text-shaping">tests and results</a> for a range of different styling effects.</p>
+<p>After some <a href="https://github.com/w3c/csswg-drafts/issues/698">discussion</a>, the CSS spec requires the following:
+ <ol>
+   <li>Markup alone around part of a joined up sequence must not disturb the joining behaviour.</li>
+   <li>Styling that doesn't affect the characters, such as text-decoration, must not break the joins.</li>
+   <li>Styling that does affect the shape of the characters should not break the joins, however the result is not well defined for complex glyph arrangements such as ligatures where the markup occurs between characters that make up the ligature.</li>
+   <li>Non-zero margins, padding, and borders, will break the join, as will isolation boundaries.</li>
+  </ol>
+<p>See the <a href="https://w3c.github.io/i18n-tests/results/css-text-shaping">tests and results</a> for a range of different styling effects.</p>
+ <p><span class="fail">Chrome</span> and <span class="fail">Safari</span> break cursive joining as soon as markup appears around a character, and so obviously fail for any type of styling application, too.</p>
+  <p><span class="partial">Firefox</span> and <span class="partial">Edge</span> keep joins for styling that doesn't affect the shape of the characters (eg. text-decoration), and keeps it for colour changes, however they fail for changes in font-weight, font-style, and font-size, as well as for markup such as `em` and `b` tags.</p>
+  <p class="issue">It would be useful to decide on the potential impact of the failures described here, so as to prioritise the issue. Is the inability to surround/style parts of a word a significant issue? It may be problematic when defining a term (using `dfn`) if the term is only part of the run of letters between spaces, eg. after the definite article.</p>
 </section>
 
 
