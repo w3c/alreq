@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="690px" height="323px" viewBox="0 0 690 323" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="790px" height="423px" viewBox="0 0 790 423" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 3.7.2 (28276) - http://www.bohemiancoding.com/sketch -->
     <title>Tatweel</title>
     <desc>Created with Sketch.</desc>
-    <defs></defs>
+    <defs/>
     <g id="Tatweel" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Group-Copy" transform="translate(-8.000000, 123.000000)">
+        <g id="Group-Copy" transform="translate(10.000000, 180.000000)">
             <text id="U+0645" font-family="SourceSansPro-Light, Source Sans Pro" font-size="32" font-weight="300" fill="#000000">
                 <tspan x="262" y="199">U+0645</tspan>
             </text>
@@ -37,7 +37,7 @@
                 <tspan x="184" y="135">←</tspan>
             </text>
         </g>
-        <g id="Group" transform="translate(222.000000, -77.000000)">
+        <g id="Group" transform="translate(232.000000, -20.000000)">
             <text id="U+0645" font-family="SourceSansPro-Light, Source Sans Pro" font-size="32" font-weight="300" fill="#000000">
                 <tspan x="202" y="199">U+0645</tspan>
             </text>
