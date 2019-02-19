@@ -30,27 +30,15 @@
         { name: "Behnam Esfahbod", mailto: "w3c@behnam.es", company: "Quora/Virgule Typeworks" },
         { name: "Mostafa Hajizadeh", mailto: "mostafa@daftar.cc" },
         { name: "Najib Tounsi", mailto: "ntounsi@emi.ac.ma", company: "Ecole Mohammadia d'Ingénieurs" },
+        { name: "Richard Ishida", mailto: "ishida@w3.org", company: "W3C" },
       ],
 
 
       wg:           "Internationalization Working Group",
       wgURI:        "https://www.w3.org/International/core/",
-      wgPublicList: "public-i18n-arabic",
-      bugTracker: {
-        new: "https://github.com/w3c/alreq/issues",
-        open: "https://github.com/w3c/alreq/issues",
-      } ,
-      otherLinks: [
-        {
-          key: "Github",
-          data: [
-          {
-            value: "repository",
-            href: "https://github.com/w3c/alreq"
-          }
-          ]
-        }
-      ],
+      //wgPublicList: "public-i18n-arabic",
+
+	  github: "w3c/alreq",
 
       // URI of the patent status for this WG, for Rec-track documents
       // !!!! IMPORTANT !!!!
@@ -132,18 +120,8 @@
     Working Group</a>. The end target for this document is a Working Group Note.</p>
 
 
-    <div class="note" title="Sending Comments on This Document">
-      <p data-lang="en">If you wish to make comments regarding this document, please raise them as
-      <a href="https://github.com/w3c/alreq/issues" style="font-size: 120%;">github issues</a> 
-      <!--against the <a href="https://www.w3.org/TR/2015/WD-alreq-TODO/" style="font-size: 120%">latest dated version in /TR</a>-->.
-      Only send comments by email if you are unable to raise issues on github (see links below).
-      All comments are welcome.</p>
-
-
-      <p data-lang="en">To make it easier to track comments, please raise separate issues or emails
-      for each comment, and point to the section you are commenting on&nbsp; using a URL for the
-      dated version of the document.</p>
-    </div>
+     <p data-lang="en">To make it easier to track comments, please raise a separate issue
+      for each comment, and at the start of the issue add a URL pointing to the section you are commenting on.</p>
   </section>
 
 
@@ -1424,7 +1402,7 @@
 	  <li>"ب" before a number in Arabic orthography (<span dir="rtl">"ب‍ 42"</span>);</li>
 	  <li>the misuse of space in place of ZWNJ in some Arabic script languages.</li>
 	</ul>
-      </p>
+      
 
       <p>Unicode Text Segmentation [[!UAX29]] describes guidelines for determining most significant
 	text boundaries independent of language and orthographic conventions. These guidelines
