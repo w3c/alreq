@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Alreq shadow</title>
+  <script src="https://www.w3.org/Tools/respec/respec-w3c-common" async class="remove"></script>
+  <script class="remove">
+    var respecConfig = {
+      // specification status (e.g. WD, LCWD, WG-NOTE, etc.). If in doubt use ED.
+      specStatus:           "base",
+      //publishDate:  "2015-07-21",
+      //previousPublishDate:  "2014-12-16",
+      //previousMaturity:  "FPWD",
+
+      noRecTrack:           true,
+      shortName:            "alreq",
+      copyrightStart:       "2015",
+      edDraftURI:           "https://w3c.github.io/alreq/",
+
+      // if this is a LCWD, uncomment and set the end of its review period
+      // lcEnd: "2009-08-05",
+
+      // editors, add as many as you like
+      // only "name" is required
+      editors:  [
+        { name: "Shervin Afshar", mailto: "safshar@netflix.com", company: "Netflix" },
+        { name: "Behnam Esfahbod", mailto: "w3c@behnam.es", company: "Quora/Virgule Typeworks" },
+        { name: "Mostafa Hajizadeh", mailto: "mostafa@daftar.cc" },
+        { name: "Najib Tounsi", mailto: "ntounsi@emi.ac.ma", company: "Ecole Mohammadia d'Ingénieurs" },
+        { name: "Richard Ishida", mailto: "ishida@w3.org", company: "W3C" },
+      ],
+
+
+      wg:           "Internationalization Working Group",
+      wgURI:        "https://www.w3.org/International/core/",
+      //wgPublicList: "public-i18n-arabic",
+
+	  github: "w3c/alreq",
+
+      // URI of the patent status for this WG, for Rec-track documents
+      // !!!! IMPORTANT !!!!
+      // This is important for Rec-track documents, do not copy a patent URI from a random
+      // document unless you know what you're doing. If in doubt ask your friendly neighbourhood
+      // Team Contact.
+      wgPatentURI:  "https://www.w3.org/2004/01/pp-impl/32113/status",
+      // !!!! IMPORTANT !!!! MAKE THE ABOVE BLINK IN YOUR HEAD
+
+      localBiblio: {
+
+        "BIDI": {
+          "authors": [
+            "Mark Davis",
+            "Aharon Lanin",
+            "Andrew Glass"
+          ],
+          "href": "http://www.unicode.org/reports/tr9/",
+          "publisher": "Unicode Consortium",
+          "status": "Unicode Standard Annex #9",
+          "title": "Unicode Bidirectional Algorithm",
+          "id": "BIDI",
+        },
+
+        "UBA-BASICS": {
+          "authors": [
+            "Richard Ishida",
+          ],
+          "href": "https://www.w3.org/International/articles/inline-bidi-markup/uba-basics",
+          "publisher": "World Wide Web Consortium",
+          "title": "Unicode Bidirectional Algorithm basics",
+          "id": "UBA-BASICS",
+        },
+
+        "UNICODE": {
+          "href": "http://www.unicode.org/versions/latest/",
+          "publisher": "The Unicode Consortium",
+          "title": "The Unicode Standard",
+          "id": "UNICODE"
+        },
+        
+        "W3-ARAB-MATH": {
+          "authors": [
+                "Azzeddine Lazrek", 
+                "Mustapha Eddahibi", 
+                "Khalid Sami", 
+                "Bruce R. Miller"
+          ],
+          "href": "https://www.w3.org/TR/arabic-math/",
+          "publisher": "World Wide Web Consortium",
+          "title": "Arabic mathematical notation",
+          "id": "W3-ARAB-MATH"
+        }
+      },
+    };
+  </script>
+  <link rel="stylesheet" href="local.css" type="text/css">
+</head>
+
+<body>
+  <section id="abstract">
+    <p>This document holds issues, blank sections, etc. that were removed from the main index.html file.</p>
+  </section>
+
+
+  <section id="sotd">
+    <p>This document holds issues, blank sections, etc. that were removed from the main index.html file.  </p>
+</section>
+<section id="h_characters_and_words">
+<h2>Characters and Words</h2>
+
+
+    <section id="h_punctuation">
+      <h3>Punctuation</h3>
+
+
+      <div class="issue">
+        <ul>
+          <li>List of non-ASCII punctuation and description of usage and frequency.</li>
+
+
+          <li>Use and positioning of punctuation marks in the sentence.</li>
+
+
+          <li>Use of paired punctuation marks.</li>
+        </ul>
+      </div>
+    </section>
+
+
+    <section id="h_segmentation">
+      <h3>Text Segmentation</h3>
+<div class="issue question">
+  Should all ligatures be selectable as a single unit, or as individual parts corresponding
+  to the underlying characters?
+</div>
+
+    </section>
+
+
+    <section id="h_diacritic_position">
+      <h3>Positioning diacritics relative to base characters</h3>
+<div class="issue question">
+  <ul>
+          <li>Some applications allow adjustment of the distance between the diacritics and the
+          base character. Is this a requirement for most text systems?</li>
+
+
+          <li>What about adjustment to the horizontal position of the diacritic?</li>
+
+
+          <li>Should it be possible to influence whether a font places the kasra below the base
+          character or immediately below the shadda, when combined with the latter?</li>
+        </ul>
+      </div>
+    </section>
+
+
+    <section id="h_letterspacing">
+      <h3>Letter-spacing</h3>
+<div class="issue question">
+  <ul>
+          <li>Is this really letter-spacing, or is it seen as something different?</li>
+
+
+          <li>Can we codify any rules for how the elongation happens? Are they the same rules as
+          for justification? (Probably not, in the case of mimicking voice.)</li>
+        </ul>
+      </div>
+    </section>
+<section id="h_italicetc">
+<h3>Handling oblique and italicised text in Arabic</h3>
+
+
+      <p>Describe the problem here.</p>
+
+
+      <div class="issue question">
+        Which way should oblique/italic text slant in Arabic?
+      </div>
+
+
+      <div class="issue">
+        Misuse of generic font styles.
+      </div>
+    </section>
+
+
+    <section id="h_mixedscript">
+      <h3>Considerations for mixed-script text</h3>
+<div class="issue question">
+  What are the font-size aspects that must be considered in mixed text scenarios?
+</div>
+    </section>
+
+
+    <section id="h_numbers">
+      <h3>Numbers</h3>
+<section id="h_families_of_numerals">
+<h4>Families of Numerals</h4>
+<p>As a consequence, the following sentences, having the similar content, result in a very
+        different ordering in a right-to-left context:</p>
+
+
+        <div class="example" dir="rtl">
+          Five is written ۵ in Iran and ٥ in Egypt.
+        </div>
+
+
+        <div class="example" dir="rtl">
+          Five is written ۵ in Iran and 5 in Morocco.
+        </div>
+      </section>
+
+
+      <p class="issue">What is the origin of this decision. More important, what is the observed
+      effect of these differences in normal Arabic script text?</p>
+<section id="h_Arabic_number_in_other_uses">
+<h4>Arabic number in other uses</h4>
+<ul>
+<li><span class="codepoint"><span lang="en">/</span> [<span class="uname">U+002F
+          SOLIDUS</span>]</span> is used for fractions or ratio notation. Fractions are noted for
+          one-half, say, 2/1 or ٢/١, mostly in RTL mode. There is no standard approach, however,
+          and some region/author may write 1/2 for European digits.
+
+
+<p class="issue">May be use image for examples.</p></li>
+
+
+          <li>Notation with Solidus sign " / " are used in:
+            <br>
+
+
+            <ul>
+<li>Dates (2017/06/24, ٢٠١٧/٠٦/٢٤)
+
+<p class="issue">Look for evidence for some examples</p></li>
+            </ul>
+          </li>
+        </ul>
+
+
+        <p>Other issues</p>
+
+
+        <p class="issue">How to know that a sign (space, comma ...) is a separator or a sign within
+        a number? <code>+12&nbsp;34&nbsp;56&nbsp;78&nbsp;90</code> is a phone number or a sequence
+        of digits? Which may be inverted in RTL. A tip is to use a syntax like
+        <code>12.34.56.78.90</code> or <code>12-34-56-78-90</code> for phones.</p>
+
+
+        <p class="issue">Maybe mention the Decimal Separator Key Symbol " ⎖ " (U+2396), used with
+        keyboards (resembles an apostrophe)</p>
+      </section>
+
+
+      <p><b><i>Old text below</i></b>
+      </p>
+
+
+      <p>Arabic script uses non-European digits for numbers in certain locales and situations.</p>
+
+
+      <p>Arabic digits are also used for counters (see ).</p>
+
+
+      <div class="issue">
+        Describe the arabic-indic digits, and when they are used, including the distinction between
+        arabic-indic and eastern-arabic-indic digits.
+      </div>
+
+
+      <div class="issue">
+        Provide resources and guidelines on how to choose the right set of numerals based on the
+        language.
+      </div>
+    </section>
+  </section>
+
+
+  <section id="h_lines_and_paragraphs">
+    <h2>Lines and Paragraphs</h2>
+
+
+    <section id="h_line_breaking">
+      <h3>Line breaking</h3>
+<div class="issue question">
+  <ul>
+          <li>In Urdu words are not necessarily bounded by spaces. What method is used for
+          determining appropriate break points in this case?</li>
+
+
+          <li>What other characters besides SPACE constitute break points for automatic line
+          wrapping?</li>
+
+
+          <li>What are the rules for hyphenation in Arabic script text?</li>
+
+
+          <li>The CSS Text spec <a href=
+          "https://drafts.csswg.org/css-text-3/#example-953e914f">says</a> "When shaping scripts
+          such as Arabic are allowed to break within words due to hyphenation, the characters must
+          still be shaped as if the word were not broken." The example shows Uighur text with a
+          hyphen at the end of a line and with shaped characters at line end and start. Is this
+          normal in Arabic and Persian text also?
+          </li>
+
+
+          <li>In some styles of CJK typesetting, English words are allowed to break between any two
+          letters, rather than only at spaces or hyphenation points. Are the rules different form
+          Arabic script text?</li>
+
+
+          <li>The CSS spec <a href="https://www.w3.org/TR/css-text-3/#word-break-property">says</a>
+          "When shaping scripts such as Arabic are allowed to break within words due to break-all,
+          the characters must still be shaped as if the word were not broken." Is this true?
+          </li>
+
+
+          <li>The CSS <a href="https://drafts.csswg.org/css-text-3/#hanging-punctuation-property">
+            hanging-punctuation</a> property allows the arabic comma and arabic full stop to hang
+            in the margin, rather than wrapping them to the next line. Is this appropriate?
+          </li>
+        </ul>
+      </div>
+
+
+      <section id="h_kinsoku">
+        <h4>Characters that cannot end or start a line</h4>
+
+
+        <div class="issue question">
+          <ul>
+            <li>What are they?</li>
+
+
+            <li>Are the rules language specific?</li>
+
+
+            <li>What's the usual course of action to avoid incorrect placement?</li>
+
+
+            <li>Are the rules applied consistently everywhere?</li>
+          </ul>
+        </div>
+      </section>
+
+
+      <section id="h_hyphenation">
+        <h4>Hyphenation</h4>
+
+
+        <div class="issue question">
+          <ul>
+            <li>Does Arabic script text use hyphenation? If so, is the use of hyphenation
+            language-specific?</li>
+
+
+            <li>What are the rules? Are there any general rules that transcend all languages?</li>
+          </ul>
+        </div>
+      </section>
+    </section>
+
+
+    <section id="h_justification">
+      <h3>Justification</h3>
+
+
+      <div class="issue">
+        <ul>
+          <li>Drop “elongation” from title of this section. It’s one of the mechanisms used for
+          justification.</li>
+
+
+          <li>Make sure “elongation,” “kashida,” and “tatweel,” have correct definitions in our
+          glossary.</li>
+
+
+          <li>Improve the images.</li>
+        </ul>
+      </div>
+
+
+      <div class="note" title="Notes, Links, …">
+        <ul>
+          <li>
+            <a href="https://www.w3.org/2016/06/28-alreq-minutes.html">Discussion at ALReq meeting
+            on 28 June, 2016</a>
+          </li>
+
+
+          <li>
+            <a href=
+            "http://quod.lib.umich.edu/j/jep/3336451.0013.105?rgn=main;view=fulltext">Justify Just
+            or Just Justify</a>
+          </li>
+
+
+          <li>
+            <a href="http://www.tug.org/TUGboat/tb27-2/tb87benatia.pdf">Arabic text
+            justification</a>
+          </li>
+
+
+          <li>
+            <a href=
+            "https://www.academia.edu/910536/Arabic_script_and_typography_A_brief_historical_overview_2002_">
+            Thomas Milo’s “Arabic script and typography: A brief historical view”</a>
+          </li>
+
+
+          <li>
+            <a href="http://www.decotype.com/pdfs/Tasmeem_Manual.pdf">Tasmeem Manual</a>
+          </li>
+
+
+          <li>
+            Justifying
+            Text using Cascading Style Sheets (CSS) in Internet Explorer 5.5
+          </li>
+        </ul>
+      </div>
+
+
+      <div class="issue question">
+        <ul>
+          <li>What are the rules for elongation of inter-character baselines, and how do they
+          differ from one font style to another?</li>
+
+
+          <li>When is it appropriate to use which method?</li>
+
+
+          <li>Is the tatweel character useful?</li>
+
+
+          <li>What should happen if an application uses a Ruqʻah font as a fallback, which cannot
+          allow for word elongation? Does the application need to automatically know that it should
+          not stretch words when using this font style?</li>
+
+
+          <li>How does an application or person decide which methods to use, and where, to justify
+          text?</li>
+
+
+          <li>The CSS Text spec says: that, apart from elongation, applications "must assume that
+          no justification opportunity exists between any pair of typographic letter units in
+          cursive script (regardless of whether they join). " Is this correct? InDesign, for
+          example, allows alterations of gaps in the middle of a word where one character doesn't
+          join with the following character.</li>
+
+
+          <li>Should the CSS <a href=
+          "https://drafts.csswg.org/css-text-3/#cursive-tracking">letter-spacing property</a> have
+          any effect on Arabic script text?
+          </li>
+        </ul>
+      </div>
+</section>
+
+
+    <section id="h_para_line_alignment">
+      <h3>Paragraph and line alignment</h3>
+
+
+      <p>Lines of Arabic script text are normally right aligned within the page.</p>
+
+
+      <div class="issue question">
+        <ul>
+          <li>When a list on an Arabic page contains an item that is completely composed of LTR
+          text, should the list item be right- or left-aligned on the page?</li>
+
+
+          <li>If a list item is left-aligned on an Arabic page because it contains only LTR text,
+          should the list item counter be to the right or to the left?</li>
+
+
+          <li>Is it common to indent the first line of a paragraph? How much?</li>
+        </ul>
+      </div>
+    </section>
+
+
+    <section id="h_tabs">
+      <h3>Tab settings</h3>
+
+
+      <div class="issue question">
+        <ul>
+          <li>What is there to say?</li>
+        </ul>
+      </div>
+    </section>
+
+
+    <section id="h_firstletter">
+      <h3>Styling the initial text in a paragraph</h3>
+
+
+      <div class="issue question">
+        <ul>
+          <li>Does this apply? If so, is there an equivalent to first-letter styling or is it
+          word-based?</li>
+
+
+          <li>Is the line initial punctuation included?</li>
+        </ul>
+      </div>
+    </section>
+
+
+    <section id="h_counters">
+      <h3>Counters, lists, etc</h3>
+
+
+      <p>Arabic script text may use special counter styles for lists, numbering headings, pages,
+      etc., based on Arabic script characters.</p>
+
+
+      <div class="issue question">
+        <ul>
+          <li>List the main counter sequences, and how they work. Cf. the <a href=
+          "https://www.w3.org/TR/2016/WD-predefined-counter-styles-20160622/#arabic-styles">ready-made
+          counter styles for CSS</a>.
+          </li>
+
+
+          <li>how to choose the right set of numerals based on the language?</li>
+        </ul>
+      </div>
+    </section>
+
+
+    <section id="h_paragraphspecial">
+      <h3>Special cases</h3>
+
+
+      <div class="issue question">
+        <ul>
+          <li>poetry, math, vertical text, etc?</li>
+        </ul>
+      </div>
+
+
+      <section id="h_vertical_text">
+        <h4>Vertical text</h4>
+<section id="h_vertical_upright">
+  <h5>Upright vertical Arabic text</h5>
+<p class="issue">We need to establish whether this is a standard approach or just an
+          oddity. The items in the list above are important to note, however, we need to check
+          whether isolated forms are always used, and the direction is always top to bottom when
+          upright letters are used.</p>
+        </section>
+      </section>
+    </section>
+  </section>
+
+
+  <section id="h_pages">
+    <h2>Pages</h2>
+
+
+    <p>Topic Keywords:</p>
+
+
+    <ul>
+      <li><strong>Basic common templates:</strong>
+      </li>
+
+
+      <li><strong>Page elements:</strong>
+      </li>
+
+
+      <li><strong>Page-level directionality:</strong> Directionality of page elements.
+      Bidirectional behaviour in mixed script texts on the page.</li>
+
+
+      <li><strong>Arrangement of elements on the page:</strong>
+      </li>
+
+
+      <li><strong>Text columns:</strong>
+      </li>
+
+
+      <li><strong>Header:</strong>
+      </li>
+
+
+      <li><strong>Footers:</strong> Footnotes and numbering schemes.</li>
+
+
+      <li><strong>Illustrations:</strong>
+      </li>
+
+
+      <li><strong>Tables:</strong> Directional behvaiour of tables. Mixed script text in
+      tables.</li>
+
+
+      <li><strong>Page numbers:</strong> Positions of page numbers on the page. Mentioning
+      contemporary and traditional use of Abjad page numbering.</li>
+
+
+      <li><strong>Page margins:</strong>
+      </li>
+
+
+      <li><strong>Positioning and arrangement of content:</strong>
+      </li>
+
+
+      <li><strong>Pagination rules:</strong>
+      </li>
+
+
+      <li><strong>Specimens and examples:</strong>
+      </li>
+    </ul>
+  </section>
+
+
+  <section id="h_document">
+    <h2>Document</h2>
+
+
+    <p>Topic Keywords:</p>
+
+
+    <ul>
+      <li><strong>Distinguished requirements:</strong> book/ebook/page</li>
+
+
+      <li><strong>Inter-page spacing:</strong>
+      </li>
+
+
+      <li><strong>First and last pages:</strong> Common practices for first and last pages.</li>
+
+
+      <li><strong>Table of Contents and lists:</strong>
+      </li>
+
+
+      <li><strong>Indexes:</strong> Sorting of names.</li>
+
+
+      <li><strong>Appendices:</strong> Bibliographies, glossaries, endnotes, etc.</li>
+    </ul>
+  </section>
+</body>
+</html>
