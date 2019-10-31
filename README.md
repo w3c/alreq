@@ -6,26 +6,28 @@ It aims to address the problem that experts often don't know how to tell the W3C
 
 Some experts may go a step further, and contribute to a gap-analysis or requirements document.
 
-Topics for discussion are suggested by [the gap-analysis template](http://w3c.github.io/i18n-activity/templates/gap-analysis/gap-analysis_template.html). This work feeds into the [language matrix](http://w3c.github.io/typography/gap-analysis/language-matrix.html) which gives an overview of languages needing attention.
+Topics for discussion are suggested by [the gap-analysis template](http://w3c.github.io/i18n-activity/templates/gap-analysis/gap-analysis_template.html). This work feeds into the [language matrix](http://w3c.github.io/typography/gap-analysis/language-matrix.html) which gives an overview of languages needing attention. You can find a list of open issues, including those from W3C Working Groups, on the [Layout Tracker](http://w3c.github.io/i18n-activity/textlayout/?filter=alreq) page. (That link applies an `alreq` filter.)
+
 
 ### Documents
 - [Arabic & Persian Gap Analysis](https://w3c.github.io/alreq/gap-analysis/)
 - [Text Layout Requirements for the Arabic Script](https://w3c.github.io/alreq/)
 - [Glossary source](https://docs.google.com/spreadsheets/d/1nSxYKQm_mKroCmxU4fyJ-g70Eo1_mF89yHZg8YNOuzc/edit#gid=0) (temporary Google spreadsheet)
 
+
 ### Feedback
 Please use the [GitHub issue list](https://github.com/w3c/alreq/issues) to report issues for language support, for discussions, and to send feedback about documents.
 
-### Following
-Rather than just 'Watch' this repository, it is best to subscribe to the [public-i18n-arabic](https://lists.w3.org/Archives/Public/public-i18n-arabic/) mailing list. That list is notified once a day (in digest form) about not only changes to this repository, but also about other W3C Working Group issues related to the Arabic writing systems. (Please use github issues rather than the mailing list to send feedback.)  Meeting minutes are also sent to public-i18n-arabic.
 
-You can find a list of open issues, including those from W3C Working Groups, on the [Layout Tracker](http://w3c.github.io/i18n-activity/textlayout/?filter=arabic) page. (That link applies an `arabic` filter.)
+### Participate
+You can participate in the task force work at various levels. In order of increasing commitment, these include Follower, Contributor, Participant, Editor, and Chair. [Find your level](https://github.com/w3c/i18n-activity/wiki/Layout-task-force-roles). We welcome participation requests.
 
-### Contributing
+**To just follow the work:** Rather than just 'Watch' this repository, subscribe to the [public-i18n-arabic](https://lists.w3.org/Archives/Public/public-i18n-arabic/) mailing list. That list is notified (no more than once a day, and in digest form), about changes to issues in this repository, but also about other W3C Working Group issues related to the Arabic writing systems. (Please use github issues rather than the mailing list to send feedback.)
 
-All contributors should read and agree with [CONTRIBUTING.md](CONTRIBUTING.md).
+**To contribute content:** All contributors should read and agree with [CONTRIBUTING.md](CONTRIBUTING.md).
 
-Group _members_ are expert contributors who participate actively in producing the work of the group, regularly contributing text and advice to create the outputs, and participating in meetings. For more information about becoming a task force member contact [Richard Ishida](mailto:ishida@w3.org). We welcome participation requests.
+**To become a participant, editor, or chair:** contact [Richard Ishida](mailto:ishida@w3.org). We welcome participation requests.
+
 
 ### Links
 - [Issue tracker](http://w3c.github.io/i18n-activity/textlayout/?filter=arabic)
