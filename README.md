@@ -24,7 +24,7 @@ Note that the public-i18n-arabic mailing list is used to send notification diges
 ### Participate
 You can participate in the task force work at various levels. In order of increasing commitment, these include Follower, Contributor, Participant, Editor, and Chair. [Find your level](https://github.com/w3c/i18n-activity/wiki/Layout-task-force-roles).
 
-**To just follow the work:** Rather than 'Watch' this repository, subscribe to the [public-i18n-arabic](https://lists.w3.org/Archives/Public/public-i18n-arabic/) mailing list. That list is notified (no more than once a day, and in digest form), about changes to issues in this repository, but also about other W3C Working Group issues related to the Arabic writing systems. (Please use github issues rather than the mailing list to send feedback.)
+**To just follow the work:** Rather than 'Watch' this repository, subscribe to the [public-i18n-arabic](https://lists.w3.org/Archives/Public/public-i18n-arabic/) mailing list. That list is notified (no more than once a day, and in digest form), about changes to issues in this repository, but also about other W3C Working Group issues related to the Arabic writing systems.
 
 **To contribute content:** All contributors should read and agree with [CONTRIBUTING.md](CONTRIBUTING.md).
 
