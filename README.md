@@ -59,8 +59,3 @@ If you edit a document, you should be familiar with and use the following:
 
 - [Github guidelines for working with i18n documents](http://w3c.github.io/i18n-activity/guidelines/github)
 - [Editorial guidelines for working with i18n documents](http://w3c.github.io/i18n-activity/guidelines/editing)
-
-The following templates are available:
-- [Gap analysis template](http://w3c.github.io/i18n-activity/templates/gap-analysis/gap-analysis_template.html)
-- [Requirements document template](http://w3c.github.io/i18n-activity/templates/lreq_doc/gap-analysis_template.html)
-
