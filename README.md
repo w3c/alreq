@@ -1,4 +1,4 @@
-# Arabic Layout Task Force
+# Arabic Layout Task Force (alreq)
 
 This task force explores gaps in Arabic and Persian language support on the Web and in eBooks, and documents requirements.
 
