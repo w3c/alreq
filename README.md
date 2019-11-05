@@ -1,12 +1,12 @@
 # Arabic Layout Task Force
 
-This group exists to explore gaps and requirements for support of Arabic and Persian languages on the Web and in eBooks.
+This task force explores gaps in Arabic and Persian language support on the Web and in eBooks, and documents requirements.
 
-It aims to address the problem that experts often don't know how to tell the W3C what problems exist for support of their script on the Web, and the W3C often doesn't know how to contact people who can help when questions arise. This network of experts should help to significantly reduce that problem.
-
-Some experts go a step further, and contribute to a gap-analysis or requirements document.
+It aims to address the problem that experts often don't know how to tell the W3C what problems exist for support of their script on the Web, and the W3C often doesn't know how to contact people who can help when questions arise.
 
 Topics for discussion are suggested by [the gap-analysis template](http://w3c.github.io/i18n-activity/templates/gap-analysis/gap-analysis_template.html). This work feeds into the [language matrix](http://w3c.github.io/typography/gap-analysis/language-matrix.html) which provides a heat-map for language issues on the Web. You can find a list of open issues, including those from W3C Working Groups, on the [Layout Tracker](http://w3c.github.io/i18n-activity/textlayout/?filter=alreq) page. (That link applies an `alreq` filter.)
+
+For more details about scope, deliverables, work methods, etc., see the [group's charter](https://w3c.github.io/alreq/charter/).
 
 
 ### Documents
@@ -33,18 +33,20 @@ You can participate in the task force work at various levels. In order of increa
 
 ### Contacts
 
-Chairs: Shervin Afshar, Behnam Esfahbod • W3C staff: [Richard Ishida](mailto:ishida@w3.org)
+- Chairs: Shervin Afshar, Behnam Esfahbod
+- W3C staff: [Richard Ishida](mailto:ishida@w3.org)
 
 
 ### Links
 - [Github issues](https://github.com/w3c/alreq/issues)
 - [Issue tracker](http://w3c.github.io/i18n-activity/textlayout/?filter=alreq)
+- [Mail archive](https://lists.w3.org/Archives/Public/public-i18n-arabic/)
+- [Writing i18n tests](https://github.com/w3c/i18n-activity/wiki/Writing-i18n-tests)
+- [Practical tips for task forces](https://w3c.github.io/i18n-activity/guidelines/process.html) 
+- (See also the github and editorial guidelines below)
 - [Charter](http://w3c.github.io/alreq/charter/)
 - [Action tracker](https://www.w3.org/International/groups/arabic-layout/track/actions/open)
-- [Writing i18n tests](https://github.com/w3c/i18n-activity/wiki/Writing-i18n-tests)
-- [Practical tips for task forces](https://w3c.github.io/i18n-activity/guidelines/process.html) (See also the github and editorial guidelines below)
 - [Meeting info](https://www.w3.org/2017/07/alreq-meeting-info.html)
-- [Mail archive](https://lists.w3.org/Archives/Public/public-i18n-arabic/)
 
 ### Links to background information
 The following information describes work going on at the W3C to support languages on the Web.
