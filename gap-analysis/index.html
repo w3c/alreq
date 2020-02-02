@@ -2,10 +2,12 @@
 
 <html lang="en">
 <head>
-  <meta charset="utf-8">
+<meta charset="utf-8">
 
-  <title>Arabic &amp; Persian Gap Analysis</title>
-  <script src="https://www.w3.org/Tools/respec/respec-w3c-common" async="" class="remove">
+<title>Arabic &amp; Persian Gap Analysis</title>
+<script src="../../i18n-activity/textlayout/resources/gap-analysis-github.js"> </script>
+
+<script src="https://www.w3.org/Tools/respec/respec-w3c-common" async="" class="remove">
 </script>
   <script class="remove">
   var respecConfig = {
@@ -23,7 +25,7 @@
       noRecTrack:           true,
       shortName:            "alreq-gap",
       copyrightStart:       "2018",
-      edDraftURI:           "http://w3c.github.io/alreq/gap-analysis/",
+      edDraftURI:           "https://w3c.github.io/alreq/gap-analysis/",
 
       // if this is a LCWD, uncomment and set the end of its review period
       // lcEnd: "2009-08-05",
@@ -37,7 +39,7 @@
 
 
       wg:           "Internationalization Working Group",
-      wgURI:        "http://www.w3.org/International/core/",
+      wgURI:        "https://www.w3.org/International/core/",
  
  	  github:	"w3c/alreq",
 
@@ -46,7 +48,7 @@
       // This is important for Rec-track documents, do not copy a patent URI from a random
       // document unless you know what you're doing. If in doubt ask your friendly neighbourhood
       // Team Contact.
-      wgPatentURI:  "http://www.w3.org/2004/01/pp-impl/32113/status",
+      wgPatentURI:  "https://www.w3.org/2004/01/pp-impl/32113/status",
       // !!!! IMPORTANT !!!! MAKE THE ABOVE BLINK IN YOUR HEAD
     };
   </script>
@@ -60,8 +62,8 @@
   </div>
 
   <div id="sotd">
-    <p>This document describes and prioritises gaps for the support of Arabic and Persian languages on the Web and in eBooks. In particular, it is concerned with text layout. It checks that needed features are supported in W3C specifications, in particular HTML and CSS and those relating to digital publications. It also checks whether the features have been implemented in browsers and ereaders. This document complements the document <a href="https://w3c.github.io/alreq/">Text Layout Requirements for the Arabic Script</a>, which describes the requirements for areas where gaps appear. It is linked to from the <a href="http://w3c.github.io/typography/gap-analysis/language-matrix.html">language matrix</a> that tracks Web support for many languages.</p>
-<p>The editor's draft of this document is being developed by the <a href="https://w3c.github.io/alreq/">Arabic Layout Task Force</a>, part of the W3C <a href="http://www.w3.org/International/ig/">Internationalization Interest Group</a>. It is published by the <a href="http://www.w3.org/International/core/">Internationalization Working Group</a>. The end target for this document is a Working Group Note.</p>
+    <p>This document describes and prioritises gaps for the support of Arabic and Persian languages on the Web and in eBooks. In particular, it is concerned with text layout. It checks that needed features are supported in W3C specifications, in particular HTML and CSS and those relating to digital publications. It also checks whether the features have been implemented in browsers and ereaders. This document complements the document <a href="https://w3c.github.io/alreq/">Text Layout Requirements for the Arabic Script</a>, which describes the requirements for areas where gaps appear. It is linked to from the <a href="https://w3c.github.io/typography/gap-analysis/language-matrix.html">language matrix</a> that tracks Web support for many languages.</p>
+<p>The editor's draft of this document is being developed by the <a href="https://w3c.github.io/alreq/">Arabic Layout Task Force</a>, part of the W3C <a href="https://www.w3.org/International/ig/">Internationalization Interest Group</a>. It is published by the <a href="https://www.w3.org/International/core/">Internationalization Working Group</a>. The end target for this document is a Working Group Note.</p>
 </div>
 
   <section id="h_introduction">
@@ -111,44 +113,25 @@
 <h2>Text direction</h2>
 <p>See also General page layout &amp; progression for features such as column layout, page turning direction, etc. that are affected by text direction.</p>
 
+
 <section id="vertical_text" class="na">
 <h3>Vertical text</h3>
 <p id="prompt-vertical_text" class="status_prompt promptStub"></p>
 
-
-    <p>We need to clarify whether there is a particular requirement for handling arabic text specially in vertical lines, such as upright glyphs. We are also waiting on implementation of sideways values of writing-modes in order to be able to effectively use arabic text in vertical arrangements (such as book spines, table headings, etc), but that is not a problem specific to arabic.</p>
-<!--section id="xxxxxx">
-<h4>xxxxxx</h4>
-<p></p>
-</section-->
+<p>We need to clarify whether there is a particular requirement for handling arabic text specially in vertical lines, such as upright glyphs. We are also waiting on implementation of sideways values of writing-modes in order to be able to effectively use arabic text in vertical arrangements (such as book spines, table headings, etc), but that is not a problem specific to arabic.</p>
+	
+<div id="insert-vertical_text"></div>
 </section>
 
 
 
 
-<section id="bidi_text" class="basic">
+<section id="bidi_text" class="tbd">
 <h3>Bidirectional text</h3>
 <p id="prompt-bidi_text" class="status_prompt promptStub"></p>
 
+<div id="insert-bidi_text"></div>
 
-<section id="isolation">
-<h4>Isolation not fully supported</h4>
-    <p><span class="fail">Safari</span> still doesn't apply bidi isolation to an element that has a dir attribute (although a shim based on CSS works fine).</p>
-<p><span class="fail">Edge</span> still doesn't support directional isolation.</p>
-<p>This creates significant issues for managing bidirectional text.</p>
-</section>
-
-
-<section id="string_bidi">
-<h4>Base direction needed for string data</h4>
-    <p>There are questions about how to transmit information about the expected directional behaviour of certain strings.</p>
-    <p>RLI, LRI, etc are still not well supported.</p>
-</section>
-
-<section id="css_logical">
-<h4>Logical CSS keyword support needed</h4>
-    <p>There needs to be wider adoption of logical keywords such as start and end, rather than left and right.</p>
-</section>
 </section>
 </section>
 
@@ -164,10 +147,7 @@
 <h3>Characters &amp; encoding</h3>
 <p id="prompt-charset" class="status_prompt promptStub"></p>
 
-<!--section id="xxxxxx">
-<h4>xxxxxx</h4>
-<p></p>
-</section-->
+<div id="insert-charset"></div>
 </section>
 
 
@@ -177,92 +157,49 @@
 <p id="prompt-fonts" class="status_prompt promptStub"></p>
 
 
-<!--section id="xxxxxx">
-<h4>xxxxxx</h4>
-<p></p>
-</section-->
+<div id="insert-fonts"></div>
 </section>
 
 
 
-<section id="font_style" class="advanced">
+<section id="font_style" class="tbd">
 <h3>Font  styles, weight, etc</h3>
 <p id="prompt-font_style" class="status_prompt promptStub"></p>
 
 
-<section id="italic_slant">
-    <h4>Controls needed for italic slant direction</h4>
-    <p>There should be means available to control the direction in which 'italicised' or 'oblique' text slants, since in some schools of Arabic script typography, text in these styles need to slant to the left.</p>
-</section>
+<div id="insert-font_style"></div>
 </section>
 
 
 
-<section id="glyphs" class="advanced">
+<section id="glyphs" class="tbd">
 <h3>Glyph shaping and positioning</h3>
 <p id="prompt-glyphs" class="status_prompt promptStub"></p>
 
 
-<section id="diacritic_position">
-    <h4>Controls needed to adjust diacritic positioning</h4>
-    <p>For advanced typographic purposes, the fixed position of diacritical marks relative to base letter or baseline and the logical stacking behavior of them might not be sufficient. Therefore, it should be possible to adjust the positioning and combining order and changes to the individual marks when combining. Fonts and other systems may implement the logic needed to result in an optimal presentation of diacritical mark clusters by default.</p>
-</section>
+<div id="insert-glyphs"></div>
 </section>
 
 
 
-<section id="cursive" class="advanced">
+<section id="cursive" class="tbd">
 <h3>Cursive text</h3>
 <p id="prompt-cursive" class="status_prompt promptStub"></p>
 
 
-    <p>The Arabic script is cursive. This means that letters appear in different forms depending on how they join with their neighbors. Majority of modern software implementations treat Arabic text accordingly. However, for few advanced typographic behaviours, additional considerations are required; for example, adding color highlighting to individual letterforms in a word context without disrupting the joining behaviour, application of text outlining, etc.</p>
-
-    <figure id="figure-2-5-shadow">
-        <img src="images/2-5-shadow.svg" alt="Correct and incorrect renderings of text shadow.">
-
-        <figcaption>
-          Correct and incorrect renderings of text shadow.
-        </figcaption>
-    </figure>
-
-<p><a href="https://www.w3.org/TR/alreq/#h_letterhighlights">Arabic Layout Requirement</a> document includes a section dedicated to this topic.</p>
-
-<section id="cursive_shadow">
-<h4>Text shadow works as expected</h4>
-<p>The <code class="kw" translate="no">text-shadow</code> property in CSS doesn't disrupt  the flow of cursive text in <span class="pass">any major browser</span>. See a  <a href="https://w3c.github.io/i18n-tests/results/cursive#text_shadow"> test</a>.</p>
-<p><img src="images/text-shadow.png" alt=""></p>
+<div id="insert-cursive"></div>
 </section>
 
-<section id="cursive_stroke">
-<h4>Text stroke cuts joining glyphs apart</h4>
-<p>The property <code class="kw" translate="no">text-stroke</code> is not yet  in CSS, but has been implemented in major browsers under the name <code class="kw" translate="no">-webkit-text-stroke</code>. In <span class="fail">all major browsers</span>,  the stroke around the text interrupts the cursive flow. See a <a href="https://w3c.github.io/i18n-tests/results/cursive#text_stroke">test</a>.</p>
-<p><img src="images/text-stroke.png" alt=""></p>
+
+
+<section id="baselines" class="ok">
+<h3>Baselines, line-height, etc</h3>
+<p id="prompt-baselines" class="status_prompt promptStub"></p>
+
+
+<div id="insert-baselines"></div>
 </section>
 
-<section id="cursive_opacity">
-<h4>Text opacity shows glyph overlap</h4>
-<p>When opacity is applied to text,  <span class="fail">Firefox</span> and <span class="fail">Chrome</span> produce dark patches where the cursive glyphs overlap, but <span class="pass">Safari</span> and <span class="pass">Edge</span> don't. See the <a href="https://w3c.github.io/i18n-tests/results/cursive#text_opacity">test</a>.</p>
-<p><img src="images/text-opacity.png" alt=""></p>
-</section>
-
-<section id="cursive_style">
-<h4>Inline elements break cursive shaping</h4>
-  <p>When elements surround part of a cursive run of text, and apply styling, the results often break the cursive joins. (See the results of trying to colour individual letters in the illustration below – successful on the left, unsuccessful on the right.)</p>
-<p><img src="images/shaping-1.png" alt=""> <img src="images/shaping-2.png" alt=""></p>
-<p>After some <a href="https://github.com/w3c/csswg-drafts/issues/698">discussion</a>, the CSS spec requires the following:</p>
- <ol>
-   <li>Markup alone around part of a joined up sequence must not disturb the joining behaviour.</li>
-   <li>Styling that doesn't affect the characters, such as text-decoration, must not break the joins.</li>
-   <li>Styling that does affect the shape of the characters should not break the joins, however the result is not well defined for complex glyph arrangements such as ligatures where the markup occurs between characters that make up the ligature.</li>
-   <li>Non-zero margins, padding, and borders, will break the join, as will isolation boundaries.</li>
-</ol>
-<p>See the <a href="https://w3c.github.io/i18n-tests/results/css-text-shaping">tests and results</a> for a range of different styling effects.</p>
- <p><span class="fail">Chrome</span> and <span class="fail">Safari</span> break cursive joining as soon as markup appears around a character, and so obviously fail for any type of styling application, too.</p>
-  <p><span class="partial">Firefox</span> and <span class="partial">Edge</span> keep joins for styling that doesn't affect the shape of the characters (eg. text-decoration), and keeps it for colour changes, however they fail for changes in font-weight, font-style, and font-size, as well as for markup such as `em` and `b` tags.</p>
-  <p class="issue">It would be useful to decide on the potential impact of the failures described here, so as to prioritise the issue. Is the inability to surround/style parts of a word a significant issue? It may be problematic when defining a term (using `dfn`) if the term is only part of the run of letters between spaces, eg. after the definite article.</p>
-</section>
-</section>
 
 
 
@@ -271,24 +208,7 @@
 <p id="prompt-transforms" class="status_prompt promptStub"></p>
 
 
-<!--section id="xxxxxx">
-<h4>xxxxxx</h4>
-<p></p>
-</section-->
-</section>
-
-
-
-
-<section id="baselines" class="ok">
-<h3>Baselines &amp; inline alignment</h3>
-<p id="prompt-baselines" class="status_prompt promptStub"></p>
-
-
-<!--section id="xxxxxx">
-<h4>xxxxxx</h4>
-<p></p>
-</section-->
+<div id="insert-transforms"></div>
 </section>
 
 
@@ -303,70 +223,46 @@
 
     <p>To enforce a disjoining behavior between the letters which under circumstances of their position normally join, special Unicode character <span class="uname">U+200C ZERO WIDTH NON-JOINER</span> (ZWNJ) is used. This usage is detailed in <a href="https://w3c.github.io/alreq/#h_disjoining_enforcement">Arabic Layout Requirement</a> document.</p>
 <p>All <span class="pass">major desktop browsers</span> select a whole word when you double-click on it, including when the word contains ZWNJ. Single-letter prepositions attached to the word are also selected. See some <a href="https://w3c.github.io/i18n-tests/results/text-selection#arabic">tests</a>.</p>
+
+<div id="insert-segmentation"></div>
 </section>
  
 
 
 <section id="punctuation_etc" class="tbd">
-<h3>Punctuation &amp; other inline features</h3>
-<p id="prompt-punctuation_etc" class="status_prompt promptStub"></p>
+<h3>Inline features &amp; punctuation</h3><p id="prompt-punctuation_etc" class="status_prompt promptStub"></p>
 
 
-<!--section id="xxxxxx">
-<h4>xxxxxx</h4>
-<p></p>
-</section-->
+<div id="insert-punctuation_etc"></div>
 </section>
    
     
     
-<section id="text_decoration" class="basic">
+<section id="text_decoration" class="tbd">
 <h3>Text decoration</h3>
 <p id="prompt-text_decoration" class="status_prompt promptStub"></p>
 
 
-<section id="underline_distance">
-<h4>Underlines too close to text</h4>
-    <p>It must be possible to position under- and overlines further away from the baseline than for Latin text. There is not currently a way to achieve effective underlining in a way that works with the Arabic script.</p>
-</section></section>
+<div id="insert-text_decoration"></div>
+</section>
 
 
 
-<section id="quotations" class="advanced">
+<section id="quotations" class="tbd">
 <h3>Quotations</h3>
 <p id="prompt-quotations" class="status_prompt promptStub"></p>
-
-
-<section id="q_defaults">
-<h4>Default quotation marks for q element</h4>
-<p>If the <code class="kw" translate="no">html</code> tag sets the language of a page, the HTML specification says that  the <code class="kw" translate="no">q</code> element should by default produce quotation marks according to the information in CLDR for that language.</p>
-<p>For <strong>Arabic</strong>, the default quote marks should be, reading right to left, “...”, and embedded quote marks ‘...’. <span class="partial">Firefox</span> produces these but facing in the wrong direction. <span class="pass">Chrome</span> &amp; <span class="pass">Safari</span> are ok. See a <a href="https://w3c.github.io/i18n-tests/results/the-q-element.html#language">test and results</a>.</p>
-<p>For <strong>Persian</strong>, the default quote marks should be, reading right to left, «...», and embedded quote marks ‹...›. Again, <span class="pass">Chrome</span> &amp; <span class="pass">Safari</span> are ok, but <span class="fail">Firefox</span> produces  the wrong quotation marks, since it doesn't change them according to the language set. See a <a href="https://w3c.github.io/i18n-tests/results/the-q-element.html#language">test and results</a>.</p>
-</section>
-
-<section id="q_section">
-<h4>Default quotation marks in a new language section</h4>
-<p>In addition, the default quotation marks for the <code class="kw" translate="no">q</code> element  are not set to the appropriate characters by the browser  when the element appears inside an Arabic/Persian section of a page that has a different overall language. This is currently per the HTML specification (both W3C and WhatWG).  There is <a href="https://github.com/whatwg/html/issues/3636#issuecomment-384340053">an issue</a> raised against the WhatWG version for this to be changed.</p>
-</section>
-
-<section id="q_multilingual">
-<h4>Embedded quotations in a different language</h4>
-<p>Arabic/Persian quotes embedded in text in another language can also be problematic if the outer language uses different quotation marks. This is due to the browsers choosing default quotation marks based on the language of the <em>quotation</em>, rather than that of the surrounding text. See <a href="https://w3c.github.io/i18n-tests/results/the-q-element.html#ml_nesting">a test</a>. This behaviour is specified in the WhatWG version of the HTML spec, but no longer in the W3C version. There is <a href="https://github.com/whatwg/html/issues/3636#issuecomment-384340053">an issue</a> raised against the WhatWG version for this to be changed.</p>
-</section>
-
-<p>Marking all the above as advanced, because use of the <code class="kw" translate="no">q</code> element is optional (quote characters can be used instead), and it can be styled using CSS for the general case.</p>
+	
+	
+<div id="insert-quotations"></div>
 </section>
 
 
-<section id="inline_notes" class="na">
+<section id="inline_notes" class="ok">
 <h3>Inline notes &amp; annotations</h3>
 <p id="prompt-inline_notes" class="status_prompt promptStub"></p>
 
 
-<!--section id="xxxxxx">
-<h4>xxxxxx</h4>
-<p></p>
-</section-->
+<div id="insert-inline_notes"></div>
 </section>
 
 
@@ -376,11 +272,9 @@
 <p id="prompt-data_formats" class="status_prompt promptStub"></p>
 
 
-    <p>Internationalization software libraries identify Arabic-Indic numerals as the set of numerals which should be used with text in Arabic language excluding a number of Arabic-speaking countries of Northern and Northwestern Africa which should use Arabic (ASCII) numerals. Surveys of publications, monetary and governmental documents, and manuscripts confirm these precedences. However, there is a considerable diverging trend from these recommendations observable on the web, digital products, and in user-generated content. If not considered in design and implementation of software products dealing with Arabic text, this discrepency could be potentially disadvantageous to the quality of text layout, digital typography, and locale-specific data processing.</p>
-<!--section id="xxxxxx">
-<h4>xxxxxx</h4>
-<p></p>
-</section-->
+<p>Internationalization software libraries identify Arabic-Indic numerals as the set of numerals which should be used with text in Arabic language excluding a number of Arabic-speaking countries of Northern and Northwestern Africa which should use Arabic (ASCII) numerals. Surveys of publications, monetary and governmental documents, and manuscripts confirm these precedences. However, there is a considerable diverging trend from these recommendations observable on the web, digital products, and in user-generated content. If not considered in design and implementation of software products dealing with Arabic text, this discrepency could be potentially disadvantageous to the quality of text layout, digital typography, and locale-specific data processing.</p>
+
+<div id="insert-data_formats"></div>
 </section>
 
 
@@ -409,63 +303,50 @@
 <p id="prompt-line_breaking" class="status_prompt promptStub"></p>
 
 
-<!--section id="xxxxxx">
-<h4>xxxxxx</h4>
-<p></p>
-</section-->
+<div id="insert-line_breaking"></div>
+
 </section>
 
 
 
-<section id="hyphenation" class="ok">
+<section id="hyphenation" class="na">
 <h3>Hyphenation</h3>
 <p id="prompt-hyphenation" class="status_prompt promptStub"></p>
 
+<p>There is no hyphenation in Arabic or Persian language text. </p>
 
-<!--section id="xxxxxx">
-<h4>xxxxxx</h4>
-<p></p>
-</section-->
+<div id="insert-hyphenation"></div>
 </section>
 
 
 
-<section id="justification" class="advanced">
+<section id="justification" class="tbd">
 <h3>Text alignment &amp; justification</h3>
 <p id="prompt-justification" class="status_prompt promptStub"></p>
 
 
-<section id="justify_controls">
-<h4>Need better control of justification mechanisms</h4>
-<p>For justification of Arabic script text, there are various common strategies available. These could be categorized in two major groups; strategies based on adjusting inter-word or inter-character whitespace and strategies based on adjusting the letterforms. </p>
-    <p>A basic implementation must provide at least one of these strategies for adequate  justification results. Advanced implementations should provide users with the necessary means to control the selection of strategies, adjustment of their attributes, and the priority with which they are being applied. </p>
-    <p>Currently, CSS specifications do not provide these advanced features, but recommend that the implementations  select the justification strategy appropriate to the text. </p>
-    <p><a href="https://w3c.github.io/alreq/#h_justification">Arabic Layout Requirement</a> document includes a section dedicated to this topic.</p>
-</section></section>
+<div id="insert-justification"></div>
+</section>
 
 
 
-<section id="spacing" class="basic">
+<section id="spacing" class="tbd">
 <h3>Letter spacing</h3>
 <p id="prompt-spacing" class="status_prompt promptStub"></p>
 
 
-<section id="stretch_controls">
-<h4>Need control of baseline stretching</h4>
-    <p>It is very common in Arabic script to stretch words or phrases to a particular width (eg. to match a Latin translation or transcription above or below). This is achieved by lengthening the connections between letters, and to some extent by use of wide glyph variants, etc. The rules for which part of the text to stretch and how far are complicated - this is not the even spacing that usually occurs in tracked Latin text. There are currently no mechanisms for managing this process effectively in HTML/CSS.</p>
-</section></section>
+
+<div id="insert-spacing"></div>
+</section>
 
 
 
-<section id="lists" class="basic">
+<section id="lists" class="tbd">
 <h3>Lists, counters, etc.</h3>
 <p id="prompt-lists" class="status_prompt promptStub"></p>
 
 
-<section id="custom_counters">
-<h4>Add support for custom counter-styles</h4>
-    <p>Arabic script text uses local counter styles. While some of these are supported by some browsers, the set of symbols used and their order varies by language. Custom counter styles can be created using Firefox only. The CSS spec needs to become a Rec and more browsers need to support it.</p>
-</section>
+<div id="insert-lists"></div>
 </section>
 
 
@@ -474,12 +355,9 @@
 <h3>Styling initials</h3>
 <p id="prompt-initials" class="status_prompt promptStub"></p>
 
+<p>Although initial letter styling is not an innate feature of the Arabic script, there have been occurences of its usage noted. However, the specifications and guidelines for composition of these decorative elements are undefined or insubstantial; for example, which of the joining forms of letters is to be used or how the joining behaviour is treated accross the boundary between the styled initial letter and rest of the paragraph.</p>
 
-    <p>Although initial letter styling is not an innate feature of the Arabic script, there have been occurences of its usage noted. However, the specifications and guidelines for composition of these decorative elements are undefined or insubstantial; for example, which of the joining forms of letters is to be used or how the joining behaviour is treated accross the boundary between the styled initial letter and rest of the paragraph.</p>
-<!--section id="xxxxxx">
-<h4>xxxxxx</h4>
-<p></p>
-</section-->
+<div id="insert-initials"></div>
 </section>
 
 
@@ -508,10 +386,7 @@
 <p id="prompt-page_layout" class="status_prompt promptStub"></p>
 
 
-<!--section id="xxxxxx">
-<h4>xxxxxx</h4>
-<p></p>
-</section-->
+<div id="insert-page-layout"></div>
 </section>
 
 
@@ -521,10 +396,7 @@
 <p id="prompt-footnotes_etc" class="status_prompt promptStub"></p>
 
 
-<!--section id="xxxxxx">
-<h4>xxxxxx</h4>
-<p></p>
-</section-->
+<div id="insert-footnotes_etc"></div>
 </section>
 
 
@@ -535,10 +407,7 @@
 
 
 
-<!--section id="xxxxxx">
-<h4>xxxxxx</h4>
-<p></p>
-</section-->
+<div id="insert-headers_footers"></div>
 </section>
 
 
@@ -548,10 +417,7 @@
 <p id="prompt-interaction" class="status_prompt promptStub"></p>
 
 
-<!--section id="xxxxxx">
-<h4>xxxxxx</h4>
-<p></p>
-</section-->
+<div id="insert-interaction"></div>
 </section>
 
 
@@ -578,7 +444,7 @@
     <p class="status_prompt">Sometimes a script or language does things that are not common outside of its sphere of influence. This is a loose bag of additional items that weren't previously mentioned. This section may also be relevant for observations related to locale formats (such as number, date, currency, format support).</p>
 
 
-    <p></p>
+<div id="insert-culturespecific"></div>
     </section>
 
 
@@ -588,7 +454,7 @@
     <p class="status_prompt">There are many other CSS modules which may need review for script-specific requirements, not to mention the SVG, HTML, Speech, MathML and other specifications. What else is likely to cause problems for worldwide deployment of the Web, and what requirements need to be addressed to make the Web function well locally?</p>
 
 
-    <p></p>
+<div id="insert-other"></div>
     </section>
     
 </section>
@@ -600,65 +466,14 @@
 <summary style="margin-top:4em; cursor: pointer;">Show summary</summary>
 <pre id="summaryPlaceholder" style="white-space: pre-wrap;"></pre>
 </details>
+
+
+
+
 <script>
-var out = ''
-for (let i=0;i<respecConfig.langs.length;i++) {
-    out += '{lang: "'+respecConfig.langs[i]+'"'
-    out += ', url:"'+respecConfig.gapDocPath+'"'
-    out += ', tentative:' + true
-    out += ', vertical_text:"'+document.getElementById('vertical_text').className+'"'
-    out += ', bidi_text:"'+document.getElementById('bidi_text').className+'"'
-
-    out += ', charset:"'+document.getElementById('charset').className+'"'   
-    out += ', fonts:"'+document.getElementById('fonts').className+'"'
-    out += ', font_style:"'+document.getElementById('font_style').className+'"'
-    out += ', glyphs:"'+document.getElementById('glyphs').className+'"'
-    out += ', cursive:"'+document.getElementById('cursive').className+'"'
-    out += ', transforms:"'+document.getElementById('transforms').className+'"'
-    out += ', baselines:"'+document.getElementById('baselines').className+'"'
-    out += ', segmentation:"'+document.getElementById('segmentation').className+'"'
-    out += ', punctuation_etc:"'+document.getElementById('punctuation_etc').className+'"'
-    out += ', text_decoration:"'+document.getElementById('text_decoration').className+'"'
-    out += ', quotations:"'+document.getElementById('quotations').className+'"'
-    out += ', inline_notes:"'+document.getElementById('inline_notes').className+'"'
-    out += ', data_formats:"'+document.getElementById('data_formats').className+'"'
-
-    out += ', line_breaking:"'+document.getElementById('line_breaking').className+'"'
-    out += ', hyphenation:"'+document.getElementById('hyphenation').className+'"'
-    out += ', justification:"'+document.getElementById('justification').className+'"'
-    out += ', spacing:"'+document.getElementById('spacing').className+'"'
-    out += ', lists:"'+document.getElementById('lists').className+'"'
-    out += ', initials:"'+document.getElementById('initials').className+'"'
-
-    out += ', page_layout:"'+document.getElementById('page_layout').className+'"'
-    out += ', footnotes_etc:"'+document.getElementById('footnotes_etc').className+'"'
-    out += ', headers_footers:"'+document.getElementById('headers_footers').className+'"'
-    out += ', interaction:"'+document.getElementById('interaction').className+'"'
-    out += '},\n'
-
-    out = out.replace(/tbd/g,'')
-    out = out.replace(/broken/g,'0')
-    out = out.replace(/ok/g,'3')
-    out = out.replace(/advanced/g,'2')
-    out = out.replace(/basic/g,'1')
-    out = out.replace(/"na/g,'"-')
-    }
-document.getElementById('summaryPlaceholder').textContent = out
-
-var temp = document.querySelectorAll('section')
-for (let x=0;x<temp.length;x++) {
-    console.log(temp[x].id)
-    }
-
-
-
-
-
-
-
+setUpSummary()
 addPrompts() 
-
-
+getAllData('alreq','doc:arfa')
 </script>
 
 
