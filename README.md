@@ -30,6 +30,9 @@ You can participate in the task force work at various levels. In order of increa
 
 **To become a participant, editor, or chair:** contact [Richard Ishida](mailto:ishida@w3.org). We welcome participation requests.
 
+To get an idea about what's involved, see [How to contribute to an Language Enablement group](https://w3c.github.io/i18n-activity/guidelines/le-participation). 
+
+
 
 ### Contacts
 
