@@ -115,10 +115,6 @@ table td {
   padding: 10px;
 }
 
-.rtlTermCell {
-  text-direction: rtl;
-  text-align: right;
-}
 
 .exampleList {
   float: left;
@@ -126,10 +122,6 @@ table td {
 }
 
 
-.question {
-    .issue;
-    font-style: italic;
-}
 
 table.characters {
     width: 100%;
