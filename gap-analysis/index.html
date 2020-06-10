@@ -5,7 +5,7 @@
 <meta charset="utf-8">
 
 <title>Arabic &amp; Persian Gap Analysis</title>
-<script src="../../i18n-activity/textlayout/resources/gap-analysis-github.js"> </script>
+<script  class="remove" src="../../i18n-activity/textlayout/resources/gap-analysis-github.js"> </script>
 
 <script src="https://www.w3.org/Tools/respec/respec-w3c-common" async="" class="remove">
 </script>
@@ -13,14 +13,14 @@
   var respecConfig = {
       // specification status (e.g. WD, LCWD, WG-NOTE, etc.). If in doubt use ED.
       specStatus:           "ED",
-      //publishDate:  		"2015-07-21",
+      //publishDate:  		"2020-06-16",
       //previousPublishDate:  "2014-12-16",
       //previousMaturity:  "FPWD",
       
       // langs array lists languages addressed by this document, in order of speaker (highest first)
       // it is used to generate the javascript needed for the matrix
       langs: ['Arabic', 'Persian'],
-      gapDocPath: 'https://w3c.github.io/alreq/gap-analysis/',
+      gapDocPath: 'https://www.w3.org/TR/alreq-gap/',
 
       noRecTrack:           true,
       shortName:            "alreq-gap",
@@ -42,6 +42,18 @@
       wgURI:        "https://www.w3.org/International/core/",
  
  	  github:	"w3c/alreq",
+	  
+	  postProcess: [
+    	function importStyleSheet() {
+			[...document.querySelectorAll("link[rel='stylesheet'][data-import]")].forEach(l => {
+				const style = document.createElement("style");
+				fetch(l.href).then(r => r.text()).then(t => {
+					style.textContent = t;
+					l.replaceWith(style);
+					});
+      			});
+    		}
+   		],
 
       // URI of the patent status for this WG, for Rec-track documents
       // !!!! IMPORTANT !!!!
@@ -52,8 +64,8 @@
       // !!!! IMPORTANT !!!! MAKE THE ABOVE BLINK IN YOUR HEAD
     };
   </script>
-<script src="/i18n-activity/templates/gap-analysis/prompts.js"> </script>
-<link rel="stylesheet" href="https://w3c.github.io/typography/gap-analysis/gapanalysis.css">
+<script  class="remove" src="/i18n-activity/templates/gap-analysis/prompts.js"> </script>
+<link rel="stylesheet" data-import href="https://w3c.github.io/typography/gap-analysis/gapanalysis.css">
 </head>
 
 <body>
@@ -470,10 +482,11 @@
 
 
 
-<script>
+<script  class="remove">
 setUpSummary()
 addPrompts() 
 getAllData('alreq','doc:arfa')
+printSummary(true)
 </script>
 
 
