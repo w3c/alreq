@@ -15,6 +15,12 @@ For more details about scope, deliverables, work methods, etc., see the [group's
 - [Glossary source](https://docs.google.com/spreadsheets/d/1nSxYKQm_mKroCmxU4fyJ-g70Eo1_mF89yHZg8YNOuzc/edit#gid=0) (temporary Google spreadsheet)
 
 
+### Related documents
+- [Arabic mathematical notation](https://www.w3.org/TR/arabic-math/)
+- [Additional Requirements for Bidi in HTML & CSS](https://www.w3.org/TR/html-bidi/)
+- [Ready-made Counter Styles](https://www.w3.org/TR/predefined-counter-styles/)
+
+
 ### Feedback
 Please use the [GitHub issue list](https://github.com/w3c/alreq/issues) to report issues for language support, for discussions, and to send feedback about documents. (Learn [how GitHub issues work](http://w3c.github.io/i18n-activity/guidelines/issues.html).)
 
