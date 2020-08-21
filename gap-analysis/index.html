@@ -7,7 +7,7 @@
 <title>Arabic &amp; Persian Gap Analysis</title>
 <script  class="remove" src="../../i18n-activity/textlayout/resources/gap-analysis-github.js"> </script>
 
-<script src="https://www.w3.org/Tools/respec/respec-w3c-common" async="" class="remove">
+<script src="https://www.w3.org/Tools/respec/respec-w3c" async="" class="remove">
 </script>
   <script class="remove">
   var respecConfig = {
@@ -38,10 +38,8 @@
       ],
 
 
-      wg:       "Internationalization Working Group",
-      wgURI:    "https://www.w3.org/International/core/",
- 
- 	  github:	"w3c/alreq",
+ 	  github:	"w3c/iip",
+	  group:	"i18n",
 	  
 	  postProcess: [
     	function importStyleSheet() {
@@ -54,16 +52,9 @@
       			});
     		}
    		],
+      };
+</script>
 
-      // URI of the patent status for this WG, for Rec-track documents
-      // !!!! IMPORTANT !!!!
-      // This is important for Rec-track documents, do not copy a patent URI from a random
-      // document unless you know what you're doing. If in doubt ask your friendly neighbourhood
-      // Team Contact.
-      wgPatentURI:  "https://www.w3.org/2004/01/pp-impl/32113/status",
-      // !!!! IMPORTANT !!!! MAKE THE ABOVE BLINK IN YOUR HEAD
-    };
-  </script>
 <script  class="remove" src="../../i18n-activity/templates/gap-analysis/prompts.js"> </script>
 <link rel="stylesheet" data-import href="https://w3c.github.io/typography/gap-analysis/gapanalysis.css">
 </head>
@@ -474,20 +465,19 @@
 
 
 
-<details>
-<summary style="margin-top:4em; cursor: pointer;">Show summary</summary>
+<details id="summaryStats">
+<summary style="margin-top:4em; cursor: pointer;" onclick="setUpSummary(); printSummary(true)">Show summary</summary>
 <pre id="summaryPlaceholder" style="white-space: pre-wrap;"></pre>
 </details>
-
-
-
-
-<script  class="remove">
-setUpSummary()
+<script class="remove">
 addPrompts() 
 getAllData('alreq','doc:arfa')
-printSummary(true)
 </script>
+<script>
+if (window.location.href.includes('/TR/')) document.getElementById('summaryStats').style.display = 'none'
+</script>
+
+
 
 
 
