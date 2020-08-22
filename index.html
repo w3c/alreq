@@ -34,34 +34,12 @@
       ],
 
 
-      wg:           "Internationalization Working Group",
-      wgURI:        "https://www.w3.org/International/core/",
+      group:        "i18n",
       //wgPublicList: "public-i18n-arabic",
 
 	  github: "w3c/alreq",
 
-      // URI of the patent status for this WG, for Rec-track documents
-      // !!!! IMPORTANT !!!!
-      // This is important for Rec-track documents, do not copy a patent URI from a random
-      // document unless you know what you're doing. If in doubt ask your friendly neighbourhood
-      // Team Contact.
-      wgPatentURI:  "https://www.w3.org/2004/01/pp-impl/32113/status",
-      // !!!! IMPORTANT !!!! MAKE THE ABOVE BLINK IN YOUR HEAD
-
       localBiblio: {
-
-        "BIDI": {
-          "authors": [
-            "Mark Davis",
-            "Aharon Lanin",
-            "Andrew Glass"
-          ],
-          "href": "http://www.unicode.org/reports/tr9/",
-          "publisher": "Unicode Consortium",
-          "status": "Unicode Standard Annex #9",
-          "title": "Unicode Bidirectional Algorithm",
-          "id": "BIDI",
-        },
 
         "UBA-BASICS": {
           "authors": [
@@ -73,13 +51,6 @@
           "id": "UBA-BASICS",
         },
 
-        "UNICODE": {
-          "href": "http://www.unicode.org/versions/latest/",
-          "publisher": "The Unicode Consortium",
-          "title": "The Unicode Standard",
-          "id": "UNICODE"
-        },
-        
         "W3-ARAB-MATH": {
           "authors": [
                 "Azzeddine Lazrek", 
@@ -646,7 +617,7 @@ character.</p>
 
 <p>The <dfn data-lt="bidirectional algorithm|bidi algorithm"><a href=
 "http://www.unicode.org/reports/tr9/">Unicode Bidirectional Algorithm</a></dfn> (or
-<span class="qterm">bidi algorithm</span>, for short) [[!BIDI]] details an algorithm for rendering right-to-left text and covers a myriad of situations, mixing different kinds of characters. A simpler explanation of the basics of the algorithm exists in the W3C article <a href="https://www.w3.org/International/articles/inline-bidi-markup/uba-basics">Unicode Bidirectional Algorithm basics</a>. [[UBA-BASICS]] You can refer to these documents for more information about Unicode’s bidirectional algorithm.</p>
+<span class="qterm">bidi algorithm</span>, for short) [[!UAX9]] details an algorithm for rendering right-to-left text and covers a myriad of situations, mixing different kinds of characters. A simpler explanation of the basics of the algorithm exists in the W3C article <a href="https://www.w3.org/International/articles/inline-bidi-markup/uba-basics">Unicode Bidirectional Algorithm basics</a>. [[UBA-BASICS]] You can refer to these documents for more information about Unicode’s bidirectional algorithm.</p>
 
 <p>A brief overview of the <a>bidirectional algorithm</a> follows, because the direction is an essential part of how Arabic script is used.</p>
 
@@ -694,7 +665,7 @@ direction of these characters is derived from their surrounding characters. If a
 essentials of how Arabic text is transformed for rendering. The actual algorithm deals with many more character types and edge cases. Please refer to <a href=
 "https://www.w3.org/International/articles/inline-bidi-markup/uba-basics">Unicode
 Bidirectional Algorithm basics</a> [[UBA-BASICS]] for more information or <a href=
-"http://www.unicode.org/reports/tr9/">Unicode Bidirectional Algorithm</a> [[!BIDI]] for the official detailed documentation.</p>
+"http://www.unicode.org/reports/tr9/">Unicode Bidirectional Algorithm</a> [[!UAX9]] for the official detailed documentation.</p>
 </section>
 
 
