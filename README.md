@@ -40,10 +40,11 @@ To get an idea about what's involved, see [How to contribute to an Language Enab
 
 
 
-### Contacts
+### People
 
 - Chairs: Shervin Afshar, Behnam Esfahbod
 - W3C staff: [Richard Ishida](mailto:ishida@w3.org)
+- [Group participants](https://www.w3.org/groups/tf/i18n-alreq/participants)
 
 
 ### Links
