@@ -17,7 +17,7 @@
       //publishDate:  		"2020-06-16",
       //previousPublishDate:  "2014-12-16",
       //previousMaturity:  "FPWD",
-      
+
       // langs array lists languages addressed by this document, in order of speaker (highest first)
       // it is used to generate the javascript needed for the matrix
       langs: ['Arabic', 'Persian'],
@@ -39,22 +39,24 @@
       ],
 
 
- 	  github:	"w3c/alreq",
-	  group:	"i18n",
-	  
-	  postProcess: [
-    	function importStyleSheet() {
-			[...document.querySelectorAll("link[rel='stylesheet'][data-import]")].forEach(l => {
-				const style = document.createElement("style");
-				fetch(l.href).then(r => r.text()).then(t => {
-					style.textContent = t;
-					l.replaceWith(style);
-					});
-      			});
-    		},
-	() => { addPrompts() },
-	() => { getAllData('alreq', 'doc:arfa') }
-   	],
+      github: "w3c/alreq",
+      group: "i18n",
+      preProcess: [
+        () => { addPrompts() },
+        () => { getAllData('alreq', 'doc:arfa') }
+      ],
+
+      postProcess: [
+        function importStyleSheet() {
+          [...document.querySelectorAll("link[rel='stylesheet'][data-import]")].forEach(l => {
+            const style = document.createElement("style");
+            fetch(l.href).then(r => r.text()).then(t => {
+              style.textContent = t;
+              l.replaceWith(style);
+            });
+          });
+        }
+      ],
       };
 </script>
 
