@@ -5,7 +5,8 @@
 <meta charset="utf-8">
 
 <title>Arabic and Persian Gap Analysis</title>
-<script  class="remove" src="../../i18n-activity/textlayout/resources/gap-analysis-github.js"> </script>
+<script class="remove" src="../../i18n-activity/textlayout/resources/gap-analysis-github.js"></script>
+<script class="remove" src="../../i18n-activity/templates/gap-analysis/prompts.js"></script>
 
 <script src="https://www.w3.org/Tools/respec/respec-w3c" async="" class="remove">
 </script>
@@ -50,12 +51,13 @@
 					l.replaceWith(style);
 					});
       			});
-    		}
-   		],
+    		},
+	() => { addPrompts() },
+	() => { getAllData('alreq', 'doc:arfa') }
+   	],
       };
 </script>
 
-<script  class="remove" src="../../i18n-activity/templates/gap-analysis/prompts.js"> </script>
 <link rel="stylesheet" data-import href="https://w3c.github.io/typography/gap-analysis/gapanalysis.css">
 </head>
 
@@ -469,10 +471,6 @@
 <summary style="margin-top:4em; cursor: pointer;" onclick="setUpSummary(); printSummary(true)">Show summary</summary>
 <pre id="summaryPlaceholder" style="white-space: pre-wrap;"></pre>
 </details>
-<script class="remove">
-addPrompts() 
-getAllData('alreq','doc:arfa')
-</script>
 <script>
 if (window.location.href.includes('/TR/')) document.getElementById('summaryStats').style.display = 'none'
 </script>
