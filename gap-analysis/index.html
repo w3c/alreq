@@ -39,29 +39,28 @@
       ],
 
 
-      github: "w3c/alreq",
-      group: "i18n",
-      preProcess: [
-        () => { addPrompts() },
-        async () => { await getAllData('alreq', 'doc:arfa') }
-      ],
+	github: "w3c/alreq",
+	group: "i18n",
 
-      postProcess: [
-        async function importStyleSheet() {
-          const elems = document.querySelectorAll(
-            `link[rel='stylesheet'][data-import]`
-          );
-          await Promise.all(
-            [...elems].map(async link => {
-              const text = await fetch(link.href).then(r => r.text());
-              const style = document.createElement("style");
-              style.textContent = text;
-              link.replaceWith(style);
-            })
-          );
-        }
-      ],
-      };
+	preProcess: [
+		() => { addPrompts() },
+		async () => { await getAllData('alreq', 'doc:arfa') }
+		],
+
+	postProcess: [
+		async function importStyleSheet() { 
+			const elems = document.querySelectorAll(`link[rel='stylesheet'][data-import]`)
+			await Promise.all(
+				[...elems].map(async link => {
+					const text = await fetch(link.href).then(r => r.text())
+					const style = document.createElement("style")
+					style.textContent = text
+					link.replaceWith(style)
+					})
+				)
+			}
+		],
+	}
 </script>
 
 <link rel="stylesheet" data-import href="https://w3c.github.io/typography/gap-analysis/gapanalysis.css">
