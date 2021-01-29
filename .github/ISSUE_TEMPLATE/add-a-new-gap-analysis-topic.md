@@ -2,7 +2,7 @@
 name: Add a new gap-analysis topic
 about: Only those in the amlreq group should use this template.
 title: Brief_description_of_the_problem
-labels: gap, doc:arfa
+labels: doc:arfa, gap
 assignees: ''
 
 ---
