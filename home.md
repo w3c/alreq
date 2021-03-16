@@ -49,7 +49,7 @@ To get an idea about what's involved, see  [Get involved with Language Enablemen
 - [Group participants](https://www.w3.org/groups/tf/i18n-alreq/participants)
 
 
-### Links
+### Links to practical information
 - [Mail archive](https://lists.w3.org/Archives/Public/public-i18n-arabic/)
 - [Writing i18n tests](https://github.com/w3c/i18n-activity/wiki/Writing-i18n-tests)
 - [Practical tips for task forces](https://www.w3.org/International/i18n-activity/guidelines/process.html) (See also the github and editorial guidelines below)
