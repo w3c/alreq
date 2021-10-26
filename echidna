@@ -4,11 +4,15 @@ local.css
 images/yastabchiro.jpg
 images/yastami3o.jpg
 images/yastabchiroNormal.jpg
+images/differentInitialNoon.jpg
 images/bsl.jpg
 images/sbl.jpg
 images/barmajaAmiri.jpg
 images/stimrarihimaArabicTypesetting.jpg
 images/barmajaDefault.png
+images/stimrarihimaDefault.jpg
+images/vertivalJoin.jpg
+images/horizontalJoin.jpg
 images/teeth.jpg
 images/kufiExampleQuran.jpg
 images/maghribi2.jpg
@@ -25,6 +29,7 @@ images/order-when-displayed.svg
 images/directional-runs.svg
 images/order-of-directional-runs.svg
 images/vertical-rotated-left.png
+images/vertical-rotated-right.png
 images/embedded-ar.png
 images/odeonMovie.png
 images/drawings/joining/joining-meem-isolated.png
