@@ -1,4 +1,4 @@
-# Arabic Language Enablement (alreq)
+# Language Enablement for Arabic Script languages (alreq)
 
 This is the place to explore gaps in support for languages that use the Arabic script on the Web and in eBooks, and to document requirements.
 
