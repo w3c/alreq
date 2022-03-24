@@ -42,17 +42,19 @@
 		async () => { await getAllData('alreq', 'doc:arab_ug') }
 		],
        
-      postProcess: [
-    	function importStyleSheet() {
-			[...document.querySelectorAll("link[rel='stylesheet'][data-import]")].forEach(l => {
-				const style = document.createElement("style");
-				fetch(l.href).then(r => r.text()).then(t => {
-					style.textContent = t;
-					l.replaceWith(style);
-					});
-      			});
-    		}
-   		],
+	  postProcess: [
+		async function importStyleSheet() { 
+			const elems = document.querySelectorAll(`link[rel='stylesheet'][data-import]`)
+			await Promise.all(
+				[...elems].map(async link => {
+					const text = await fetch(link.href).then(r => r.text())
+					const style = document.createElement("style")
+					style.textContent = text
+					link.replaceWith(style)
+					})
+				)
+			}
+		],
 	  
 	  
 
