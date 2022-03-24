@@ -13,7 +13,8 @@ Topics for discussion are suggested by [the gap-analysis template](https://www.w
 
 ### Documents
 - [**Arabic & Persian Gap Analysis**](https://www.w3.org/TR/alreq-gap) • [*Editor's draft*](https://www.w3.org/International/alreq/gap-analysis/) • [*Latest commits*](https://github.com/w3c/alreq/commits/gh-pages/gap-analysis/index.html) • [*Edit/comment on GitHub*](https://github.com/w3c/alreq/labels/doc%3Aarfa)
-- [**Kashmiri Gap Analysis**](https://www.w3.org/TR/arab-ks-gap) • [*Editor's draft*](https://www.w3.org/International/alreq/gap-analysis/arab-ks) • [*Latest commits*](https://github.com/w3c/alreq/commits/gh-pages/gap-analysis/index.html) • [*Edit/comment on GitHub*](https://github.com/w3c/alreq/labels/doc%3Aarab_ks)
+- [**Kashmiri Gap Analysis**](https://www.w3.org/TR/arab-ks-gap) • [*Editor's draft*](https://www.w3.org/International/alreq/gap-analysis/arab-ks-gap) • [*Latest commits*](https://github.com/w3c/alreq/commits/gh-pages/gap-analysis/arab-ks-gap.html) • [*Edit/comment on GitHub*](https://github.com/w3c/alreq/labels/doc%3Aarab_ks)
+- [**Uighur Gap Analysis**](https://www.w3.org/TR/arab-ug-gap) • [*Editor's draft*](https://www.w3.org/International/alreq/gap-analysis/arab-ug-gap) • [*Latest commits*](https://github.com/w3c/alreq/commits/gh-pages/gap-analysis/arab-ug-gap.html) • [*Edit/comment on GitHub*](https://github.com/w3c/alreq/labels/doc%3Aarab_ug)
 - [**Text Layout Requirements for the Arabic Script**](https://www.w3.org/TR/alreq) • [*Editor's draft*](https://www.w3.org/International/alreq/) • [*Latest commits*](https://github.com/w3c/alreq/commits/gh-pages/index.html)
 
 
