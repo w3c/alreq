@@ -472,15 +472,12 @@ It is linked to from the <a href="https://w3c.github.io/typography/gap-analysis/
 
 
 
-<details>
-<summary style="margin-top:4em; cursor: pointer;">Show summary</summary>
+<details id="summaryStats">
+<summary style="margin-top:4em; cursor: pointer;" onclick="setUpSummary(); printSummary(true)">Show summary</summary>
 <pre id="summaryPlaceholder" style="white-space: pre-wrap;"></pre>
 </details>
-<script class="remove">
-setUpSummary()
-addPrompts() 
-getAllData('alreq','doc:arab_ug')
-printSummary(true)
+<script>
+if (window.location.href.includes('/TR/')) document.getElementById('summaryStats').style.display = 'none'
 </script>
 
 
