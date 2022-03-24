@@ -37,10 +37,10 @@
       group:        "i18n",
       
  
-	//preProcess: [
-	//	() => { addPrompts() },
-	//	async () => { await getAllData('alreq', 'doc:arab_ks') }
-	//	],
+	  preProcess: [
+		() => { addPrompts() },
+		async () => { await getAllData('alreq', 'doc:arab_ks') }
+		],
        
       postProcess: [
     	function importStyleSheet() {
@@ -62,7 +62,7 @@
       gapDocPath: 'https://www.w3.org/TR/arab-ks-gap',
     };
   </script>
-<link rel="stylesheet" href="https://w3c.github.io/typography/gap-analysis/gapanalysis.css">
+<link rel="stylesheet" data-import href="https://w3c.github.io/typography/gap-analysis/gapanalysis.css">
 </head>
 
 <body>

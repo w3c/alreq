@@ -37,10 +37,10 @@
       group:        "i18n",
       
  
-	//preProcess: [
-	//	() => { addPrompts() },
-	//	async () => { await getAllData('alreq', 'doc:arab_ks') }
-	//	],
+	  preProcess: [
+		() => { addPrompts() },
+		async () => { await getAllData('alreq', 'doc:arab_ug') }
+		],
        
       postProcess: [
     	function importStyleSheet() {
