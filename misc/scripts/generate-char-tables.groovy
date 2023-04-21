@@ -14,7 +14,7 @@ import groovy.xml.MarkupBuilder
 tables = [['fname': 'resources/chars-alphabet.csv', 'name': 'Alphabetical characters'],
 		  ['fname': 'resources/chars-diacritics.csv', 'name': 'Diacritics'],
 		  ['fname': 'resources/chars-numbers.csv', 'name': 'Numeral characters'],
-		  ['fname': 'resources/chars-punctuations.csv', 'name': 'Punctuations and symbols'],
+		  ['fname': 'resources/chars-punctuations.csv', 'name': 'Punctuation and symbols'],
 		  ['fname': 'resources/chars-control.csv', 'name': 'Control characters']]
 
 tables.each {
