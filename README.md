@@ -10,6 +10,11 @@ Topics for discussion are suggested by [the gap-analysis template](https://www.w
 ### Key links
 [GitHub repo](https://github.com/w3c/alreq) • [Discussion threads](https://github.com/w3c/alreq/issues) • [Issue tracker](https://www.w3.org/International/i18n-activity/textlayout/?filter=alreq) (with alreq filter) • [Charter](https://www.w3.org/International/alreq/charter/)
 
+### Help wanted! ###
+We're looking for information about these writing systems. Follow the links for specific questions.
+
+[Arabic](https://github.com/w3c/alreq/issues?q=is%3Aissue+is%3Aopen+label%3Al%3Aarabic+label%3Aquestion) • [Kashmiri](https://github.com/w3c/alreq/issues?q=is%3Aissue+is%3Aopen+label%3Al%3Akashmiri+label%3Aquestion) • [Persian](https://github.com/w3c/alreq/issues?q=is%3Aissue+is%3Aopen+label%3Al%3Apersian+label%3Aquestion) • [Uighur](https://github.com/w3c/alreq/issues?q=is%3Aissue+is%3Aopen+label%3Al%3Auighur+label%3Aquestion) • [Urdu](https://github.com/w3c/alreq/issues?q=is%3Aissue+is%3Aopen+label%3Al%3Aurdu+label%3Aquestion)
+
 
 ### Documents
 - **Arabic & Persian Gap Analysis** • [DNOTE](https://www.w3.org/TR/alreq-gap) • [*Editor's draft*](https://www.w3.org/International/alreq/gap-analysis/) • [*Latest commits*](https://github.com/w3c/alreq/commits/gh-pages/gap-analysis/index.html) • [*Discuss*](https://github.com/w3c/alreq/labels/l%3Aarabic) • [*Edit*](https://github.com/w3c/alreq/labels/doc%3Aarfa)
