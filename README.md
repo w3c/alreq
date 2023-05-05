@@ -7,19 +7,19 @@ We aim to address the problem that local users don't know how to tell the W3C wh
 Topics for discussion are suggested by [the gap-analysis template](https://www.w3.org/International/i18n-activity/templates/gap-analysis/gap-analysis_template.html). This work feeds into the [language matrix](https://www.w3.org/International/typography/gap-analysis/language-matrix.html) which provides a heat-map for language issues on the Web.
 
 
-### Key links
-[GitHub repo](https://github.com/w3c/alreq) • [Discussion threads](https://github.com/w3c/alreq/issues) • [Issue tracker](https://www.w3.org/International/i18n-activity/textlayout/?filter=alreq) (with alreq filter) • [Charter](https://www.w3.org/International/alreq/charter/)
-
-
-
 ---
-### Help wanted! ###
+
+## Help wanted! ###
 **We're looking for information about these writing systems. Follow the links for specific questions.**
 
 **[Arabic](https://github.com/w3c/alreq/issues?q=is%3Aissue+is%3Aopen+label%3Al%3Aarabic+label%3Aquestion) • [Kashmiri](https://github.com/w3c/alreq/issues?q=is%3Aissue+is%3Aopen+label%3Al%3Akashmiri+label%3Aquestion) • [Persian](https://github.com/w3c/alreq/issues?q=is%3Aissue+is%3Aopen+label%3Al%3Apersian+label%3Aquestion) • [Uighur](https://github.com/w3c/alreq/issues?q=is%3Aissue+is%3Aopen+label%3Al%3Auighur+label%3Aquestion) • [Urdu](https://github.com/w3c/alreq/issues?q=is%3Aissue+is%3Aopen+label%3Al%3Aurdu+label%3Aquestion)**
 
 ---
 
+
+
+### Key links
+[GitHub repo](https://github.com/w3c/alreq) • [Discussion threads](https://github.com/w3c/alreq/issues) • [Issue tracker](https://www.w3.org/International/i18n-activity/textlayout/?filter=alreq) (with alreq filter) • [Charter](https://www.w3.org/International/alreq/charter/)
 
 
 ### Documents
