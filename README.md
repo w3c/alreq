@@ -23,13 +23,41 @@ Topics for discussion are suggested by [the gap-analysis template](https://www.w
 
 
 ### Documents
-- **Arabic & Persian Gap Analysis** • [DNOTE](https://www.w3.org/TR/alreq-gap) • [*Editor's draft*](https://www.w3.org/International/alreq/gap-analysis/) • [*Latest commits*](https://github.com/w3c/alreq/commits/gh-pages/gap-analysis/index.html) • [*Discuss*](https://github.com/w3c/alreq/labels/l%3Aarabic) • [*Edit*](https://github.com/w3c/alreq/labels/doc%3Aarfa)
+- **Arabic & Persian Gap Analysis** • [DNOTE](https://www.w3.org/TR/alreq-gap) • [*Editor's draft*](https://www.w3.org/International/alreq/gap-analysis/) • [*Latest commits*](https://github.com/w3c/alreq/commits/gh-pages/gap-analysis/index.html)
 
-- **Text Layout Requirements for the Arabic Script** • [DNOTE](https://www.w3.org/TR/alreq) • [*Editor's draft*](https://www.w3.org/International/alreq/) • [*Latest commits*](https://github.com/w3c/alreq/commits/gh-pages/index.html) • [*Discuss*](https://github.com/w3c/alreq/labels/l%3Aarabic)
+- **Text Layout Requirements for the Arabic Script** • [DNOTE](https://www.w3.org/TR/alreq) • [*Editor's draft*](https://www.w3.org/International/alreq/) • [*Latest commits*](https://github.com/w3c/alreq/commits/gh-pages/index.html)
 
-- **Perso-arabic Kashmiri Gap Analysis** • [DNOTE](https://www.w3.org/TR/arab-ks-gap) • [*Editor's draft*](https://www.w3.org/International/alreq/gap-analysis/arab-ks-gap) • [*Latest commits*](https://github.com/w3c/alreq/commits/gh-pages/gap-analysis/arab-ks-gap.html) • [*Discuss*](https://github.com/w3c/alreq/labels/l%3Akashmiri) • [*Edit*](https://github.com/w3c/alreq/labels/doc%3Aarab_ks)
+- **Perso-arabic Kashmiri Gap Analysis** • [DNOTE](https://www.w3.org/TR/arab-ks-gap) • [*Editor's draft*](https://www.w3.org/International/alreq/gap-analysis/arab-ks-gap) • [*Latest commits*](https://github.com/w3c/alreq/commits/gh-pages/gap-analysis/arab-ks-gap.html)
 
-- **Uighur Gap Analysis** • [DNOTE](https://www.w3.org/TR/arab-ug-gap) • [*Editor's draft*](https://www.w3.org/International/alreq/gap-analysis/arab-ug-gap) • [*Latest commits*](https://github.com/w3c/alreq/commits/gh-pages/gap-analysis/arab-ug-gap.html) • [*Discuss*](https://github.com/w3c/alreq/labels/l%3Auighur) • [*Edit*](https://github.com/w3c/alreq/labels/doc%3arab_ug)
+- **Uighur Gap Analysis** • [DNOTE](https://www.w3.org/TR/arab-ug-gap) • [*Editor's draft*](https://www.w3.org/International/alreq/gap-analysis/arab-ug-gap) • [*Latest commits*](https://github.com/w3c/alreq/commits/gh-pages/gap-analysis/arab-ug-gap.html)
+
+
+### Discussions
+- **Arabic** • [*Questions*](https://github.com/w3c/alreq/issues?q=is%3Aissue+is%3Aopen+label%3Al%3Aarb+label%3Aquestion)
+• [*Gap reports*](https://github.com/w3c/alreq/labels/doc%3Aarfa)
+• [*Other*](https://github.com/w3c/alreq/issues?q=is%3Aopen+label%3As%3Aarb+-label%3Aquestion) 
+• [*Spec issues*](https://github.com/w3c/i18n-activity/issues?q=is%3Aopen+label%3Aalreq+label%3Aspec-type-issue)
+
+- **Kashmiri** • [*Questions*](https://github.com/w3c/alreq/issues?q=is%3Aissue+is%3Aopen+label%3Al%3Aks+label%3Aquestion)
+• [*Gap reports*](https://github.com/w3c/alreq/labels/doc%3Aarab_ks)
+• [*Other*](https://github.com/w3c/alreq/issues?q=is%3Aopen+label%3As%3Aks+-label%3Aquestion) 
+• [*Spec issues*](https://github.com/w3c/i18n-activity/issues?q=is%3Aopen+label%3Aalreq+label%3Aspec-type-issue)
+
+- **Persian** • [*Questions*](https://github.com/w3c/alreq/issues?q=is%3Aissue+is%3Aopen+label%3Al%3Apes+label%3Aquestion)
+• [*Gap reports*](https://github.com/w3c/alreq/labels/doc%3Aarab_fa)
+• [*Other*](https://github.com/w3c/alreq/issues?q=is%3Aopen+label%3As%3Apes+-label%3Aquestion) 
+• [*Spec issues*](https://github.com/w3c/i18n-activity/issues?q=is%3Aopen+label%3Aalreq+label%3Aspec-type-issue)
+
+- **Uighur** • [*Questions*](https://github.com/w3c/alreq/issues?q=is%3Aissue+is%3Aopen+label%3Al%3Aug+label%3Aquestion)
+• [*Gap reports*](https://github.com/w3c/alreq/labels/doc%3Aarab_ug)
+• [*Other*](https://github.com/w3c/alreq/issues?q=is%3Aopen+label%3As%3Aug+-label%3Aquestion) 
+• [*Spec issues*](https://github.com/w3c/i18n-activity/issues?q=is%3Aopen+label%3Aalreq+label%3Aspec-type-issue)
+
+- **Urdu** • [*Questions*](https://github.com/w3c/alreq/issues?q=is%3Aissue+is%3Aopen+label%3Al%3Aur+label%3Aquestion)
+• [*Gap reports*](https://github.com/w3c/alreq/labels/doc%3Aarab_ur)
+• [*Other*](https://github.com/w3c/alreq/issues?q=is%3Aopen+label%3As%3Aur+-label%3Aquestion) 
+• [*Spec issues*](https://github.com/w3c/i18n-activity/issues?q=is%3Aopen+label%3Aalreq+label%3Aspec-type-issue)
+
 
 
 ### Related documents
