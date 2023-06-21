@@ -12,7 +12,7 @@ Topics for discussion are suggested by [the gap-analysis template](https://www.w
 ## Help wanted! ###
 **We're looking for information about these writing systems. Follow the links for specific questions.**
 
-**[Arabic](https://github.com/w3c/alreq/issues?q=is%3Aissue+is%3Aopen+label%3Al%3Aarabic+label%3Aquestion) • [Kashmiri](https://github.com/w3c/alreq/issues?q=is%3Aissue+is%3Aopen+label%3Al%3Akashmiri+label%3Aquestion) • [Persian](https://github.com/w3c/alreq/issues?q=is%3Aissue+is%3Aopen+label%3Al%3Apersian+label%3Aquestion) • [Uighur](https://github.com/w3c/alreq/issues?q=is%3Aissue+is%3Aopen+label%3Al%3Auighur+label%3Aquestion) • [Urdu](https://github.com/w3c/alreq/issues?q=is%3Aissue+is%3Aopen+label%3Al%3Aurdu+label%3Aquestion)**
+**[Arabic](https://github.com/w3c/alreq/issues?q=is%3Aissue+is%3Aopen+label%3Al%3Aarb+label%3Aquestion) • [Kashmiri](https://github.com/w3c/alreq/issues?q=is%3Aissue+is%3Aopen+label%3Al%3Aks+label%3Aquestion) • [Persian](https://github.com/w3c/alreq/issues?q=is%3Aissue+is%3Aopen+label%3Al%3Apes+label%3Aquestion) • [Uighur](https://github.com/w3c/alreq/issues?q=is%3Aissue+is%3Aopen+label%3Al%3Aug+label%3Aquestion) • [Urdu](https://github.com/w3c/alreq/issues?q=is%3Aissue+is%3Aopen+label%3Al%3Aur+label%3Aquestion)**
 
 ---
 
