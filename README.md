@@ -97,8 +97,8 @@ To get an idea about what's involved, see  [Get involved with Language Enablemen
 - [Mail archive](https://lists.w3.org/Archives/Public/public-i18n-arabic/)
 - [Writing i18n tests](https://github.com/w3c/i18n-activity/wiki/Writing-i18n-tests)
 - [Practical tips for task forces](https://www.w3.org/International/i18n-activity/guidelines/process.html) (See also the github and editorial guidelines below)
-- [Action tracker](https://www.w3.org/International/groups/arabic-layout/track/actions/open)
 - [Meeting info](https://www.w3.org/2017/07/alreq-meeting-info.html)
+- [Archived, former action tracker](https://www.w3.org/International/groups/arabic-layout/track/actions/open)
 
 
 ### Links to background information
