@@ -25,7 +25,7 @@ Topics for discussion are suggested by [the gap-analysis template](https://www.w
 ### Documents
 - **Arabic & Persian Gap Analysis** • [DNOTE](https://www.w3.org/TR/alreq-gap) • [*Editor's draft*](https://www.w3.org/International/alreq/gap-analysis/) • [*Latest commits*](https://github.com/w3c/alreq/commits/gh-pages/gap-analysis/index.html)
 
-- **Text Layout Requirements for the Arabic Script** • [DNOTE](https://www.w3.org/TR/alreq) • [*Editor's draft*](https://www.w3.org/International/alreq/) • [*Latest commits*](https://github.com/w3c/alreq/commits/gh-pages/index.html)
+- **Arabic & Persian Layout Requirements** • [DNOTE](https://www.w3.org/TR/alreq) • [*Editor's draft*](https://www.w3.org/International/alreq/) • [*Latest commits*](https://github.com/w3c/alreq/commits/gh-pages/index.html)
 
 - **Perso-arabic Kashmiri Gap Analysis** • [DNOTE](https://www.w3.org/TR/arab-ks-gap) • [*Editor's draft*](https://www.w3.org/International/alreq/gap-analysis/arab-ks-gap) • [*Latest commits*](https://github.com/w3c/alreq/commits/gh-pages/gap-analysis/arab-ks-gap.html)
 
